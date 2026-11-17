@@ -1,0 +1,21 @@
+{
+  "total_faces": 81,
+  "total_verts": 73,
+  "ngons": 0,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Blade": 0.153,
+    "Guard": 0.593,
+    "Grip": 0.809,
+    "Pommel": 0.373
+  },
+  "uv_islands": 16,
+  "uv_overlap_pct": 0.0,
+  "overall_pass": true
+}

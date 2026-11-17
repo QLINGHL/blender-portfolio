@@ -1,0 +1,153 @@
+{
+  "asset": "lowpoly_sword",
+  "label": "lowpoly_sword",
+  "source_blend": "scenes/001-lowpoly-sword.blend",
+  "image": "renders/004-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 3.8,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "bbox": [
+        0.4427,
+        0.2606,
+        0.5573,
+        0.7363
+      ],
+      "keypoints": {
+        "tip": [
+          0.5,
+          0.2606
+        ],
+        "guard_left": [
+          0.4438,
+          0.6548
+        ],
+        "guard_right": [
+          0.5573,
+          0.6594
+        ],
+        "pommel": [
+          0.5,
+          0.7363
+        ]
+      }
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 3.8,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "bbox": [
+        0.487,
+        0.2606,
+        0.513,
+        0.7363
+      ],
+      "keypoints": {
+        "tip": [
+          0.5,
+          0.2606
+        ],
+        "guard_left": [
+          0.5104,
+          0.6459
+        ],
+        "guard_right": [
+          0.4884,
+          0.6695
+        ],
+        "pommel": [
+          0.5,
+          0.7363
+        ]
+      }
+    },
+    {
+      "view": "back",
+      "azimuth_deg": 180.0,
+      "elevation_deg": 3.8,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "bbox": [
+        0.4427,
+        0.2606,
+        0.5573,
+        0.7363
+      ],
+      "keypoints": {
+        "tip": [
+          0.5,
+          0.2606
+        ],
+        "guard_left": [
+          0.5573,
+          0.6594
+        ],
+        "guard_right": [
+          0.4438,
+          0.6548
+        ],
+        "pommel": [
+          0.5,
+          0.7363
+        ]
+      }
+    },
+    {
+      "view": "top45",
+      "azimuth_deg": 45.0,
+      "elevation_deg": 45.0,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "bbox": [
+        0.4564,
+        0.2841,
+        0.5453,
+        0.642
+      ],
+      "keypoints": {
+        "tip": [
+          0.5,
+          0.2841
+        ],
+        "guard_left": [
+          0.4708,
+          0.5583
+        ],
+        "guard_right": [
+          0.5309,
+          0.6264
+        ],
+        "pommel": [
+          0.5,
+          0.6378
+        ]
+      }
+    }
+  ]
+}
