@@ -1,0 +1,64 @@
+{
+  "asset": "002-lowpoly-character",
+  "parts": 14,
+  "total_faces": 356,
+  "total_verts": 314,
+  "tris": 140,
+  "quads": 216,
+  "ngons": 0,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Head": 0.485,
+    "Hair": 0.604,
+    "Eye": 0.594,
+    "Eye.001": 0.594,
+    "Neck": 0.563,
+    "Torso": 0.813,
+    "Arm": 0.704,
+    "Hand": 0.446,
+    "Arm.001": 0.704,
+    "Hand.001": 0.446,
+    "Leg": 0.582,
+    "Foot": 0.635,
+    "Leg.001": 0.582,
+    "Foot.001": 0.635
+  },
+  "uv_islands": 66,
+  "uv_overlap_pct": 0.0,
+  "empty_material_slots": 0,
+  "joint_rings": {
+    "Arm": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    },
+    "Arm.001": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    },
+    "Leg": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    },
+    "Leg.001": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    }
+  },
+  "joint_rings_ok": true,
+  "overall_pass": true,
+  "defect_found_and_fixed": "初测倒置面 70（5 个管状部件盖面 60 + Torso 整体内翻 10）；修 002 生成脚本绕序并重建后复测为 0"
+}

@@ -465,36 +465,36 @@
       "min_z": 1.2713
     },
     "Torso": {
-      "max_displacement": 0.1855,
-      "min_z": 0.6359
+      "max_displacement": 0.174,
+      "min_z": 0.5701
     },
     "Arm": {
-      "max_displacement": 0.1767,
-      "min_z": 0.6885
+      "max_displacement": 0.1744,
+      "min_z": 0.6945
     },
     "Hand": {
       "max_displacement": 0.2309,
       "min_z": 0.6419
     },
     "Arm.001": {
-      "max_displacement": 0.1712,
-      "min_z": 0.7342
+      "max_displacement": 0.1702,
+      "min_z": 0.737
     },
     "Hand.001": {
       "max_displacement": 0.1674,
       "min_z": 0.6475
     },
     "Leg": {
-      "max_displacement": 0.3689,
-      "min_z": 0.1273
+      "max_displacement": 0.37,
+      "min_z": 0.1258
     },
     "Foot": {
       "max_displacement": 0.4471,
       "min_z": -0.0133
     },
     "Leg.001": {
-      "max_displacement": 0.2147,
-      "min_z": 0.1584
+      "max_displacement": 0.2149,
+      "min_z": 0.1578
     },
     "Foot.001": {
       "max_displacement": 0.2473,

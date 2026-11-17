@@ -65,8 +65,10 @@ def make_tube(name, origin, direction, distances, radii, sides, material):
     verts.append(tuple(o + d * distances[-1]))
     for i in range(sides):
         j = (i + 1) % sides
-        faces.append((top_c, i, j))
-        faces.append((bot_c, (n_rings - 1) * sides + j, (n_rings - 1) * sides + i))
+        # cap winding flipped: QA 008 found both cap fans inverted
+        # (recalc + ray-cast verified on 002)
+        faces.append((top_c, j, i))
+        faces.append((bot_c, (n_rings - 1) * sides + i, (n_rings - 1) * sides + j))
     return mesh_from_data(name, verts, faces, material)
 
 
@@ -77,10 +79,11 @@ def make_box_tube(name, rings, material):
     for k in range(len(rings) - 1):
         for i in range(4):
             j = (i + 1) % 4
-            faces.append((k * 4 + i, k * 4 + j, (k + 1) * 4 + j, (k + 1) * 4 + i))
+            # winding flipped: QA 008 found the whole box tube inside-out
+            faces.append((k * 4 + i, (k + 1) * 4 + i, (k + 1) * 4 + j, k * 4 + j))
     n = len(rings)
-    faces.append(((n - 1) * 4, (n - 1) * 4 + 1, (n - 1) * 4 + 2, (n - 1) * 4 + 3))
-    faces.append((3, 2, 1, 0))
+    faces.append(((n - 1) * 4, (n - 1) * 4 + 3, (n - 1) * 4 + 2, (n - 1) * 4 + 1))
+    faces.append((0, 1, 2, 3))
     return mesh_from_data(name, verts, faces, material)
 
 
