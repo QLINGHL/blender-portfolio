@@ -1,0 +1,324 @@
+{
+  "asset": "multi_object_sword_potion",
+  "labels": [
+    "lowpoly_sword",
+    "lowpoly_potion"
+  ],
+  "source_blends": [
+    "scenes/001-lowpoly-sword.blend",
+    "scenes/005-lowpoly-potion.blend"
+  ],
+  "layout": "sword at x=-0.95, potion at x=+0.95, both standing on z=0",
+  "image": "renders/009-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "poly_counts": {
+    "Blade": 17,
+    "Guard": 6,
+    "Grip": 18,
+    "Pommel": 40,
+    "Bottle": 100,
+    "Liquid": 60,
+    "Cork": 40,
+    "Label": 6,
+    "WaxSeal": 12
+  },
+  "total_polys": 299,
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 3.1,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.2666,
+        0.2615,
+        0.7409,
+        0.75
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_sword",
+          "bbox": [
+            0.2666,
+            0.2615,
+            0.3833,
+            0.7379
+          ],
+          "keypoints": {
+            "tip": [
+              0.3227,
+              0.2615
+            ],
+            "guard_left": [
+              0.2702,
+              0.656
+            ],
+            "guard_right": [
+              0.3814,
+              0.6597
+            ],
+            "pommel": [
+              0.3259,
+              0.7379
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_potion",
+          "bbox": [
+            0.6085,
+            0.4405,
+            0.7409,
+            0.75
+          ],
+          "keypoints": {
+            "cork_top": [
+              0.7011,
+              0.4408
+            ],
+            "bottle_base_left": [
+              0.6085,
+              0.6469
+            ],
+            "bottle_base_right": [
+              0.7409,
+              0.6469
+            ],
+            "wax_seal_center": [
+              0.6837,
+              0.6467
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 3.1,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.4219,
+        0.2801,
+        0.5732,
+        0.7994
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_sword",
+          "bbox": [
+            0.4884,
+            0.2801,
+            0.5116,
+            0.7032
+          ],
+          "keypoints": {
+            "tip": [
+              0.5,
+              0.2801
+            ],
+            "guard_left": [
+              0.5095,
+              0.6247
+            ],
+            "guard_right": [
+              0.4898,
+              0.6398
+            ],
+            "pommel": [
+              0.5,
+              0.7032
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_potion",
+          "bbox": [
+            0.4219,
+            0.4426,
+            0.5732,
+            0.7994
+          ],
+          "keypoints": {
+            "cork_top": [
+              0.5,
+              0.4433
+            ],
+            "bottle_base_left": [
+              0.5,
+              0.6656
+            ],
+            "bottle_base_right": [
+              0.5,
+              0.6932
+            ],
+            "wax_seal_center": [
+              0.4226,
+              0.6661
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "back",
+      "azimuth_deg": 180.0,
+      "elevation_deg": 3.1,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.2591,
+        0.2615,
+        0.7334,
+        0.75
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_sword",
+          "bbox": [
+            0.6167,
+            0.2615,
+            0.7334,
+            0.7379
+          ],
+          "keypoints": {
+            "tip": [
+              0.6773,
+              0.2615
+            ],
+            "guard_left": [
+              0.7334,
+              0.6597
+            ],
+            "guard_right": [
+              0.6167,
+              0.656
+            ],
+            "pommel": [
+              0.6741,
+              0.7379
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_potion",
+          "bbox": [
+            0.2591,
+            0.4405,
+            0.3915,
+            0.75
+          ],
+          "keypoints": {
+            "cork_top": [
+              0.2989,
+              0.4408
+            ],
+            "bottle_base_left": [
+              0.3915,
+              0.6469
+            ],
+            "bottle_base_right": [
+              0.2591,
+              0.6469
+            ],
+            "wax_seal_center": [
+              0.3334,
+              0.6262
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "top45",
+      "azimuth_deg": 45.0,
+      "elevation_deg": 36.4,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3594,
+        0.2315,
+        0.6803,
+        0.7668
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_sword",
+          "bbox": [
+            0.3594,
+            0.2315,
+            0.4362,
+            0.5869
+          ],
+          "keypoints": {
+            "tip": [
+              0.3805,
+              0.2315
+            ],
+            "guard_left": [
+              0.3731,
+              0.5086
+            ],
+            "guard_right": [
+              0.4225,
+              0.5577
+            ],
+            "pommel": [
+              0.4001,
+              0.5843
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_potion",
+          "bbox": [
+            0.5537,
+            0.4964,
+            0.6803,
+            0.7668
+          ],
+          "keypoints": {
+            "cork_top": [
+              0.6476,
+              0.5226
+            ],
+            "bottle_base_left": [
+              0.571,
+              0.638
+            ],
+            "bottle_base_right": [
+              0.6659,
+              0.6994
+            ],
+            "wax_seal_center": [
+              0.5741,
+              0.6923
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
