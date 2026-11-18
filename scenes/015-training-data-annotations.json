@@ -1,0 +1,448 @@
+{
+  "asset": "cabin_scene_training_data",
+  "labels": [
+    "lowpoly_cabin",
+    "lowpoly_pine",
+    "lowpoly_rocks"
+  ],
+  "source_blends": [
+    "scenes/011-lowpoly-cabin.blend"
+  ],
+  "layout": "cabin at origin (footprint 4.0 x 3.0 m, chimney top z~4.1); pine at (-3.9, -0.8); rocks at (-2.6, -2.4), (2.9, 1.6), (3.3, -1.4); stone path from door toward -y; lowpoly_cabin group includes the house structure, door/windows/steps and the path stones",
+  "image": "renders/015-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "poly_counts": {
+    "groups": {
+      "cabin": 906,
+      "pine": 37,
+      "rocks": 60
+    },
+    "cabin_families": {
+      "Window": 72,
+      "Step": 12,
+      "Roof": 12,
+      "RidgeBeam": 6,
+      "PathStone": 40,
+      "Log": 700,
+      "Gable": 10,
+      "Door": 36,
+      "Chimney": 18
+    },
+    "pine_and_rocks": {
+      "Pine_Trunk": 10,
+      "Pine_Cone_2": 9,
+      "Pine_Cone_1": 9,
+      "Pine_Cone_0": 9,
+      "Rock_2": 20,
+      "Rock_1": 20,
+      "Rock_0": 20
+    }
+  },
+  "total_polys": 1003,
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 5.5,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.1066,
+        0.3033,
+        0.8706,
+        0.7934
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_cabin",
+          "bbox": [
+            0.3114,
+            0.3033,
+            0.7853,
+            0.7934
+          ],
+          "keypoints": {
+            "roof_peak": [
+              0.3347,
+              0.3471
+            ],
+            "chimney_top": [
+              0.6201,
+              0.3033
+            ],
+            "door_top": [
+              0.5023,
+              0.5142
+            ],
+            "door_handle": [
+              0.5751,
+              0.5832
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_pine",
+          "bbox": [
+            0.1066,
+            0.3535,
+            0.3055,
+            0.655
+          ],
+          "keypoints": {
+            "tree_top": [
+              0.2001,
+              0.3535
+            ],
+            "trunk_base": [
+              0.219,
+              0.6523
+            ],
+            "canopy_left": [
+              0.1276,
+              0.5092
+            ],
+            "canopy_right": [
+              0.2807,
+              0.5092
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_rocks",
+          "bbox": [
+            0.2571,
+            0.5657,
+            0.8706,
+            0.6916
+          ],
+          "keypoints": {
+            "rock0_top": [
+              0.2933,
+              0.6414
+            ],
+            "rock1_top": [
+              0.7476,
+              0.5657
+            ],
+            "rock2_top": [
+              0.8435,
+              0.6296
+            ],
+            "rocks_center": [
+              0.6456,
+              0.6308
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 5.3,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.1191,
+        0.2833,
+        0.839,
+        0.7549
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_cabin",
+          "bbox": [
+            0.1191,
+            0.2833,
+            0.8354,
+            0.7094
+          ],
+          "keypoints": {
+            "roof_peak": [
+              0.5665,
+              0.3561
+            ],
+            "chimney_top": [
+              0.6518,
+              0.2873
+            ],
+            "door_top": [
+              0.4523,
+              0.5087
+            ],
+            "door_handle": [
+              0.4468,
+              0.5831
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_pine",
+          "bbox": [
+            0.4362,
+            0.3666,
+            0.5907,
+            0.6006
+          ],
+          "keypoints": {
+            "tree_top": [
+              0.5136,
+              0.3666
+            ],
+            "trunk_base": [
+              0.5135,
+              0.6006
+            ],
+            "canopy_left": [
+              0.5128,
+              0.4828
+            ],
+            "canopy_right": [
+              0.5143,
+              0.4924
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_rocks",
+          "bbox": [
+            0.3774,
+            0.5808,
+            0.839,
+            0.7549
+          ],
+          "keypoints": {
+            "rock0_top": [
+              0.3981,
+              0.5808
+            ],
+            "rock1_top": [
+              0.7955,
+              0.6664
+            ],
+            "rock2_top": [
+              0.4527,
+              0.7063
+            ],
+            "rocks_center": [
+              0.5258,
+              0.6651
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "back",
+      "azimuth_deg": 180.0,
+      "elevation_deg": 5.5,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.0718,
+        0.2731,
+        0.9059,
+        0.7276
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_cabin",
+          "bbox": [
+            0.1549,
+            0.2731,
+            0.7281,
+            0.7203
+          ],
+          "keypoints": {
+            "roof_peak": [
+              0.6907,
+              0.34
+            ],
+            "chimney_top": [
+              0.3456,
+              0.2775
+            ],
+            "door_top": [
+              0.4979,
+              0.5039
+            ],
+            "door_handle": [
+              0.4315,
+              0.5663
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_pine",
+          "bbox": [
+            0.7007,
+            0.3522,
+            0.9059,
+            0.6634
+          ],
+          "keypoints": {
+            "tree_top": [
+              0.8096,
+              0.3522
+            ],
+            "trunk_base": [
+              0.79,
+              0.6606
+            ],
+            "canopy_left": [
+              0.8844,
+              0.5129
+            ],
+            "canopy_right": [
+              0.7263,
+              0.5129
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_rocks",
+          "bbox": [
+            0.0718,
+            0.5923,
+            0.6949,
+            0.7276
+          ],
+          "keypoints": {
+            "rock0_top": [
+              0.6658,
+              0.5923
+            ],
+            "rock1_top": [
+              0.1252,
+              0.6543
+            ],
+            "rock2_top": [
+              0.1774,
+              0.6152
+            ],
+            "rocks_center": [
+              0.3482,
+              0.6409
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "top45",
+      "azimuth_deg": 45.0,
+      "elevation_deg": 36.8,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.259,
+        0.2841,
+        0.8421,
+        0.7808
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_cabin",
+          "bbox": [
+            0.259,
+            0.2891,
+            0.8202,
+            0.7808
+          ],
+          "keypoints": {
+            "roof_peak": [
+              0.4447,
+              0.2941
+            ],
+            "chimney_top": [
+              0.6778,
+              0.3253
+            ],
+            "door_top": [
+              0.4711,
+              0.5067
+            ],
+            "door_handle": [
+              0.5121,
+              0.5791
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_pine",
+          "bbox": [
+            0.283,
+            0.2841,
+            0.4292,
+            0.4846
+          ],
+          "keypoints": {
+            "tree_top": [
+              0.3417,
+              0.2841
+            ],
+            "trunk_base": [
+              0.3651,
+              0.4832
+            ],
+            "canopy_left": [
+              0.3163,
+              0.3702
+            ],
+            "canopy_right": [
+              0.3892,
+              0.4127
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_rocks",
+          "bbox": [
+            0.3071,
+            0.5289,
+            0.8421,
+            0.7576
+          ],
+          "keypoints": {
+            "rock0_top": [
+              0.3283,
+              0.5354
+            ],
+            "rock1_top": [
+              0.8127,
+              0.5755
+            ],
+            "rock2_top": [
+              0.7009,
+              0.7224
+            ],
+            "rocks_center": [
+              0.6033,
+              0.62
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
