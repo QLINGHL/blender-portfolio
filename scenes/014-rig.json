@@ -1,0 +1,726 @@
+{
+  "bones": [
+    {
+      "name": "Hips",
+      "head": [
+        0,
+        0,
+        0.62
+      ],
+      "tail": [
+        0,
+        0,
+        0.95
+      ],
+      "parent": null
+    },
+    {
+      "name": "Spine",
+      "head": [
+        0,
+        0,
+        0.95
+      ],
+      "tail": [
+        0,
+        0,
+        1.28
+      ],
+      "parent": "Hips"
+    },
+    {
+      "name": "Neck",
+      "head": [
+        0,
+        0,
+        1.28
+      ],
+      "tail": [
+        0,
+        0,
+        1.42
+      ],
+      "parent": "Spine"
+    },
+    {
+      "name": "Head",
+      "head": [
+        0,
+        0,
+        1.42
+      ],
+      "tail": [
+        0,
+        0,
+        1.72
+      ],
+      "parent": "Neck"
+    },
+    {
+      "name": "Shoulder.L",
+      "head": [
+        0.32,
+        0,
+        1.24
+      ],
+      "tail": [
+        0.356,
+        0,
+        0.9825
+      ],
+      "parent": "Spine"
+    },
+    {
+      "name": "Forearm.L",
+      "head": [
+        0.356,
+        0,
+        0.9825
+      ],
+      "tail": [
+        0.396,
+        0,
+        0.695
+      ],
+      "parent": "Shoulder.L"
+    },
+    {
+      "name": "Hand.L",
+      "head": [
+        0.396,
+        0,
+        0.695
+      ],
+      "tail": [
+        0.4,
+        0,
+        0.62
+      ],
+      "parent": "Forearm.L"
+    },
+    {
+      "name": "Shoulder.R",
+      "head": [
+        -0.32,
+        0,
+        1.24
+      ],
+      "tail": [
+        -0.356,
+        0,
+        0.9825
+      ],
+      "parent": "Spine"
+    },
+    {
+      "name": "Forearm.R",
+      "head": [
+        -0.356,
+        0,
+        0.9825
+      ],
+      "tail": [
+        -0.396,
+        0,
+        0.695
+      ],
+      "parent": "Shoulder.R"
+    },
+    {
+      "name": "Hand.R",
+      "head": [
+        -0.396,
+        0,
+        0.695
+      ],
+      "tail": [
+        -0.4,
+        0,
+        0.62
+      ],
+      "parent": "Forearm.R"
+    },
+    {
+      "name": "Thigh.L",
+      "head": [
+        0.12,
+        0,
+        0.62
+      ],
+      "tail": [
+        0.12,
+        0,
+        0.36
+      ],
+      "parent": "Hips"
+    },
+    {
+      "name": "Shin.L",
+      "head": [
+        0.12,
+        0,
+        0.36
+      ],
+      "tail": [
+        0.12,
+        0,
+        0.1
+      ],
+      "parent": "Thigh.L"
+    },
+    {
+      "name": "Foot.L",
+      "head": [
+        0.12,
+        0,
+        0.1
+      ],
+      "tail": [
+        0.12,
+        -0.2,
+        0.05
+      ],
+      "parent": "Shin.L"
+    },
+    {
+      "name": "Thigh.R",
+      "head": [
+        -0.12,
+        0,
+        0.62
+      ],
+      "tail": [
+        -0.12,
+        0,
+        0.36
+      ],
+      "parent": "Hips"
+    },
+    {
+      "name": "Shin.R",
+      "head": [
+        -0.12,
+        0,
+        0.36
+      ],
+      "tail": [
+        -0.12,
+        0,
+        0.1
+      ],
+      "parent": "Thigh.R"
+    },
+    {
+      "name": "Foot.R",
+      "head": [
+        -0.12,
+        0,
+        0.1
+      ],
+      "tail": [
+        -0.12,
+        -0.2,
+        0.05
+      ],
+      "parent": "Shin.R"
+    }
+  ],
+  "bone_count": 16,
+  "skin_method": "ARMATURE_AUTO",
+  "pose_degrees": {
+    "Hips": {
+      "loc": [
+        0,
+        0,
+        -0.08
+      ],
+      "rot_deg": [
+        0.0,
+        -1.1,
+        2.9
+      ]
+    },
+    "Spine": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        4.6,
+        0.0,
+        0.0
+      ]
+    },
+    "Neck": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -1.7,
+        0.0,
+        0.0
+      ]
+    },
+    "Head": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -2.9,
+        0.0,
+        0.0
+      ]
+    },
+    "Shoulder.L": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        20.1,
+        0.0,
+        3.4
+      ]
+    },
+    "Forearm.L": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -25.8,
+        0.0,
+        0.0
+      ]
+    },
+    "Hand.L": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -5.7,
+        0.0,
+        0.0
+      ]
+    },
+    "Shoulder.R": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -20.1,
+        0.0,
+        -3.4
+      ]
+    },
+    "Forearm.R": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -20.1,
+        0.0,
+        0.0
+      ]
+    },
+    "Hand.R": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -5.7,
+        0.0,
+        0.0
+      ]
+    },
+    "Thigh.L": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -21.8,
+        0.0,
+        0.0
+      ]
+    },
+    "Shin.L": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -19.5,
+        0.0,
+        0.0
+      ]
+    },
+    "Foot.L": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        41.3,
+        0.0,
+        0.0
+      ]
+    },
+    "Thigh.R": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        21.8,
+        0.0,
+        0.0
+      ]
+    },
+    "Shin.R": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        19.5,
+        0.0,
+        0.0
+      ]
+    },
+    "Foot.R": {
+      "loc": [
+        0,
+        0,
+        0
+      ],
+      "rot_deg": [
+        -5.2,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "poly": {
+    "total": 580,
+    "tris": 224,
+    "quads": 352,
+    "ngons": 4,
+    "per_part": {
+      "Head": 48,
+      "Hair": 40,
+      "Ponytail": 30,
+      "Eye": 18,
+      "Eye.001": 18,
+      "Neck": 18,
+      "Torso": 14,
+      "Belt": 6,
+      "Skirt": 40,
+      "Arm": 36,
+      "ShoulderPad": 32,
+      "Hand": 24,
+      "Arm.001": 36,
+      "ShoulderPad.001": 32,
+      "Hand.001": 24,
+      "Leg": 36,
+      "Boot": 6,
+      "Leg.001": 36,
+      "Boot.001": 6,
+      "SwordHandle": 8,
+      "SwordGuard": 6,
+      "SwordBlade": 20,
+      "Shield": 14,
+      "ShieldBoss": 32
+    }
+  },
+  "joint_ring_checks": [
+    {
+      "joint": "Arm.R ring0 肩",
+      "ring_center": [
+        -0.32,
+        0.0,
+        1.24
+      ],
+      "bone_joint": [
+        -0.32,
+        0.0,
+        1.24
+      ],
+      "distance": 0.0
+    },
+    {
+      "joint": "Arm.R ring2 肘",
+      "ring_center": [
+        -0.356,
+        0.0,
+        0.9825
+      ],
+      "bone_joint": [
+        -0.356,
+        0.0,
+        0.9825
+      ],
+      "distance": 5e-05
+    },
+    {
+      "joint": "Arm.R ring4 腕",
+      "ring_center": [
+        -0.3921,
+        0.0,
+        0.725
+      ],
+      "bone_joint": [
+        -0.396,
+        0.0,
+        0.695
+      ],
+      "distance": 0.03027
+    },
+    {
+      "joint": "Arm.L ring0 肩",
+      "ring_center": [
+        0.32,
+        0.0,
+        1.24
+      ],
+      "bone_joint": [
+        0.32,
+        0.0,
+        1.24
+      ],
+      "distance": 0.0
+    },
+    {
+      "joint": "Arm.L ring2 肘",
+      "ring_center": [
+        0.356,
+        0.0,
+        0.9825
+      ],
+      "bone_joint": [
+        0.356,
+        0.0,
+        0.9825
+      ],
+      "distance": 5e-05
+    },
+    {
+      "joint": "Arm.L ring4 腕",
+      "ring_center": [
+        0.3921,
+        0.0,
+        0.725
+      ],
+      "bone_joint": [
+        0.396,
+        0.0,
+        0.695
+      ],
+      "distance": 0.03027
+    },
+    {
+      "joint": "Leg.R ring0 髋",
+      "ring_center": [
+        -0.12,
+        -0.0,
+        0.62
+      ],
+      "bone_joint": [
+        -0.12,
+        0.0,
+        0.62
+      ],
+      "distance": 0.0
+    },
+    {
+      "joint": "Leg.R ring2 膝",
+      "ring_center": [
+        -0.12,
+        0.0,
+        0.36
+      ],
+      "bone_joint": [
+        -0.12,
+        0.0,
+        0.36
+      ],
+      "distance": 0.0
+    },
+    {
+      "joint": "Leg.R ring4 踝",
+      "ring_center": [
+        -0.12,
+        0.0,
+        0.1
+      ],
+      "bone_joint": [
+        -0.12,
+        0.0,
+        0.1
+      ],
+      "distance": 0.0
+    },
+    {
+      "joint": "Leg.L ring0 髋",
+      "ring_center": [
+        0.12,
+        -0.0,
+        0.62
+      ],
+      "bone_joint": [
+        0.12,
+        0.0,
+        0.62
+      ],
+      "distance": 0.0
+    },
+    {
+      "joint": "Leg.L ring2 膝",
+      "ring_center": [
+        0.12,
+        0.0,
+        0.36
+      ],
+      "bone_joint": [
+        0.12,
+        0.0,
+        0.36
+      ],
+      "distance": 0.0
+    },
+    {
+      "joint": "Leg.L ring4 踝",
+      "ring_center": [
+        0.12,
+        0.0,
+        0.1
+      ],
+      "bone_joint": [
+        0.12,
+        0.0,
+        0.1
+      ],
+      "distance": 0.0
+    }
+  ],
+  "joint_ring_max_error": 0.03027,
+  "verification": {
+    "Head": {
+      "max_displacement": 0.0744,
+      "min_z": 1.2975
+    },
+    "Hair": {
+      "max_displacement": 0.0762,
+      "min_z": 1.44
+    },
+    "Ponytail": {
+      "max_displacement": 0.0669,
+      "min_z": 1.1223
+    },
+    "Eye": {
+      "max_displacement": 0.0719,
+      "min_z": 1.478
+    },
+    "Eye.001": {
+      "max_displacement": 0.0646,
+      "min_z": 1.4808
+    },
+    "Neck": {
+      "max_displacement": 0.065,
+      "min_z": 1.2922
+    },
+    "Torso": {
+      "max_displacement": 0.1306,
+      "min_z": 0.5878
+    },
+    "Belt": {
+      "max_displacement": 0.1207,
+      "min_z": 0.7278
+    },
+    "Skirt": {
+      "max_displacement": 0.2249,
+      "min_z": 0.2647
+    },
+    "Arm": {
+      "max_displacement": 0.1742,
+      "min_z": 0.7189
+    },
+    "ShoulderPad": {
+      "max_displacement": 0.1077,
+      "min_z": 1.1468
+    },
+    "Hand": {
+      "max_displacement": 0.2294,
+      "min_z": 0.6665
+    },
+    "Arm.001": {
+      "max_displacement": 0.168,
+      "min_z": 0.7571
+    },
+    "ShoulderPad.001": {
+      "max_displacement": 0.0916,
+      "min_z": 1.1719
+    },
+    "Hand.001": {
+      "max_displacement": 0.1659,
+      "min_z": 0.6709
+    },
+    "Leg": {
+      "max_displacement": 0.3693,
+      "min_z": 0.1282
+    },
+    "Boot": {
+      "max_displacement": 0.4458,
+      "min_z": -0.0096
+    },
+    "Leg.001": {
+      "max_displacement": 0.2143,
+      "min_z": 0.1586
+    },
+    "Boot.001": {
+      "max_displacement": 0.2467,
+      "min_z": 0.068
+    },
+    "SwordHandle": {
+      "max_displacement": 0.164,
+      "min_z": 0.539
+    },
+    "SwordGuard": {
+      "max_displacement": 0.1629,
+      "min_z": 0.7646
+    },
+    "SwordBlade": {
+      "max_displacement": 0.167,
+      "min_z": 0.7767
+    },
+    "Shield": {
+      "max_displacement": 0.2934,
+      "min_z": 0.6643
+    },
+    "ShieldBoss": {
+      "max_displacement": 0.1774,
+      "min_z": 0.8214
+    },
+    "_overall_min_z": -0.0096
+  }
+}
