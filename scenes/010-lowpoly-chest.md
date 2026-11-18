@@ -13,7 +13,7 @@
 
 ## 面数
 
-- 总面数：334（三角面 18，四边面 280，N-gon 36）
+- 总面数：574（三角面 294，四边面 280，N-gon 0）
 - Body_Bottom：6
 - Body_Front：6
 - Body_Back：6
@@ -33,25 +33,25 @@
 - Hasp_Body：6
 - Padlock：6
 - Padlock_Shankle：6
-- Coin_L0_0：10
-- Coin_L0_1：10
-- Coin_L0_2：10
-- Coin_L0_3：10
-- Coin_L0_4：10
-- Coin_L0_5：10
-- Coin_L0_6：10
-- Coin_L1_0：10
-- Coin_L1_1：10
-- Coin_L1_2：10
-- Coin_L1_3：10
-- Coin_L1_4：10
-- Coin_L2_0：10
-- Coin_L2_1：10
-- Coin_L2_2：10
-- Coin_Top：10
-- Gem_Red：8
-- Gem_Blue：8
-- Lid：27
+- Coin_L0_0：24
+- Coin_L0_1：24
+- Coin_L0_2：24
+- Coin_L0_3：24
+- Coin_L0_4：24
+- Coin_L0_5：24
+- Coin_L0_6：24
+- Coin_L1_0：24
+- Coin_L1_1：24
+- Coin_L1_2：24
+- Coin_L1_3：24
+- Coin_L1_4：24
+- Coin_L2_0：24
+- Coin_L2_1：24
+- Coin_L2_2：24
+- Coin_Top：24
+- Gem_Red：18
+- Gem_Blue：18
+- Lid：23
 - LidBand_7：8
 - LidBand_7.001：8
 - LidHasp：1

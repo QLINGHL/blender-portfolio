@@ -1,0 +1,94 @@
+{
+  "asset": "010-lowpoly-chest",
+  "parts": 41,
+  "total_faces": 574,
+  "total_verts": 526,
+  "tris": 294,
+  "quads": 280,
+  "ngons": 0,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 40,
+  "boundary_edges_expected_only_on_open_parts": true,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Body_Bottom": 0.727,
+    "Body_Front": 0.767,
+    "Body_Back": 0.767,
+    "Body_Left": 0.601,
+    "Body_Right": 0.601,
+    "Inner_Floor": 0.84,
+    "Rim_Front": 0.151,
+    "Rim_Back": 0.151,
+    "Rim_Left": 0.305,
+    "Rim_Right": 0.305,
+    "Band_Front_7": 0.384,
+    "Band_Back_7": 0.384,
+    "Band_Bottom_7": 0.245,
+    "Band_Front_7.001": 0.384,
+    "Band_Back_7.001": 0.384,
+    "Band_Bottom_7.001": 0.245,
+    "Hasp_Body": 0.588,
+    "Padlock": 0.702,
+    "Padlock_Shankle": 0.688,
+    "Coin_L0_0": 0.483,
+    "Coin_L0_1": 0.483,
+    "Coin_L0_2": 0.483,
+    "Coin_L0_3": 0.483,
+    "Coin_L0_4": 0.483,
+    "Coin_L0_5": 0.483,
+    "Coin_L0_6": 0.483,
+    "Coin_L1_0": 0.483,
+    "Coin_L1_1": 0.486,
+    "Coin_L1_2": 0.483,
+    "Coin_L1_3": 0.483,
+    "Coin_L1_4": 0.483,
+    "Coin_L2_0": 0.483,
+    "Coin_L2_1": 0.483,
+    "Coin_L2_2": 0.483,
+    "Coin_Top": 0.486,
+    "Gem_Red": 0.64,
+    "Gem_Blue": 0.62,
+    "Lid": 0.66,
+    "LidBand_7": 0.298,
+    "LidBand_7.001": 0.298,
+    "LidHasp": 0.683
+  },
+  "uv_islands": 215,
+  "uv_overlap_pct": 0.0,
+  "empty_material_slots": 0,
+  "hinge": {
+    "lid_location": [
+      0.0,
+      0.7,
+      0.9
+    ],
+    "open_angle_deg": -100.0,
+    "parented_to_lid": [
+      "LidBand_7",
+      "LidBand_7.001",
+      "LidHasp"
+    ],
+    "ok": true
+  },
+  "treasure_containment": {
+    "treasure_parts": 18,
+    "outside_verts": {},
+    "ok": true
+  },
+  "cavity": {
+    "over_treasure": {
+      "hit": "Coin_L2_2",
+      "z": 0.601
+    },
+    "over_clear_corner": {
+      "hit": "Inner_Floor",
+      "z": 0.12
+    },
+    "ok": true
+  },
+  "overall_pass": true
+}

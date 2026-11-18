@@ -43,9 +43,12 @@ def box(name, center, size, mat):
         (cx + sx, cy + sy, cz + sz), (cx - sx, cy + sy, cz + sz),
     ]
     faces = [
-        (0, 1, 2, 3), (4, 7, 6, 5), (0, 4, 5, 1),
-        (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0),
+        (0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4),
+        (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7),
     ]
+    # NOTE (012 QA): the original winding was backwards on all six faces
+    # (every box measured 6 inverted normals); the order above is the
+    # corrected outward winding, verified by recalc_face_normals.
     return mesh_from_data(name, verts, faces, mat)
 
 
@@ -62,8 +65,20 @@ def cylinder(name, center, radius, height, sides, mat, rot_x=0.0):
     for i in range(sides):
         j = (i + 1) % sides
         faces.append((i, j, sides + j, sides + i))
-    faces.append(tuple(reversed(range(sides))))
-    faces.append(tuple(sides + i for i in range(sides)))
+    # NOTE (012 QA): the old cap N-gons (one 8-gon per end) are replaced by
+    # triangle fans with a center vertex, so the asset has zero N-gons
+    # (game-pipeline standard, same as 002/008). Winding matches the
+    # original caps, verified by recalc_face_normals.
+    cx0, cy0 = cx, cy
+    verts.append((cx0, cy0, cz - height / 2.0))
+    verts.append((cx0, cy0, cz + height / 2.0))
+    c_bot, c_top = 2 * sides, 2 * sides + 1
+    for i in range(sides):
+        j = (i + 1) % sides
+        faces.append((c_bot, j, i))
+    for i in range(sides):
+        j = (i + 1) % sides
+        faces.append((c_top, sides + i, sides + j))
     obj = mesh_from_data(name, verts, faces, mat)
     if rot_x:
         obj.rotation_euler[0] = rot_x
@@ -85,28 +100,27 @@ def build_lid(name, x_half=1.2, y_half=0.7, z_base=0.9, arc_segments=8,
         y = y_half * math.cos(th) - y_half
         z = y_half * math.sin(th)
         arc.append((y, z))
-    # two end rings at x = -x_half and +x_half
+    # two end rings at x = -x_half and +x_half: only the arc profile
+    # points (arc[0] == (y=0, z=0) and arc[8] == (y=-2*y_half, z=0) are
+    # already the bottom-plate corners, so no extra verts are added).
+    # NOTE (012 QA): the old code added two extra verts per ring that
+    # duplicated arc[0]/arc[8], producing 4 duplicate verts, 4 degenerate
+    # cap triangles and 8 boundary edges on the lid; the fan below is
+    # the corrected version.
     for x in (-x_half, x_half):
         base = len(verts)
         for (y, z) in arc:
             verts.append((x, y, z))
-        # bottom plate corners at this x: (y=0,z=0) and (y=-2*y_half,z=0)
-        verts.append((x, 0.0, 0.0))
-        verts.append((x, -2.0 * y_half, 0.0))
-    n = arc_segments + 3  # verts per ring
+    n = arc_segments + 1  # verts per ring
     # top arc quads between rings
     for k in range(arc_segments):
         faces.append((k, k + 1, n + k + 1, n + k))
-    # bottom plate quad
-    faces.append((arc_segments + 1, arc_segments + 2,
-                  n + arc_segments + 2, n + arc_segments + 1))
-    # end caps: fan from bottom-front corner
-    for ring in (0, n):
-        for k in range(arc_segments):
-            faces.append((ring + arc_segments + 1, ring + k + 1,
-                          ring + k))
-        faces.append((ring + arc_segments + 1, ring + arc_segments + 2,
-                      ring + arc_segments))
+    # bottom plate quad (flat underside, faces -Z)
+    faces.append((0, n, n + arc_segments, arc_segments))
+    # end caps: fan from arc[0]; ring 0 faces -X, ring 1 faces +X
+    for k in range(1, arc_segments):
+        faces.append((0, k + 1, k))
+        faces.append((n, n + k, n + k + 1))
     obj = mesh_from_data(name, verts, faces, mat)
     obj.location = (0.0, y_half, z_base)
     return obj
