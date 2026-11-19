@@ -1,0 +1,166 @@
+{
+  "asset": "020-lowpoly-mage",
+  "parts": 23,
+  "total_faces": 540,
+  "total_verts": 494,
+  "tris": 220,
+  "quads": 312,
+  "ngons": 8,
+  "ngons_expected": 8,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "inverted_normals": 144,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Head": 0.485,
+    "Eye": 0.608,
+    "Eye.001": 0.608,
+    "Beard": 0.401,
+    "Neck": 0.577,
+    "HatBrim": 0.427,
+    "Hat": 0.458,
+    "HatTip": 0.608,
+    "Robe": 0.478,
+    "Collar": 0.587,
+    "Sash": 0.489,
+    "Arm": 0.561,
+    "Hand": 0.446,
+    "Arm.001": 0.561,
+    "Hand.001": 0.446,
+    "Leg": 0.642,
+    "Boot": 0.621,
+    "Leg.001": 0.642,
+    "Boot.001": 0.621,
+    "StaffShaft": 0.093,
+    "StaffRing": 0.624,
+    "StaffRing.001": 0.624,
+    "StaffCrystal": 0.289
+  },
+  "uv_islands": 110,
+  "uv_overlap_pct": 0.0,
+  "empty_material_slots": 0,
+  "joint_rings": {
+    "Arm": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    },
+    "Arm.001": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    },
+    "Leg": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    },
+    "Leg.001": {
+      "rings": 5,
+      "mid_ring_fraction": 0.5,
+      "mid_ring_max_valence": 4,
+      "mid_ring_tri_faces": 0
+    }
+  },
+  "joint_rings_ok": true,
+  "robe": {
+    "rings": [
+      {
+        "z": 1.3,
+        "radius": 0.3,
+        "verts": 9
+      },
+      {
+        "z": 1.0,
+        "radius": 0.31,
+        "verts": 8
+      },
+      {
+        "z": 0.68,
+        "radius": 0.34,
+        "verts": 8
+      },
+      {
+        "z": 0.35,
+        "radius": 0.4,
+        "verts": 8
+      },
+      {
+        "z": 0.05,
+        "radius": 0.48,
+        "verts": 9
+      }
+    ],
+    "ok": true
+  },
+  "staff": {
+    "shaft_z": [
+      0.02,
+      1.57
+    ],
+    "shaft_radius": 0.035,
+    "rings": [
+      {
+        "name": "StaffRing",
+        "z_center": 1.315,
+        "radius": 0.05,
+        "on_shaft": true,
+        "wraps_shaft": true
+      },
+      {
+        "name": "StaffRing.001",
+        "z_center": 1.395,
+        "radius": 0.05,
+        "on_shaft": true,
+        "wraps_shaft": true
+      }
+    ],
+    "crystal": {
+      "center_x": 0.466,
+      "shaft_x": 0.466,
+      "center_z": 1.615,
+      "min_z": 1.445,
+      "max_z": 1.785,
+      "shaft_top_z": 1.57,
+      "gap_center_above_shaft_top": 0.045,
+      "bottom_embedded": 0.125
+    },
+    "ok": true
+  },
+  "hat": {
+    "brim_z": [
+      1.683,
+      1.718
+    ],
+    "brim_center_z": 1.7,
+    "hat_z": [
+      1.687,
+      2.11
+    ],
+    "hat_base_below_brim_top": 0.031,
+    "tip_center_z": 2.11,
+    "tip_minus_hat_top": -0.0,
+    "ok": true
+  },
+  "beard": {
+    "top_z": 1.437,
+    "bottom_z": 1.047,
+    "head_top_z": 1.74,
+    "max_y": -0.104,
+    "all_front": true,
+    "ok": true
+  },
+  "emission": {
+    "emission_strength": 0.6,
+    "mix_fac": 0.45,
+    "ok": true
+  },
+  "overall_pass": false
+}
