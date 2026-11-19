@@ -1,0 +1,230 @@
+{
+  "asset": "016-lowpoly-altar",
+  "parts": 43,
+  "total_faces": 728,
+  "total_verts": 628,
+  "tris": 368,
+  "quads": 360,
+  "ngons": 0,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "boundary_edges_expected_only_on_open_parts": true,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Platform_Tier1": 0.43,
+    "Platform_Tier2": 0.44,
+    "Platform_Tier3": 0.457,
+    "Step_Low": 0.808,
+    "Step_High": 0.825,
+    "Altar_Block": 0.727,
+    "Altar_Slab": 0.571,
+    "Rune_Ring": 0.073,
+    "RuneStone_0": 0.763,
+    "RunePlate_0": 0.9,
+    "RuneStone_1": 0.763,
+    "RunePlate_1": 0.9,
+    "RuneStone_2": 0.763,
+    "RunePlate_2": 0.9,
+    "RuneStone_3": 0.763,
+    "RunePlate_3": 0.9,
+    "RuneStone_4": 0.763,
+    "RunePlate_4": 0.9,
+    "RuneStone_5": 0.763,
+    "RunePlate_5": 0.9,
+    "RuneStone_6": 0.763,
+    "RunePlate_6": 0.9,
+    "RuneStone_7": 0.763,
+    "RunePlate_7": 0.9,
+    "Candle_L_Base": 0.608,
+    "Candle_L_Stem": 0.483,
+    "Candle_L_Cup": 0.648,
+    "Candle_L_Candle": 0.666,
+    "Candle_L_Flame": 0.409,
+    "Candle_R_Base": 0.608,
+    "Candle_R_Stem": 0.483,
+    "Candle_R_Cup": 0.648,
+    "Candle_R_Candle": 0.666,
+    "Candle_R_Flame": 0.409,
+    "Candle_Tall_Base": 0.608,
+    "Candle_Tall_Stem": 0.299,
+    "Candle_Tall_Cup": 0.648,
+    "Candle_Tall_Candle": 0.666,
+    "Candle_Tall_Flame": 0.238,
+    "Crystal_Main": 0.301,
+    "Crystal_Shard_0": 0.301,
+    "Crystal_Shard_1": 0.301,
+    "Crystal_Shard_2": 0.301
+  },
+  "uv_islands": 247,
+  "uv_overlap_pct": 0.0,
+  "empty_material_slots": 0,
+  "rune_ring": {
+    "center_z": 1.11,
+    "min_z": 1.05,
+    "max_z": 1.17,
+    "centre_xy": [
+      0.0,
+      0.0
+    ],
+    "ok": true
+  },
+  "rune_stones": {
+    "stones": [
+      {
+        "name": "RuneStone_0",
+        "radius": 2.0,
+        "angle_deg": 0.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      },
+      {
+        "name": "RuneStone_1",
+        "radius": 2.0,
+        "angle_deg": 45.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      },
+      {
+        "name": "RuneStone_2",
+        "radius": 2.0,
+        "angle_deg": 90.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      },
+      {
+        "name": "RuneStone_3",
+        "radius": 2.0,
+        "angle_deg": 135.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      },
+      {
+        "name": "RuneStone_4",
+        "radius": 2.0,
+        "angle_deg": 180.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      },
+      {
+        "name": "RuneStone_5",
+        "radius": 2.0,
+        "angle_deg": 225.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      },
+      {
+        "name": "RuneStone_6",
+        "radius": 2.0,
+        "angle_deg": 270.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      },
+      {
+        "name": "RuneStone_7",
+        "radius": 2.0,
+        "angle_deg": 315.0,
+        "tilt_deg": -8.0,
+        "min_z": 0.696,
+        "max_z": 1.604
+      }
+    ],
+    "angle_gaps_deg": [
+      45.0,
+      45.0,
+      45.0,
+      45.0,
+      45.0,
+      45.0,
+      45.0,
+      45.0
+    ],
+    "ok": true
+  },
+  "crystal_float": {
+    "Crystal_Main": {
+      "min_z": 2.7,
+      "max_z": 3.6,
+      "gap_above_slab": 0.63
+    },
+    "Crystal_Shard_0": {
+      "min_z": 2.77,
+      "max_z": 3.13,
+      "gap_above_tier3": 1.72
+    },
+    "Crystal_Shard_1": {
+      "min_z": 3.12,
+      "max_z": 3.48,
+      "gap_above_tier3": 2.07
+    },
+    "Crystal_Shard_2": {
+      "min_z": 2.87,
+      "max_z": 3.23,
+      "gap_above_tier3": 1.82
+    },
+    "ok": true
+  },
+  "candle_flames": {
+    "rows": [
+      {
+        "candle": "Candle_L",
+        "candle_top_z": 2.73,
+        "flame_base_z": 2.73,
+        "flame_gap": 0.0,
+        "candle_base_z": 2.51,
+        "cup_top_z": 2.51,
+        "candle_sunk_into_cup": 0.0
+      },
+      {
+        "candle": "Candle_R",
+        "candle_top_z": 2.73,
+        "flame_base_z": 2.73,
+        "flame_gap": 0.0,
+        "candle_base_z": 2.51,
+        "cup_top_z": 2.51,
+        "candle_sunk_into_cup": 0.0
+      },
+      {
+        "candle": "Candle_Tall",
+        "candle_top_z": 1.91,
+        "flame_base_z": 1.91,
+        "flame_gap": 0.0,
+        "candle_base_z": 1.69,
+        "cup_top_z": 1.69,
+        "candle_sunk_into_cup": 0.0
+      }
+    ],
+    "ok": true
+  },
+  "emission": {
+    "rows": [
+      {
+        "material": "Rune_Glow",
+        "design_strength": 1.8,
+        "measured_strength": 1.8
+      },
+      {
+        "material": "Altar_Crystal",
+        "design_strength": 1.4,
+        "measured_strength": 1.4
+      },
+      {
+        "material": "Candle_Flame",
+        "design_strength": 2.5,
+        "measured_strength": 2.5
+      }
+    ],
+    "ok": true
+  },
+  "overall_pass": true
+}

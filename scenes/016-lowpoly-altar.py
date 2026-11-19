@@ -43,9 +43,13 @@ def box(name, center, size, mat, rot=(0.0, 0.0, 0.0)):
         (sx, sy, sz), (-sx, sy, sz),
     ]
     faces = [
-        (0, 1, 2, 3), (4, 7, 6, 5), (0, 4, 5, 1),
-        (1, 5, 6, 2), (2, 6, 7, 3), (3, 7, 4, 0),
+        (0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4),
+        (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7),
     ]
+    # NOTE (017 QA): the original winding was backwards on all six faces
+    # (every box measured 6 inverted normals, same bug 012 found in 010);
+    # the order above is the corrected outward winding, verified by
+    # recalc_face_normals.
     obj = mesh_from_data(name, verts, faces, mat)
     obj.location = center
     if rot != (0.0, 0.0, 0.0):
@@ -91,8 +95,10 @@ def cone(name, center, radius, height, sides, mat):
     faces = []
     for i in range(sides):
         j = (i + 1) % sides
-        faces.append((0, 1 + j, 1 + i))
-        faces.append((bc, 1 + i, 1 + j))
+        faces.append((0, 1 + i, 1 + j))
+        faces.append((bc, 1 + j, 1 + i))
+    # NOTE (017 QA): the original winding was backwards on all 16 faces
+    # (side + base fan); the order above is the corrected outward winding.
     return mesh_from_data(name, verts, faces, mat)
 
 
