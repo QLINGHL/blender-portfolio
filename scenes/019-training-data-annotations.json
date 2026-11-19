@@ -1,0 +1,553 @@
+{
+  "asset": "props_scene_training_data",
+  "labels": [
+    "lowpoly_staff",
+    "lowpoly_shield",
+    "lowpoly_chest"
+  ],
+  "source_blends": [
+    "scenes/013-lowpoly-staff.blend",
+    "scenes/018-lowpoly-shield.blend",
+    "scenes/010-lowpoly-chest.blend"
+  ],
+  "layout": "staff at (-2.4, 0), z 0-3.84; shield at (0.3, 0.3), disc facing +/-y, centre z~1.0, radius ~0.91; chest at (2.3, 0), 2.4 wide, lid open toward +y to z~2.28; objects renamed with staff_/shield_/chest_ prefixes because names collide across source blends (e.g. Grip)",
+  "image": "renders/019-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "poly_counts": {
+    "groups": {
+      "staff": 252,
+      "shield": 258,
+      "chest": 574
+    },
+    "per_object": {
+      "staff_Shard": 8,
+      "staff_Shaft": 24,
+      "staff_Prong_2": 12,
+      "staff_Prong_1": 12,
+      "staff_Prong_0": 12,
+      "staff_Pommel_Gem": 8,
+      "staff_Pommel_Cap": 24,
+      "staff_Grip": 24,
+      "staff_Crystal_Seat": 24,
+      "staff_Crystal": 8,
+      "staff_Band_Top": 24,
+      "staff_Band_GripTop": 24,
+      "staff_Band_GripBottom": 24,
+      "staff_Band_Bottom": 24,
+      "shield_Rivet_11": 8,
+      "shield_Rivet_10": 8,
+      "shield_Rivet_09": 8,
+      "shield_Rivet_08": 8,
+      "shield_Rivet_07": 8,
+      "shield_Rivet_06": 8,
+      "shield_Rivet_05": 8,
+      "shield_Rivet_04": 8,
+      "shield_Rivet_03": 8,
+      "shield_Rivet_02": 8,
+      "shield_Rivet_01": 8,
+      "shield_Rivet_00": 8,
+      "shield_Rim": 72,
+      "shield_Grip": 6,
+      "shield_Face": 48,
+      "shield_Bracket_R": 6,
+      "shield_Bracket_L": 6,
+      "shield_Boss": 24,
+      "chest_Rim_Right": 6,
+      "chest_Rim_Left": 6,
+      "chest_Rim_Front": 6,
+      "chest_Rim_Back": 6,
+      "chest_Padlock_Shankle": 6,
+      "chest_Padlock": 6,
+      "chest_LidHasp": 1,
+      "chest_LidBand_7.001": 8,
+      "chest_LidBand_7": 8,
+      "chest_Lid": 23,
+      "chest_Inner_Floor": 6,
+      "chest_Hasp_Body": 6,
+      "chest_Gem_Red": 18,
+      "chest_Gem_Blue": 18,
+      "chest_Coin_Top": 24,
+      "chest_Coin_L2_2": 24,
+      "chest_Coin_L2_1": 24,
+      "chest_Coin_L2_0": 24,
+      "chest_Coin_L1_4": 24,
+      "chest_Coin_L1_3": 24,
+      "chest_Coin_L1_2": 24,
+      "chest_Coin_L1_1": 24,
+      "chest_Coin_L1_0": 24,
+      "chest_Coin_L0_6": 24,
+      "chest_Coin_L0_5": 24,
+      "chest_Coin_L0_4": 24,
+      "chest_Coin_L0_3": 24,
+      "chest_Coin_L0_2": 24,
+      "chest_Coin_L0_1": 24,
+      "chest_Coin_L0_0": 24,
+      "chest_Body_Right": 6,
+      "chest_Body_Left": 6,
+      "chest_Body_Front": 6,
+      "chest_Body_Bottom": 6,
+      "chest_Body_Back": 6,
+      "chest_Band_Front_7.001": 6,
+      "chest_Band_Front_7": 6,
+      "chest_Band_Bottom_7.001": 6,
+      "chest_Band_Bottom_7": 6,
+      "chest_Band_Back_7.001": 6,
+      "chest_Band_Back_7": 6
+    }
+  },
+  "total_polys": 1084,
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 6.8,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.2403,
+        0.3143,
+        0.7658,
+        0.6427
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_staff",
+          "bbox": [
+            0.2403,
+            0.3143,
+            0.3224,
+            0.64
+          ],
+          "keypoints": {
+            "crystal_top": [
+              0.2666,
+              0.3143
+            ],
+            "crystal_center": [
+              0.2676,
+              0.3558
+            ],
+            "grip_center": [
+              0.2716,
+              0.5202
+            ],
+            "pommel_gem": [
+              0.2744,
+              0.6328
+            ],
+            "shaft_base": [
+              0.2831,
+              0.6281
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shield",
+          "bbox": [
+            0.4196,
+            0.4725,
+            0.5645,
+            0.6156
+          ],
+          "keypoints": {
+            "boss_center": [
+              0.4919,
+              0.5477
+            ],
+            "rim_top": [
+              0.492,
+              0.4725
+            ],
+            "rim_left": [
+              0.4196,
+              0.5446
+            ],
+            "rim_right": [
+              0.5645,
+              0.5446
+            ],
+            "face_center": [
+              0.492,
+              0.5453
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_chest",
+          "bbox": [
+            0.5515,
+            0.4357,
+            0.7658,
+            0.6427
+          ],
+          "keypoints": {
+            "lid_top": [
+              0.5538,
+              0.4396
+            ],
+            "coin_top": [
+              0.6593,
+              0.5716
+            ],
+            "gem_red": [
+              0.673,
+              0.5688
+            ],
+            "gem_blue": [
+              0.6317,
+              0.5657
+            ],
+            "hasp_center": [
+              0.6626,
+              0.5768
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 7.0,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.4205,
+        0.3185,
+        0.6656,
+        0.7116
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_staff",
+          "bbox": [
+            0.4828,
+            0.3185,
+            0.5236,
+            0.596
+          ],
+          "keypoints": {
+            "crystal_top": [
+              0.5,
+              0.3185
+            ],
+            "crystal_center": [
+              0.5,
+              0.3536
+            ],
+            "grip_center": [
+              0.5,
+              0.4937
+            ],
+            "pommel_gem": [
+              0.5,
+              0.5899
+            ],
+            "shaft_base": [
+              0.5,
+              0.5873
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shield",
+          "bbox": [
+            0.4967,
+            0.4732,
+            0.5369,
+            0.6225
+          ],
+          "keypoints": {
+            "boss_center": [
+              0.505,
+              0.5485
+            ],
+            "rim_top": [
+              0.5251,
+              0.4732
+            ],
+            "rim_left": [
+              0.5234,
+              0.5368
+            ],
+            "rim_right": [
+              0.5267,
+              0.5618
+            ],
+            "face_center": [
+              0.5202,
+              0.5485
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_chest",
+          "bbox": [
+            0.4205,
+            0.4473,
+            0.6656,
+            0.7116
+          ],
+          "keypoints": {
+            "lid_top": [
+              0.5844,
+              0.4473
+            ],
+            "coin_top": [
+              0.4906,
+              0.6076
+            ],
+            "gem_red": [
+              0.4921,
+              0.6083
+            ],
+            "gem_blue": [
+              0.5133,
+              0.5983
+            ],
+            "hasp_center": [
+              0.4309,
+              0.6017
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "back",
+      "azimuth_deg": 180.0,
+      "elevation_deg": 7.3,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.1894,
+        0.2993,
+        0.7782,
+        0.6547
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_staff",
+          "bbox": [
+            0.6996,
+            0.2993,
+            0.7782,
+            0.6505
+          ],
+          "keypoints": {
+            "crystal_top": [
+              0.7526,
+              0.2993
+            ],
+            "crystal_center": [
+              0.7513,
+              0.3442
+            ],
+            "grip_center": [
+              0.7463,
+              0.5218
+            ],
+            "pommel_gem": [
+              0.7428,
+              0.6428
+            ],
+            "shaft_base": [
+              0.7334,
+              0.6377
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shield",
+          "bbox": [
+            0.4273,
+            0.4756,
+            0.5906,
+            0.6366
+          ],
+          "keypoints": {
+            "boss_center": [
+              0.5088,
+              0.5531
+            ],
+            "rim_top": [
+              0.5091,
+              0.4756
+            ],
+            "rim_left": [
+              0.5906,
+              0.5568
+            ],
+            "rim_right": [
+              0.4273,
+              0.5568
+            ],
+            "face_center": [
+              0.5089,
+              0.5559
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_chest",
+          "bbox": [
+            0.1894,
+            0.438,
+            0.4431,
+            0.6547
+          ],
+          "keypoints": {
+            "lid_top": [
+              0.4328,
+              0.4469
+            ],
+            "coin_top": [
+              0.3308,
+              0.5739
+            ],
+            "gem_red": [
+              0.3158,
+              0.5715
+            ],
+            "gem_blue": [
+              0.355,
+              0.5752
+            ],
+            "hasp_center": [
+              0.3426,
+              0.5599
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "top45",
+      "azimuth_deg": 40.5,
+      "elevation_deg": 36.7,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3254,
+        0.2695,
+        0.7547,
+        0.6936
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_staff",
+          "bbox": [
+            0.3254,
+            0.2695,
+            0.3953,
+            0.4999
+          ],
+          "keypoints": {
+            "crystal_top": [
+              0.3467,
+              0.2695
+            ],
+            "crystal_center": [
+              0.3496,
+              0.3017
+            ],
+            "grip_center": [
+              0.3602,
+              0.4209
+            ],
+            "pommel_gem": [
+              0.3668,
+              0.4953
+            ],
+            "shaft_base": [
+              0.3714,
+              0.495
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shield",
+          "bbox": [
+            0.4604,
+            0.4417,
+            0.5588,
+            0.5546
+          ],
+          "keypoints": {
+            "boss_center": [
+              0.4974,
+              0.5066
+            ],
+            "rim_top": [
+              0.5086,
+              0.4462
+            ],
+            "rim_left": [
+              0.4611,
+              0.4751
+            ],
+            "rim_right": [
+              0.5583,
+              0.5243
+            ],
+            "face_center": [
+              0.5057,
+              0.5008
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_chest",
+          "bbox": [
+            0.5049,
+            0.4234,
+            0.7547,
+            0.6936
+          ],
+          "keypoints": {
+            "lid_top": [
+              0.584,
+              0.4249
+            ],
+            "coin_top": [
+              0.6069,
+              0.5885
+            ],
+            "gem_red": [
+              0.6182,
+              0.5917
+            ],
+            "gem_blue": [
+              0.5988,
+              0.5682
+            ],
+            "hasp_center": [
+              0.576,
+              0.6077
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
