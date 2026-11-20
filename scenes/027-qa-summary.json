@@ -1,0 +1,250 @@
+{
+  "asset": "025-lowpoly-battleaxe",
+  "parts": 7,
+  "total_faces": 108,
+  "total_verts": 92,
+  "tris": 60,
+  "quads": 48,
+  "ngons": 0,
+  "ngons_expected": 0,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Haft": 0.138,
+    "Grip": 0.612,
+    "Pommel": 0.573,
+    "Socket": 0.718,
+    "Blade": 0.553,
+    "CuttingEdge": 0.816,
+    "TopWedge": 0.744
+  },
+  "uv_islands": 43,
+  "uv_overlap_pct": 0.0,
+  "empty_material_slots": 0,
+  "structure": {
+    "haft": {
+      "rings": [
+        {
+          "z": 0.0,
+          "radius": 0.045,
+          "verts": 9
+        },
+        {
+          "z": 1.55,
+          "radius": 0.035,
+          "verts": 9
+        }
+      ],
+      "z_min": 0.0,
+      "z_max": 1.55,
+      "height": 1.55,
+      "ok": true
+    },
+    "grip": {
+      "rings": [
+        {
+          "z": 0.02,
+          "radius": 0.052,
+          "verts": 9
+        },
+        {
+          "z": 0.3,
+          "radius": 0.05,
+          "verts": 9
+        }
+      ],
+      "z": [
+        0.02,
+        0.3
+      ],
+      "center_xy": [
+        -0.0,
+        0.0
+      ],
+      "haft_radius_at_mid": 0.044,
+      "wraps_haft": true,
+      "ok": true
+    },
+    "pommel": {
+      "rings": [
+        {
+          "z": 0.0,
+          "radius": 0.05,
+          "verts": 9
+        },
+        {
+          "z": 0.06,
+          "radius": 0.045,
+          "verts": 9
+        }
+      ],
+      "z": [
+        0.0,
+        0.06
+      ],
+      "ok": true
+    },
+    "socket": {
+      "bbox_x": [
+        -0.09,
+        0.13
+      ],
+      "bbox_y": [
+        -0.065,
+        0.065
+      ],
+      "bbox_z": [
+        1.09,
+        1.39
+      ],
+      "size": [
+        0.22,
+        0.13,
+        0.3
+      ],
+      "haft_through": true,
+      "blade_root_inside": true,
+      "blade_z_overlap": 0.3,
+      "ok": true
+    },
+    "blade": {
+      "bbox_x": [
+        0.0,
+        0.52
+      ],
+      "bbox_y": [
+        -0.04,
+        0.04
+      ],
+      "bbox_z": [
+        0.88,
+        1.56
+      ],
+      "tris": 12,
+      "quads": 6,
+      "extends_above_socket": 0.17,
+      "extends_below_socket": 0.21,
+      "ok": true
+    },
+    "edge": {
+      "bbox_x": [
+        0.5,
+        0.56
+      ],
+      "bbox_y": [
+        -0.05,
+        0.05
+      ],
+      "bbox_z": [
+        1.01,
+        1.43
+      ],
+      "protrudes_past_blade": 0.04,
+      "thicker_than_blade": 0.02,
+      "ok": true
+    },
+    "wedge": {
+      "bbox_x": [
+        -0.045,
+        0.045
+      ],
+      "bbox_y": [
+        -0.045,
+        0.045
+      ],
+      "bbox_z": [
+        1.55,
+        1.62
+      ],
+      "haft_top_z": 1.55,
+      "bottom_minus_haft_top": 0.0,
+      "ok": true
+    }
+  },
+  "structure_ok": true,
+  "materials": {
+    "rows": [
+      {
+        "name": "Axe_Steel",
+        "found": true,
+        "metallic": 0.85,
+        "roughness": 0.35,
+        "base_color": [
+          0.3,
+          0.31,
+          0.34
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_EdgeSteel",
+        "found": true,
+        "metallic": 0.9,
+        "roughness": 0.15,
+        "base_color": [
+          0.62,
+          0.64,
+          0.68
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_Wood",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.45,
+          0.28,
+          0.14
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_WoodDark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.3,
+          0.18,
+          0.09
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_Leather",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.2,
+          0.12,
+          0.08
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_Iron",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.5,
+        "base_color": [
+          0.16,
+          0.16,
+          0.18
+        ],
+        "ok": true
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": []
+  },
+  "overall_pass": true
+}
