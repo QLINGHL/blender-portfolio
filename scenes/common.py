@@ -103,6 +103,71 @@ def studio_lights(target=(0, 0, 1.0)):
     return key, fill, rim
 
 
+def fit_camera_to_objects(objects, direction=(0.0, -1.0, 0.35), lens=40.0,
+                           target_fill=0.78, name="Camera"):
+    """Place the camera so the given objects fill ~target_fill of the frame.
+
+    Root cause of the recurring '构图偏空' notes (025 战斧、026 提灯、030 弩):
+    every build script hand-tuned a fixed camera position, so small props
+    ended up occupying only a few percent of the 1024x1024 frame
+    (measured: 025 fill 2.7%, 026 fill 3.5%, 030 fill 4.4%).
+    This helper instead measures the real bounding box, projects it through
+    the camera, and moves the camera along `direction` until the largest
+    projected span equals target_fill. Ground plane is excluded.
+    Returns the camera object.
+    """
+    from bpy_extras.object_utils import world_to_camera_view
+    scene = bpy.context.scene
+    meshes = [o for o in objects
+              if o.type == 'MESH' and o.name != 'Ground']
+    if not meshes:
+        raise ValueError("fit_camera_to_objects: no mesh objects to frame")
+    # World-space bounding box of all meshes.
+    corners = []
+    for o in meshes:
+        mw = o.matrix_world
+        for c in o.bound_box:
+            corners.append(mw @ Vector(c))
+    center = sum(corners, Vector((0.0, 0.0, 0.0))) / len(corners)
+    radius = max((c - center).length for c in corners)
+    cam_data = bpy.data.cameras.new(name)
+    cam_data.lens = lens
+    cam = bpy.data.objects.new(name, cam_data)
+    scene.collection.objects.link(cam)
+    scene.camera = cam
+    # Horizontal/vertical FOV (36 mm sensor, square frame -> same both ways).
+    import math as _math
+    fov = 2.0 * _math.atan(18.0 / lens)
+    direction = Vector(direction).normalized()
+    dist = radius / _math.tan(fov / 2.0) * 1.2
+    for _ in range(3):
+        cam.location = center + direction * dist
+        _point_at(cam, center)
+        bpy.context.view_layer.update()
+        xs, ys = [], []
+        for c in corners:
+            x, y, d = world_to_camera_view(scene, cam, c)
+            if d < 0:
+                continue
+            xs.append(x)
+            ys.append(y)
+        if not xs:
+            break
+        span = max(max(xs) - min(xs), max(ys) - min(ys))
+        if span <= 0:
+            break
+        new_dist = dist * span / target_fill
+        if abs(new_dist - dist) / dist < 0.02:
+            dist = new_dist
+            break
+        dist = new_dist
+    cam.location = center + direction * dist
+    _point_at(cam, center)
+    bpy.context.view_layer.update()
+    print("FIT_CAMERA: dist=%.2f target_fill=%.2f" % (dist, target_fill))
+    return cam
+
+
 def _point_at(obj, target):
     direction = Vector(target) - obj.location
     obj.rotation_euler = direction.to_track_quat('-Z', 'Y').to_euler()
