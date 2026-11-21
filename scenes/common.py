@@ -104,7 +104,8 @@ def studio_lights(target=(0, 0, 1.0)):
 
 
 def fit_camera_to_objects(objects, direction=(0.0, -1.0, 0.35), lens=40.0,
-                           target_fill=0.78, name="Camera"):
+                           target_fill=0.78, name="Camera",
+                           res_x=1024, res_y=1024):
     """Place the camera so the given objects fill ~target_fill of the frame.
 
     Root cause of the recurring '构图偏空' notes (025 战斧、026 提灯、030 弩):
@@ -114,10 +115,27 @@ def fit_camera_to_objects(objects, direction=(0.0, -1.0, 0.35), lens=40.0,
     This helper instead measures the real bounding box, projects it through
     the camera, and moves the camera along `direction` until the largest
     projected span equals target_fill. Ground plane is excluded.
+
+    Aspect trap (found 2026-11-21 on 031): world_to_camera_view measures
+    against the CURRENT render resolution. Build scripts call this helper
+    before setup_render, when the resolution is still the factory default
+    1920x1080 (16:9) — the narrower vertical FOV inflates the measured
+    span, so the camera is pushed too far out (031: dist 5.89 instead of
+    3.44, figure only ~44% of the square frame). The helper therefore
+    applies res_x/res_y (default 1024x1024, the repo standard) while
+    measuring, then restores the previous resolution.
     Returns the camera object.
     """
     from bpy_extras.object_utils import world_to_camera_view
     scene = bpy.context.scene
+    # Apply the measurement frame (restored at the end) so the result
+    # does not depend on whether setup_render ran before this call.
+    prev_res = (scene.render.resolution_x, scene.render.resolution_y,
+                scene.render.resolution_percentage)
+    scene.render.resolution_x = res_x
+    scene.render.resolution_y = res_y
+    scene.render.resolution_percentage = 100
+    bpy.context.view_layer.update()
     meshes = [o for o in objects
               if o.type == 'MESH' and o.name != 'Ground']
     if not meshes:
@@ -164,6 +182,8 @@ def fit_camera_to_objects(objects, direction=(0.0, -1.0, 0.35), lens=40.0,
     cam.location = center + direction * dist
     _point_at(cam, center)
     bpy.context.view_layer.update()
+    scene.render.resolution_x, scene.render.resolution_y, \
+        scene.render.resolution_percentage = prev_res
     print("FIT_CAMERA: dist=%.2f target_fill=%.2f" % (dist, target_fill))
     return cam
 
