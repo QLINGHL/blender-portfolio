@@ -1,0 +1,499 @@
+{
+  "asset": "blacksmith_corner_training_data",
+  "labels": [
+    "lowpoly_anvil",
+    "lowpoly_barrel",
+    "lowpoly_brazier"
+  ],
+  "source_blends": [
+    "scenes/028-blacksmith-corner.blend"
+  ],
+  "layout": "anvil group at (-2.2, 0), rotated -20 deg, ~1.5 long along x, z 0-1.07; barrel at (0.2, 0), 0.9 tall, radius ~0.53; brazier at (2.3, 0), pedestal + bowl + 3 glowing coals, top z~0.87; objects renamed with anvil_/barrel_/brazier_ prefixes because names collide across source blends; only top-level objects moved, children follow their parent",
+  "image": "renders/032-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "poly_counts": {
+    "groups": {
+      "anvil": 90,
+      "barrel": 252,
+      "brazier": 90
+    },
+    "per_object": {
+      "Anvil_Waist": 6,
+      "Anvil_TopPlate": 6,
+      "Anvil_PritchelHole": 24,
+      "Anvil_Pedestal": 6,
+      "Anvil_Horn": 24,
+      "Anvil_Heel": 6,
+      "Anvil_HardyHole": 6,
+      "Anvil_Body": 6,
+      "Anvil_Base": 6,
+      "Barrel_Top": 36,
+      "Barrel_Middle": 36,
+      "Barrel_Lid": 36,
+      "Barrel_Hoop_78": 36,
+      "Barrel_Hoop_45": 36,
+      "Barrel_Hoop_12": 36,
+      "Barrel_Bottom": 36,
+      "Ember_2": 20,
+      "Ember_1": 20,
+      "Ember_0": 20,
+      "Brazier_Pedestal": 6,
+      "Brazier_Bowl": 24
+    }
+  },
+  "total_polys": 432,
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 10.4,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.1286,
+        0.4317,
+        0.8219,
+        0.5844
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_anvil",
+          "bbox": [
+            0.1286,
+            0.4317,
+            0.3583,
+            0.5844
+          ],
+          "keypoints": {
+            "horn_tip": [
+              0.3583,
+              0.4698
+            ],
+            "top_plate_center": [
+              0.2303,
+              0.4433
+            ],
+            "heel_top": [
+              0.138,
+              0.444
+            ],
+            "hardy_hole": [
+              0.1835,
+              0.4355
+            ],
+            "base_center": [
+              0.2352,
+              0.5544
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_barrel",
+          "bbox": [
+            0.4594,
+            0.4506,
+            0.5891,
+            0.5782
+          ],
+          "keypoints": {
+            "lid_center": [
+              0.5244,
+              0.4597
+            ],
+            "top_rim": [
+              0.5783,
+              0.4579
+            ],
+            "hoop_mid": [
+              0.5242,
+              0.5119
+            ],
+            "barrel_center": [
+              0.5242,
+              0.5119
+            ],
+            "bottom_center": [
+              0.5241,
+              0.5445
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_brazier",
+          "bbox": [
+            0.739,
+            0.4603,
+            0.8219,
+            0.5716
+          ],
+          "keypoints": {
+            "bowl_rim_top": [
+              0.8219,
+              0.476
+            ],
+            "ember_center": [
+              0.7801,
+              0.4721
+            ],
+            "ember_front": [
+              0.768,
+              0.4767
+            ],
+            "pedestal_center": [
+              0.7777,
+              0.5356
+            ],
+            "bowl_center": [
+              0.7797,
+              0.4916
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 10.4,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.4337,
+        0.4045,
+        0.5663,
+        0.6636
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_anvil",
+          "bbox": [
+            0.4351,
+            0.4045,
+            0.5589,
+            0.5311
+          ],
+          "keypoints": {
+            "horn_tip": [
+              0.4592,
+              0.4449
+            ],
+            "top_plate_center": [
+              0.5,
+              0.415
+            ],
+            "heel_top": [
+              0.5031,
+              0.4085
+            ],
+            "hardy_hole": [
+              0.5147,
+              0.4065
+            ],
+            "base_center": [
+              0.5,
+              0.5054
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_barrel",
+          "bbox": [
+            0.4337,
+            0.4538,
+            0.5663,
+            0.5846
+          ],
+          "keypoints": {
+            "lid_center": [
+              0.5,
+              0.4633
+            ],
+            "top_rim": [
+              0.5,
+              0.4699
+            ],
+            "hoop_mid": [
+              0.5,
+              0.5166
+            ],
+            "barrel_center": [
+              0.5,
+              0.5166
+            ],
+            "bottom_center": [
+              0.5,
+              0.5499
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_brazier",
+          "bbox": [
+            0.4449,
+            0.5141,
+            0.5551,
+            0.6636
+          ],
+          "keypoints": {
+            "bowl_rim_top": [
+              0.5,
+              0.5476
+            ],
+            "ember_center": [
+              0.5027,
+              0.5306
+            ],
+            "ember_front": [
+              0.5042,
+              0.5337
+            ],
+            "pedestal_center": [
+              0.5,
+              0.6136
+            ],
+            "bowl_center": [
+              0.5,
+              0.5559
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "back",
+      "azimuth_deg": 180.0,
+      "elevation_deg": 10.4,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.1781,
+        0.4317,
+        0.8646,
+        0.5844
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_anvil",
+          "bbox": [
+            0.6306,
+            0.4317,
+            0.8646,
+            0.5844
+          ],
+          "keypoints": {
+            "horn_tip": [
+              0.6306,
+              0.4563
+            ],
+            "top_plate_center": [
+              0.7697,
+              0.4433
+            ],
+            "heel_top": [
+              0.8646,
+              0.4451
+            ],
+            "hardy_hole": [
+              0.8272,
+              0.4403
+            ],
+            "base_center": [
+              0.7648,
+              0.5544
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_barrel",
+          "bbox": [
+            0.4109,
+            0.4506,
+            0.5406,
+            0.5782
+          ],
+          "keypoints": {
+            "lid_center": [
+              0.4756,
+              0.4597
+            ],
+            "top_rim": [
+              0.4217,
+              0.4579
+            ],
+            "hoop_mid": [
+              0.4758,
+              0.5119
+            ],
+            "barrel_center": [
+              0.4758,
+              0.5119
+            ],
+            "bottom_center": [
+              0.4759,
+              0.5445
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_brazier",
+          "bbox": [
+            0.1781,
+            0.4606,
+            0.261,
+            0.5716
+          ],
+          "keypoints": {
+            "bowl_rim_top": [
+              0.1781,
+              0.476
+            ],
+            "ember_center": [
+              0.2189,
+              0.4727
+            ],
+            "ember_front": [
+              0.2304,
+              0.4778
+            ],
+            "pedestal_center": [
+              0.2223,
+              0.5356
+            ],
+            "bowl_center": [
+              0.2203,
+              0.4916
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "top45",
+      "azimuth_deg": 42.7,
+      "elevation_deg": 38.4,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3025,
+        0.3423,
+        0.7275,
+        0.671
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_anvil",
+          "bbox": [
+            0.3025,
+            0.3423,
+            0.4177,
+            0.4994
+          ],
+          "keypoints": {
+            "horn_tip": [
+              0.3959,
+              0.4437
+            ],
+            "top_plate_center": [
+              0.3519,
+              0.3778
+            ],
+            "heel_top": [
+              0.3093,
+              0.3529
+            ],
+            "hardy_hole": [
+              0.3368,
+              0.3552
+            ],
+            "base_center": [
+              0.3586,
+              0.4471
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_barrel",
+          "bbox": [
+            0.4631,
+            0.4511,
+            0.567,
+            0.574
+          ],
+          "keypoints": {
+            "lid_center": [
+              0.5149,
+              0.4779
+            ],
+            "top_rim": [
+              0.5489,
+              0.4954
+            ],
+            "hoop_mid": [
+              0.5146,
+              0.5122
+            ],
+            "barrel_center": [
+              0.5146,
+              0.5122
+            ],
+            "bottom_center": [
+              0.5144,
+              0.5331
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_brazier",
+          "bbox": [
+            0.6472,
+            0.5613,
+            0.7275,
+            0.671
+          ],
+          "keypoints": {
+            "bowl_rim_top": [
+              0.7217,
+              0.6046
+            ],
+            "ember_center": [
+              0.6911,
+              0.5832
+            ],
+            "ember_front": [
+              0.6825,
+              0.5811
+            ],
+            "pedestal_center": [
+              0.6839,
+              0.6267
+            ],
+            "bowl_center": [
+              0.6881,
+              0.5973
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
