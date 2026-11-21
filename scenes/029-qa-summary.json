@@ -1,0 +1,836 @@
+{
+  "asset": "028-blacksmith-corner",
+  "parts": 58,
+  "total_faces": 852,
+  "total_verts": 732,
+  "tris": 472,
+  "quads": 380,
+  "ngons": 0,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Anvil_Base": 0.655,
+    "Anvil_Body": 0.745,
+    "Anvil_HardyHole": 0.7,
+    "Anvil_Heel": 0.698,
+    "Anvil_Horn": 0.402,
+    "Anvil_Pedestal": 0.621,
+    "Anvil_PritchelHole": 0.614,
+    "Anvil_TopPlate": 0.924,
+    "Anvil_Waist": 0.837,
+    "Axe_Blade": 0.553,
+    "Axe_CuttingEdge": 0.816,
+    "Axe_Grip": 0.612,
+    "Axe_Haft": 0.138,
+    "Axe_Pommel": 0.573,
+    "Axe_Socket": 0.718,
+    "Axe_TopWedge": 0.744,
+    "Barrel_Bottom": 0.666,
+    "Barrel_Hoop_12": 0.427,
+    "Barrel_Hoop_45": 0.424,
+    "Barrel_Hoop_78": 0.427,
+    "Barrel_Lid": 0.419,
+    "Barrel_Middle": 0.533,
+    "Barrel_Top": 0.666,
+    "Beam_Back": 0.188,
+    "Beam_Left": 0.221,
+    "Brazier_Bowl": 0.439,
+    "Brazier_Pedestal": 0.682,
+    "Bucket": 0.546,
+    "Bucket_Hoop": 0.449,
+    "Bucket_Water": 0.429,
+    "Coal_0": 0.508,
+    "Coal_1": 0.512,
+    "Coal_2": 0.513,
+    "Ember_0": 0.552,
+    "Ember_1": 0.552,
+    "Ember_2": 0.552,
+    "Hammer_Handle": 0.273,
+    "Hammer_Head": 0.719,
+    "Ingot_0": 0.749,
+    "Ingot_1": 0.749,
+    "Ingot_2": 0.749,
+    "Paver_00": 0.534,
+    "Paver_01": 0.534,
+    "Paver_02": 0.534,
+    "Paver_03": 0.534,
+    "Paver_04": 0.534,
+    "Paver_05": 0.534,
+    "Paver_06": 0.534,
+    "Paver_07": 0.534,
+    "Paver_08": 0.534,
+    "Paver_09": 0.534,
+    "Paver_10": 0.534,
+    "Paver_11": 0.534,
+    "Post_Corner": 0.448,
+    "WallBase_Back": 0.289,
+    "WallBase_Left": 0.34,
+    "Wall_Back": 0.819,
+    "Wall_Left": 0.707
+  },
+  "uv_islands": 344,
+  "uv_overlap_pct": 0.0,
+  "empty_material_slots": 0,
+  "structure": {
+    "walls": {
+      "wall_back": [
+        -2.7,
+        2.7,
+        2.05,
+        2.35,
+        0.0,
+        2.6
+      ],
+      "wall_left": [
+        -2.35,
+        -2.05,
+        -2.3,
+        2.3,
+        0.0,
+        2.6
+      ],
+      "beam_back_z": [
+        2.34,
+        2.56
+      ],
+      "beam_left_z": [
+        2.34,
+        2.56
+      ],
+      "post_z": [
+        0.0,
+        2.6
+      ],
+      "corner_overlap": true,
+      "back_wall_overhang_past_left_wall": 0.35,
+      "ok": true
+    },
+    "pavers": {
+      "count": 12,
+      "pavers": [
+        {
+          "name": "Paver_00",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            -1.34,
+            -0.46
+          ],
+          "y": [
+            -1.04,
+            -0.16
+          ]
+        },
+        {
+          "name": "Paver_01",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            -0.439,
+            0.439
+          ],
+          "y": [
+            -1.039,
+            -0.161
+          ]
+        },
+        {
+          "name": "Paver_02",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            0.467,
+            1.333
+          ],
+          "y": [
+            -1.033,
+            -0.167
+          ]
+        },
+        {
+          "name": "Paver_03",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            -1.338,
+            -0.462
+          ],
+          "y": [
+            -0.138,
+            0.738
+          ]
+        },
+        {
+          "name": "Paver_04",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            -0.439,
+            0.439
+          ],
+          "y": [
+            -0.139,
+            0.739
+          ]
+        },
+        {
+          "name": "Paver_05",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            0.469,
+            1.331
+          ],
+          "y": [
+            -0.131,
+            0.731
+          ]
+        },
+        {
+          "name": "Paver_06",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            -1.332,
+            -0.468
+          ],
+          "y": [
+            0.768,
+            1.632
+          ]
+        },
+        {
+          "name": "Paver_07",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            -0.437,
+            0.437
+          ],
+          "y": [
+            0.763,
+            1.637
+          ]
+        },
+        {
+          "name": "Paver_08",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            0.467,
+            1.333
+          ],
+          "y": [
+            0.767,
+            1.633
+          ]
+        },
+        {
+          "name": "Paver_09",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            1.361,
+            2.239
+          ],
+          "y": [
+            -0.139,
+            0.739
+          ]
+        },
+        {
+          "name": "Paver_10",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            1.361,
+            2.239
+          ],
+          "y": [
+            0.761,
+            1.639
+          ]
+        },
+        {
+          "name": "Paver_11",
+          "z": [
+            0.0,
+            0.04
+          ],
+          "x": [
+            -2.238,
+            -1.362
+          ],
+          "y": [
+            -0.138,
+            0.738
+          ]
+        }
+      ],
+      "ok": true
+    },
+    "anvil": {
+      "base_z": [
+        0.0,
+        0.18
+      ],
+      "top_plate_z": [
+        0.98,
+        1.06
+      ],
+      "body_x_max": 0.115,
+      "horn_x_max": 0.637,
+      "hardy_z": [
+        1.055,
+        1.075
+      ],
+      "horn_beyond_body": 0.522,
+      "ok": true
+    },
+    "barrel": {
+      "bottom_z": [
+        0.0,
+        0.35
+      ],
+      "middle_z": [
+        0.35,
+        0.55
+      ],
+      "top_z": [
+        0.55,
+        0.9
+      ],
+      "lid_z": [
+        0.87,
+        0.9
+      ],
+      "hoops": [
+        {
+          "name": "Barrel_Hoop_12",
+          "z": [
+            0.095,
+            0.145
+          ],
+          "hoop_radius": 0.49,
+          "barrel_radius_at_z": 0.467,
+          "clearance": 0.023
+        },
+        {
+          "name": "Barrel_Hoop_45",
+          "z": [
+            0.425,
+            0.475
+          ],
+          "hoop_radius": 0.535,
+          "barrel_radius_at_z": 0.52,
+          "clearance": 0.015
+        },
+        {
+          "name": "Barrel_Hoop_78",
+          "z": [
+            0.755,
+            0.805
+          ],
+          "hoop_radius": 0.49,
+          "barrel_radius_at_z": 0.467,
+          "clearance": 0.023
+        }
+      ],
+      "ok": true
+    },
+    "axe": {
+      "pommel_z_min": -0.013,
+      "blade_min_z": 0.954,
+      "min_clearance_to_barrel": 0.327,
+      "closest_point": [
+        "Axe_Grip",
+        1.225,
+        -0.2,
+        0.033
+      ],
+      "shaft_clearance_at_rim_z0.90": 0.582,
+      "touches_barrel": false,
+      "butt_on_floor": false,
+      "ok": false
+    },
+    "brazier": {
+      "pedestal_z": [
+        0.0,
+        0.5
+      ],
+      "bowl_z": [
+        0.49,
+        0.75
+      ],
+      "embers": [
+        {
+          "name": "Ember_0",
+          "z": [
+            0.69,
+            0.87
+          ],
+          "embedded_below_rim": true
+        },
+        {
+          "name": "Ember_1",
+          "z": [
+            0.69,
+            0.87
+          ],
+          "embedded_below_rim": true
+        },
+        {
+          "name": "Ember_2",
+          "z": [
+            0.69,
+            0.87
+          ],
+          "embedded_below_rim": true
+        }
+      ],
+      "light": {
+        "type": "POINT",
+        "location": [
+          -1.75,
+          0.1,
+          1.15
+        ],
+        "energy": 250.0,
+        "color": [
+          1.0,
+          0.55,
+          0.2
+        ]
+      },
+      "ok": true
+    },
+    "bucket": {
+      "bucket_z": [
+        0.0,
+        0.35
+      ],
+      "water_z": [
+        0.29,
+        0.31
+      ],
+      "water_below_rim": 0.04,
+      "ok": true
+    },
+    "floor_props": {
+      "hammer_handle_z_min": -0.028,
+      "hammer_head_z": [
+        0.0,
+        0.07
+      ],
+      "ingot_z": [
+        [
+          0.0,
+          0.07
+        ],
+        [
+          0.0,
+          0.07
+        ],
+        [
+          0.07,
+          0.14
+        ]
+      ],
+      "coal_z_min": [
+        0.004,
+        0.004,
+        0.004
+      ],
+      "ingot_stacked": true,
+      "ok": false
+    },
+    "ground_contact": {
+      "checked": 25,
+      "off_floor": [],
+      "ok": true
+    }
+  },
+  "structure_ok": false,
+  "materials": {
+    "rows": [
+      {
+        "name": "Corner_StoneWall",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.3,
+          0.28,
+          0.26
+        ],
+        "ok": true
+      },
+      {
+        "name": "Corner_StoneDark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.2,
+          0.19,
+          0.19
+        ],
+        "ok": true
+      },
+      {
+        "name": "Corner_Beam",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.32,
+          0.2,
+          0.1
+        ],
+        "ok": true
+      },
+      {
+        "name": "Anvil_Steel",
+        "found": true,
+        "metallic": 0.85,
+        "roughness": 0.35,
+        "base_color": [
+          0.32,
+          0.33,
+          0.37
+        ],
+        "ok": true
+      },
+      {
+        "name": "Anvil_TopSteel",
+        "found": true,
+        "metallic": 0.9,
+        "roughness": 0.18,
+        "base_color": [
+          0.62,
+          0.64,
+          0.68
+        ],
+        "ok": true
+      },
+      {
+        "name": "Anvil_Iron",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.5,
+        "base_color": [
+          0.16,
+          0.16,
+          0.18
+        ],
+        "ok": true
+      },
+      {
+        "name": "Anvil_Dark",
+        "found": true,
+        "metallic": 0.3,
+        "roughness": 0.8,
+        "base_color": [
+          0.05,
+          0.05,
+          0.06
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_EdgeSteel",
+        "found": true,
+        "metallic": 0.9,
+        "roughness": 0.15,
+        "base_color": [
+          0.62,
+          0.64,
+          0.68
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_Wood",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.45,
+          0.28,
+          0.14
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_WoodDark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.3,
+          0.18,
+          0.09
+        ],
+        "ok": true
+      },
+      {
+        "name": "Axe_Leather",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.2,
+          0.12,
+          0.08
+        ],
+        "ok": true
+      },
+      {
+        "name": "Barrel_Wood",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.42,
+          0.27,
+          0.13
+        ],
+        "ok": true
+      },
+      {
+        "name": "Barrel_WoodLight",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.6,
+          0.42,
+          0.22
+        ],
+        "ok": true
+      },
+      {
+        "name": "Barrel_Hoop",
+        "found": true,
+        "metallic": 0.8,
+        "roughness": 0.45,
+        "base_color": [
+          0.12,
+          0.12,
+          0.13
+        ],
+        "ok": true
+      },
+      {
+        "name": "Bucket_Water",
+        "found": true,
+        "metallic": 0.1,
+        "roughness": 0.1,
+        "base_color": [
+          0.1,
+          0.22,
+          0.32
+        ],
+        "ok": true
+      },
+      {
+        "name": "Coal",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.04,
+          0.04,
+          0.05
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_0",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.3,
+          0.3,
+          0.32
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_1",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.36,
+          0.36,
+          0.38
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_2",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.26,
+          0.26,
+          0.28
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_3",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.4,
+          0.39,
+          0.38
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_4",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.3,
+          0.3,
+          0.32
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_5",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.36,
+          0.36,
+          0.38
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_6",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.26,
+          0.26,
+          0.28
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_7",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.4,
+          0.39,
+          0.38
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_8",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.3,
+          0.3,
+          0.32
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_9",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.36,
+          0.36,
+          0.38
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_10",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.26,
+          0.26,
+          0.28
+        ],
+        "ok": true
+      },
+      {
+        "name": "Paver_11",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.4,
+          0.39,
+          0.38
+        ],
+        "ok": true
+      },
+      {
+        "name": "Ember",
+        "found": true,
+        "ok": true,
+        "emission_color": [
+          1.0,
+          0.3,
+          0.05
+        ],
+        "emission_strength": 3.0
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": []
+  },
+  "overall_pass": false
+}
