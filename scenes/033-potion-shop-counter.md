@@ -1,0 +1,294 @@
+# 033 低模场景：药水店柜台
+
+低多边形药水店室内场景资产，平面着色（flat shading），干净拓扑。
+
+## 结构
+
+- 墙体：后墙（y=+2.2，5.4×2.6）+ 左墙（x=-2.2，4.6×2.6），上层灰泥、下层木护墙板 + 压条；木梁压顶 + 角柱
+- 地面：8 块木地板（0.58 宽，灰度交错）
+- 柜台：3.0×0.75×0.92 柜身 + 3.2×0.90×0.08 台面，正面 4 块深色嵌板 + 黄铜包边，踢脚线 + 黄铜饰条
+- 药水架：后墙两层木架（z=1.50 / 1.95，2.6 长），铁支架，共 14 瓶药水（高瓶 / 圆腹瓶 / 小瓶，红绿蓝紫琥珀粉 6 色，软木塞 + 米色标签）
+- 吊灯：5 节铁链自横梁垂下，铁框 + 发光玻璃罩（Emission 暖黄），内有蜡烛 + 火焰（Emission 橙），暖色点光源（220W）
+- 柜台道具：3 瓶药水（红高瓶 / 蓝圆腹瓶 / 绿小瓶），翻开的红皮账本（两页微张 8°），黄铜烛台 + 蜡烛 + 火焰，3 枚金币叠放，束口钱袋 + 黄铜扎带
+- 大锅：右侧铁锅（12 边，0.55 高）+ 绿色药液面 + 3 条铁腿，木勺斜插（35°），药液面 3 个气泡
+- 地毯 + 圆凳：红色地毯（2.2×1.1，黄铜色内边），圆凳（12 边座面 + 3 条垂直凳腿），位于柜台前方
+
+## 面数
+
+- 总面数：1950（三角面 1108，四边面 842，N-gon 0）
+- Wall_Back：6
+- Wall_Left：6
+- Wainscot_Back：6
+- Wainscot_Left：6
+- WainscotRail_Back：6
+- WainscotRail_Left：6
+- Beam_Back：6
+- Beam_Left：6
+- Post_Corner：6
+- Plank_00：6
+- Plank_01：6
+- Plank_02：6
+- Plank_03：6
+- Plank_04：6
+- Plank_05：6
+- Plank_06：6
+- Plank_07：6
+- Counter_Body：6
+- Counter_Top：6
+- Counter_Kick：6
+- Counter_Trim：6
+- CounterPanel_0：6
+- CounterPanelTrim_0：6
+- CounterPanel_1：6
+- CounterPanelTrim_1：6
+- CounterPanel_2：6
+- CounterPanelTrim_2：6
+- CounterPanel_3：6
+- CounterPanelTrim_3：6
+- Shelf_150：6
+- ShelfBracket_150_-8：6
+- ShelfBracket_150_14：6
+- Shelf_195：6
+- ShelfBracket_195_-8：6
+- ShelfBracket_195_14：6
+- ShelfBtl_A_Body：24
+- ShelfBtl_A_Neck：24
+- ShelfBtl_A_Cork：24
+- ShelfBtl_A_Label：6
+- ShelfBtl_B_Body：20
+- ShelfBtl_B_Neck：24
+- ShelfBtl_B_Cork：24
+- ShelfBtl_C_Body：24
+- ShelfBtl_C_Neck：24
+- ShelfBtl_C_Cork：24
+- ShelfBtl_C_Label：6
+- ShelfBtl_D_Body：24
+- ShelfBtl_D_Cork：24
+- ShelfBtl_E_Body：24
+- ShelfBtl_E_Neck：24
+- ShelfBtl_E_Cork：24
+- ShelfBtl_E_Label：6
+- ShelfBtl_F_Body：20
+- ShelfBtl_F_Neck：24
+- ShelfBtl_F_Cork：24
+- ShelfBtl_G_Body：24
+- ShelfBtl_G_Cork：24
+- ShelfBtl_H_Body：24
+- ShelfBtl_H_Neck：24
+- ShelfBtl_H_Cork：24
+- ShelfBtl_H_Label：6
+- ShelfBtl_I_Body：24
+- ShelfBtl_I_Cork：24
+- ShelfBtl_J_Body：24
+- ShelfBtl_J_Neck：24
+- ShelfBtl_J_Cork：24
+- ShelfBtl_J_Label：6
+- ShelfBtl_K_Body：20
+- ShelfBtl_K_Neck：24
+- ShelfBtl_K_Cork：24
+- ShelfBtl_L_Body：24
+- ShelfBtl_L_Neck：24
+- ShelfBtl_L_Cork：24
+- ShelfBtl_L_Label：6
+- ShelfBtl_M_Body：24
+- ShelfBtl_M_Cork：24
+- ShelfBtl_N_Body：24
+- ShelfBtl_N_Neck：24
+- ShelfBtl_N_Cork：24
+- ShelfBtl_N_Label：6
+- LampChain_0：6
+- LampChain_1：6
+- LampChain_2：6
+- LampChain_3：6
+- LampChain_4：6
+- Lamp_Cap：18
+- Lamp_Glass：6
+- LampPost_-11_-11：6
+- LampPost_11_-11：6
+- LampPost_-11_11：6
+- LampPost_11_11：6
+- Lamp_Base：6
+- Lamp_Candle：24
+- Lamp_Flame：20
+- CounterBtl_A_Body：24
+- CounterBtl_A_Neck：24
+- CounterBtl_A_Cork：24
+- CounterBtl_A_Label：6
+- CounterBtl_B_Body：20
+- CounterBtl_B_Neck：24
+- CounterBtl_B_Cork：24
+- CounterBtl_C_Body：24
+- CounterBtl_C_Cork：24
+- Ledger_Cover：6
+- Ledger_Left：6
+- Ledger_Right：6
+- Candle_Holder：24
+- Candle：24
+- Candle_Flame：20
+- Coin_0：30
+- Coin_1：30
+- Coin_2：30
+- Pouch：24
+- Pouch_Tie：6
+- Cauldron_Pot：36
+- Cauldron_Brew：36
+- CauldronLeg_0：6
+- CauldronLeg_1：6
+- CauldronLeg_2：6
+- Cauldron_Spoon：18
+- BrewBubble_0：20
+- BrewBubble_1：20
+- BrewBubble_2：20
+- Rug：6
+- Rug_Trim：6
+- Stool_Seat：36
+- StoolLeg_0：18
+- StoolLeg_1：18
+- StoolLeg_2：18
+
+## 绕向自检
+
+- Wall_Back：内翻面 0
+- Wall_Left：内翻面 0
+- Wainscot_Back：内翻面 0
+- Wainscot_Left：内翻面 0
+- WainscotRail_Back：内翻面 0
+- WainscotRail_Left：内翻面 0
+- Beam_Back：内翻面 0
+- Beam_Left：内翻面 0
+- Post_Corner：内翻面 0
+- Plank_00：内翻面 0
+- Plank_01：内翻面 0
+- Plank_02：内翻面 0
+- Plank_03：内翻面 0
+- Plank_04：内翻面 0
+- Plank_05：内翻面 0
+- Plank_06：内翻面 0
+- Plank_07：内翻面 0
+- Counter_Body：内翻面 0
+- Counter_Top：内翻面 0
+- Counter_Kick：内翻面 0
+- Counter_Trim：内翻面 0
+- CounterPanel_0：内翻面 0
+- CounterPanelTrim_0：内翻面 0
+- CounterPanel_1：内翻面 0
+- CounterPanelTrim_1：内翻面 0
+- CounterPanel_2：内翻面 0
+- CounterPanelTrim_2：内翻面 0
+- CounterPanel_3：内翻面 0
+- CounterPanelTrim_3：内翻面 0
+- Shelf_150：内翻面 0
+- ShelfBracket_150_-8：内翻面 0
+- ShelfBracket_150_14：内翻面 0
+- Shelf_195：内翻面 0
+- ShelfBracket_195_-8：内翻面 0
+- ShelfBracket_195_14：内翻面 0
+- ShelfBtl_A_Body：内翻面 0
+- ShelfBtl_A_Neck：内翻面 0
+- ShelfBtl_A_Cork：内翻面 0
+- ShelfBtl_A_Label：内翻面 0
+- ShelfBtl_B_Body：内翻面 0
+- ShelfBtl_B_Neck：内翻面 0
+- ShelfBtl_B_Cork：内翻面 0
+- ShelfBtl_C_Body：内翻面 0
+- ShelfBtl_C_Neck：内翻面 0
+- ShelfBtl_C_Cork：内翻面 0
+- ShelfBtl_C_Label：内翻面 0
+- ShelfBtl_D_Body：内翻面 0
+- ShelfBtl_D_Cork：内翻面 0
+- ShelfBtl_E_Body：内翻面 0
+- ShelfBtl_E_Neck：内翻面 0
+- ShelfBtl_E_Cork：内翻面 0
+- ShelfBtl_E_Label：内翻面 0
+- ShelfBtl_F_Body：内翻面 0
+- ShelfBtl_F_Neck：内翻面 0
+- ShelfBtl_F_Cork：内翻面 0
+- ShelfBtl_G_Body：内翻面 0
+- ShelfBtl_G_Cork：内翻面 0
+- ShelfBtl_H_Body：内翻面 0
+- ShelfBtl_H_Neck：内翻面 0
+- ShelfBtl_H_Cork：内翻面 0
+- ShelfBtl_H_Label：内翻面 0
+- ShelfBtl_I_Body：内翻面 0
+- ShelfBtl_I_Cork：内翻面 0
+- ShelfBtl_J_Body：内翻面 0
+- ShelfBtl_J_Neck：内翻面 0
+- ShelfBtl_J_Cork：内翻面 0
+- ShelfBtl_J_Label：内翻面 0
+- ShelfBtl_K_Body：内翻面 0
+- ShelfBtl_K_Neck：内翻面 0
+- ShelfBtl_K_Cork：内翻面 0
+- ShelfBtl_L_Body：内翻面 0
+- ShelfBtl_L_Neck：内翻面 0
+- ShelfBtl_L_Cork：内翻面 0
+- ShelfBtl_L_Label：内翻面 0
+- ShelfBtl_M_Body：内翻面 0
+- ShelfBtl_M_Cork：内翻面 0
+- ShelfBtl_N_Body：内翻面 0
+- ShelfBtl_N_Neck：内翻面 0
+- ShelfBtl_N_Cork：内翻面 0
+- ShelfBtl_N_Label：内翻面 0
+- LampChain_0：内翻面 0
+- LampChain_1：内翻面 0
+- LampChain_2：内翻面 0
+- LampChain_3：内翻面 0
+- LampChain_4：内翻面 0
+- Lamp_Cap：内翻面 0
+- Lamp_Glass：内翻面 0
+- LampPost_-11_-11：内翻面 0
+- LampPost_11_-11：内翻面 0
+- LampPost_-11_11：内翻面 0
+- LampPost_11_11：内翻面 0
+- Lamp_Base：内翻面 0
+- Lamp_Candle：内翻面 0
+- Lamp_Flame：内翻面 0
+- CounterBtl_A_Body：内翻面 0
+- CounterBtl_A_Neck：内翻面 0
+- CounterBtl_A_Cork：内翻面 0
+- CounterBtl_A_Label：内翻面 0
+- CounterBtl_B_Body：内翻面 0
+- CounterBtl_B_Neck：内翻面 0
+- CounterBtl_B_Cork：内翻面 0
+- CounterBtl_C_Body：内翻面 0
+- CounterBtl_C_Cork：内翻面 0
+- Ledger_Cover：内翻面 0
+- Ledger_Left：内翻面 0
+- Ledger_Right：内翻面 0
+- Candle_Holder：内翻面 0
+- Candle：内翻面 0
+- Candle_Flame：内翻面 0
+- Coin_0：内翻面 0
+- Coin_1：内翻面 0
+- Coin_2：内翻面 0
+- Pouch：内翻面 0
+- Pouch_Tie：内翻面 0
+- Cauldron_Pot：内翻面 0
+- Cauldron_Brew：内翻面 0
+- CauldronLeg_0：内翻面 0
+- CauldronLeg_1：内翻面 0
+- CauldronLeg_2：内翻面 0
+- Cauldron_Spoon：内翻面 0
+- BrewBubble_0：内翻面 0
+- BrewBubble_1：内翻面 0
+- BrewBubble_2：内翻面 0
+- Rug：内翻面 0
+- Rug_Trim：内翻面 0
+- Stool_Seat：内翻面 0
+- StoolLeg_0：内翻面 0
+- StoolLeg_1：内翻面 0
+- StoolLeg_2：内翻面 0
+
+## 材质
+
+- Shop_Plaster：墙面灰泥；Shop_Wainscot：木护墙板
+- Shop_Counter / Shop_CounterTop：柜身 / 台面木材；Shop_Brass：黄铜饰条 / 烛台 / 钱袋扎带
+- Potion_*：6 色药水（不透明风格化玻璃，roughness 0.12）
+- Shop_LampGlass：吊灯发光玻璃（Emission 暖黄 1.5）+ LampGlow 点光源（220W，暖色）
+- Shop_Flame：火焰（Emission 橙，强度 4.0）
+- Shop_Brew：绿色药液（roughness 0.15）+ 气泡
+
+## 渲染
+
+- Blender 5.3 / Eevee，1024x1024，三点式影棚灯光 + 吊灯暖光，40mm 镜头
+- 相机用 fit_camera_to_objects 自动取景（目标填充 78%%）
+- 线框图：同角度，美观渲染 + 真实投影边线叠加（可见边判定）
