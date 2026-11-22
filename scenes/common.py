@@ -124,6 +124,16 @@ def fit_camera_to_objects(objects, direction=(0.0, -1.0, 0.35), lens=40.0,
     3.44, figure only ~44% of the square frame). The helper therefore
     applies res_x/res_y (default 1024x1024, the repo standard) while
     measuring, then restores the previous resolution.
+
+    Centering trap (found 2026-11-23 on 038): sizing the span is not
+    enough — the camera aims at the world-space bbox center, but the
+    average of the projected corners is NOT the projection of the average
+    corner (perspective is nonlinear), so for a tall object viewed from
+    above the projected bbox sits low in the frame and the bottom clips
+    (038: projected y -0.018..0.762, center 0.372, pommel cut off). The
+    helper therefore recenters with the camera sensor shift after sizing:
+    shift_x/y move the projected content 1:1 in the opposite direction,
+    so shift += (projected center - 0.5) per axis, iterated twice.
     Returns the camera object.
     """
     from bpy_extras.object_utils import world_to_camera_view
@@ -182,9 +192,42 @@ def fit_camera_to_objects(objects, direction=(0.0, -1.0, 0.35), lens=40.0,
     cam.location = center + direction * dist
     _point_at(cam, center)
     bpy.context.view_layer.update()
+    # Recenter: shift the projected bbox center to the frame center.
+    # Sensor shift moves projected content 1:1 in the opposite direction
+    # (verified 2026-11-23: shift_x +0.1 moves content x -0.1), so add
+    # (projected center - 0.5) per axis; two passes to converge.
+    for _ in range(2):
+        xs, ys = [], []
+        for c in corners:
+            x, y, d = world_to_camera_view(scene, cam, c)
+            if d < 0:
+                continue
+            xs.append(x)
+            ys.append(y)
+        if not xs:
+            break
+        mx = (min(xs) + max(xs)) / 2.0
+        my = (min(ys) + max(ys)) / 2.0
+        if abs(mx - 0.5) < 0.005 and abs(my - 0.5) < 0.005:
+            break
+        cam_data.shift_x += mx - 0.5
+        cam_data.shift_y += my - 0.5
+        bpy.context.view_layer.update()
+    xs, ys = [], []
+    for c in corners:
+        x, y, d = world_to_camera_view(scene, cam, c)
+        if d < 0:
+            continue
+        xs.append(x)
+        ys.append(y)
+    if xs:
+        print("FIT_CAMERA: dist=%.2f target_fill=%.2f centered=(%.3f, %.3f) "
+              "span=(%.3f, %.3f) shift=(%.3f, %.3f)"
+              % (dist, target_fill, (min(xs) + max(xs)) / 2.0,
+                 (min(ys) + max(ys)) / 2.0, max(xs) - min(xs),
+                 max(ys) - min(ys), cam_data.shift_x, cam_data.shift_y))
     scene.render.resolution_x, scene.render.resolution_y, \
         scene.render.resolution_percentage = prev_res
-    print("FIT_CAMERA: dist=%.2f target_fill=%.2f" % (dist, target_fill))
     return cam
 
 
