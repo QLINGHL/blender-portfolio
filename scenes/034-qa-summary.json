@@ -1,0 +1,514 @@
+{
+  "asset": "026-lowpoly-lantern",
+  "parts": 16,
+  "total_faces": 328,
+  "total_verts": 310,
+  "tris": 104,
+  "quads": 224,
+  "ngons": 0,
+  "ngons_expected": 0,
+  "ngons_ok": true,
+  "boundary_edges": 8,
+  "boundary_expected": 8,
+  "boundary_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "Base": 0.685,
+    "BottomFrame": 0.648,
+    "Post_-1-1": 0.365,
+    "Post_-1+1": 0.365,
+    "Post_+1-1": 0.365,
+    "Post_+1+1": 0.365,
+    "GlassShade": 0.0,
+    "Candle": 0.802,
+    "Wick": 0.64,
+    "Flame": 0.417,
+    "TopFrame": 0.672,
+    "Cap": 0.501,
+    "Finial": 0.623,
+    "HandlePost_-1": 0.634,
+    "HandlePost_+1": 0.634,
+    "Handle": 0.202
+  },
+  "uv_islands": 85,
+  "uv_overlap_pct": 0.0,
+  "uv_ok": true,
+  "empty_material_slots": 0,
+  "structure": {
+    "base": {
+      "bbox_x": [
+        -0.17,
+        0.17
+      ],
+      "bbox_y": [
+        -0.17,
+        0.17
+      ],
+      "bbox_z": [
+        0.0,
+        0.07
+      ],
+      "size": [
+        0.34,
+        0.34,
+        0.07
+      ],
+      "ok": true
+    },
+    "bottom_frame": {
+      "bbox_x": [
+        -0.15,
+        0.15
+      ],
+      "bbox_y": [
+        -0.15,
+        0.15
+      ],
+      "bbox_z": [
+        0.07,
+        0.12
+      ],
+      "size": [
+        0.3,
+        0.3,
+        0.05
+      ],
+      "bottom_minus_base_top": 0.0,
+      "ok": true
+    },
+    "posts": {
+      "posts": [
+        {
+          "name": "Post_-1-1",
+          "center_xy": [
+            -0.125,
+            -0.125
+          ],
+          "bbox_z": [
+            0.12,
+            0.46
+          ],
+          "size": [
+            0.03,
+            0.03,
+            0.34
+          ],
+          "outer_edge": 0.14,
+          "ok": true
+        },
+        {
+          "name": "Post_-1+1",
+          "center_xy": [
+            -0.125,
+            0.125
+          ],
+          "bbox_z": [
+            0.12,
+            0.46
+          ],
+          "size": [
+            0.03,
+            0.03,
+            0.34
+          ],
+          "outer_edge": 0.14,
+          "ok": true
+        },
+        {
+          "name": "Post_+1-1",
+          "center_xy": [
+            0.125,
+            -0.125
+          ],
+          "bbox_z": [
+            0.12,
+            0.46
+          ],
+          "size": [
+            0.03,
+            0.03,
+            0.34
+          ],
+          "outer_edge": 0.14,
+          "ok": true
+        },
+        {
+          "name": "Post_+1+1",
+          "center_xy": [
+            0.125,
+            0.125
+          ],
+          "bbox_z": [
+            0.12,
+            0.46
+          ],
+          "size": [
+            0.03,
+            0.03,
+            0.34
+          ],
+          "outer_edge": 0.14,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    "glass": {
+      "rows": [
+        {
+          "z": 0.12,
+          "half_x": 0.13,
+          "half_y": 0.13,
+          "verts": 4
+        },
+        {
+          "z": 0.46,
+          "half_x": 0.1,
+          "half_y": 0.1,
+          "verts": 4
+        }
+      ],
+      "bbox_z": [
+        0.12,
+        0.46
+      ],
+      "tris": 0,
+      "quads": 4,
+      "ok": true
+    },
+    "candle": {
+      "rings": [
+        {
+          "z": 0.12,
+          "radius": 0.035,
+          "verts": 9
+        },
+        {
+          "z": 0.24,
+          "radius": 0.035,
+          "verts": 9
+        }
+      ],
+      "z": [
+        0.12,
+        0.24
+      ],
+      "center_xy": [
+        -0.0,
+        0.0
+      ],
+      "ok": true
+    },
+    "wick": {
+      "rings": [
+        {
+          "z": 0.24,
+          "radius": 0.006,
+          "verts": 7
+        },
+        {
+          "z": 0.265,
+          "radius": 0.006,
+          "verts": 7
+        }
+      ],
+      "z": [
+        0.24,
+        0.265
+      ],
+      "candle_top_z": 0.24,
+      "bottom_minus_candle_top": 0.0,
+      "ok": true
+    },
+    "flame": {
+      "rings": [
+        {
+          "z": 0.255,
+          "radius": 0.028,
+          "verts": 9
+        },
+        {
+          "z": 0.345,
+          "radius": 0.0,
+          "verts": 1
+        }
+      ],
+      "z": [
+        0.255,
+        0.345
+      ],
+      "tris": 16,
+      "wick_top_z": 0.265,
+      "wick_top_inside": true,
+      "ok": true
+    },
+    "top_frame": {
+      "bbox_x": [
+        -0.13,
+        0.13
+      ],
+      "bbox_y": [
+        -0.13,
+        0.13
+      ],
+      "bbox_z": [
+        0.46,
+        0.51
+      ],
+      "size": [
+        0.26,
+        0.26,
+        0.05
+      ],
+      "bottom_minus_post_top": 0.0,
+      "post_outer_edge": 0.14,
+      "frame_half": 0.13,
+      "ok": true
+    },
+    "cap": {
+      "bbox_x": [
+        -0.13,
+        0.13
+      ],
+      "bbox_y": [
+        -0.13,
+        0.13
+      ],
+      "bbox_z": [
+        0.51,
+        0.63
+      ],
+      "tris": 8,
+      "base_half": 0.13,
+      "apex_z": 0.63,
+      "bottom_minus_frame_top": 0.0,
+      "ok": true
+    },
+    "finial": {
+      "rings": [
+        {
+          "z": 0.63,
+          "radius": 0.02,
+          "verts": 9
+        },
+        {
+          "z": 0.68,
+          "radius": 0.016,
+          "verts": 9
+        }
+      ],
+      "z": [
+        0.63,
+        0.68
+      ],
+      "cap_apex_z": 0.63,
+      "bottom_minus_cap_apex": 0.0,
+      "ok": true
+    },
+    "handle_posts": {
+      "posts": [
+        {
+          "name": "HandlePost_-1",
+          "rings": [
+            {
+              "z": 0.51,
+              "radius": 0.015,
+              "verts": 7,
+              "center_xy": [
+                -0.14,
+                0.0
+              ]
+            },
+            {
+              "z": 0.56,
+              "radius": 0.015,
+              "verts": 7,
+              "center_xy": [
+                -0.14,
+                0.0
+              ]
+            }
+          ],
+          "z": [
+            0.51,
+            0.56
+          ],
+          "center_x": -0.14,
+          "ok": true
+        },
+        {
+          "name": "HandlePost_+1",
+          "rings": [
+            {
+              "z": 0.51,
+              "radius": 0.015,
+              "verts": 7,
+              "center_xy": [
+                0.14,
+                0.0
+              ]
+            },
+            {
+              "z": 0.56,
+              "radius": 0.015,
+              "verts": 7,
+              "center_xy": [
+                0.14,
+                0.0
+              ]
+            }
+          ],
+          "z": [
+            0.51,
+            0.56
+          ],
+          "center_x": 0.14,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    "handle": {
+      "bbox_x": [
+        -0.152,
+        0.152
+      ],
+      "bbox_y": [
+        -0.01,
+        0.01
+      ],
+      "bbox_z": [
+        0.56,
+        0.712
+      ],
+      "tris": 12,
+      "quads": 144,
+      "post_top_z": 0.56,
+      "feet_z_minus_post_top": 0.0,
+      "ok": true
+    },
+    "candle_light": {
+      "found": true,
+      "location": [
+        0.0,
+        0.0,
+        0.3
+      ],
+      "color": [
+        1.0,
+        0.55,
+        0.2
+      ],
+      "energy": 10.0,
+      "use_shadow": false,
+      "glass_half_at_light_z": 0.114,
+      "inside_glass": true,
+      "ok": true
+    },
+    "encloses": {
+      "glass_z": [
+        0.12,
+        0.46
+      ],
+      "candle_z": [
+        0.12,
+        0.24
+      ],
+      "flame_z": [
+        0.255,
+        0.345
+      ],
+      "candle_radius": 0.035,
+      "flame_radius": 0.028,
+      "glass_half_at_candle_top": 0.119,
+      "glass_half_at_flame_top": 0.11,
+      "ok": true
+    }
+  },
+  "structure_ok": true,
+  "materials": {
+    "rows": [
+      {
+        "name": "Lantern_Iron",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.5,
+        "base_color": [
+          0.16,
+          0.16,
+          0.18
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lantern_Brass",
+        "found": true,
+        "metallic": 0.85,
+        "roughness": 0.35,
+        "base_color": [
+          0.55,
+          0.42,
+          0.18
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lantern_Wax",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.6,
+        "base_color": [
+          0.92,
+          0.86,
+          0.7
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lantern_Wick",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.1,
+          0.08,
+          0.06
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lantern_Glass",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.08,
+        "base_color": [
+          0.85,
+          0.75,
+          0.55
+        ],
+        "alpha": 0.3,
+        "blend": "BLENDED",
+        "ok": true
+      },
+      {
+        "name": "Lantern_Flame",
+        "found": true,
+        "emission_color": [
+          1.0,
+          0.45,
+          0.08
+        ],
+        "strength": 8.0,
+        "ok": true
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": []
+  },
+  "overall_pass": true
+}
