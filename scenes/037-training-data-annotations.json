@@ -1,0 +1,1219 @@
+{
+  "asset": "potion_shop_counter_training_data",
+  "labels": [
+    "lowpoly_counter",
+    "lowpoly_shelf",
+    "lowpoly_shelf_bottles",
+    "lowpoly_counter_props",
+    "lowpoly_ledger",
+    "lowpoly_cauldron",
+    "lowpoly_lantern",
+    "lowpoly_stool"
+  ],
+  "source_blends": [
+    "scenes/033-potion-shop-counter.blend"
+  ],
+  "layout": "033 scene used as-is, no repositioning: counter along x at y 0.1, top z 1.00; two wall shelves on the back wall (z 1.50 / 1.95) with 14 bottles; hanging lantern above the counter (chain from the beam, flame z 1.88); cauldron right of the counter at (2.05, 0.10); rug + stool in front of the counter; ledger, 3 counter bottles, candle, 3 gold coins and pouch on the counter top; back wall y=+2.2 and left wall x=-2.2 are background, so no back view - views are front / front-right diagonal / right side / high-left over the wall",
+  "image": "renders/037-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "poly_counts": {
+    "groups": {
+      "counter": 72,
+      "shelf": 36,
+      "shelf_bottles": 942,
+      "counter_props": 382,
+      "ledger": 18,
+      "cauldron": 168,
+      "lantern": 128,
+      "stool": 90
+    },
+    "per_object": {
+      "CounterPanelTrim_3": 6,
+      "CounterPanelTrim_2": 6,
+      "CounterPanelTrim_1": 6,
+      "CounterPanelTrim_0": 6,
+      "CounterPanel_3": 6,
+      "CounterPanel_2": 6,
+      "CounterPanel_1": 6,
+      "CounterPanel_0": 6,
+      "Counter_Trim": 6,
+      "Counter_Top": 6,
+      "Counter_Kick": 6,
+      "Counter_Body": 6,
+      "ShelfBracket_195_14": 6,
+      "ShelfBracket_195_-8": 6,
+      "ShelfBracket_150_14": 6,
+      "ShelfBracket_150_-8": 6,
+      "Shelf_195": 6,
+      "Shelf_150": 6,
+      "ShelfBtl_N_Neck": 24,
+      "ShelfBtl_N_Label": 6,
+      "ShelfBtl_N_Cork": 24,
+      "ShelfBtl_N_Body": 24,
+      "ShelfBtl_M_Cork": 24,
+      "ShelfBtl_M_Body": 24,
+      "ShelfBtl_L_Neck": 24,
+      "ShelfBtl_L_Label": 6,
+      "ShelfBtl_L_Cork": 24,
+      "ShelfBtl_L_Body": 24,
+      "ShelfBtl_K_Neck": 24,
+      "ShelfBtl_K_Cork": 24,
+      "ShelfBtl_K_Body": 20,
+      "ShelfBtl_J_Neck": 24,
+      "ShelfBtl_J_Label": 6,
+      "ShelfBtl_J_Cork": 24,
+      "ShelfBtl_J_Body": 24,
+      "ShelfBtl_I_Cork": 24,
+      "ShelfBtl_I_Body": 24,
+      "ShelfBtl_H_Neck": 24,
+      "ShelfBtl_H_Label": 6,
+      "ShelfBtl_H_Cork": 24,
+      "ShelfBtl_H_Body": 24,
+      "ShelfBtl_G_Cork": 24,
+      "ShelfBtl_G_Body": 24,
+      "ShelfBtl_F_Neck": 24,
+      "ShelfBtl_F_Cork": 24,
+      "ShelfBtl_F_Body": 20,
+      "ShelfBtl_E_Neck": 24,
+      "ShelfBtl_E_Label": 6,
+      "ShelfBtl_E_Cork": 24,
+      "ShelfBtl_E_Body": 24,
+      "ShelfBtl_D_Cork": 24,
+      "ShelfBtl_D_Body": 24,
+      "ShelfBtl_C_Neck": 24,
+      "ShelfBtl_C_Label": 6,
+      "ShelfBtl_C_Cork": 24,
+      "ShelfBtl_C_Body": 24,
+      "ShelfBtl_B_Neck": 24,
+      "ShelfBtl_B_Cork": 24,
+      "ShelfBtl_B_Body": 20,
+      "ShelfBtl_A_Neck": 24,
+      "ShelfBtl_A_Label": 6,
+      "ShelfBtl_A_Cork": 24,
+      "ShelfBtl_A_Body": 24,
+      "Pouch_Tie": 6,
+      "Pouch": 24,
+      "CounterBtl_C_Cork": 24,
+      "CounterBtl_C_Body": 24,
+      "CounterBtl_B_Neck": 24,
+      "CounterBtl_B_Cork": 24,
+      "CounterBtl_B_Body": 20,
+      "CounterBtl_A_Neck": 24,
+      "CounterBtl_A_Label": 6,
+      "CounterBtl_A_Cork": 24,
+      "CounterBtl_A_Body": 24,
+      "Coin_2": 30,
+      "Coin_1": 30,
+      "Coin_0": 30,
+      "Candle_Holder": 24,
+      "Candle_Flame": 20,
+      "Candle": 24,
+      "Ledger_Right": 6,
+      "Ledger_Left": 6,
+      "Ledger_Cover": 6,
+      "CauldronLeg_2": 6,
+      "CauldronLeg_1": 6,
+      "CauldronLeg_0": 6,
+      "Cauldron_Spoon": 18,
+      "Cauldron_Pot": 36,
+      "Cauldron_Brew": 36,
+      "BrewBubble_2": 20,
+      "BrewBubble_1": 20,
+      "BrewBubble_0": 20,
+      "LampPost_11_11": 6,
+      "LampPost_11_-11": 6,
+      "LampPost_-11_11": 6,
+      "LampPost_-11_-11": 6,
+      "LampChain_4": 6,
+      "LampChain_3": 6,
+      "LampChain_2": 6,
+      "LampChain_1": 6,
+      "LampChain_0": 6,
+      "Lamp_Glass": 6,
+      "Lamp_Flame": 20,
+      "Lamp_Cap": 18,
+      "Lamp_Candle": 24,
+      "Lamp_Base": 6,
+      "StoolLeg_2": 18,
+      "StoolLeg_1": 18,
+      "StoolLeg_0": 18,
+      "Stool_Seat": 36
+    }
+  },
+  "total_polys": 1836,
+  "scene_total_polys": 1951,
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 8.1,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.19,
+        0.2592,
+        0.8792,
+        0.7827
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_counter",
+          "bbox": [
+            0.19,
+            0.5107,
+            0.81,
+            0.7185
+          ],
+          "keypoints": {
+            "top_center": [
+              0.5,
+              0.53
+            ],
+            "trim_mid": [
+              0.5,
+              0.5499
+            ],
+            "panel0_center": [
+              0.274,
+              0.6342
+            ],
+            "kick_center": [
+              0.5,
+              0.7032
+            ],
+            "body_center": [
+              0.5,
+              0.6175
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf",
+          "bbox": [
+            0.3137,
+            0.3441,
+            0.6863,
+            0.4415
+          ],
+          "keypoints": {
+            "shelf_low_center": [
+              0.5,
+              0.4117
+            ],
+            "shelf_high_center": [
+              0.5,
+              0.3484
+            ],
+            "bracket_low_left": [
+              0.3477,
+              0.428
+            ],
+            "bracket_high_right": [
+              0.6535,
+              0.3652
+            ],
+            "shelf_mid": [
+              0.5,
+              0.3802
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf_bottles",
+          "bbox": [
+            0.3417,
+            0.2953,
+            0.6432,
+            0.4098
+          ],
+          "keypoints": {
+            "bottle_A_body": [
+              0.3533,
+              0.3921
+            ],
+            "bottle_H_cork_top": [
+              0.6393,
+              0.3645
+            ],
+            "bottle_K_body": [
+              0.4648,
+              0.33
+            ],
+            "bottle_D_cork_top": [
+              0.4961,
+              0.383
+            ],
+            "bottles_center": [
+              0.4964,
+              0.3666
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_counter_props",
+          "bbox": [
+            0.296,
+            0.4541,
+            0.7211,
+            0.5327
+          ],
+          "keypoints": {
+            "bottle_A_cork_top": [
+              0.3206,
+              0.455
+            ],
+            "bottle_B_body": [
+              0.3637,
+              0.5046
+            ],
+            "coin_top": [
+              0.5968,
+              0.5147
+            ],
+            "pouch_center": [
+              0.6586,
+              0.5203
+            ],
+            "candle_flame": [
+              0.7091,
+              0.4974
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_ledger",
+          "bbox": [
+            0.4141,
+            0.5092,
+            0.5299,
+            0.5289
+          ],
+          "keypoints": {
+            "cover_center": [
+              0.473,
+              0.5202
+            ],
+            "left_page": [
+              0.446,
+              0.5167
+            ],
+            "right_page": [
+              0.5,
+              0.5167
+            ],
+            "cover_front_edge": [
+              0.5277,
+              0.5156
+            ],
+            "cover_top": [
+              0.4141,
+              0.5252
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.7483,
+            0.5028,
+            0.8792,
+            0.7081
+          ],
+          "keypoints": {
+            "brew_center": [
+              0.8125,
+              0.5758
+            ],
+            "pot_top": [
+              0.877,
+              0.5714
+            ],
+            "spoon_tip": [
+              0.8332,
+              0.5028
+            ],
+            "leg0_bottom": [
+              0.7697,
+              0.7081
+            ],
+            "bubble0_center": [
+              0.7981,
+              0.5749
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_lantern",
+          "bbox": [
+            0.4706,
+            0.2592,
+            0.5294,
+            0.3969
+          ],
+          "keypoints": {
+            "flame_center": [
+              0.5,
+              0.3635
+            ],
+            "glass_center": [
+              0.5,
+              0.3672
+            ],
+            "cap_top": [
+              0.5111,
+              0.3301
+            ],
+            "base_center": [
+              0.5,
+              0.393
+            ],
+            "chain_top": [
+              0.4953,
+              0.2592
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_stool",
+          "bbox": [
+            0.4446,
+            0.655,
+            0.5554,
+            0.7827
+          ],
+          "keypoints": {
+            "seat_center": [
+              0.5,
+              0.6767
+            ],
+            "seat_top": [
+              0.5554,
+              0.6705
+            ],
+            "leg0_bottom": [
+              0.5484,
+              0.7663
+            ],
+            "leg1_bottom": [
+              0.4858,
+              0.7529
+            ],
+            "stool_center": [
+              0.5,
+              0.7058
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "diag",
+      "azimuth_deg": 41.2,
+      "elevation_deg": 18.2,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.251,
+        0.2636,
+        0.8498,
+        0.8136
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_counter",
+          "bbox": [
+            0.251,
+            0.4589,
+            0.7567,
+            0.7898
+          ],
+          "keypoints": {
+            "top_center": [
+              0.4779,
+              0.5302
+            ],
+            "trim_mid": [
+              0.4326,
+              0.554
+            ],
+            "panel0_center": [
+              0.3055,
+              0.5753
+            ],
+            "kick_center": [
+              0.4453,
+              0.6838
+            ],
+            "body_center": [
+              0.4784,
+              0.6075
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf",
+          "bbox": [
+            0.5038,
+            0.3009,
+            0.8498,
+            0.4482
+          ],
+          "keypoints": {
+            "shelf_low_center": [
+              0.6578,
+              0.3894
+            ],
+            "shelf_high_center": [
+              0.6607,
+              0.3253
+            ],
+            "bracket_low_left": [
+              0.5396,
+              0.3833
+            ],
+            "bracket_high_right": [
+              0.8099,
+              0.3622
+            ],
+            "shelf_mid": [
+              0.6592,
+              0.3577
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf_bottles",
+          "bbox": [
+            0.5301,
+            0.2636,
+            0.7936,
+            0.4087
+          ],
+          "keypoints": {
+            "bottle_A_body": [
+              0.5418,
+              0.3513
+            ],
+            "bottle_H_cork_top": [
+              0.7916,
+              0.36
+            ],
+            "bottle_K_body": [
+              0.6314,
+              0.303
+            ],
+            "bottle_D_cork_top": [
+              0.6557,
+              0.36
+            ],
+            "bottles_center": [
+              0.6567,
+              0.3435
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_counter_props",
+          "bbox": [
+            0.3478,
+            0.4297,
+            0.6463,
+            0.5793
+          ],
+          "keypoints": {
+            "bottle_A_cork_top": [
+              0.3679,
+              0.4331
+            ],
+            "bottle_B_body": [
+              0.3843,
+              0.4833
+            ],
+            "coin_top": [
+              0.5233,
+              0.5405
+            ],
+            "pouch_center": [
+              0.5684,
+              0.5605
+            ],
+            "candle_flame": [
+              0.6342,
+              0.5475
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_ledger",
+          "bbox": [
+            0.3959,
+            0.4938,
+            0.5234,
+            0.5393
+          ],
+          "keypoints": {
+            "cover_center": [
+              0.4594,
+              0.5161
+            ],
+            "left_page": [
+              0.4414,
+              0.5077
+            ],
+            "right_page": [
+              0.4778,
+              0.5183
+            ],
+            "cover_front_edge": [
+              0.5234,
+              0.5194
+            ],
+            "cover_top": [
+              0.3959,
+              0.5129
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.6619,
+            0.5871,
+            0.8092,
+            0.8136
+          ],
+          "keypoints": {
+            "brew_center": [
+              0.7351,
+              0.6562
+            ],
+            "pot_top": [
+              0.8013,
+              0.6734
+            ],
+            "spoon_tip": [
+              0.7373,
+              0.5875
+            ],
+            "leg0_bottom": [
+              0.6619,
+              0.7751
+            ],
+            "bubble0_center": [
+              0.7108,
+              0.6514
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_lantern",
+          "bbox": [
+            0.445,
+            0.2788,
+            0.509,
+            0.4158
+          ],
+          "keypoints": {
+            "flame_center": [
+              0.4769,
+              0.3782
+            ],
+            "glass_center": [
+              0.4769,
+              0.3816
+            ],
+            "cap_top": [
+              0.4846,
+              0.3481
+            ],
+            "base_center": [
+              0.4771,
+              0.4056
+            ],
+            "chain_top": [
+              0.4698,
+              0.2796
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_stool",
+          "bbox": [
+            0.3,
+            0.6443,
+            0.3952,
+            0.7568
+          ],
+          "keypoints": {
+            "seat_center": [
+              0.3483,
+              0.6698
+            ],
+            "seat_top": [
+              0.3809,
+              0.6795
+            ],
+            "leg0_bottom": [
+              0.3801,
+              0.7558
+            ],
+            "leg1_bottom": [
+              0.3664,
+              0.7252
+            ],
+            "stool_center": [
+              0.3494,
+              0.6932
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 8.5,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.2277,
+        0.2497,
+        0.9372,
+        0.8636
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_counter",
+          "bbox": [
+            0.3395,
+            0.4799,
+            0.5617,
+            0.8067
+          ],
+          "keypoints": {
+            "top_center": [
+              0.4635,
+              0.5253
+            ],
+            "trim_mid": [
+              0.3933,
+              0.5325
+            ],
+            "panel0_center": [
+              0.4153,
+              0.5688
+            ],
+            "kick_center": [
+              0.4107,
+              0.6837
+            ],
+            "body_center": [
+              0.4639,
+              0.6141
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf",
+          "bbox": [
+            0.7329,
+            0.3364,
+            0.9372,
+            0.4954
+          ],
+          "keypoints": {
+            "shelf_low_center": [
+              0.8107,
+              0.4268
+            ],
+            "shelf_high_center": [
+              0.8142,
+              0.3428
+            ],
+            "bracket_low_left": [
+              0.7687,
+              0.4313
+            ],
+            "bracket_high_right": [
+              0.8923,
+              0.3725
+            ],
+            "shelf_mid": [
+              0.8124,
+              0.385
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf_bottles",
+          "bbox": [
+            0.7506,
+            0.2704,
+            0.8854,
+            0.4392
+          ],
+          "keypoints": {
+            "bottle_A_body": [
+              0.7657,
+              0.3909
+            ],
+            "bottle_H_cork_top": [
+              0.8752,
+              0.3704
+            ],
+            "bottle_K_body": [
+              0.8026,
+              0.3189
+            ],
+            "bottle_D_cork_top": [
+              0.8108,
+              0.3885
+            ],
+            "bottles_center": [
+              0.8119,
+              0.3669
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_counter_props",
+          "bbox": [
+            0.3898,
+            0.4322,
+            0.4912,
+            0.5638
+          ],
+          "keypoints": {
+            "bottle_A_cork_top": [
+              0.4762,
+              0.4336
+            ],
+            "bottle_B_body": [
+              0.4592,
+              0.4802
+            ],
+            "coin_top": [
+              0.42,
+              0.5199
+            ],
+            "pouch_center": [
+              0.4108,
+              0.5373
+            ],
+            "candle_flame": [
+              0.4436,
+              0.5273
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_ledger",
+          "bbox": [
+            0.4193,
+            0.4979,
+            0.5056,
+            0.5221
+          ],
+          "keypoints": {
+            "cover_center": [
+              0.4643,
+              0.511
+            ],
+            "left_page": [
+              0.4651,
+              0.5034
+            ],
+            "right_page": [
+              0.4634,
+              0.5118
+            ],
+            "cover_front_edge": [
+              0.5056,
+              0.5221
+            ],
+            "cover_top": [
+              0.4269,
+              0.501
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.3583,
+            0.5605,
+            0.5405,
+            0.8636
+          ],
+          "keypoints": {
+            "brew_center": [
+              0.4494,
+              0.6656
+            ],
+            "pot_top": [
+              0.4449,
+              0.6883
+            ],
+            "spoon_tip": [
+              0.4128,
+              0.5613
+            ],
+            "leg0_bottom": [
+              0.4055,
+              0.8052
+            ],
+            "bubble0_center": [
+              0.4332,
+              0.6535
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_lantern",
+          "bbox": [
+            0.4358,
+            0.2497,
+            0.4887,
+            0.39
+          ],
+          "keypoints": {
+            "flame_center": [
+              0.4627,
+              0.356
+            ],
+            "glass_center": [
+              0.4627,
+              0.3598
+            ],
+            "cap_top": [
+              0.4621,
+              0.3218
+            ],
+            "base_center": [
+              0.4628,
+              0.386
+            ],
+            "chain_top": [
+              0.4576,
+              0.2504
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_stool",
+          "bbox": [
+            0.2277,
+            0.6012,
+            0.3217,
+            0.7077
+          ],
+          "keypoints": {
+            "seat_center": [
+              0.2747,
+              0.6176
+            ],
+            "seat_top": [
+              0.2647,
+              0.6245
+            ],
+            "leg0_bottom": [
+              0.2686,
+              0.7077
+            ],
+            "leg1_bottom": [
+              0.3101,
+              0.69
+            ],
+            "stool_center": [
+              0.2755,
+              0.6425
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "high",
+      "azimuth_deg": 297.8,
+      "elevation_deg": 39.3,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.1446,
+        0.2461,
+        0.6971,
+        0.7879
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_counter",
+          "bbox": [
+            0.3418,
+            0.3898,
+            0.6695,
+            0.7879
+          ],
+          "keypoints": {
+            "top_center": [
+              0.5253,
+              0.524
+            ],
+            "trim_mid": [
+              0.5752,
+              0.5454
+            ],
+            "panel0_center": [
+              0.4898,
+              0.7079
+            ],
+            "kick_center": [
+              0.5598,
+              0.6288
+            ],
+            "body_center": [
+              0.5243,
+              0.5763
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf",
+          "bbox": [
+            0.1446,
+            0.252,
+            0.4075,
+            0.5005
+          ],
+          "keypoints": {
+            "shelf_low_center": [
+              0.2961,
+              0.3893
+            ],
+            "shelf_high_center": [
+              0.2887,
+              0.3357
+            ],
+            "bracket_low_left": [
+              0.1959,
+              0.4836
+            ],
+            "bracket_high_right": [
+              0.3707,
+              0.2831
+            ],
+            "shelf_mid": [
+              0.2925,
+              0.363
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_shelf_bottles",
+          "bbox": [
+            0.1849,
+            0.2461,
+            0.3778,
+            0.471
+          ],
+          "keypoints": {
+            "bottle_A_body": [
+              0.1988,
+              0.4501
+            ],
+            "bottle_H_cork_top": [
+              0.3675,
+              0.2895
+            ],
+            "bottle_K_body": [
+              0.2645,
+              0.3361
+            ],
+            "bottle_D_cork_top": [
+              0.2905,
+              0.3673
+            ],
+            "bottles_center": [
+              0.2887,
+              0.3532
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_counter_props",
+          "bbox": [
+            0.4291,
+            0.4144,
+            0.6162,
+            0.6222
+          ],
+          "keypoints": {
+            "bottle_A_cork_top": [
+              0.4458,
+              0.5635
+            ],
+            "bottle_B_body": [
+              0.4799,
+              0.5757
+            ],
+            "coin_top": [
+              0.5832,
+              0.4783
+            ],
+            "pouch_center": [
+              0.6041,
+              0.4576
+            ],
+            "candle_flame": [
+              0.6002,
+              0.4196
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_ledger",
+          "bbox": [
+            0.4642,
+            0.4935,
+            0.5653,
+            0.5694
+          ],
+          "keypoints": {
+            "cover_center": [
+              0.5156,
+              0.5305
+            ],
+            "left_page": [
+              0.5054,
+              0.5411
+            ],
+            "right_page": [
+              0.5255,
+              0.5158
+            ],
+            "cover_front_edge": [
+              0.5068,
+              0.4965
+            ],
+            "cover_top": [
+              0.5251,
+              0.5672
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.5775,
+            0.3821,
+            0.665,
+            0.5168
+          ],
+          "keypoints": {
+            "brew_center": [
+              0.6211,
+              0.4256
+            ],
+            "pot_top": [
+              0.6381,
+              0.4012
+            ],
+            "spoon_tip": [
+              0.6435,
+              0.3821
+            ],
+            "leg0_bottom": [
+              0.6255,
+              0.5168
+            ],
+            "bubble0_center": [
+              0.6244,
+              0.4323
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_lantern",
+          "bbox": [
+            0.5002,
+            0.3385,
+            0.5538,
+            0.4537
+          ],
+          "keypoints": {
+            "flame_center": [
+              0.5274,
+              0.4157
+            ],
+            "glass_center": [
+              0.5273,
+              0.4182
+            ],
+            "cap_top": [
+              0.532,
+              0.3877
+            ],
+            "base_center": [
+              0.527,
+              0.4357
+            ],
+            "chain_top": [
+              0.5306,
+              0.3442
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_stool",
+          "bbox": [
+            0.6217,
+            0.5976,
+            0.6971,
+            0.6908
+          ],
+          "keypoints": {
+            "seat_center": [
+              0.6593,
+              0.6269
+            ],
+            "seat_top": [
+              0.6733,
+              0.6005
+            ],
+            "leg0_bottom": [
+              0.6655,
+              0.6491
+            ],
+            "leg1_bottom": [
+              0.6277,
+              0.6679
+            ],
+            "stool_center": [
+              0.6575,
+              0.6411
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
