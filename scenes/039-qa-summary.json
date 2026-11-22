@@ -1,0 +1,622 @@
+{
+  "asset": "035-lowpoly-spellbook",
+  "parts": 28,
+  "total_faces": 468,
+  "total_verts": 498,
+  "tris": 48,
+  "quads": 420,
+  "ngons": 0,
+  "ngons_expected": 0,
+  "ngons_ok": true,
+  "boundary_edges": 0,
+  "boundary_expected": 0,
+  "boundary_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "inverted_normals": 0,
+  "uv_out_of_bounds": 0,
+  "uv_utilization_per_part": {
+    "CoverBottom": 0.615,
+    "PageBlock": 0.574,
+    "CoverTop": 0.615,
+    "Spine": 0.168,
+    "PageLineFore_1": 0.029,
+    "PageLineFore_2": 0.029,
+    "PageLineFore_3": 0.029,
+    "PageLineHead_1": 0.04,
+    "PageLineHead_2": 0.04,
+    "PageLineHead_3": 0.04,
+    "PageLineTail_1": 0.04,
+    "PageLineTail_2": 0.04,
+    "PageLineTail_3": 0.04,
+    "RuneRing": 0.156,
+    "RuneStar_1": 0.233,
+    "RuneStar_2": 0.233,
+    "RuneStar_3": 0.233,
+    "RuneStar_4": 0.233,
+    "RuneStar_5": 0.233,
+    "Gem": 0.363,
+    "ClaspTop": 0.714,
+    "ClaspFront": 0.786,
+    "ClaspStud": 0.717,
+    "Corner_-1-1": 0.571,
+    "Corner_-1+1": 0.571,
+    "Corner_+1-1": 0.571,
+    "Corner_+1+1": 0.571,
+    "Bookmark": 0.661
+  },
+  "uv_islands": 174,
+  "uv_overlap_pct": 0.0,
+  "uv_ok": true,
+  "empty_material_slots": 0,
+  "structure": {
+    "cover_bottom": {
+      "bbox_x": [
+        -0.28,
+        0.28
+      ],
+      "bbox_y": [
+        -0.38,
+        0.38
+      ],
+      "bbox_z": [
+        0.0,
+        0.018
+      ],
+      "size": [
+        0.56,
+        0.76,
+        0.018
+      ],
+      "ok": true
+    },
+    "page_block": {
+      "bbox_x": [
+        -0.25,
+        0.25
+      ],
+      "bbox_y": [
+        -0.35,
+        0.35
+      ],
+      "bbox_z": [
+        0.018,
+        0.08
+      ],
+      "size": [
+        0.5,
+        0.7,
+        0.062
+      ],
+      "bottom_minus_cover_top": 0.0,
+      "inset_x": 0.03,
+      "inset_y": 0.03,
+      "ok": true
+    },
+    "cover_top": {
+      "bbox_x": [
+        -0.28,
+        0.28
+      ],
+      "bbox_y": [
+        -0.38,
+        0.38
+      ],
+      "bbox_z": [
+        0.08,
+        0.098
+      ],
+      "size": [
+        0.56,
+        0.76,
+        0.018
+      ],
+      "bottom_minus_page_top": 0.0,
+      "ok": true
+    },
+    "spine": {
+      "bbox_x": [
+        -0.302,
+        -0.258
+      ],
+      "bbox_y": [
+        -0.38,
+        0.38
+      ],
+      "bbox_z": [
+        0.027,
+        0.071
+      ],
+      "radius": 0.022,
+      "tris": 24,
+      "quads": 12,
+      "outboard_past_cover_edge": 0.022,
+      "ok": true
+    },
+    "page_lines": {
+      "lines": [
+        {
+          "name": "PageLineFore_1",
+          "edge": "fore",
+          "z_center": 0.032,
+          "bbox_z": [
+            0.029,
+            0.035
+          ],
+          "span": [
+            0.7,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineFore_2",
+          "edge": "fore",
+          "z_center": 0.049,
+          "bbox_z": [
+            0.046,
+            0.052
+          ],
+          "span": [
+            0.7,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineFore_3",
+          "edge": "fore",
+          "z_center": 0.066,
+          "bbox_z": [
+            0.063,
+            0.069
+          ],
+          "span": [
+            0.7,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineHead_1",
+          "edge": "head",
+          "z_center": 0.032,
+          "bbox_z": [
+            0.029,
+            0.035
+          ],
+          "span": [
+            0.5,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineHead_2",
+          "edge": "head",
+          "z_center": 0.049,
+          "bbox_z": [
+            0.046,
+            0.052
+          ],
+          "span": [
+            0.5,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineHead_3",
+          "edge": "head",
+          "z_center": 0.066,
+          "bbox_z": [
+            0.063,
+            0.069
+          ],
+          "span": [
+            0.5,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineTail_1",
+          "edge": "tail",
+          "z_center": 0.032,
+          "bbox_z": [
+            0.029,
+            0.035
+          ],
+          "span": [
+            0.5,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineTail_2",
+          "edge": "tail",
+          "z_center": 0.049,
+          "bbox_z": [
+            0.046,
+            0.052
+          ],
+          "span": [
+            0.5,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        },
+        {
+          "name": "PageLineTail_3",
+          "edge": "tail",
+          "z_center": 0.066,
+          "bbox_z": [
+            0.063,
+            0.069
+          ],
+          "span": [
+            0.5,
+            0.006
+          ],
+          "protrusion_past_page_face": 0.003,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    "rune_ring": {
+      "bbox_z": [
+        0.088,
+        0.112
+      ],
+      "z_center": 0.1,
+      "radius_min": 0.128,
+      "radius_max": 0.152,
+      "tris": 0,
+      "quads": 256,
+      "bottom_minus_cover_top": -0.01,
+      "ok": true
+    },
+    "rune_star": {
+      "stars": [
+        {
+          "name": "RuneStar_1",
+          "rotation_z_deg": 0.0,
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "max_radius": 0.131,
+          "ring_inner_radius": 0.128,
+          "end_joins_ring": true,
+          "ok": true
+        },
+        {
+          "name": "RuneStar_2",
+          "rotation_z_deg": 72.0,
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "max_radius": 0.131,
+          "ring_inner_radius": 0.128,
+          "end_joins_ring": true,
+          "ok": true
+        },
+        {
+          "name": "RuneStar_3",
+          "rotation_z_deg": 144.0,
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "max_radius": 0.131,
+          "ring_inner_radius": 0.128,
+          "end_joins_ring": true,
+          "ok": true
+        },
+        {
+          "name": "RuneStar_4",
+          "rotation_z_deg": 216.0,
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "max_radius": 0.131,
+          "ring_inner_radius": 0.128,
+          "end_joins_ring": true,
+          "ok": true
+        },
+        {
+          "name": "RuneStar_5",
+          "rotation_z_deg": 288.0,
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "max_radius": 0.131,
+          "ring_inner_radius": 0.128,
+          "end_joins_ring": true,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    "gem": {
+      "bbox_x": [
+        -0.035,
+        0.035
+      ],
+      "bbox_y": [
+        -0.035,
+        0.035
+      ],
+      "bbox_z": [
+        0.08,
+        0.15
+      ],
+      "tris": 8,
+      "top_above_cover": 0.052,
+      "bottom_minus_page_top": 0.0,
+      "ok": true
+    },
+    "clasp": {
+      "clasp_top": {
+        "bbox_x": [
+          0.12,
+          0.28
+        ],
+        "bbox_y": [
+          -0.025,
+          0.025
+        ],
+        "bbox_z": [
+          0.098,
+          0.104
+        ],
+        "bottom_minus_cover_top": 0.0,
+        "ok": true
+      },
+      "clasp_front": {
+        "bbox_x": [
+          0.28,
+          0.286
+        ],
+        "bbox_y": [
+          -0.025,
+          0.025
+        ],
+        "bbox_z": [
+          -0.001,
+          0.099
+        ],
+        "bottom_z": -0.001,
+        "below_ground_by": 0.001,
+        "top_minus_strap_bottom": 0.001,
+        "ok": false
+      },
+      "clasp_stud": {
+        "bbox_z": [
+          0.104,
+          0.116
+        ],
+        "radius": 0.014,
+        "tris": 16,
+        "quads": 8,
+        "bottom_minus_strap_top": 0.0,
+        "ok": true
+      },
+      "ok": false
+    },
+    "corners": {
+      "corners": [
+        {
+          "name": "Corner_-1-1",
+          "bbox_x": [
+            -0.28,
+            -0.21
+          ],
+          "bbox_y": [
+            -0.38,
+            -0.31
+          ],
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "outer_x": 0.28,
+          "outer_y": 0.38,
+          "ok": true
+        },
+        {
+          "name": "Corner_-1+1",
+          "bbox_x": [
+            -0.28,
+            -0.21
+          ],
+          "bbox_y": [
+            0.31,
+            0.38
+          ],
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "outer_x": 0.28,
+          "outer_y": 0.38,
+          "ok": true
+        },
+        {
+          "name": "Corner_+1-1",
+          "bbox_x": [
+            0.21,
+            0.28
+          ],
+          "bbox_y": [
+            -0.38,
+            -0.31
+          ],
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "outer_x": 0.28,
+          "outer_y": 0.38,
+          "ok": true
+        },
+        {
+          "name": "Corner_+1+1",
+          "bbox_x": [
+            0.21,
+            0.28
+          ],
+          "bbox_y": [
+            0.31,
+            0.38
+          ],
+          "bbox_z": [
+            0.098,
+            0.104
+          ],
+          "outer_x": 0.28,
+          "outer_y": 0.38,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    "bookmark": {
+      "bbox_x": [
+        0.083,
+        0.117
+      ],
+      "bbox_y": [
+        -0.46,
+        -0.34
+      ],
+      "bbox_z": [
+        0.047,
+        0.051
+      ],
+      "protrusion_past_cover_tail": 0.08,
+      "protrusion_past_page_tail": 0.11,
+      "inside_page_block_z": true,
+      "ok": true
+    }
+  },
+  "structure_ok": false,
+  "materials": {
+    "rows": [
+      {
+        "name": "Spellbook_Leather",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.05,
+          0.02,
+          0.12
+        ],
+        "ok": true
+      },
+      {
+        "name": "Spellbook_LeatherDark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.03,
+          0.01,
+          0.07
+        ],
+        "ok": true
+      },
+      {
+        "name": "Spellbook_Pages",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.85,
+          0.78,
+          0.6
+        ],
+        "ok": true
+      },
+      {
+        "name": "Spellbook_PageLine",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.68,
+          0.6,
+          0.44
+        ],
+        "ok": true
+      },
+      {
+        "name": "Spellbook_Brass",
+        "found": true,
+        "metallic": 0.85,
+        "roughness": 0.35,
+        "base_color": [
+          0.45,
+          0.28,
+          0.06
+        ],
+        "ok": true
+      },
+      {
+        "name": "Spellbook_Iron",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.5,
+        "base_color": [
+          0.2,
+          0.2,
+          0.22
+        ],
+        "ok": true
+      },
+      {
+        "name": "Spellbook_Amethyst",
+        "found": true,
+        "metallic": 0.3,
+        "roughness": 0.2,
+        "base_color": [
+          0.25,
+          0.05,
+          0.45
+        ],
+        "ok": true
+      },
+      {
+        "name": "Spellbook_Ribbon",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.35,
+          0.02,
+          0.05
+        ],
+        "ok": true
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": []
+  },
+  "overall_pass": false
+}
