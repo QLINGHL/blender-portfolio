@@ -1,0 +1,553 @@
+# 040 低模场景：魔法图书馆角落
+
+低多边形魔法图书馆室内场景资产，平面着色（flat shading），干净拓扑。
+
+## 结构
+
+- 墙体：后墙（y=+2.2，5.4×2.6）+ 左墙（x=-2.2，4.6×2.6），上层灰泥、下层木护墙板 + 压条；木梁压顶 + 角柱
+- 地面：8 块木地板（0.58 宽，灰度交错）
+- 高书架：后墙 2.5 宽 × 2.35 高，5 层书格，共 111 本书（红绿蓝紫棕青赭 7 色封面，12% 斜靠、10% 留空），第 3 层右端 3 本平放叠书
+- 矮书架：左墙 2.0 长 × 1.15 高，2 层书格，共 38 本书；顶上地球仪（蓝球 + 金色子午环）
+- 图书馆梯子：两根立柱 + 6 根横档，向书架倾斜 17.7°
+- 书桌：1.7×0.90 台面 + 4 腿 + 抽屉（黄铜拉手）+ 挡板；桌上翻开的蓝色法术书（两页微张 8°）、三臂黄铜烛台（3 支蜡烛 + 火焰）、墨水瓶 + 羽毛笔、3 本叠书、横放羊皮卷轴（两端木轴）
+- 落地烛台：黄铜底座 + 1.28 高立柱 + 托盘，3 支蜡烛 + 火焰，暖色点光源（180W）
+- 墙饰：星图挂画（深蓝画布 + 金月 + 5 颗金星），位于书桌上方后墙
+- 地毯 + 椅子：红色地毯（2.6×1.7，金色内边），木椅（座面 + 4 腿 + 靠背），位于书桌前方
+- 地面散书：梯子旁 2 本平放的书
+
+## 面数
+
+- 总面数：2198（三角面 540，四边面 1658，N-gon 0）
+- Wall_Back：6
+- Wall_Left：6
+- Wainscot_Back：6
+- Wainscot_Left：6
+- WainscotRail_Back：6
+- WainscotRail_Left：6
+- Beam_Back：6
+- Beam_Left：6
+- Post_Corner：6
+- Plank_00：6
+- Plank_01：6
+- Plank_02：6
+- Plank_03：6
+- Plank_04：6
+- Plank_05：6
+- Plank_06：6
+- Plank_07：6
+- Shelf_Left：6
+- Shelf_Right：6
+- Shelf_Top：6
+- Shelf_Plinth：6
+- Shelf_Back：6
+- ShelfBoard_0：6
+- ShelfBoard_1：6
+- ShelfBoard_2：6
+- ShelfBoard_3：6
+- Book_T0_0：6
+- Book_T0_1：6
+- Book_T0_2：6
+- Book_T0_3：6
+- Book_T0_4：6
+- Book_T0_5：6
+- Book_T0_6：6
+- Book_T0_7：6
+- Book_T0_8：6
+- Book_T0_9：6
+- Book_T0_10：6
+- Book_T0_11：6
+- Book_T0_12：6
+- Book_T0_13：6
+- Book_T0_14：6
+- Book_T0_15：6
+- Book_T0_16：6
+- Book_T0_17：6
+- Book_T0_18：6
+- Book_T1_0：6
+- Book_T1_1：6
+- Book_T1_2：6
+- Book_T1_3：6
+- Book_T1_4：6
+- Book_T1_5：6
+- Book_T1_6：6
+- Book_T1_7：6
+- Book_T1_8：6
+- Book_T1_9：6
+- Book_T1_10：6
+- Book_T1_11：6
+- Book_T1_12：6
+- Book_T1_13：6
+- Book_T1_14：6
+- Book_T1_15：6
+- Book_T1_16：6
+- Book_T1_17：6
+- Book_T1_18：6
+- Book_T1_19：6
+- Book_T1_20：6
+- Book_T1_21：6
+- Book_T2_0：6
+- Book_T2_1：6
+- Book_T2_2：6
+- Book_T2_3：6
+- Book_T2_4：6
+- Book_T2_5：6
+- Book_T2_6：6
+- Book_T2_7：6
+- Book_T2_8：6
+- Book_T2_9：6
+- Book_T2_10：6
+- Book_T2_11：6
+- Book_T2_12：6
+- Book_T2_13：6
+- Book_T2_14：6
+- Book_T2_15：6
+- Book_T2_16：6
+- Book_T2_17：6
+- Book_T2_18：6
+- Book_T2_19：6
+- Book_T2_20：6
+- Book_T3_0：6
+- Book_T3_1：6
+- Book_T3_2：6
+- Book_T3_3：6
+- Book_T3_4：6
+- Book_T3_5：6
+- Book_T3_6：6
+- Book_T3_7：6
+- Book_T3_8：6
+- Book_T3_9：6
+- Book_T3_10：6
+- Book_T3_11：6
+- Book_T3_12：6
+- Book_T3_13：6
+- Book_T3_14：6
+- Book_T3_15：6
+- Book_T3_16：6
+- Book_T3_17：6
+- Book_T3_18：6
+- Book_T3_19：6
+- Book_T3_20：6
+- Book_T3_21：6
+- Book_T3_22：6
+- Book_T3_23：6
+- Book_T4_0：6
+- Book_T4_1：6
+- Book_T4_2：6
+- Book_T4_3：6
+- Book_T4_4：6
+- Book_T4_5：6
+- Book_T4_6：6
+- Book_T4_7：6
+- Book_T4_8：6
+- Book_T4_9：6
+- Book_T4_10：6
+- Book_T4_11：6
+- Book_T4_12：6
+- Book_T4_13：6
+- Book_T4_14：6
+- Book_T4_15：6
+- Book_T4_16：6
+- Book_T4_17：6
+- Book_T4_18：6
+- Book_T4_19：6
+- Book_T4_20：6
+- Book_T4_21：6
+- Book_T4_22：6
+- Book_T4_23：6
+- Book_T4_24：6
+- BookStack_0：6
+- BookStack_1：6
+- BookStack_2：6
+- LowShelf_EndA：6
+- LowShelf_EndB：6
+- LowShelf_Top：6
+- LowShelf_Plinth：6
+- LowShelf_Back：6
+- LowShelf_Board：6
+- LBook_T0_0：6
+- LBook_T0_1：6
+- LBook_T0_2：6
+- LBook_T0_3：6
+- LBook_T0_4：6
+- LBook_T0_5：6
+- LBook_T0_6：6
+- LBook_T0_7：6
+- LBook_T0_8：6
+- LBook_T0_9：6
+- LBook_T0_10：6
+- LBook_T0_11：6
+- LBook_T0_12：6
+- LBook_T0_13：6
+- LBook_T0_14：6
+- LBook_T0_15：6
+- LBook_T0_16：6
+- LBook_T0_17：6
+- LBook_T1_0：6
+- LBook_T1_1：6
+- LBook_T1_2：6
+- LBook_T1_3：6
+- LBook_T1_4：6
+- LBook_T1_5：6
+- LBook_T1_6：6
+- LBook_T1_7：6
+- LBook_T1_8：6
+- LBook_T1_9：6
+- LBook_T1_10：6
+- LBook_T1_11：6
+- LBook_T1_12：6
+- LBook_T1_13：6
+- LBook_T1_14：6
+- LBook_T1_15：6
+- LBook_T1_16：6
+- LBook_T1_17：6
+- LBook_T1_18：6
+- LBook_T1_19：6
+- Globe_Stand：24
+- Globe：20
+- Globe_Ring：96
+- LadderRail_0：6
+- LadderRail_1：6
+- LadderRung_0：6
+- LadderRung_1：6
+- LadderRung_2：6
+- LadderRung_3：6
+- LadderRung_4：6
+- LadderRung_5：6
+- Desk_Top：6
+- DeskLeg_-75_-35：6
+- DeskLeg_75_-35：6
+- DeskLeg_-75_35：6
+- DeskLeg_75_35：6
+- Desk_Drawer：6
+- DeskKnob_0：24
+- DeskKnob_1：24
+- Desk_Modesty：6
+- Spellbook_Cover：6
+- Spellbook_Left：6
+- Spellbook_Right：6
+- Candelabra_Base：30
+- Candelabra_Stem：24
+- Candelabra_ArmL：6
+- Candelabra_ArmR：6
+- Candelabra_CupL：24
+- Candelabra_CupR：24
+- Candelabra_CupC：24
+- DeskCandle_L：24
+- DeskCandle_L_Flame：20
+- DeskCandle_R：24
+- DeskCandle_R_Flame：20
+- DeskCandle_C：24
+- DeskCandle_C_Flame：20
+- InkPot：30
+- Ink_Surface：30
+- Quill：6
+- DeskBook_0：6
+- DeskBook_1：6
+- DeskBook_2：6
+- Scroll：30
+- ScrollKnob_51：24
+- ScrollKnob_99：24
+- FloorCand_Base：30
+- FloorCand_Pole：24
+- FloorCand_Tray：30
+- FloorCandle_0：24
+- FloorCandle_0_Flame：20
+- FloorCandle_1：24
+- FloorCandle_1_Flame：20
+- FloorCandle_2：24
+- FloorCandle_2_Flame：20
+- Chart_Frame：6
+- Chart_Canvas：6
+- Chart_Moon：36
+- Chart_Star_0：6
+- Chart_Star_1：6
+- Chart_Star_2：6
+- Chart_Star_3：6
+- Chart_Star_4：6
+- Rug：6
+- Rug_Trim：6
+- Chair_Seat：6
+- ChairLeg_-20_-17：6
+- ChairLeg_20_-17：6
+- ChairLeg_-20_17：6
+- ChairLeg_20_17：6
+- ChairBack_-20：6
+- ChairBack_20：6
+- ChairBack_Top：6
+- FloorBook_0：6
+- FloorBook_1：6
+
+## 绕向自检
+
+- Wall_Back：内翻面 0
+- Wall_Left：内翻面 0
+- Wainscot_Back：内翻面 0
+- Wainscot_Left：内翻面 0
+- WainscotRail_Back：内翻面 0
+- WainscotRail_Left：内翻面 0
+- Beam_Back：内翻面 0
+- Beam_Left：内翻面 0
+- Post_Corner：内翻面 0
+- Plank_00：内翻面 0
+- Plank_01：内翻面 0
+- Plank_02：内翻面 0
+- Plank_03：内翻面 0
+- Plank_04：内翻面 0
+- Plank_05：内翻面 0
+- Plank_06：内翻面 0
+- Plank_07：内翻面 0
+- Shelf_Left：内翻面 0
+- Shelf_Right：内翻面 0
+- Shelf_Top：内翻面 0
+- Shelf_Plinth：内翻面 0
+- Shelf_Back：内翻面 0
+- ShelfBoard_0：内翻面 0
+- ShelfBoard_1：内翻面 0
+- ShelfBoard_2：内翻面 0
+- ShelfBoard_3：内翻面 0
+- Book_T0_0：内翻面 0
+- Book_T0_1：内翻面 0
+- Book_T0_2：内翻面 0
+- Book_T0_3：内翻面 0
+- Book_T0_4：内翻面 0
+- Book_T0_5：内翻面 0
+- Book_T0_6：内翻面 0
+- Book_T0_7：内翻面 0
+- Book_T0_8：内翻面 0
+- Book_T0_9：内翻面 0
+- Book_T0_10：内翻面 0
+- Book_T0_11：内翻面 0
+- Book_T0_12：内翻面 0
+- Book_T0_13：内翻面 0
+- Book_T0_14：内翻面 0
+- Book_T0_15：内翻面 0
+- Book_T0_16：内翻面 0
+- Book_T0_17：内翻面 0
+- Book_T0_18：内翻面 0
+- Book_T1_0：内翻面 0
+- Book_T1_1：内翻面 0
+- Book_T1_2：内翻面 0
+- Book_T1_3：内翻面 0
+- Book_T1_4：内翻面 0
+- Book_T1_5：内翻面 0
+- Book_T1_6：内翻面 0
+- Book_T1_7：内翻面 0
+- Book_T1_8：内翻面 0
+- Book_T1_9：内翻面 0
+- Book_T1_10：内翻面 0
+- Book_T1_11：内翻面 0
+- Book_T1_12：内翻面 0
+- Book_T1_13：内翻面 0
+- Book_T1_14：内翻面 0
+- Book_T1_15：内翻面 0
+- Book_T1_16：内翻面 0
+- Book_T1_17：内翻面 0
+- Book_T1_18：内翻面 0
+- Book_T1_19：内翻面 0
+- Book_T1_20：内翻面 0
+- Book_T1_21：内翻面 0
+- Book_T2_0：内翻面 0
+- Book_T2_1：内翻面 0
+- Book_T2_2：内翻面 0
+- Book_T2_3：内翻面 0
+- Book_T2_4：内翻面 0
+- Book_T2_5：内翻面 0
+- Book_T2_6：内翻面 0
+- Book_T2_7：内翻面 0
+- Book_T2_8：内翻面 0
+- Book_T2_9：内翻面 0
+- Book_T2_10：内翻面 0
+- Book_T2_11：内翻面 0
+- Book_T2_12：内翻面 0
+- Book_T2_13：内翻面 0
+- Book_T2_14：内翻面 0
+- Book_T2_15：内翻面 0
+- Book_T2_16：内翻面 0
+- Book_T2_17：内翻面 0
+- Book_T2_18：内翻面 0
+- Book_T2_19：内翻面 0
+- Book_T2_20：内翻面 0
+- Book_T3_0：内翻面 0
+- Book_T3_1：内翻面 0
+- Book_T3_2：内翻面 0
+- Book_T3_3：内翻面 0
+- Book_T3_4：内翻面 0
+- Book_T3_5：内翻面 0
+- Book_T3_6：内翻面 0
+- Book_T3_7：内翻面 0
+- Book_T3_8：内翻面 0
+- Book_T3_9：内翻面 0
+- Book_T3_10：内翻面 0
+- Book_T3_11：内翻面 0
+- Book_T3_12：内翻面 0
+- Book_T3_13：内翻面 0
+- Book_T3_14：内翻面 0
+- Book_T3_15：内翻面 0
+- Book_T3_16：内翻面 0
+- Book_T3_17：内翻面 0
+- Book_T3_18：内翻面 0
+- Book_T3_19：内翻面 0
+- Book_T3_20：内翻面 0
+- Book_T3_21：内翻面 0
+- Book_T3_22：内翻面 0
+- Book_T3_23：内翻面 0
+- Book_T4_0：内翻面 0
+- Book_T4_1：内翻面 0
+- Book_T4_2：内翻面 0
+- Book_T4_3：内翻面 0
+- Book_T4_4：内翻面 0
+- Book_T4_5：内翻面 0
+- Book_T4_6：内翻面 0
+- Book_T4_7：内翻面 0
+- Book_T4_8：内翻面 0
+- Book_T4_9：内翻面 0
+- Book_T4_10：内翻面 0
+- Book_T4_11：内翻面 0
+- Book_T4_12：内翻面 0
+- Book_T4_13：内翻面 0
+- Book_T4_14：内翻面 0
+- Book_T4_15：内翻面 0
+- Book_T4_16：内翻面 0
+- Book_T4_17：内翻面 0
+- Book_T4_18：内翻面 0
+- Book_T4_19：内翻面 0
+- Book_T4_20：内翻面 0
+- Book_T4_21：内翻面 0
+- Book_T4_22：内翻面 0
+- Book_T4_23：内翻面 0
+- Book_T4_24：内翻面 0
+- BookStack_0：内翻面 0
+- BookStack_1：内翻面 0
+- BookStack_2：内翻面 0
+- LowShelf_EndA：内翻面 0
+- LowShelf_EndB：内翻面 0
+- LowShelf_Top：内翻面 0
+- LowShelf_Plinth：内翻面 0
+- LowShelf_Back：内翻面 0
+- LowShelf_Board：内翻面 0
+- LBook_T0_0：内翻面 0
+- LBook_T0_1：内翻面 0
+- LBook_T0_2：内翻面 0
+- LBook_T0_3：内翻面 0
+- LBook_T0_4：内翻面 0
+- LBook_T0_5：内翻面 0
+- LBook_T0_6：内翻面 0
+- LBook_T0_7：内翻面 0
+- LBook_T0_8：内翻面 0
+- LBook_T0_9：内翻面 0
+- LBook_T0_10：内翻面 0
+- LBook_T0_11：内翻面 0
+- LBook_T0_12：内翻面 0
+- LBook_T0_13：内翻面 0
+- LBook_T0_14：内翻面 0
+- LBook_T0_15：内翻面 0
+- LBook_T0_16：内翻面 0
+- LBook_T0_17：内翻面 0
+- LBook_T1_0：内翻面 0
+- LBook_T1_1：内翻面 0
+- LBook_T1_2：内翻面 0
+- LBook_T1_3：内翻面 0
+- LBook_T1_4：内翻面 0
+- LBook_T1_5：内翻面 0
+- LBook_T1_6：内翻面 0
+- LBook_T1_7：内翻面 0
+- LBook_T1_8：内翻面 0
+- LBook_T1_9：内翻面 0
+- LBook_T1_10：内翻面 0
+- LBook_T1_11：内翻面 0
+- LBook_T1_12：内翻面 0
+- LBook_T1_13：内翻面 0
+- LBook_T1_14：内翻面 0
+- LBook_T1_15：内翻面 0
+- LBook_T1_16：内翻面 0
+- LBook_T1_17：内翻面 0
+- LBook_T1_18：内翻面 0
+- LBook_T1_19：内翻面 0
+- Globe_Stand：内翻面 0
+- Globe：内翻面 0
+- Globe_Ring：内翻面 32
+- LadderRail_0：内翻面 0
+- LadderRail_1：内翻面 0
+- LadderRung_0：内翻面 0
+- LadderRung_1：内翻面 0
+- LadderRung_2：内翻面 0
+- LadderRung_3：内翻面 0
+- LadderRung_4：内翻面 0
+- LadderRung_5：内翻面 0
+- Desk_Top：内翻面 0
+- DeskLeg_-75_-35：内翻面 0
+- DeskLeg_75_-35：内翻面 0
+- DeskLeg_-75_35：内翻面 0
+- DeskLeg_75_35：内翻面 0
+- Desk_Drawer：内翻面 0
+- DeskKnob_0：内翻面 0
+- DeskKnob_1：内翻面 0
+- Desk_Modesty：内翻面 0
+- Spellbook_Cover：内翻面 0
+- Spellbook_Left：内翻面 0
+- Spellbook_Right：内翻面 0
+- Candelabra_Base：内翻面 0
+- Candelabra_Stem：内翻面 0
+- Candelabra_ArmL：内翻面 0
+- Candelabra_ArmR：内翻面 0
+- Candelabra_CupL：内翻面 0
+- Candelabra_CupR：内翻面 0
+- Candelabra_CupC：内翻面 0
+- DeskCandle_L：内翻面 0
+- DeskCandle_L_Flame：内翻面 0
+- DeskCandle_R：内翻面 0
+- DeskCandle_R_Flame：内翻面 0
+- DeskCandle_C：内翻面 0
+- DeskCandle_C_Flame：内翻面 0
+- InkPot：内翻面 0
+- Ink_Surface：内翻面 0
+- Quill：内翻面 0
+- DeskBook_0：内翻面 0
+- DeskBook_1：内翻面 0
+- DeskBook_2：内翻面 0
+- Scroll：内翻面 0
+- ScrollKnob_51：内翻面 0
+- ScrollKnob_99：内翻面 0
+- FloorCand_Base：内翻面 0
+- FloorCand_Pole：内翻面 0
+- FloorCand_Tray：内翻面 0
+- FloorCandle_0：内翻面 0
+- FloorCandle_0_Flame：内翻面 0
+- FloorCandle_1：内翻面 0
+- FloorCandle_1_Flame：内翻面 0
+- FloorCandle_2：内翻面 0
+- FloorCandle_2_Flame：内翻面 0
+- Chart_Frame：内翻面 0
+- Chart_Canvas：内翻面 0
+- Chart_Moon：内翻面 0
+- Chart_Star_0：内翻面 0
+- Chart_Star_1：内翻面 0
+- Chart_Star_2：内翻面 0
+- Chart_Star_3：内翻面 0
+- Chart_Star_4：内翻面 0
+- Rug：内翻面 0
+- Rug_Trim：内翻面 0
+- Chair_Seat：内翻面 0
+- ChairLeg_-20_-17：内翻面 0
+- ChairLeg_20_-17：内翻面 0
+- ChairLeg_-20_17：内翻面 0
+- ChairLeg_20_17：内翻面 0
+- ChairBack_-20：内翻面 0
+- ChairBack_20：内翻面 0
+- ChairBack_Top：内翻面 0
+- FloorBook_0：内翻面 0
+- FloorBook_1：内翻面 0
+
+## 材质
+
+- Lib_Plaster：墙面灰泥；Lib_Wainscot：木护墙板；Lib_Shelf / Lib_Desk：书架 / 书桌木材
+- Book_*：7 色书封（红绿蓝紫棕青赭）
+- Lib_Brass / Lib_Gold：黄铜烛台、地球仪支架 / 金月金星
+- Lib_Flame：火焰（Emission 橙，强度 4.0）+ FloorCandGlow 点光源（180W，暖色）
+- Lib_Chart：星图深蓝画布；Lib_Globe：地球仪蓝球
+
+## 渲染
+
+- Blender 5.3 / Eevee，1024x1024，三点式影棚灯光 + 落地烛台暖光，40mm 镜头
+- 相机用 fit_camera_to_objects 自动取景（目标填充 78%%）
+- 线框图：同角度，美观渲染 + 真实投影边线叠加（可见边判定）
