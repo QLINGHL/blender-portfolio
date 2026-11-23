@@ -1,0 +1,1577 @@
+{
+  "asset": "040-magic-library-corner",
+  "parts": 258,
+  "total_faces": 2198,
+  "total_verts": 2442,
+  "tris": 540,
+  "quads": 1658,
+  "ngons": 0,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "inverted_normals": 0,
+  "winding_center_flagged": {
+    "Globe_Ring": 32
+  },
+  "uv_out_of_bounds": 0,
+  "uv_ok": true,
+  "uv_utilization_per_part": {
+    "Beam_Back": 0.188,
+    "Beam_Left": 0.221,
+    "BookStack_0": 0.61,
+    "BookStack_1": 0.61,
+    "BookStack_2": 0.61,
+    "Book_T0_0": 0.577,
+    "Book_T0_1": 0.567,
+    "Book_T0_10": 0.606,
+    "Book_T0_11": 0.565,
+    "Book_T0_12": 0.688,
+    "Book_T0_13": 0.641,
+    "Book_T0_14": 0.693,
+    "Book_T0_15": 0.692,
+    "Book_T0_16": 0.744,
+    "Book_T0_17": 0.619,
+    "Book_T0_18": 0.727,
+    "Book_T0_2": 0.553,
+    "Book_T0_3": 0.689,
+    "Book_T0_4": 0.805,
+    "Book_T0_5": 0.711,
+    "Book_T0_6": 0.796,
+    "Book_T0_7": 0.624,
+    "Book_T0_8": 0.615,
+    "Book_T0_9": 0.765,
+    "Book_T1_0": 0.741,
+    "Book_T1_1": 0.591,
+    "Book_T1_10": 0.61,
+    "Book_T1_11": 0.689,
+    "Book_T1_12": 0.742,
+    "Book_T1_13": 0.564,
+    "Book_T1_14": 0.751,
+    "Book_T1_15": 0.725,
+    "Book_T1_16": 0.587,
+    "Book_T1_17": 0.597,
+    "Book_T1_18": 0.582,
+    "Book_T1_19": 0.758,
+    "Book_T1_2": 0.732,
+    "Book_T1_20": 0.575,
+    "Book_T1_21": 0.721,
+    "Book_T1_3": 0.712,
+    "Book_T1_4": 0.797,
+    "Book_T1_5": 0.574,
+    "Book_T1_6": 0.61,
+    "Book_T1_7": 0.555,
+    "Book_T1_8": 0.783,
+    "Book_T1_9": 0.581,
+    "Book_T2_0": 0.715,
+    "Book_T2_1": 0.589,
+    "Book_T2_10": 0.704,
+    "Book_T2_11": 0.721,
+    "Book_T2_12": 0.626,
+    "Book_T2_13": 0.688,
+    "Book_T2_14": 0.568,
+    "Book_T2_15": 0.663,
+    "Book_T2_16": 0.682,
+    "Book_T2_17": 0.656,
+    "Book_T2_18": 0.552,
+    "Book_T2_19": 0.565,
+    "Book_T2_2": 0.561,
+    "Book_T2_20": 0.564,
+    "Book_T2_3": 0.689,
+    "Book_T2_4": 0.736,
+    "Book_T2_5": 0.635,
+    "Book_T2_6": 0.74,
+    "Book_T2_7": 0.754,
+    "Book_T2_8": 0.747,
+    "Book_T2_9": 0.617,
+    "Book_T3_0": 0.698,
+    "Book_T3_1": 0.75,
+    "Book_T3_10": 0.561,
+    "Book_T3_11": 0.782,
+    "Book_T3_12": 0.648,
+    "Book_T3_13": 0.561,
+    "Book_T3_14": 0.582,
+    "Book_T3_15": 0.569,
+    "Book_T3_16": 0.636,
+    "Book_T3_17": 0.622,
+    "Book_T3_18": 0.573,
+    "Book_T3_19": 0.669,
+    "Book_T3_2": 0.717,
+    "Book_T3_20": 0.674,
+    "Book_T3_21": 0.592,
+    "Book_T3_22": 0.706,
+    "Book_T3_23": 0.64,
+    "Book_T3_3": 0.576,
+    "Book_T3_4": 0.637,
+    "Book_T3_5": 0.591,
+    "Book_T3_6": 0.566,
+    "Book_T3_7": 0.797,
+    "Book_T3_8": 0.591,
+    "Book_T3_9": 0.621,
+    "Book_T4_0": 0.639,
+    "Book_T4_1": 0.669,
+    "Book_T4_10": 0.758,
+    "Book_T4_11": 0.807,
+    "Book_T4_12": 0.714,
+    "Book_T4_13": 0.783,
+    "Book_T4_14": 0.698,
+    "Book_T4_15": 0.667,
+    "Book_T4_16": 0.748,
+    "Book_T4_17": 0.779,
+    "Book_T4_18": 0.682,
+    "Book_T4_19": 0.648,
+    "Book_T4_2": 0.584,
+    "Book_T4_20": 0.759,
+    "Book_T4_21": 0.678,
+    "Book_T4_22": 0.783,
+    "Book_T4_23": 0.692,
+    "Book_T4_24": 0.647,
+    "Book_T4_3": 0.789,
+    "Book_T4_4": 0.679,
+    "Book_T4_5": 0.649,
+    "Book_T4_6": 0.615,
+    "Book_T4_7": 0.748,
+    "Book_T4_8": 0.652,
+    "Book_T4_9": 0.706,
+    "Candelabra_ArmL": 0.807,
+    "Candelabra_ArmR": 0.807,
+    "Candelabra_Base": 0.4,
+    "Candelabra_CupC": 0.636,
+    "Candelabra_CupL": 0.636,
+    "Candelabra_CupR": 0.636,
+    "Candelabra_Stem": 0.369,
+    "ChairBack_-20": 0.415,
+    "ChairBack_20": 0.415,
+    "ChairBack_Top": 0.545,
+    "ChairLeg_-20_-17": 0.463,
+    "ChairLeg_-20_17": 0.463,
+    "ChairLeg_20_-17": 0.463,
+    "ChairLeg_20_17": 0.463,
+    "Chair_Seat": 0.532,
+    "Chart_Canvas": 0.586,
+    "Chart_Frame": 0.55,
+    "Chart_Moon": 0.454,
+    "Chart_Star_0": 0.813,
+    "Chart_Star_1": 0.813,
+    "Chart_Star_2": 0.813,
+    "Chart_Star_3": 0.813,
+    "Chart_Star_4": 0.813,
+    "DeskBook_0": 0.583,
+    "DeskBook_1": 0.583,
+    "DeskBook_2": 0.583,
+    "DeskCandle_C": 0.608,
+    "DeskCandle_C_Flame": 0.495,
+    "DeskCandle_L": 0.634,
+    "DeskCandle_L_Flame": 0.495,
+    "DeskCandle_R": 0.634,
+    "DeskCandle_R_Flame": 0.495,
+    "DeskKnob_0": 0.757,
+    "DeskKnob_1": 0.757,
+    "DeskLeg_-75_-35": 0.444,
+    "DeskLeg_-75_35": 0.444,
+    "DeskLeg_75_-35": 0.444,
+    "DeskLeg_75_35": 0.444,
+    "Desk_Drawer": 0.463,
+    "Desk_Modesty": 0.526,
+    "Desk_Top": 0.801,
+    "FloorBook_0": 0.553,
+    "FloorBook_1": 0.557,
+    "FloorCand_Base": 0.4,
+    "FloorCand_Pole": 0.114,
+    "FloorCand_Tray": 0.4,
+    "FloorCandle_0": 0.608,
+    "FloorCandle_0_Flame": 0.495,
+    "FloorCandle_1": 0.608,
+    "FloorCandle_1_Flame": 0.495,
+    "FloorCandle_2": 0.608,
+    "FloorCandle_2_Flame": 0.495,
+    "Globe": 0.552,
+    "Globe_Ring": 0.125,
+    "Globe_Stand": 0.603,
+    "InkPot": 0.581,
+    "Ink_Surface": 0.488,
+    "LBook_T0_0": 0.706,
+    "LBook_T0_1": 0.676,
+    "LBook_T0_10": 0.713,
+    "LBook_T0_11": 0.566,
+    "LBook_T0_12": 0.774,
+    "LBook_T0_13": 0.62,
+    "LBook_T0_14": 0.554,
+    "LBook_T0_15": 0.745,
+    "LBook_T0_16": 0.765,
+    "LBook_T0_17": 0.605,
+    "LBook_T0_2": 0.567,
+    "LBook_T0_3": 0.687,
+    "LBook_T0_4": 0.592,
+    "LBook_T0_5": 0.616,
+    "LBook_T0_6": 0.807,
+    "LBook_T0_7": 0.564,
+    "LBook_T0_8": 0.58,
+    "LBook_T0_9": 0.724,
+    "LBook_T1_0": 0.58,
+    "LBook_T1_1": 0.556,
+    "LBook_T1_10": 0.561,
+    "LBook_T1_11": 0.701,
+    "LBook_T1_12": 0.688,
+    "LBook_T1_13": 0.64,
+    "LBook_T1_14": 0.784,
+    "LBook_T1_15": 0.622,
+    "LBook_T1_16": 0.563,
+    "LBook_T1_17": 0.784,
+    "LBook_T1_18": 0.568,
+    "LBook_T1_19": 0.557,
+    "LBook_T1_2": 0.574,
+    "LBook_T1_3": 0.563,
+    "LBook_T1_4": 0.771,
+    "LBook_T1_5": 0.563,
+    "LBook_T1_6": 0.696,
+    "LBook_T1_7": 0.632,
+    "LBook_T1_8": 0.63,
+    "LBook_T1_9": 0.631,
+    "LadderRail_0": 0.091,
+    "LadderRail_1": 0.091,
+    "LadderRung_0": 0.453,
+    "LadderRung_1": 0.453,
+    "LadderRung_2": 0.453,
+    "LadderRung_3": 0.453,
+    "LadderRung_4": 0.453,
+    "LadderRung_5": 0.453,
+    "LowShelf_Back": 0.776,
+    "LowShelf_Board": 0.446,
+    "LowShelf_EndA": 0.801,
+    "LowShelf_EndB": 0.801,
+    "LowShelf_Plinth": 0.555,
+    "LowShelf_Top": 0.455,
+    "Plank_00": 0.265,
+    "Plank_01": 0.265,
+    "Plank_02": 0.265,
+    "Plank_03": 0.265,
+    "Plank_04": 0.265,
+    "Plank_05": 0.265,
+    "Plank_06": 0.265,
+    "Plank_07": 0.265,
+    "Post_Corner": 0.448,
+    "Quill": 0.348,
+    "Rug": 0.708,
+    "Rug_Trim": 0.753,
+    "Scroll": 0.597,
+    "ScrollKnob_51": 0.538,
+    "ScrollKnob_99": 0.538,
+    "ShelfBoard_0": 0.354,
+    "ShelfBoard_1": 0.354,
+    "ShelfBoard_2": 0.354,
+    "ShelfBoard_3": 0.354,
+    "Shelf_Back": 0.506,
+    "Shelf_Left": 0.386,
+    "Shelf_Plinth": 0.441,
+    "Shelf_Right": 0.386,
+    "Shelf_Top": 0.363,
+    "Spellbook_Cover": 0.593,
+    "Spellbook_Left": 0.638,
+    "Spellbook_Right": 0.638,
+    "WainscotRail_Back": 0.178,
+    "WainscotRail_Left": 0.21,
+    "Wainscot_Back": 0.522,
+    "Wainscot_Left": 0.617,
+    "Wall_Back": 0.819,
+    "Wall_Left": 0.707
+  },
+  "uv_islands": 1540,
+  "uv_overlap_pct": 0.0,
+  "uv_overlap_worst_part": "Beam_Back",
+  "empty_material_slots": 0,
+  "structure": {
+    "walls": {
+      "wall_back": [
+        -2.7,
+        2.7,
+        2.05,
+        2.35,
+        0.0,
+        2.6
+      ],
+      "wall_left": [
+        -2.35,
+        -2.05,
+        -2.3,
+        2.3,
+        0.0,
+        2.6
+      ],
+      "wainscot_back": [
+        -2.7,
+        2.7,
+        1.98,
+        2.34,
+        0.0,
+        1.0
+      ],
+      "wainscot_left": [
+        -2.34,
+        -1.98,
+        -2.3,
+        2.3,
+        0.0,
+        1.0
+      ],
+      "rail_back_z": [
+        0.99,
+        1.05
+      ],
+      "rail_left_z": [
+        0.99,
+        1.05
+      ],
+      "beam_back_z": [
+        2.34,
+        2.56
+      ],
+      "beam_left_z": [
+        2.34,
+        2.56
+      ],
+      "post_z": [
+        0.0,
+        2.6
+      ],
+      "corner_overlap": true,
+      "back_wall_overhang_past_left_wall": 0.35,
+      "ok": true
+    },
+    "planks": {
+      "count": 8,
+      "planks": [
+        {
+          "name": "Plank_00",
+          "x_center": -2.1,
+          "x": [
+            -2.39,
+            -1.81
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        },
+        {
+          "name": "Plank_01",
+          "x_center": -1.5,
+          "x": [
+            -1.79,
+            -1.21
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        },
+        {
+          "name": "Plank_02",
+          "x_center": -0.9,
+          "x": [
+            -1.19,
+            -0.61
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        },
+        {
+          "name": "Plank_03",
+          "x_center": -0.3,
+          "x": [
+            -0.59,
+            -0.01
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        },
+        {
+          "name": "Plank_04",
+          "x_center": 0.3,
+          "x": [
+            0.01,
+            0.59
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        },
+        {
+          "name": "Plank_05",
+          "x_center": 0.9,
+          "x": [
+            0.61,
+            1.19
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        },
+        {
+          "name": "Plank_06",
+          "x_center": 1.5,
+          "x": [
+            1.21,
+            1.79
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        },
+        {
+          "name": "Plank_07",
+          "x_center": 2.1,
+          "x": [
+            1.81,
+            2.39
+          ],
+          "y": [
+            -2.3,
+            2.3
+          ],
+          "z": [
+            0.0,
+            0.03
+          ]
+        }
+      ],
+      "gaps": [
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02,
+        0.02
+      ],
+      "ok": true
+    },
+    "tall_shelf": {
+      "frame": {
+        "Shelf_Left": [
+          -1.6,
+          -1.55,
+          1.75,
+          2.15,
+          0.0,
+          2.35
+        ],
+        "Shelf_Right": [
+          0.85,
+          0.9,
+          1.75,
+          2.15,
+          0.0,
+          2.35
+        ],
+        "Shelf_Top": [
+          -1.6,
+          0.9,
+          1.75,
+          2.15,
+          2.3,
+          2.35
+        ],
+        "Shelf_Plinth": [
+          -1.6,
+          0.9,
+          1.73,
+          2.17,
+          0.0,
+          0.1
+        ],
+        "Shelf_Back": [
+          -1.6,
+          0.9,
+          2.11,
+          2.15,
+          0.0,
+          2.35
+        ]
+      },
+      "board_tops": [
+        0.575,
+        1.025,
+        1.475,
+        1.925
+      ],
+      "tiers": [
+        {
+          "tier": 0,
+          "count": 19,
+          "base": 0.1,
+          "max_float": 0.007,
+          "min_float": 0.0
+        },
+        {
+          "tier": 1,
+          "count": 22,
+          "base": 0.575,
+          "max_float": 0.009,
+          "min_float": 0.0
+        },
+        {
+          "tier": 2,
+          "count": 21,
+          "base": 1.025,
+          "max_float": 0.008,
+          "min_float": 0.0
+        },
+        {
+          "tier": 3,
+          "count": 24,
+          "base": 1.475,
+          "max_float": 0.009,
+          "min_float": 0.0
+        },
+        {
+          "tier": 4,
+          "count": 25,
+          "base": 1.925,
+          "max_float": 0.007,
+          "min_float": 0.0
+        }
+      ],
+      "total_books": 111,
+      "leaning_books": 11,
+      "max_book_float": 0.009,
+      "books_floating_over_1mm": 11,
+      "stack_z": [
+        [
+          1.025,
+          1.075
+        ],
+        [
+          1.08,
+          1.13
+        ],
+        [
+          1.135,
+          1.185
+        ]
+      ],
+      "stack_gaps": [
+        0.005,
+        0.005
+      ],
+      "ok": false
+    },
+    "low_shelf": {
+      "frame": {
+        "LowShelf_EndA": [
+          -2.15,
+          -1.75,
+          -0.6,
+          -0.55,
+          0.0,
+          1.15
+        ],
+        "LowShelf_EndB": [
+          -2.15,
+          -1.75,
+          1.35,
+          1.4,
+          0.0,
+          1.15
+        ],
+        "LowShelf_Top": [
+          -2.15,
+          -1.75,
+          -0.6,
+          1.4,
+          1.1,
+          1.15
+        ],
+        "LowShelf_Plinth": [
+          -2.17,
+          -1.73,
+          -0.6,
+          1.4,
+          0.0,
+          0.1
+        ],
+        "LowShelf_Back": [
+          -2.15,
+          -2.11,
+          -0.6,
+          1.4,
+          0.0,
+          1.15
+        ],
+        "LowShelf_Board": [
+          -2.14,
+          -1.76,
+          -0.575,
+          1.375,
+          0.525,
+          0.575
+        ]
+      },
+      "tiers": [
+        {
+          "tier": 0,
+          "count": 18,
+          "base": 0.1,
+          "max_float": 0.009
+        },
+        {
+          "tier": 1,
+          "count": 20,
+          "base": 0.575,
+          "max_float": 0.008
+        }
+      ],
+      "total_books": 38,
+      "leaning_books": 3,
+      "max_book_float": 0.009,
+      "books_floating_over_1mm": 3,
+      "globe_stand_z": [
+        1.15,
+        1.23
+      ],
+      "globe_radius": 0.17,
+      "globe_z": [
+        1.23,
+        1.57
+      ],
+      "ring_max_radius": 0.202,
+      "ring_z": [
+        1.21,
+        1.59
+      ],
+      "ring_bottom_above_shelf_top": 0.06,
+      "ok": false
+    },
+    "ladder": {
+      "rail_z": [
+        [
+          -0.006,
+          2.106
+        ],
+        [
+          -0.006,
+          2.106
+        ]
+      ],
+      "rail_y": [
+        [
+          1.027,
+          1.743
+        ],
+        [
+          1.027,
+          1.743
+        ]
+      ],
+      "rail_tilt_deg": [
+        -17.7,
+        -17.7
+      ],
+      "rail_z_min": -0.006,
+      "rung_z_centers": [
+        0.315,
+        0.609,
+        0.903,
+        1.197,
+        1.491,
+        1.785
+      ],
+      "rung_y_centers": [
+        1.151,
+        1.244,
+        1.339,
+        1.431,
+        1.526,
+        1.619
+      ],
+      "rung_x_span": [
+        -1.33,
+        -0.87
+      ],
+      "ok": false
+    },
+    "desk": {
+      "desk_top_z": [
+        0.75,
+        0.81
+      ],
+      "desk_top_x": [
+        0.2,
+        1.9
+      ],
+      "desk_top_y": [
+        0.1,
+        1.0
+      ],
+      "leg_z": [
+        [
+          0.0,
+          0.75
+        ],
+        [
+          0.0,
+          0.75
+        ],
+        [
+          0.0,
+          0.75
+        ],
+        [
+          0.0,
+          0.75
+        ]
+      ],
+      "drawer_z": [
+        0.46,
+        0.74
+      ],
+      "drawer_y": [
+        0.07,
+        0.11
+      ],
+      "knob_z": [
+        [
+          0.58,
+          0.62
+        ],
+        [
+          0.58,
+          0.62
+        ]
+      ],
+      "modesty_z": [
+        0.375,
+        0.725
+      ],
+      "spellbook_cover_z": [
+        0.81,
+        0.83
+      ],
+      "spellbook_page_z": [
+        0.827,
+        0.842
+      ],
+      "spellbook_page_rot_z_deg": [
+        8.0,
+        -8.0
+      ],
+      "candelabra": {
+        "Candelabra_Base": [
+          1.46,
+          1.64,
+          0.264,
+          0.436,
+          0.81,
+          0.84
+        ],
+        "Candelabra_Stem": [
+          1.53,
+          1.57,
+          0.33,
+          0.37,
+          0.84,
+          1.14
+        ],
+        "Candelabra_ArmL": [
+          1.39,
+          1.55,
+          0.335,
+          0.365,
+          1.065,
+          1.095
+        ],
+        "Candelabra_ArmR": [
+          1.55,
+          1.71,
+          0.335,
+          0.365,
+          1.065,
+          1.095
+        ],
+        "Candelabra_CupL": [
+          1.365,
+          1.435,
+          0.315,
+          0.385,
+          1.085,
+          1.115
+        ],
+        "Candelabra_CupR": [
+          1.665,
+          1.735,
+          0.315,
+          0.385,
+          1.085,
+          1.115
+        ],
+        "Candelabra_CupC": [
+          1.515,
+          1.585,
+          0.315,
+          0.385,
+          1.135,
+          1.165
+        ]
+      },
+      "candles": {
+        "DeskCandle_L": {
+          "wax_z": [
+            1.115,
+            1.235
+          ],
+          "flame_z": [
+            1.224,
+            1.292
+          ],
+          "flame_above_wax_top": 0.057
+        },
+        "DeskCandle_R": {
+          "wax_z": [
+            1.115,
+            1.235
+          ],
+          "flame_z": [
+            1.224,
+            1.292
+          ],
+          "flame_above_wax_top": 0.057
+        },
+        "DeskCandle_C": {
+          "wax_z": [
+            1.165,
+            1.305
+          ],
+          "flame_z": [
+            1.293,
+            1.362
+          ],
+          "flame_above_wax_top": 0.057
+        }
+      },
+      "inkpot_z": [
+        0.81,
+        0.89
+      ],
+      "ink_surface_z": [
+        0.88,
+        0.89
+      ],
+      "ink_inside_pot": true,
+      "quill_z_min": 0.855,
+      "deskbook_z": [
+        [
+          0.81,
+          0.86
+        ],
+        [
+          0.865,
+          0.915
+        ],
+        [
+          0.92,
+          0.97
+        ]
+      ],
+      "deskbook_gaps": [
+        0.005,
+        0.005
+      ],
+      "scroll_z": [
+        0.81,
+        0.9
+      ],
+      "scroll_knob_z": [
+        [
+          0.8,
+          0.91
+        ],
+        [
+          0.8,
+          0.91
+        ]
+      ],
+      "scroll_knob_z_min": 0.8,
+      "ok": false
+    },
+    "floor_candelabra": {
+      "base_z": [
+        0.0,
+        0.04
+      ],
+      "pole_z": [
+        0.04,
+        1.32
+      ],
+      "tray_z": [
+        1.315,
+        1.345
+      ],
+      "candles": {
+        "FloorCandle_0": {
+          "wax_z": [
+            1.345,
+            1.485
+          ],
+          "flame_z": [
+            1.474,
+            1.542
+          ],
+          "center_xy": [
+            -1.46,
+            0.75
+          ]
+        },
+        "FloorCandle_1": {
+          "wax_z": [
+            1.345,
+            1.485
+          ],
+          "flame_z": [
+            1.474,
+            1.542
+          ],
+          "center_xy": [
+            -1.595,
+            0.828
+          ]
+        },
+        "FloorCandle_2": {
+          "wax_z": [
+            1.345,
+            1.485
+          ],
+          "flame_z": [
+            1.474,
+            1.542
+          ],
+          "center_xy": [
+            -1.595,
+            0.672
+          ]
+        }
+      },
+      "light": {
+        "type": "POINT",
+        "location": [
+          -1.55,
+          0.75,
+          1.5
+        ],
+        "energy": 180.0,
+        "color": [
+          1.0,
+          0.7,
+          0.35
+        ]
+      },
+      "ok": true
+    },
+    "chart": {
+      "frame_y": [
+        2.0,
+        2.06
+      ],
+      "frame_z": [
+        1.275,
+        2.025
+      ],
+      "canvas_y": [
+        1.98,
+        2.01
+      ],
+      "canvas_in_front_of_frame": true,
+      "moon_radius": 0.12,
+      "moon_y": [
+        1.965,
+        1.985
+      ],
+      "moon_z": [
+        1.56,
+        1.8
+      ],
+      "stars": [
+        {
+          "name": "Chart_Star_0",
+          "x_center": 1.45,
+          "z_center": 1.85,
+          "y": [
+            1.965,
+            1.985
+          ]
+        },
+        {
+          "name": "Chart_Star_1",
+          "x_center": 1.95,
+          "z_center": 1.8,
+          "y": [
+            1.965,
+            1.985
+          ]
+        },
+        {
+          "name": "Chart_Star_2",
+          "x_center": 1.5,
+          "z_center": 1.45,
+          "y": [
+            1.965,
+            1.985
+          ]
+        },
+        {
+          "name": "Chart_Star_3",
+          "x_center": 1.9,
+          "z_center": 1.5,
+          "y": [
+            1.965,
+            1.985
+          ]
+        },
+        {
+          "name": "Chart_Star_4",
+          "x_center": 1.7,
+          "z_center": 1.42,
+          "y": [
+            1.965,
+            1.985
+          ]
+        }
+      ],
+      "ok": true
+    },
+    "rug_chair": {
+      "rug_z": [
+        0.03,
+        0.054
+      ],
+      "rug_x": [
+        -0.4,
+        2.2
+      ],
+      "rug_y": [
+        -0.7,
+        1.0
+      ],
+      "trim_z": [
+        0.053,
+        0.059
+      ],
+      "trim_inside_rug": true,
+      "seat_z": [
+        0.425,
+        0.475
+      ],
+      "leg_z": [
+        [
+          0.0,
+          0.45
+        ],
+        [
+          0.0,
+          0.45
+        ],
+        [
+          0.0,
+          0.45
+        ],
+        [
+          0.0,
+          0.45
+        ]
+      ],
+      "back_z": [
+        [
+          0.45,
+          0.95
+        ],
+        [
+          0.45,
+          0.95
+        ]
+      ],
+      "back_top_z": [
+        0.91,
+        0.99
+      ],
+      "ok": true
+    },
+    "floor_books": {
+      "floorbook_0_z": [
+        0.03,
+        0.08
+      ],
+      "floorbook_1_z": [
+        0.08,
+        0.13
+      ],
+      "stack_gap": 0.0,
+      "ok": true
+    },
+    "ground_contact": {
+      "checked": 258,
+      "below_ground": {
+        "LadderRail_0": -0.006,
+        "LadderRail_1": -0.006
+      },
+      "parts_at_z0_embedded_in_planks_0.03": 30,
+      "global_min_z": -0.006,
+      "ok": false
+    }
+  },
+  "structure_ok": false,
+  "materials": {
+    "rows": [
+      {
+        "name": "Lib_Plaster",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.95,
+        "base_color": [
+          0.76,
+          0.7,
+          0.58
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Wainscot",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.4,
+          0.26,
+          0.13
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Beam",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.3,
+          0.19,
+          0.09
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Shelf",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.38,
+          0.24,
+          0.11
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_ShelfDark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.28,
+          0.17,
+          0.08
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Desk",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.46,
+          0.3,
+          0.14
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_DeskTop",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.7,
+        "base_color": [
+          0.56,
+          0.38,
+          0.19
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Brass",
+        "found": true,
+        "metallic": 0.9,
+        "roughness": 0.3,
+        "base_color": [
+          0.75,
+          0.58,
+          0.2
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Gold",
+        "found": true,
+        "metallic": 0.9,
+        "roughness": 0.25,
+        "base_color": [
+          0.85,
+          0.68,
+          0.25
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Iron",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.5,
+        "base_color": [
+          0.16,
+          0.16,
+          0.18
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Paper",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.92,
+          0.88,
+          0.74
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Parchment",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.88,
+          0.8,
+          0.6
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Ink",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.15,
+        "base_color": [
+          0.05,
+          0.05,
+          0.1
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Rug",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "base_color": [
+          0.42,
+          0.11,
+          0.13
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_RugTrim",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 1.0,
+        "base_color": [
+          0.72,
+          0.58,
+          0.28
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Chart",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.08,
+          0.12,
+          0.3
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Globe",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.6,
+        "base_color": [
+          0.15,
+          0.35,
+          0.6
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Wax",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.7,
+        "base_color": [
+          0.94,
+          0.88,
+          0.74
+        ],
+        "ok": true
+      },
+      {
+        "name": "Book_Red",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.45,
+          0.1,
+          0.12
+        ],
+        "ok": true
+      },
+      {
+        "name": "Book_Green",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.1,
+          0.35,
+          0.15
+        ],
+        "ok": true
+      },
+      {
+        "name": "Book_Blue",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.12,
+          0.2,
+          0.45
+        ],
+        "ok": true
+      },
+      {
+        "name": "Book_Purple",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.35,
+          0.15,
+          0.45
+        ],
+        "ok": true
+      },
+      {
+        "name": "Book_Brown",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.45,
+          0.28,
+          0.12
+        ],
+        "ok": true
+      },
+      {
+        "name": "Book_Teal",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.1,
+          0.35,
+          0.35
+        ],
+        "ok": true
+      },
+      {
+        "name": "Book_Ochre",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.65,
+          0.5,
+          0.15
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_0",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.42,
+          0.28,
+          0.14
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_1",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.5,
+          0.34,
+          0.18
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_2",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.38,
+          0.25,
+          0.12
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_3",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.55,
+          0.38,
+          0.2
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_4",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.42,
+          0.28,
+          0.14
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_5",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.5,
+          0.34,
+          0.18
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_6",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.38,
+          0.25,
+          0.12
+        ],
+        "ok": true
+      },
+      {
+        "name": "Plank_7",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.55,
+          0.38,
+          0.2
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lib_Flame",
+        "found": true,
+        "ok": true,
+        "emission_color": [
+          1.0,
+          0.55,
+          0.1
+        ],
+        "emission_strength": 4.0,
+        "base_color": [
+          1.0,
+          0.6,
+          0.1
+        ]
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": []
+  },
+  "overall_pass": false
+}
