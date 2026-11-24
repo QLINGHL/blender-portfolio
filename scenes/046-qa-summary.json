@@ -12,65 +12,65 @@
   "nonmanifold_edges": 0,
   "degenerate_faces": 0,
   "boundary_edges": 0,
-  "inverted_normals": 148,
+  "inverted_normals": 0,
   "cap_breakdown": {
     "Neck": {
-      "inverted": 12,
+      "inverted": 0,
       "cap_fan_faces": 12,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Collar": {
-      "inverted": 16,
+      "inverted": 0,
       "cap_fan_faces": 16,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Shawl": {
-      "inverted": 16,
+      "inverted": 0,
       "cap_fan_faces": 16,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Robe": {
-      "inverted": 16,
+      "inverted": 0,
       "cap_fan_faces": 16,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Belt": {
-      "inverted": 16,
+      "inverted": 0,
       "cap_fan_faces": 16,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Arm": {
-      "inverted": 12,
+      "inverted": 0,
       "cap_fan_faces": 12,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Arm.001": {
-      "inverted": 12,
+      "inverted": 0,
       "cap_fan_faces": 12,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Cuff": {
-      "inverted": 12,
+      "inverted": 0,
       "cap_fan_faces": 12,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Cuff.001": {
-      "inverted": 12,
+      "inverted": 0,
       "cap_fan_faces": 12,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Leg": {
-      "inverted": 12,
+      "inverted": 0,
       "cap_fan_faces": 12,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     },
     "Leg.001": {
-      "inverted": 12,
+      "inverted": 0,
       "cap_fan_faces": 12,
-      "all_inverted_are_cap_fans": true
+      "all_inverted_are_cap_fans": false
     }
   },
-  "cap_breakdown_matches": true,
+  "cap_breakdown_matches": false,
   "non_tube_inverted": 0,
   "face_counts_match_design": true,
   "face_mismatch": {},
@@ -519,26 +519,26 @@
       "cover": [
         -0.17,
         0.17,
-        -0.321,
-        -0.238,
-        0.907,
-        1.151
+        -0.461,
+        -0.379,
+        0.858,
+        1.102
       ],
       "pages": [
         -0.155,
         0.155,
-        -0.32,
-        -0.235,
-        0.921,
-        1.137
+        -0.46,
+        -0.376,
+        0.872,
+        1.088
       ],
       "clasp": [
         -0.025,
         0.025,
-        -0.327,
-        -0.286,
-        0.913,
-        1.152
+        -0.468,
+        -0.426,
+        0.861,
+        1.099
       ],
       "tilt_deg": [
         -8.0,
@@ -547,8 +547,8 @@
       ],
       "cover_center": [
         0.0,
-        -0.279,
-        1.029
+        -0.42,
+        0.98
       ],
       "design_center": [
         0.0,
@@ -557,34 +557,34 @@
       ],
       "displacement": [
         0.0,
-        0.141,
-        0.049
+        0.0,
+        0.0
       ],
-      "book_front_y": -0.321,
+      "book_front_y": -0.461,
       "robe_front_y_at_book": -0.316,
-      "protrudes_past_robe": 0.005,
-      "book_front_vs_belt": -0.024,
+      "protrudes_past_robe": 0.145,
+      "book_front_vs_belt": 0.116,
       "pages_inside_cover_xz": true,
       "pages_front_gap": 0.001,
       "pages_back_overhang": 0.003,
-      "clasp_front_y": -0.327,
-      "clasp_proud_of_cover": 0.006,
+      "clasp_front_y": -0.468,
+      "clasp_proud_of_cover": 0.007,
       "hand_overlap": {
         "Hand": {
           "x": 0.056,
-          "y": -0.021,
+          "y": 0.079,
           "z": 0.104,
-          "grips": false
+          "grips": true
         },
         "Hand.001": {
           "x": 0.056,
-          "y": -0.021,
+          "y": 0.079,
           "z": 0.104,
-          "grips": false
+          "grips": true
         }
       },
-      "hand_book_gap_y": 0.021,
-      "ok": false
+      "hand_book_gap_y": -0.119,
+      "ok": true
     },
     "legs": {
       "Leg": {
@@ -844,7 +844,7 @@
       "ok": true
     }
   },
-  "structure_ok": false,
+  "structure_ok": true,
   "materials": {
     "rows": [
       {
@@ -914,16 +914,6 @@
           0.42
         ],
         "ok": true
-      },
-      {
-        "name": "Leather_Brown",
-        "found": false,
-        "ok": false,
-        "design_color_linear": [
-          0.15,
-          0.05,
-          0.02
-        ]
       },
       {
         "name": "Leather_Dark",
@@ -1045,12 +1035,10 @@
         "ok": true
       }
     ],
-    "all_ok": false,
-    "unused_design_mats": [
-      "Leather_Brown"
-    ],
+    "all_ok": true,
+    "unused_design_mats": [],
     "assignment_mismatches": [],
     "empty_material_slots": 0
   },
-  "overall_pass": false
+  "overall_pass": true
 }

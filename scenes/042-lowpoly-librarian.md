@@ -56,7 +56,7 @@
 
 - Robe_Burgundy / Robe_Dark：酒红长袍与深红披肩
 - Collar_Cream / Pages_Cream：奶油领口与书页
-- Leather_Brown / Leather_Dark：皮带、皮鞋；Brass：眼镜、带扣、书锁扣
+- Leather_Dark：皮带、皮鞋；Brass：眼镜、带扣、书锁扣
 - Skin / Eyes_Dark / Hair_Grey：皮肤、眼睛、灰发；Book_Red：书封
 
 ## 渲染

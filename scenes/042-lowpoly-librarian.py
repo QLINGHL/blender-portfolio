@@ -6,6 +6,9 @@ with a brass buckle, and a leather-bound book held in both arms.
 Arms and legs are 5-ring tubes: the middle ring lands exactly on the
 elbow / knee joint loop. Flat shading, Eevee beauty + wireframe shots.
 Camera is auto-fitted with fit_camera_to_objects (target fill 0.78).
+048 (2026-11-24): fixed cap-fan winding (148 inverted faces -> 0),
+book now tilts -8 deg about its own centre, dead material
+Leather_Brown removed.
 Run: blender --background --python 042-lowpoly-librarian.py
 """
 import os
@@ -38,7 +41,9 @@ def mesh_from_data(name, verts, faces, material=None):
 
 def make_tube(name, origin, direction, distances, radii, sides, material):
     """Closed tube along `direction`; one ring per (distance, radius).
-    Rings are edge loops — joints land exactly on a ring."""
+    Rings are edge loops — joints land exactly on a ring.
+    Winding: 048 修正版（照搬 045/007/022：管盖扇形绕向与 042 旧版相反，
+    旧版 148 个倒置面全是管盖扇形）."""
     d = Vector(direction).normalized()
     ref = Vector((0, 0, 1)) if abs(d.z) < 0.9 else Vector((1, 0, 0))
     u = d.cross(ref).normalized()
@@ -63,9 +68,21 @@ def make_tube(name, origin, direction, distances, radii, sides, material):
     verts.append(tuple(o + d * distances[-1]))
     for i in range(sides):
         j = (i + 1) % sides
-        faces.append((top_c, i, j))
-        faces.append((bot_c, (n_rings - 1) * sides + j, (n_rings - 1) * sides + i))
+        faces.append((top_c, j, i))
+        faces.append((bot_c, (n_rings - 1) * sides + i, (n_rings - 1) * sides + j))
     return mesh_from_data(name, verts, faces, material)
+
+
+def recenter_origin(obj, center):
+    """Move the object origin to `center` (mesh verts become relative),
+    so a later rotation_euler rotates about the part's own centre.
+    048: 书之前用 rotation_euler 直接摆 -8°，但原点在世界原点，
+    书绕 (0,0,0) 转、位移 0.141；先把原点移到书自身中心再摆。"""
+    c = Vector(center)
+    for v in obj.data.vertices:
+        v.co -= c
+    obj.location = c
+    obj.data.update()
 
 
 def add_sphere(name, location, radius, segments, rings, scale, material):
@@ -169,7 +186,6 @@ def main():
     robe = solid_material("Robe_Burgundy", srgb((0.42, 0.13, 0.16)), metallic=0.0, roughness=0.85)
     robe_dark = solid_material("Robe_Dark", srgb((0.30, 0.09, 0.12)), metallic=0.0, roughness=0.9)
     cream = solid_material("Collar_Cream", srgb((0.88, 0.82, 0.68)), metallic=0.0, roughness=0.85)
-    leather = solid_material("Leather_Brown", srgb((0.42, 0.26, 0.13)), metallic=0.0, roughness=0.85)
     leather_dark = solid_material("Leather_Dark", srgb((0.30, 0.18, 0.09)), metallic=0.0, roughness=0.9)
     brass = solid_material("Brass", srgb((0.72, 0.55, 0.20)), metallic=0.8, roughness=0.35)
     eyes = solid_material("Eyes_Dark", srgb((0.05, 0.05, 0.06)), metallic=0.0, roughness=0.4)
@@ -260,15 +276,18 @@ def main():
     #     at this height) so the book stays visible. ---
     bc = Vector((0, -0.42, 0.98))
     book = box("BookCover", tuple(bc), (0.34, 0.05, 0.24), book_cover)
+    recenter_origin(book, bc)
     book.rotation_euler = (math.radians(-8), 0, 0)
     parts.append(book)
     page_block = box("BookPages", tuple(bc + Vector((0, 0.002, 0))),
                      (0.31, 0.056, 0.21), pages)
+    recenter_origin(page_block, bc + Vector((0, 0.002, 0)))
     page_block.rotation_euler = (math.radians(-8), 0, 0)
     parts.append(page_block)
     # book spine band (brass clasp across the cover)
     clasp = box("BookClasp", tuple(bc + Vector((0, -0.027, 0))),
                 (0.05, 0.008, 0.24), brass)
+    recenter_origin(clasp, bc + Vector((0, -0.027, 0)))
     clasp.rotation_euler = (math.radians(-8), 0, 0)
     parts.append(clasp)
     # --- legs under the robe: 5 rings, middle ring = knee joint loop ---
@@ -331,7 +350,7 @@ def main():
         f.write("\n## 材质\n\n")
         f.write("- Robe_Burgundy / Robe_Dark：酒红长袍与深红披肩\n")
         f.write("- Collar_Cream / Pages_Cream：奶油领口与书页\n")
-        f.write("- Leather_Brown / Leather_Dark：皮带、皮鞋；Brass：眼镜、带扣、书锁扣\n")
+        f.write("- Leather_Dark：皮带、皮鞋；Brass：眼镜、带扣、书锁扣\n")
         f.write("- Skin / Eyes_Dark / Hair_Grey：皮肤、眼睛、灰发；Book_Red：书封\n\n")
         f.write("## 渲染\n\n")
         f.write("- Blender 5.3 / Eevee，1024x1024，三点式影棚灯光，40mm 镜头\n")
