@@ -1,0 +1,1448 @@
+{
+  "asset": "049-lowpoly-alchemist",
+  "parts": 39,
+  "total_faces": 1004,
+  "total_verts": 880,
+  "tris": 392,
+  "quads": 612,
+  "ngons": 0,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 0,
+  "inverted_normals": 0,
+  "cap_breakdown": {
+    "Neck": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "Collar": {
+      "inverted": 0,
+      "cap_fan_faces": 16,
+      "ok": true
+    },
+    "Shawl": {
+      "inverted": 0,
+      "cap_fan_faces": 16,
+      "ok": true
+    },
+    "Robe": {
+      "inverted": 0,
+      "cap_fan_faces": 16,
+      "ok": true
+    },
+    "Belt": {
+      "inverted": 0,
+      "cap_fan_faces": 16,
+      "ok": true
+    },
+    "Arm": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "Arm.001": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "Cuff": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "Cuff.001": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "PotionRedBody": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "PotionRedCork": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "PotionBlueBody": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "PotionBlueCork": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "PotionPurpleBody": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "PotionPurpleCork": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "Flask": {
+      "inverted": 0,
+      "cap_fan_faces": 16,
+      "ok": true
+    },
+    "FlaskLiquid": {
+      "inverted": 0,
+      "cap_fan_faces": 16,
+      "ok": true
+    },
+    "FlaskCork": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "Leg": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    },
+    "Leg.001": {
+      "inverted": 0,
+      "cap_fan_faces": 12,
+      "ok": true
+    }
+  },
+  "cap_breakdown_ok": true,
+  "non_tube_inverted": 0,
+  "face_counts_match_design": true,
+  "face_mismatch": {},
+  "missing_parts": [],
+  "extra_parts": [],
+  "uv_out_of_bounds": 0,
+  "uv_ok": true,
+  "uv_utilization_per_part": {
+    "Apron": 0.906,
+    "ApronPocket": 0.614,
+    "ApronStrap": 0.268,
+    "ApronStrap.001": 0.268,
+    "Arm": 0.653,
+    "Arm.001": 0.653,
+    "Beard": 0.549,
+    "Belt": 0.48,
+    "Buckle": 0.618,
+    "Collar": 0.544,
+    "Cuff": 0.617,
+    "Cuff.001": 0.617,
+    "Eye": 0.608,
+    "Eye.001": 0.608,
+    "Flask": 0.546,
+    "FlaskCork": 0.511,
+    "FlaskLiquid": 0.662,
+    "GoggleLens": 0.591,
+    "GoggleLens.001": 0.591,
+    "GoggleRim": 0.243,
+    "GoggleRim.001": 0.243,
+    "GoggleStrap": 0.112,
+    "HairCap": 0.53,
+    "Hand": 0.446,
+    "Hand.001": 0.446,
+    "Head": 0.485,
+    "Leg": 0.662,
+    "Leg.001": 0.662,
+    "Neck": 0.592,
+    "PotionBlueBody": 0.58,
+    "PotionBlueCork": 0.606,
+    "PotionPurpleBody": 0.58,
+    "PotionPurpleCork": 0.606,
+    "PotionRedBody": 0.58,
+    "PotionRedCork": 0.606,
+    "Robe": 0.435,
+    "Shawl": 0.653,
+    "Shoe": 0.726,
+    "Shoe.001": 0.726
+  },
+  "uv_islands": 207,
+  "uv_overlap_pct": 0.0,
+  "uv_overlap_worst_part": "Apron",
+  "empty_material_slots": 0,
+  "structure": {
+    "head": {
+      "head": [
+        -0.2,
+        0.2,
+        -0.18,
+        0.18,
+        1.31,
+        1.73
+      ],
+      "eyes": {
+        "Eye": [
+          -0.09,
+          -0.05,
+          -0.191,
+          -0.145,
+          1.504,
+          1.556
+        ],
+        "Eye.001": [
+          0.05,
+          0.09,
+          -0.191,
+          -0.145,
+          1.504,
+          1.556
+        ]
+      },
+      "haircap": [
+        -0.181,
+        0.181,
+        -0.152,
+        0.192,
+        1.512,
+        1.748
+      ],
+      "beard": [
+        -0.086,
+        0.086,
+        -0.164,
+        -0.036,
+        1.303,
+        1.457
+      ],
+      "head_height": 0.42,
+      "eye_protrusion": -0.011,
+      "cap_above_head": 0.018,
+      "beard_below_chin": 0.007,
+      "beard_protrusion": 0.03,
+      "ok": true
+    },
+    "goggles": {
+      "rims": {
+        "GoggleRim": [
+          -0.142,
+          -0.014,
+          -0.191,
+          -0.145,
+          1.553,
+          1.677
+        ],
+        "GoggleRim.001": [
+          0.014,
+          0.142,
+          -0.191,
+          -0.145,
+          1.553,
+          1.677
+        ]
+      },
+      "lenses": {
+        "GoggleLens": [
+          -0.126,
+          -0.03,
+          -0.206,
+          -0.13,
+          1.569,
+          1.661
+        ],
+        "GoggleLens.001": [
+          0.03,
+          0.126,
+          -0.206,
+          -0.13,
+          1.569,
+          1.661
+        ]
+      },
+      "strap": [
+        -0.219,
+        0.219,
+        -0.209,
+        0.229,
+        1.586,
+        1.614
+      ],
+      "rim_centers": {
+        "GoggleRim": [
+          -0.078,
+          -0.168,
+          1.615
+        ],
+        "GoggleRim.001": [
+          0.078,
+          -0.168,
+          1.615
+        ]
+      },
+      "lens_centers": {
+        "GoggleLens": [
+          -0.078,
+          -0.168,
+          1.615
+        ],
+        "GoggleLens.001": [
+          0.078,
+          -0.168,
+          1.615
+        ]
+      },
+      "lens_rim_center_gap": {
+        "GoggleRim": 0.0,
+        "GoggleRim.001": 0.0
+      },
+      "lens_inside_rim": {
+        "GoggleRim": true,
+        "GoggleRim.001": true
+      },
+      "strap_x": [
+        -0.219,
+        0.219
+      ],
+      "strap_y": [
+        -0.209,
+        0.229
+      ],
+      "strap_z": [
+        1.586,
+        1.614
+      ],
+      "ok": true
+    },
+    "torso": {
+      "neck_z": [
+        1.28,
+        1.38
+      ],
+      "collar_z": [
+        1.26,
+        1.32
+      ],
+      "collar_x": [
+        -0.16,
+        0.16
+      ],
+      "shawl_z": [
+        1.1,
+        1.32
+      ],
+      "robe_z": [
+        0.1,
+        1.3
+      ],
+      "robe_rings": [
+        [
+          1.3,
+          0.3,
+          8
+        ],
+        [
+          1.0,
+          0.315,
+          8
+        ],
+        [
+          0.7,
+          0.335,
+          8
+        ],
+        [
+          0.4,
+          0.365,
+          8
+        ],
+        [
+          0.1,
+          0.4,
+          8
+        ]
+      ],
+      "belt_z": [
+        0.91,
+        0.98
+      ],
+      "belt_radius": 0.345,
+      "robe_radius_at_belt": 0.319,
+      "belt_proud_of_robe": 0.026,
+      "buckle": [
+        -0.045,
+        0.045,
+        -0.355,
+        -0.335,
+        0.915,
+        0.975
+      ],
+      "buckle_proud_of_belt": -0.01,
+      "apron": [
+        -0.22,
+        0.22,
+        -0.36,
+        -0.264,
+        0.299,
+        1.249
+      ],
+      "apron_front_y_at_055": -0.342,
+      "apron_front_y_at_0775": -0.327,
+      "apron_front_y_at_092": -0.317,
+      "robe_front_y_at_055": -0.35,
+      "robe_front_y_at_0775": -0.33,
+      "robe_front_y_at_092": -0.32,
+      "apron_vs_robe_055": 0.008,
+      "apron_vs_robe_0775": 0.003,
+      "apron_vs_robe_092": 0.003,
+      "pocket": [
+        -0.1,
+        0.1,
+        -0.363,
+        -0.328,
+        0.505,
+        0.646
+      ],
+      "pocket_center_z": 0.576,
+      "pocket_back_y": -0.333,
+      "apron_front_at_pocket_z": -0.341,
+      "pocket_float_gap": 0.008,
+      "straps": {
+        "ApronStrap": [
+          -0.165,
+          -0.095,
+          -0.36,
+          0.36,
+          1.247,
+          1.273
+        ],
+        "ApronStrap.001": [
+          0.095,
+          0.165,
+          -0.36,
+          0.36,
+          1.247,
+          1.273
+        ]
+      },
+      "potions": {
+        "PotionRedBody": {
+          "range": [
+            -0.303,
+            -0.217,
+            -0.47,
+            -0.37,
+            0.78,
+            0.9
+          ],
+          "back_y": -0.37,
+          "front_y": -0.47,
+          "apron_front_at_z": -0.322,
+          "clear_of_apron": -0.048
+        },
+        "PotionBlueBody": {
+          "range": [
+            -0.043,
+            0.043,
+            -0.47,
+            -0.37,
+            0.78,
+            0.9
+          ],
+          "back_y": -0.37,
+          "front_y": -0.47,
+          "apron_front_at_z": -0.322,
+          "clear_of_apron": -0.048
+        },
+        "PotionPurpleBody": {
+          "range": [
+            0.217,
+            0.303,
+            -0.47,
+            -0.37,
+            0.78,
+            0.9
+          ],
+          "back_y": -0.37,
+          "front_y": -0.47,
+          "apron_front_at_z": -0.322,
+          "clear_of_apron": -0.048
+        }
+      },
+      "ok": false
+    },
+    "arms": {
+      "Arm": {
+        "rings": [
+          {
+            "distance": -0.0,
+            "count": 6,
+            "center": [
+              -0.3,
+              0.0,
+              1.22
+            ],
+            "radius": 0.105
+          },
+          {
+            "distance": 0.137,
+            "count": 6,
+            "center": [
+              -0.26,
+              -0.117,
+              1.163
+            ],
+            "radius": 0.1
+          },
+          {
+            "distance": 0.274,
+            "count": 6,
+            "center": [
+              -0.22,
+              -0.235,
+              1.105
+            ],
+            "radius": 0.095
+          },
+          {
+            "distance": 0.41,
+            "count": 6,
+            "center": [
+              -0.18,
+              -0.353,
+              1.048
+            ],
+            "radius": 0.085
+          },
+          {
+            "distance": 0.547,
+            "count": 6,
+            "center": [
+              -0.14,
+              -0.47,
+              0.99
+            ],
+            "radius": 0.075
+          }
+        ],
+        "ring_count": 5,
+        "ring_sizes": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "elbow_expected": [
+          -0.22,
+          -0.235,
+          1.105
+        ],
+        "elbow_ring_center": [
+          -0.22,
+          -0.235,
+          1.105
+        ],
+        "elbow_ring_error": 0.0,
+        "elbow_ring_max_valence": 4,
+        "tris_not_at_ends": [],
+        "cuff_rings": [
+          [
+            0.0,
+            6,
+            0.088
+          ],
+          [
+            0.12,
+            6,
+            0.082
+          ]
+        ],
+        "hand": [
+          -0.196,
+          -0.084,
+          -0.529,
+          -0.412,
+          0.938,
+          1.042
+        ],
+        "hand_center": [
+          -0.14,
+          -0.471,
+          0.99
+        ],
+        "wrist_expected": [
+          -0.14,
+          -0.47,
+          0.99
+        ],
+        "ok": true
+      },
+      "Arm.001": {
+        "rings": [
+          {
+            "distance": 0.0,
+            "count": 6,
+            "center": [
+              0.3,
+              0.0,
+              1.22
+            ],
+            "radius": 0.105
+          },
+          {
+            "distance": 0.137,
+            "count": 6,
+            "center": [
+              0.26,
+              -0.117,
+              1.163
+            ],
+            "radius": 0.1
+          },
+          {
+            "distance": 0.274,
+            "count": 6,
+            "center": [
+              0.22,
+              -0.235,
+              1.105
+            ],
+            "radius": 0.095
+          },
+          {
+            "distance": 0.41,
+            "count": 6,
+            "center": [
+              0.18,
+              -0.353,
+              1.048
+            ],
+            "radius": 0.085
+          },
+          {
+            "distance": 0.547,
+            "count": 6,
+            "center": [
+              0.14,
+              -0.47,
+              0.99
+            ],
+            "radius": 0.075
+          }
+        ],
+        "ring_count": 5,
+        "ring_sizes": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "elbow_expected": [
+          0.22,
+          -0.235,
+          1.105
+        ],
+        "elbow_ring_center": [
+          0.22,
+          -0.235,
+          1.105
+        ],
+        "elbow_ring_error": 0.0,
+        "elbow_ring_max_valence": 4,
+        "tris_not_at_ends": [],
+        "cuff_rings": [
+          [
+            0.0,
+            6,
+            0.088
+          ],
+          [
+            0.12,
+            6,
+            0.082
+          ]
+        ],
+        "hand": [
+          0.084,
+          0.196,
+          -0.529,
+          -0.412,
+          0.938,
+          1.042
+        ],
+        "hand_center": [
+          0.14,
+          -0.471,
+          0.99
+        ],
+        "wrist_expected": [
+          0.14,
+          -0.47,
+          0.99
+        ],
+        "ok": true
+      }
+    },
+    "flask": {
+      "flask": [
+        -0.11,
+        0.11,
+        -0.59,
+        -0.37,
+        0.92,
+        1.14
+      ],
+      "liquid": [
+        -0.095,
+        0.095,
+        -0.575,
+        -0.385,
+        0.925,
+        1.035
+      ],
+      "cork": [
+        -0.033,
+        0.033,
+        -0.518,
+        -0.442,
+        1.14,
+        1.18
+      ],
+      "flask_center": [
+        0.0,
+        -0.48,
+        1.03
+      ],
+      "flask_back_y": -0.37,
+      "apron_front_y_at_103": -0.309,
+      "flask_clear_of_apron": -0.061,
+      "liquid_inside_flask_xz": true,
+      "liquid_top_below_cork": 0.105,
+      "cork_above_flask": 0.0,
+      "hand_overlap": {
+        "Hand": {
+          "x": 0.026,
+          "y": 0.117,
+          "z": 0.104,
+          "grips": true
+        },
+        "Hand.001": {
+          "x": 0.026,
+          "y": 0.117,
+          "z": 0.104,
+          "grips": true
+        }
+      },
+      "flask_to_apron_min_vert_dist": 0.2757,
+      "ok": true
+    },
+    "legs": {
+      "Leg": {
+        "rings": [
+          {
+            "distance": 0.0,
+            "count": 6,
+            "center": [
+              -0.12,
+              -0.0,
+              0.55
+            ],
+            "radius": 0.1
+          },
+          {
+            "distance": 0.125,
+            "count": 6,
+            "center": [
+              -0.12,
+              -0.0,
+              0.425
+            ],
+            "radius": 0.098
+          },
+          {
+            "distance": 0.25,
+            "count": 6,
+            "center": [
+              -0.12,
+              -0.0,
+              0.3
+            ],
+            "radius": 0.093
+          },
+          {
+            "distance": 0.375,
+            "count": 6,
+            "center": [
+              -0.12,
+              -0.0,
+              0.175
+            ],
+            "radius": 0.086
+          },
+          {
+            "distance": 0.5,
+            "count": 6,
+            "center": [
+              -0.12,
+              0.0,
+              0.05
+            ],
+            "radius": 0.08
+          }
+        ],
+        "ring_count": 5,
+        "ring_sizes": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "knee_z": 0.3,
+        "knee_ring_max_valence": 4,
+        "tris_not_at_ends": [],
+        "shoe": [
+          -0.195,
+          -0.045,
+          -0.47,
+          -0.13,
+          0.0,
+          0.11
+        ],
+        "shoe_toe_y": -0.47,
+        "shoe_bottom_z": 0.0,
+        "leg_bottom_z": 0.05,
+        "ok": true
+      },
+      "Leg.001": {
+        "rings": [
+          {
+            "distance": 0.0,
+            "count": 6,
+            "center": [
+              0.12,
+              -0.0,
+              0.55
+            ],
+            "radius": 0.1
+          },
+          {
+            "distance": 0.125,
+            "count": 6,
+            "center": [
+              0.12,
+              -0.0,
+              0.425
+            ],
+            "radius": 0.098
+          },
+          {
+            "distance": 0.25,
+            "count": 6,
+            "center": [
+              0.12,
+              -0.0,
+              0.3
+            ],
+            "radius": 0.093
+          },
+          {
+            "distance": 0.375,
+            "count": 6,
+            "center": [
+              0.12,
+              -0.0,
+              0.175
+            ],
+            "radius": 0.086
+          },
+          {
+            "distance": 0.5,
+            "count": 6,
+            "center": [
+              0.12,
+              0.0,
+              0.05
+            ],
+            "radius": 0.08
+          }
+        ],
+        "ring_count": 5,
+        "ring_sizes": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "knee_z": 0.3,
+        "knee_ring_max_valence": 4,
+        "tris_not_at_ends": [],
+        "shoe": [
+          0.045,
+          0.195,
+          -0.47,
+          -0.13,
+          0.0,
+          0.11
+        ],
+        "shoe_toe_y": -0.47,
+        "shoe_bottom_z": 0.0,
+        "leg_bottom_z": 0.05,
+        "ok": true
+      }
+    },
+    "symmetry": {
+      "pairs": [
+        {
+          "pair": [
+            "Eye",
+            "Eye.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "GoggleRim",
+            "GoggleRim.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "GoggleLens",
+            "GoggleLens.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "Arm",
+            "Arm.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "Cuff",
+            "Cuff.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "Hand",
+            "Hand.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "Leg",
+            "Leg.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "Shoe",
+            "Shoe.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "ApronStrap",
+            "ApronStrap.001"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "PotionRedBody",
+            "PotionPurpleBody"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "PotionRedCork",
+            "PotionPurpleCork"
+          ],
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "faces_equal": true,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    "ground_contact": {
+      "checked": 39,
+      "below_ground": {},
+      "global_min_z": 0.0,
+      "robe_hem_z": 0.1,
+      "shoe_bottom_z": 0.0,
+      "ok": true
+    }
+  },
+  "structure_ok": false,
+  "materials": {
+    "rows": [
+      {
+        "name": "Skin",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.7,
+        "base_color": [
+          0.71,
+          0.35,
+          0.2
+        ],
+        "design_color_linear": [
+          0.71,
+          0.35,
+          0.2
+        ],
+        "ok": true
+      },
+      {
+        "name": "Robe_Teal",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.01,
+          0.08,
+          0.06
+        ],
+        "design_color_linear": [
+          0.01,
+          0.08,
+          0.06
+        ],
+        "ok": true
+      },
+      {
+        "name": "Robe_Dark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.01,
+          0.04,
+          0.03
+        ],
+        "design_color_linear": [
+          0.01,
+          0.04,
+          0.03
+        ],
+        "ok": true
+      },
+      {
+        "name": "Apron_Brown",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.17,
+          0.07,
+          0.02
+        ],
+        "design_color_linear": [
+          0.17,
+          0.07,
+          0.02
+        ],
+        "ok": true
+      },
+      {
+        "name": "Apron_Dark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.08,
+          0.03,
+          0.01
+        ],
+        "design_color_linear": [
+          0.08,
+          0.03,
+          0.01
+        ],
+        "ok": true
+      },
+      {
+        "name": "Leather_Dark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.07,
+          0.03,
+          0.01
+        ],
+        "design_color_linear": [
+          0.07,
+          0.03,
+          0.01
+        ],
+        "ok": true
+      },
+      {
+        "name": "Brass",
+        "found": true,
+        "metallic": 0.8,
+        "roughness": 0.35,
+        "base_color": [
+          0.48,
+          0.26,
+          0.03
+        ],
+        "design_color_linear": [
+          0.48,
+          0.26,
+          0.03
+        ],
+        "ok": true
+      },
+      {
+        "name": "Eyes_Dark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.4,
+        "base_color": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "design_color_linear": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ok": true
+      },
+      {
+        "name": "Hair_Brown",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.08,
+          0.03,
+          0.01
+        ],
+        "design_color_linear": [
+          0.08,
+          0.03,
+          0.01
+        ],
+        "ok": true
+      },
+      {
+        "name": "Beard_Grey",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.26,
+          0.21,
+          0.17
+        ],
+        "design_color_linear": [
+          0.26,
+          0.21,
+          0.17
+        ],
+        "ok": true
+      },
+      {
+        "name": "Flask_Glass",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.15,
+        "base_color": [
+          0.52,
+          0.69,
+          0.75
+        ],
+        "design_color_linear": [
+          0.52,
+          0.69,
+          0.75
+        ],
+        "ok": true,
+        "alpha": 0.35,
+        "render_method": "DITHERED"
+      },
+      {
+        "name": "Flask_Liquid",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.3,
+        "base_color": [
+          0.05,
+          0.69,
+          0.07
+        ],
+        "design_color_linear": [
+          0.05,
+          0.69,
+          0.07
+        ],
+        "ok": true
+      },
+      {
+        "name": "Lens_Green",
+        "found": true,
+        "metallic": 0.1,
+        "roughness": 0.2,
+        "base_color": [
+          0.03,
+          0.38,
+          0.1
+        ],
+        "design_color_linear": [
+          0.03,
+          0.38,
+          0.1
+        ],
+        "ok": true
+      },
+      {
+        "name": "Potion_Red",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.3,
+        "base_color": [
+          0.52,
+          0.02,
+          0.01
+        ],
+        "design_color_linear": [
+          0.52,
+          0.02,
+          0.01
+        ],
+        "ok": true
+      },
+      {
+        "name": "Potion_Blue",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.3,
+        "base_color": [
+          0.02,
+          0.1,
+          0.52
+        ],
+        "design_color_linear": [
+          0.02,
+          0.1,
+          0.52
+        ],
+        "ok": true
+      },
+      {
+        "name": "Potion_Purple",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.3,
+        "base_color": [
+          0.21,
+          0.03,
+          0.32
+        ],
+        "design_color_linear": [
+          0.21,
+          0.03,
+          0.32
+        ],
+        "ok": true
+      },
+      {
+        "name": "Cork",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.45,
+          0.26,
+          0.1
+        ],
+        "design_color_linear": [
+          0.45,
+          0.26,
+          0.1
+        ],
+        "ok": true
+      },
+      {
+        "name": "Pants_Grey",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.06,
+          0.06,
+          0.07
+        ],
+        "design_color_linear": [
+          0.06,
+          0.06,
+          0.07
+        ],
+        "ok": true
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": [],
+    "assignment_mismatches": [],
+    "empty_material_slots": 0
+  },
+  "rig": {
+    "parts": 39,
+    "total_faces": 1004,
+    "armature": "AlchemistRig",
+    "bones": [
+      "Hips",
+      "Spine",
+      "Neck",
+      "Head",
+      "Shoulder.L",
+      "Forearm.L",
+      "Hand.L",
+      "Shoulder.R",
+      "Forearm.R",
+      "Hand.R",
+      "Thigh.L",
+      "Shin.L",
+      "Foot.L",
+      "Thigh.R",
+      "Shin.R",
+      "Foot.R"
+    ],
+    "bone_count": 16,
+    "bones_match_design": true,
+    "flask_parents": {
+      "Flask": {
+        "found": true,
+        "parent_type": "BONE",
+        "parent": "AlchemistRig",
+        "parent_bone": "Hand.L"
+      },
+      "FlaskLiquid": {
+        "found": true,
+        "parent_type": "BONE",
+        "parent": "AlchemistRig",
+        "parent_bone": "Hand.L"
+      },
+      "FlaskCork": {
+        "found": true,
+        "parent_type": "BONE",
+        "parent": "AlchemistRig",
+        "parent_bone": "Hand.L"
+      }
+    },
+    "flask_parent_ok": true,
+    "rest_flask_hand_l": 0.1488,
+    "rest_flask_hand_r": 0.1488,
+    "posed": {
+      "flask_center": [
+        -0.053,
+        -0.43,
+        1.021
+      ],
+      "hand_l_center": [
+        0.089,
+        -0.422,
+        0.977
+      ],
+      "hand_r_center": [
+        -0.15,
+        -0.417,
+        0.965
+      ],
+      "flask_hand_l": 0.1489,
+      "flask_hand_r": 0.1122
+    },
+    "drift": {
+      "left": 0.0001,
+      "right": 0.0366
+    },
+    "drift_left_ok": true,
+    "drift_right_ok": true,
+    "skinned_parts": 36,
+    "unskinned_mesh_parts": [
+      "Flask",
+      "FlaskLiquid",
+      "FlaskCork"
+    ],
+    "robe_vertex_groups": [
+      "Hips",
+      "Spine",
+      "Neck",
+      "Head",
+      "Shoulder.L",
+      "Forearm.L",
+      "Hand.L",
+      "Shoulder.R",
+      "Forearm.R",
+      "Hand.R",
+      "Thigh.L",
+      "Shin.L",
+      "Foot.L",
+      "Thigh.R",
+      "Shin.R",
+      "Foot.R"
+    ],
+    "posed_min_z": 0.002,
+    "posed_shoe_l_z": 0.002,
+    "posed_shoe_r_z": 0.004,
+    "posed_below_ground": {},
+    "ok": true
+  },
+  "overall_pass": false
+}
