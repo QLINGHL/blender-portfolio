@@ -1,0 +1,708 @@
+# 047 低模场景：炼金实验室角落
+
+低多边形炼金实验室室内场景资产，平面着色（flat shading），干净拓扑。
+
+## 结构
+
+- 墙体：后墙（y=+2.2，5.4×2.6）+ 左墙（x=-2.2，4.6×2.6），上层石材、下层深色石基 + 木压条；木梁压顶 + 角柱
+- 地面：6×5 石砖（0.86 见方，4 色交错）
+- 工作台：2.6×0.95 重木台面 + 4 腿 + 下层架（木箱 2 个 + 药水罐 2 个）+ 抽屉（黄铜拉手）
+- 台面：研钵 + 研杵（倾斜 35°）、试管架（黄铜架 + 3 支试管，绿/紫/琥珀药液）、蒸馏器（圆底玻璃烧瓶 + 铜颈 + 导管 + 接收瓶）、翻开的紫色法术书（两页微张 8°）、黄铜烛台（1 支蜡烛 + 火焰）、3 根干草药、横放羊皮卷轴
+- 药水架：后墙 2.55 宽 × 0.55 高，2 层，共 26 瓶药水（绿/紫/红/蓝/琥珀 5 色发光药液，玻璃瓶 + 软木塞），顶层右端 4 本小书
+- 坩埚：1.30×1.10 石质炉台上，铁锅（底 0.30 / 口 0.44，0.55 高）+ 铁箍口沿 + 绿色发光药液 + 3 个气泡 + 3 条微张铁腿；锅底 3 团火焰 + 橙色点光源（220W）；木柄铜勺斜靠锅沿
+- 左角木桶（铁箍 2 道）+ 左墙木箱 2 个（顶上 1 瓶紫药水）
+- 左墙药水罐架：2 层，共 18 罐
+- 悬挂草药：后梁下 3 束（绳 + 绿/干叶交错叶簇）
+- 墙饰：炼金星图挂画（深蓝画布 + 金圆 + 旋转金三角 + 4 颗金星），位于药水架右侧后墙
+- 墙烛台：左墙铁托 + 黄铜烛杯 + 蜡烛 + 火焰，暖色点光源（120W）
+- 凳子 + 地毯：三腿圆凳（铁环拉条），红色地毯（1.7×1.2，金色内边），位于工作台前方
+- 地面散书：工作台旁 2 本平放的书 + 1 卷羊皮卷轴
+
+## 面数
+
+- 总面数：6584（三角面 4116，四边面 2468，N-gon 0）
+- Wall_Back：6
+- Wall_Left：6
+- StoneBase_Back：6
+- StoneBase_Left：6
+- StoneRail_Back：6
+- StoneRail_Left：6
+- Beam_Back：6
+- Beam_Left：6
+- Post_Corner：6
+- Tile_0_0：6
+- Tile_0_1：6
+- Tile_0_2：6
+- Tile_0_3：6
+- Tile_0_4：6
+- Tile_1_0：6
+- Tile_1_1：6
+- Tile_1_2：6
+- Tile_1_3：6
+- Tile_1_4：6
+- Tile_2_0：6
+- Tile_2_1：6
+- Tile_2_2：6
+- Tile_2_3：6
+- Tile_2_4：6
+- Tile_3_0：6
+- Tile_3_1：6
+- Tile_3_2：6
+- Tile_3_3：6
+- Tile_3_4：6
+- Tile_4_0：6
+- Tile_4_1：6
+- Tile_4_2：6
+- Tile_4_3：6
+- Tile_4_4：6
+- Tile_5_0：6
+- Tile_5_1：6
+- Tile_5_2：6
+- Tile_5_3：6
+- Tile_5_4：6
+- Bench_Top：6
+- BenchLeg_-120_-38：6
+- BenchLeg_120_-38：6
+- BenchLeg_-120_38：6
+- BenchLeg_120_38：6
+- Bench_LowShelf：6
+- Bench_Drawer：6
+- BenchKnob_0：24
+- BenchKnob_1：24
+- BenchCrate_0：6
+- BenchCrate_1：6
+- BenchJar_0_Body：24
+- BenchJar_0_Liquid：24
+- BenchJar_0_Neck：24
+- BenchJar_0_Cork：24
+- BenchJar_1_Body：24
+- BenchJar_1_Liquid：24
+- BenchJar_1_Neck：24
+- BenchJar_1_Cork：24
+- Mortar：30
+- Pestle：24
+- Rack_PostL：6
+- Rack_PostR：6
+- Rack_Bar：6
+- Tube_0：24
+- TubeLiq_0：24
+- Tube_1：24
+- TubeLiq_1：24
+- Tube_2：24
+- TubeLiq_2：24
+- Alembic_Flask：80
+- Alembic_Liquid：30
+- Alembic_Neck：24
+- Alembic_Arm：24
+- Alembic_Receiver：20
+- Receiver_Liq：24
+- Spellbook_Cover：6
+- Spellbook_Left：6
+- Spellbook_Right：6
+- BenchCand_Base：30
+- BenchCand_Stem：24
+- BenchCandle：24
+- BenchCandle_Flame：20
+- BenchHerb_0：6
+- BenchHerb_1：6
+- BenchHerb_2：6
+- BenchScroll：30
+- PotionShelf_EndL：6
+- PotionShelf_EndR：6
+- PotionShelf_Top：6
+- PotionShelf_Board：6
+- PotionShelf_Back：6
+- Potion_T0_0_Body：24
+- Potion_T0_0_Liquid：24
+- Potion_T0_0_Neck：24
+- Potion_T0_0_Cork：24
+- Potion_T0_1_Body：24
+- Potion_T0_1_Liquid：24
+- Potion_T0_1_Neck：24
+- Potion_T0_1_Cork：24
+- Potion_T0_2_Body：24
+- Potion_T0_2_Liquid：24
+- Potion_T0_2_Neck：24
+- Potion_T0_2_Cork：24
+- Potion_T0_3_Body：24
+- Potion_T0_3_Liquid：24
+- Potion_T0_3_Neck：24
+- Potion_T0_3_Cork：24
+- Potion_T0_4_Body：24
+- Potion_T0_4_Liquid：24
+- Potion_T0_4_Neck：24
+- Potion_T0_4_Cork：24
+- Potion_T0_5_Body：24
+- Potion_T0_5_Liquid：24
+- Potion_T0_5_Neck：24
+- Potion_T0_5_Cork：24
+- Potion_T0_6_Body：24
+- Potion_T0_6_Liquid：24
+- Potion_T0_6_Neck：24
+- Potion_T0_6_Cork：24
+- Potion_T0_7_Body：24
+- Potion_T0_7_Liquid：24
+- Potion_T0_7_Neck：24
+- Potion_T0_7_Cork：24
+- Potion_T0_8_Body：24
+- Potion_T0_8_Liquid：24
+- Potion_T0_8_Neck：24
+- Potion_T0_8_Cork：24
+- Potion_T0_9_Body：24
+- Potion_T0_9_Liquid：24
+- Potion_T0_9_Neck：24
+- Potion_T0_9_Cork：24
+- Potion_T0_10_Body：24
+- Potion_T0_10_Liquid：24
+- Potion_T0_10_Neck：24
+- Potion_T0_10_Cork：24
+- Potion_T0_11_Body：24
+- Potion_T0_11_Liquid：24
+- Potion_T0_11_Neck：24
+- Potion_T0_11_Cork：24
+- Potion_T0_12_Body：24
+- Potion_T0_12_Liquid：24
+- Potion_T0_12_Neck：24
+- Potion_T0_12_Cork：24
+- Potion_T1_0_Body：24
+- Potion_T1_0_Liquid：24
+- Potion_T1_0_Neck：24
+- Potion_T1_0_Cork：24
+- Potion_T1_1_Body：24
+- Potion_T1_1_Liquid：24
+- Potion_T1_1_Neck：24
+- Potion_T1_1_Cork：24
+- Potion_T1_2_Body：24
+- Potion_T1_2_Liquid：24
+- Potion_T1_2_Neck：24
+- Potion_T1_2_Cork：24
+- Potion_T1_3_Body：24
+- Potion_T1_3_Liquid：24
+- Potion_T1_3_Neck：24
+- Potion_T1_3_Cork：24
+- Potion_T1_4_Body：24
+- Potion_T1_4_Liquid：24
+- Potion_T1_4_Neck：24
+- Potion_T1_4_Cork：24
+- Potion_T1_5_Body：24
+- Potion_T1_5_Liquid：24
+- Potion_T1_5_Neck：24
+- Potion_T1_5_Cork：24
+- Potion_T1_6_Body：24
+- Potion_T1_6_Liquid：24
+- Potion_T1_6_Neck：24
+- Potion_T1_6_Cork：24
+- Potion_T1_7_Body：24
+- Potion_T1_7_Liquid：24
+- Potion_T1_7_Neck：24
+- Potion_T1_7_Cork：24
+- Potion_T1_8_Body：24
+- Potion_T1_8_Liquid：24
+- Potion_T1_8_Neck：24
+- Potion_T1_8_Cork：24
+- Potion_T1_9_Body：24
+- Potion_T1_9_Liquid：24
+- Potion_T1_9_Neck：24
+- Potion_T1_9_Cork：24
+- Potion_T1_10_Body：24
+- Potion_T1_10_Liquid：24
+- Potion_T1_10_Neck：24
+- Potion_T1_10_Cork：24
+- Potion_T1_11_Body：24
+- Potion_T1_11_Liquid：24
+- Potion_T1_11_Neck：24
+- Potion_T1_11_Cork：24
+- Potion_T1_12_Body：24
+- Potion_T1_12_Liquid：24
+- Potion_T1_12_Neck：24
+- Potion_T1_12_Cork：24
+- ShelfBook_0：6
+- ShelfBook_1：6
+- ShelfBook_2：6
+- ShelfBook_3：6
+- Hearth_Slab：6
+- Cauldron_Body：36
+- Cauldron_Rim：36
+- Cauldron_Liquid：36
+- Bubble_0：20
+- Bubble_1：20
+- Bubble_2：20
+- CauldronLeg_0：24
+- CauldronLeg_1：24
+- CauldronLeg_2：24
+- Fire_0：18
+- Fire_1：18
+- Fire_2：18
+- Ladle：24
+- Ladle_Cup：30
+- Barrel：36
+- Barrel_Top：36
+- Barrel_Band：36
+- Barrel_Band2：36
+- Crate_0：6
+- Crate_1：6
+- CrateBottle_Body：24
+- CrateBottle_Liquid：24
+- CrateBottle_Neck：24
+- CrateBottle_Cork：24
+- JarShelf_EndA：6
+- JarShelf_EndB：6
+- JarShelf_Top：6
+- JarShelf_Board：6
+- Jar_T0_0_Body：24
+- Jar_T0_0_Liquid：24
+- Jar_T0_0_Neck：24
+- Jar_T0_0_Cork：24
+- Jar_T0_1_Body：24
+- Jar_T0_1_Liquid：24
+- Jar_T0_1_Neck：24
+- Jar_T0_1_Cork：24
+- Jar_T0_2_Body：24
+- Jar_T0_2_Liquid：24
+- Jar_T0_2_Neck：24
+- Jar_T0_2_Cork：24
+- Jar_T0_3_Body：24
+- Jar_T0_3_Liquid：24
+- Jar_T0_3_Neck：24
+- Jar_T0_3_Cork：24
+- Jar_T0_4_Body：24
+- Jar_T0_4_Liquid：24
+- Jar_T0_4_Neck：24
+- Jar_T0_4_Cork：24
+- Jar_T0_5_Body：24
+- Jar_T0_5_Liquid：24
+- Jar_T0_5_Neck：24
+- Jar_T0_5_Cork：24
+- Jar_T0_6_Body：24
+- Jar_T0_6_Liquid：24
+- Jar_T0_6_Neck：24
+- Jar_T0_6_Cork：24
+- Jar_T0_7_Body：24
+- Jar_T0_7_Liquid：24
+- Jar_T0_7_Neck：24
+- Jar_T0_7_Cork：24
+- Jar_T0_8_Body：24
+- Jar_T0_8_Liquid：24
+- Jar_T0_8_Neck：24
+- Jar_T0_8_Cork：24
+- Jar_T1_0_Body：24
+- Jar_T1_0_Liquid：24
+- Jar_T1_0_Neck：24
+- Jar_T1_0_Cork：24
+- Jar_T1_1_Body：24
+- Jar_T1_1_Liquid：24
+- Jar_T1_1_Neck：24
+- Jar_T1_1_Cork：24
+- Jar_T1_2_Body：24
+- Jar_T1_2_Liquid：24
+- Jar_T1_2_Neck：24
+- Jar_T1_2_Cork：24
+- Jar_T1_3_Body：24
+- Jar_T1_3_Liquid：24
+- Jar_T1_3_Neck：24
+- Jar_T1_3_Cork：24
+- Jar_T1_4_Body：24
+- Jar_T1_4_Liquid：24
+- Jar_T1_4_Neck：24
+- Jar_T1_4_Cork：24
+- Jar_T1_5_Body：24
+- Jar_T1_5_Liquid：24
+- Jar_T1_5_Neck：24
+- Jar_T1_5_Cork：24
+- Jar_T1_6_Body：24
+- Jar_T1_6_Liquid：24
+- Jar_T1_6_Neck：24
+- Jar_T1_6_Cork：24
+- Jar_T1_7_Body：24
+- Jar_T1_7_Liquid：24
+- Jar_T1_7_Neck：24
+- Jar_T1_7_Cork：24
+- Jar_T1_8_Body：24
+- Jar_T1_8_Liquid：24
+- Jar_T1_8_Neck：24
+- Jar_T1_8_Cork：24
+- HerbString_0：18
+- HerbLeaf_0_0：18
+- HerbLeaf_0_1：18
+- HerbLeaf_0_2：18
+- HerbString_1：18
+- HerbLeaf_1_0：18
+- HerbLeaf_1_1：18
+- HerbLeaf_1_2：18
+- HerbString_2：18
+- HerbLeaf_2_0：18
+- HerbLeaf_2_1：18
+- HerbLeaf_2_2：18
+- Chart_Frame：6
+- Chart_Canvas：6
+- Chart_Circle：48
+- Chart_Tri：6
+- Chart_Star_0：6
+- Chart_Star_1：6
+- Chart_Star_2：6
+- Chart_Star_3：6
+- Sconce_Bracket：6
+- Sconce_Cup：24
+- SconceCandle：24
+- SconceCandle_Flame：20
+- Rug：6
+- Rug_Trim：6
+- Stool_Seat：30
+- StoolLeg_0：24
+- StoolLeg_1：24
+- StoolLeg_2：24
+- Stool_Ring：30
+- FloorBook_0：6
+- FloorBook_1：6
+- FloorScroll：30
+
+## 绕向自检
+
+- Wall_Back：内翻面 0
+- Wall_Left：内翻面 0
+- StoneBase_Back：内翻面 0
+- StoneBase_Left：内翻面 0
+- StoneRail_Back：内翻面 0
+- StoneRail_Left：内翻面 0
+- Beam_Back：内翻面 0
+- Beam_Left：内翻面 0
+- Post_Corner：内翻面 0
+- Tile_0_0：内翻面 0
+- Tile_0_1：内翻面 0
+- Tile_0_2：内翻面 0
+- Tile_0_3：内翻面 0
+- Tile_0_4：内翻面 0
+- Tile_1_0：内翻面 0
+- Tile_1_1：内翻面 0
+- Tile_1_2：内翻面 0
+- Tile_1_3：内翻面 0
+- Tile_1_4：内翻面 0
+- Tile_2_0：内翻面 0
+- Tile_2_1：内翻面 0
+- Tile_2_2：内翻面 0
+- Tile_2_3：内翻面 0
+- Tile_2_4：内翻面 0
+- Tile_3_0：内翻面 0
+- Tile_3_1：内翻面 0
+- Tile_3_2：内翻面 0
+- Tile_3_3：内翻面 0
+- Tile_3_4：内翻面 0
+- Tile_4_0：内翻面 0
+- Tile_4_1：内翻面 0
+- Tile_4_2：内翻面 0
+- Tile_4_3：内翻面 0
+- Tile_4_4：内翻面 0
+- Tile_5_0：内翻面 0
+- Tile_5_1：内翻面 0
+- Tile_5_2：内翻面 0
+- Tile_5_3：内翻面 0
+- Tile_5_4：内翻面 0
+- Bench_Top：内翻面 0
+- BenchLeg_-120_-38：内翻面 0
+- BenchLeg_120_-38：内翻面 0
+- BenchLeg_-120_38：内翻面 0
+- BenchLeg_120_38：内翻面 0
+- Bench_LowShelf：内翻面 0
+- Bench_Drawer：内翻面 0
+- BenchKnob_0：内翻面 0
+- BenchKnob_1：内翻面 0
+- BenchCrate_0：内翻面 0
+- BenchCrate_1：内翻面 0
+- BenchJar_0_Body：内翻面 0
+- BenchJar_0_Liquid：内翻面 0
+- BenchJar_0_Neck：内翻面 0
+- BenchJar_0_Cork：内翻面 0
+- BenchJar_1_Body：内翻面 0
+- BenchJar_1_Liquid：内翻面 0
+- BenchJar_1_Neck：内翻面 0
+- BenchJar_1_Cork：内翻面 0
+- Mortar：内翻面 0
+- Pestle：内翻面 0
+- Rack_PostL：内翻面 0
+- Rack_PostR：内翻面 0
+- Rack_Bar：内翻面 0
+- Tube_0：内翻面 0
+- TubeLiq_0：内翻面 0
+- Tube_1：内翻面 0
+- TubeLiq_1：内翻面 0
+- Tube_2：内翻面 0
+- TubeLiq_2：内翻面 0
+- Alembic_Flask：内翻面 0
+- Alembic_Liquid：内翻面 0
+- Alembic_Neck：内翻面 0
+- Alembic_Arm：内翻面 0
+- Alembic_Receiver：内翻面 0
+- Receiver_Liq：内翻面 0
+- Spellbook_Cover：内翻面 0
+- Spellbook_Left：内翻面 0
+- Spellbook_Right：内翻面 0
+- BenchCand_Base：内翻面 0
+- BenchCand_Stem：内翻面 0
+- BenchCandle：内翻面 0
+- BenchCandle_Flame：内翻面 0
+- BenchHerb_0：内翻面 0
+- BenchHerb_1：内翻面 0
+- BenchHerb_2：内翻面 0
+- BenchScroll：内翻面 0
+- PotionShelf_EndL：内翻面 0
+- PotionShelf_EndR：内翻面 0
+- PotionShelf_Top：内翻面 0
+- PotionShelf_Board：内翻面 0
+- PotionShelf_Back：内翻面 0
+- Potion_T0_0_Body：内翻面 0
+- Potion_T0_0_Liquid：内翻面 0
+- Potion_T0_0_Neck：内翻面 0
+- Potion_T0_0_Cork：内翻面 0
+- Potion_T0_1_Body：内翻面 0
+- Potion_T0_1_Liquid：内翻面 0
+- Potion_T0_1_Neck：内翻面 0
+- Potion_T0_1_Cork：内翻面 0
+- Potion_T0_2_Body：内翻面 0
+- Potion_T0_2_Liquid：内翻面 0
+- Potion_T0_2_Neck：内翻面 0
+- Potion_T0_2_Cork：内翻面 0
+- Potion_T0_3_Body：内翻面 0
+- Potion_T0_3_Liquid：内翻面 0
+- Potion_T0_3_Neck：内翻面 0
+- Potion_T0_3_Cork：内翻面 0
+- Potion_T0_4_Body：内翻面 0
+- Potion_T0_4_Liquid：内翻面 0
+- Potion_T0_4_Neck：内翻面 0
+- Potion_T0_4_Cork：内翻面 0
+- Potion_T0_5_Body：内翻面 0
+- Potion_T0_5_Liquid：内翻面 0
+- Potion_T0_5_Neck：内翻面 0
+- Potion_T0_5_Cork：内翻面 0
+- Potion_T0_6_Body：内翻面 0
+- Potion_T0_6_Liquid：内翻面 0
+- Potion_T0_6_Neck：内翻面 0
+- Potion_T0_6_Cork：内翻面 0
+- Potion_T0_7_Body：内翻面 0
+- Potion_T0_7_Liquid：内翻面 0
+- Potion_T0_7_Neck：内翻面 0
+- Potion_T0_7_Cork：内翻面 0
+- Potion_T0_8_Body：内翻面 0
+- Potion_T0_8_Liquid：内翻面 0
+- Potion_T0_8_Neck：内翻面 0
+- Potion_T0_8_Cork：内翻面 0
+- Potion_T0_9_Body：内翻面 0
+- Potion_T0_9_Liquid：内翻面 0
+- Potion_T0_9_Neck：内翻面 0
+- Potion_T0_9_Cork：内翻面 0
+- Potion_T0_10_Body：内翻面 0
+- Potion_T0_10_Liquid：内翻面 0
+- Potion_T0_10_Neck：内翻面 0
+- Potion_T0_10_Cork：内翻面 0
+- Potion_T0_11_Body：内翻面 0
+- Potion_T0_11_Liquid：内翻面 0
+- Potion_T0_11_Neck：内翻面 0
+- Potion_T0_11_Cork：内翻面 0
+- Potion_T0_12_Body：内翻面 0
+- Potion_T0_12_Liquid：内翻面 0
+- Potion_T0_12_Neck：内翻面 0
+- Potion_T0_12_Cork：内翻面 0
+- Potion_T1_0_Body：内翻面 0
+- Potion_T1_0_Liquid：内翻面 0
+- Potion_T1_0_Neck：内翻面 0
+- Potion_T1_0_Cork：内翻面 0
+- Potion_T1_1_Body：内翻面 0
+- Potion_T1_1_Liquid：内翻面 0
+- Potion_T1_1_Neck：内翻面 0
+- Potion_T1_1_Cork：内翻面 0
+- Potion_T1_2_Body：内翻面 0
+- Potion_T1_2_Liquid：内翻面 0
+- Potion_T1_2_Neck：内翻面 0
+- Potion_T1_2_Cork：内翻面 0
+- Potion_T1_3_Body：内翻面 0
+- Potion_T1_3_Liquid：内翻面 0
+- Potion_T1_3_Neck：内翻面 0
+- Potion_T1_3_Cork：内翻面 0
+- Potion_T1_4_Body：内翻面 0
+- Potion_T1_4_Liquid：内翻面 0
+- Potion_T1_4_Neck：内翻面 0
+- Potion_T1_4_Cork：内翻面 0
+- Potion_T1_5_Body：内翻面 0
+- Potion_T1_5_Liquid：内翻面 0
+- Potion_T1_5_Neck：内翻面 0
+- Potion_T1_5_Cork：内翻面 0
+- Potion_T1_6_Body：内翻面 0
+- Potion_T1_6_Liquid：内翻面 0
+- Potion_T1_6_Neck：内翻面 0
+- Potion_T1_6_Cork：内翻面 0
+- Potion_T1_7_Body：内翻面 0
+- Potion_T1_7_Liquid：内翻面 0
+- Potion_T1_7_Neck：内翻面 0
+- Potion_T1_7_Cork：内翻面 0
+- Potion_T1_8_Body：内翻面 0
+- Potion_T1_8_Liquid：内翻面 0
+- Potion_T1_8_Neck：内翻面 0
+- Potion_T1_8_Cork：内翻面 0
+- Potion_T1_9_Body：内翻面 0
+- Potion_T1_9_Liquid：内翻面 0
+- Potion_T1_9_Neck：内翻面 0
+- Potion_T1_9_Cork：内翻面 0
+- Potion_T1_10_Body：内翻面 0
+- Potion_T1_10_Liquid：内翻面 0
+- Potion_T1_10_Neck：内翻面 0
+- Potion_T1_10_Cork：内翻面 0
+- Potion_T1_11_Body：内翻面 0
+- Potion_T1_11_Liquid：内翻面 0
+- Potion_T1_11_Neck：内翻面 0
+- Potion_T1_11_Cork：内翻面 0
+- Potion_T1_12_Body：内翻面 0
+- Potion_T1_12_Liquid：内翻面 0
+- Potion_T1_12_Neck：内翻面 0
+- Potion_T1_12_Cork：内翻面 0
+- ShelfBook_0：内翻面 0
+- ShelfBook_1：内翻面 0
+- ShelfBook_2：内翻面 0
+- ShelfBook_3：内翻面 0
+- Hearth_Slab：内翻面 0
+- Cauldron_Body：内翻面 0
+- Cauldron_Rim：内翻面 0
+- Cauldron_Liquid：内翻面 0
+- Bubble_0：内翻面 0
+- Bubble_1：内翻面 0
+- Bubble_2：内翻面 0
+- CauldronLeg_0：内翻面 0
+- CauldronLeg_1：内翻面 0
+- CauldronLeg_2：内翻面 0
+- Fire_0：内翻面 0
+- Fire_1：内翻面 0
+- Fire_2：内翻面 0
+- Ladle：内翻面 0
+- Ladle_Cup：内翻面 0
+- Barrel：内翻面 0
+- Barrel_Top：内翻面 0
+- Barrel_Band：内翻面 0
+- Barrel_Band2：内翻面 0
+- Crate_0：内翻面 0
+- Crate_1：内翻面 0
+- CrateBottle_Body：内翻面 0
+- CrateBottle_Liquid：内翻面 0
+- CrateBottle_Neck：内翻面 0
+- CrateBottle_Cork：内翻面 0
+- JarShelf_EndA：内翻面 0
+- JarShelf_EndB：内翻面 0
+- JarShelf_Top：内翻面 0
+- JarShelf_Board：内翻面 0
+- Jar_T0_0_Body：内翻面 0
+- Jar_T0_0_Liquid：内翻面 0
+- Jar_T0_0_Neck：内翻面 0
+- Jar_T0_0_Cork：内翻面 0
+- Jar_T0_1_Body：内翻面 0
+- Jar_T0_1_Liquid：内翻面 0
+- Jar_T0_1_Neck：内翻面 0
+- Jar_T0_1_Cork：内翻面 0
+- Jar_T0_2_Body：内翻面 0
+- Jar_T0_2_Liquid：内翻面 0
+- Jar_T0_2_Neck：内翻面 0
+- Jar_T0_2_Cork：内翻面 0
+- Jar_T0_3_Body：内翻面 0
+- Jar_T0_3_Liquid：内翻面 0
+- Jar_T0_3_Neck：内翻面 0
+- Jar_T0_3_Cork：内翻面 0
+- Jar_T0_4_Body：内翻面 0
+- Jar_T0_4_Liquid：内翻面 0
+- Jar_T0_4_Neck：内翻面 0
+- Jar_T0_4_Cork：内翻面 0
+- Jar_T0_5_Body：内翻面 0
+- Jar_T0_5_Liquid：内翻面 0
+- Jar_T0_5_Neck：内翻面 0
+- Jar_T0_5_Cork：内翻面 0
+- Jar_T0_6_Body：内翻面 0
+- Jar_T0_6_Liquid：内翻面 0
+- Jar_T0_6_Neck：内翻面 0
+- Jar_T0_6_Cork：内翻面 0
+- Jar_T0_7_Body：内翻面 0
+- Jar_T0_7_Liquid：内翻面 0
+- Jar_T0_7_Neck：内翻面 0
+- Jar_T0_7_Cork：内翻面 0
+- Jar_T0_8_Body：内翻面 0
+- Jar_T0_8_Liquid：内翻面 0
+- Jar_T0_8_Neck：内翻面 0
+- Jar_T0_8_Cork：内翻面 0
+- Jar_T1_0_Body：内翻面 0
+- Jar_T1_0_Liquid：内翻面 0
+- Jar_T1_0_Neck：内翻面 0
+- Jar_T1_0_Cork：内翻面 0
+- Jar_T1_1_Body：内翻面 0
+- Jar_T1_1_Liquid：内翻面 0
+- Jar_T1_1_Neck：内翻面 0
+- Jar_T1_1_Cork：内翻面 0
+- Jar_T1_2_Body：内翻面 0
+- Jar_T1_2_Liquid：内翻面 0
+- Jar_T1_2_Neck：内翻面 0
+- Jar_T1_2_Cork：内翻面 0
+- Jar_T1_3_Body：内翻面 0
+- Jar_T1_3_Liquid：内翻面 0
+- Jar_T1_3_Neck：内翻面 0
+- Jar_T1_3_Cork：内翻面 0
+- Jar_T1_4_Body：内翻面 0
+- Jar_T1_4_Liquid：内翻面 0
+- Jar_T1_4_Neck：内翻面 0
+- Jar_T1_4_Cork：内翻面 0
+- Jar_T1_5_Body：内翻面 0
+- Jar_T1_5_Liquid：内翻面 0
+- Jar_T1_5_Neck：内翻面 0
+- Jar_T1_5_Cork：内翻面 0
+- Jar_T1_6_Body：内翻面 0
+- Jar_T1_6_Liquid：内翻面 0
+- Jar_T1_6_Neck：内翻面 0
+- Jar_T1_6_Cork：内翻面 0
+- Jar_T1_7_Body：内翻面 0
+- Jar_T1_7_Liquid：内翻面 0
+- Jar_T1_7_Neck：内翻面 0
+- Jar_T1_7_Cork：内翻面 0
+- Jar_T1_8_Body：内翻面 0
+- Jar_T1_8_Liquid：内翻面 0
+- Jar_T1_8_Neck：内翻面 0
+- Jar_T1_8_Cork：内翻面 0
+- HerbString_0：内翻面 0
+- HerbLeaf_0_0：内翻面 0
+- HerbLeaf_0_1：内翻面 0
+- HerbLeaf_0_2：内翻面 0
+- HerbString_1：内翻面 0
+- HerbLeaf_1_0：内翻面 0
+- HerbLeaf_1_1：内翻面 0
+- HerbLeaf_1_2：内翻面 0
+- HerbString_2：内翻面 0
+- HerbLeaf_2_0：内翻面 0
+- HerbLeaf_2_1：内翻面 0
+- HerbLeaf_2_2：内翻面 0
+- Chart_Frame：内翻面 0
+- Chart_Canvas：内翻面 0
+- Chart_Circle：内翻面 0
+- Chart_Tri：内翻面 0
+- Chart_Star_0：内翻面 0
+- Chart_Star_1：内翻面 0
+- Chart_Star_2：内翻面 0
+- Chart_Star_3：内翻面 0
+- Sconce_Bracket：内翻面 0
+- Sconce_Cup：内翻面 0
+- SconceCandle：内翻面 0
+- SconceCandle_Flame：内翻面 0
+- Rug：内翻面 0
+- Rug_Trim：内翻面 0
+- Stool_Seat：内翻面 0
+- StoolLeg_0：内翻面 0
+- StoolLeg_1：内翻面 0
+- StoolLeg_2：内翻面 0
+- Stool_Ring：内翻面 0
+- FloorBook_0：内翻面 0
+- FloorBook_1：内翻面 0
+- FloorScroll：内翻面 0
+
+## 材质
+
+- Alc_Stone / Alc_StoneDark：墙面石材 / 石基；Alc_Bench / Alc_BenchTop：工作台木材
+- Liq_*：5 色发光药液（绿/紫/红/蓝/琥珀，Emission 1.0-1.2）
+- Alc_Glass：半透明玻璃（alpha 0.38，BLEND，不投阴影，内层彩色药液可见）；Alc_Brass / Alc_Copper：黄铜/铜件
+- Alc_Flame：火焰（Emission 橙，强度 4.0）+ 坩埚橙光（220W）+ 墙烛台暖光（120W）
+- Alc_Herb / Alc_HerbDry：新鲜/干燥草药
+
+## 渲染
+
+- Blender 5.3 / Eevee，1024x1024，三点式影棚灯光 + 坩埚橙光 + 墙烛台暖光，40mm 镜头
+- 相机用 fit_camera_to_objects 自动取景（目标填充 78%%）
+- 线框图：同角度，美观渲染 + 真实投影边线叠加（可见边判定）
