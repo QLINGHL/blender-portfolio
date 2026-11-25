@@ -1,0 +1,706 @@
+{
+  "asset": "new_props_training_data",
+  "labels": [
+    "lowpoly_alchemist",
+    "lowpoly_alchemy_scale",
+    "lowpoly_cauldron",
+    "lowpoly_worktable"
+  ],
+  "source_blends": [
+    "scenes/053-lowpoly-alchemy-scale.blend",
+    "scenes/055-lowpoly-cauldron.blend",
+    "scenes/049-lowpoly-alchemist.blend"
+  ],
+  "layout": "Studio scene, no walls: the 055 cauldron stands on the floor at (-0.55, -0.10) with its tripod legs, glowing green potion and campfire; the 053 alchemy scale stands on a small wooden worktable at (0.55, -0.10), table top surface z 0.725, with its brass beam, two pans, three stacked weights and a spare weight; the 049 alchemist stands behind the table at (0, 0.55) facing the front camera so the flask he holds in front of him stays visible. Ground plane + three-point studio lights. Views are front / front-right diagonal / right side / high from the left.",
+  "image": "renders/057-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "poly_counts": {
+    "groups": {
+      "alchemist": 1004,
+      "scale": 1798,
+      "cauldron": 1360,
+      "worktable": 30
+    },
+    "per_object": {
+      "Shoe.001": 6,
+      "Shoe": 6,
+      "Shawl": 32,
+      "Robe": 48,
+      "PotionRedCork": 18,
+      "PotionRedBody": 24,
+      "PotionPurpleCork": 18,
+      "PotionPurpleBody": 24,
+      "PotionBlueCork": 18,
+      "PotionBlueBody": 24,
+      "Neck": 18,
+      "Leg.001": 36,
+      "Leg": 36,
+      "Head": 48,
+      "Hand.001": 24,
+      "Hand": 24,
+      "HairCap": 40,
+      "GoggleStrap": 64,
+      "GoggleRim.001": 48,
+      "GoggleRim": 48,
+      "GoggleLens.001": 24,
+      "GoggleLens": 24,
+      "FlaskLiquid": 32,
+      "FlaskCork": 18,
+      "Flask": 40,
+      "Eye.001": 18,
+      "Eye": 18,
+      "Cuff.001": 18,
+      "Cuff": 18,
+      "Collar": 24,
+      "Buckle": 6,
+      "Belt": 24,
+      "Beard": 40,
+      "Arm.001": 36,
+      "Arm": 36,
+      "ApronStrap.001": 6,
+      "ApronStrap": 6,
+      "ApronPocket": 6,
+      "Apron": 6,
+      "WeightKnob": 50,
+      "Weight_Small": 36,
+      "Weight_Mid": 48,
+      "Weight_Large": 48,
+      "TopFinial": 72,
+      "SpareWeightKnob": 50,
+      "SpareWeight": 48,
+      "PointerArm": 18,
+      "Pointer": 18,
+      "PlinthTrim": 144,
+      "Plinth": 72,
+      "Pivot": 72,
+      "Pillar": 36,
+      "PanRim_2": 144,
+      "PanRim_1": 144,
+      "Pan_2": 72,
+      "Pan_1": 72,
+      "DialPlate": 6,
+      "Collar_2": 96,
+      "Collar_1": 96,
+      "Chain_2_3": 12,
+      "Chain_2_2": 12,
+      "Chain_2_1": 12,
+      "Chain_1_3": 12,
+      "Chain_1_2": 12,
+      "Chain_1_1": 12,
+      "BeamFinial_2": 72,
+      "BeamFinial_1": 72,
+      "Beam": 24,
+      "BaseBody": 72,
+      "BaseBand": 144,
+      "StirStick": 24,
+      "Rim": 144,
+      "Potion": 72,
+      "Pot": 168,
+      "Log_2": 24,
+      "Log_1": 24,
+      "Leg_3": 24,
+      "Leg_2": 24,
+      "Leg_1": 24,
+      "Handle_2": 96,
+      "Handle_1": 96,
+      "FootPad_3": 50,
+      "FootPad_2": 50,
+      "FootPad_1": 50,
+      "FlameCore": 24,
+      "Flame_3": 24,
+      "Flame_2": 24,
+      "Flame_1": 24,
+      "Bubble_5": 50,
+      "Bubble_4": 50,
+      "Bubble_3": 50,
+      "Bubble_2": 50,
+      "Bubble_1": 50,
+      "BellyBand": 144,
+      "Table_Top": 6,
+      "TableLeg_0": 6,
+      "TableLeg_1": 6,
+      "TableLeg_2": 6,
+      "TableLeg_3": 6
+    }
+  },
+  "total_polys": 4192,
+  "scene_total_polys": 4193,
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 9.7,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3634,
+        0.3539,
+        0.6938,
+        0.6926
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.4323,
+            0.3539,
+            0.5677,
+            0.6664
+          ],
+          "keypoints": {
+            "head_center": [
+              0.5,
+              0.3931
+            ],
+            "goggles_center": [
+              0.5,
+              0.3786
+            ],
+            "flask_center": [
+              0.5,
+              0.4865
+            ],
+            "flask_liquid_center": [
+              0.5,
+              0.4957
+            ],
+            "belt_bottle_red_center": [
+              0.4533,
+              0.52
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alchemy_scale",
+          "bbox": [
+            0.5362,
+            0.4637,
+            0.6682,
+            0.5567
+          ],
+          "keypoints": {
+            "beam_center": [
+              0.6025,
+              0.472
+            ],
+            "pointer_tip": [
+              0.6042,
+              0.4731
+            ],
+            "dial_plate_center": [
+              0.6027,
+              0.4894
+            ],
+            "pan_left_center": [
+              0.5539,
+              0.4955
+            ],
+            "pan_right_center": [
+              0.6505,
+              0.4955
+            ],
+            "weights_center": [
+              0.6506,
+              0.4892
+            ],
+            "spare_weight_center": [
+              0.6568,
+              0.5411
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.3634,
+            0.5986,
+            0.4346,
+            0.6845
+          ],
+          "keypoints": {
+            "pot_center": [
+              0.3999,
+              0.6305
+            ],
+            "potion_top": [
+              0.4237,
+              0.6093
+            ],
+            "bubble_1_center": [
+              0.4083,
+              0.6079
+            ],
+            "handle_1_center": [
+              0.3715,
+              0.619
+            ],
+            "flames_center": [
+              0.4004,
+              0.6594
+            ],
+            "stir_stick_center": [
+              0.3996,
+              0.6047
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.5175,
+            0.5375,
+            0.6938,
+            0.6926
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.6013,
+              0.5531
+            ],
+            "table_center": [
+              0.6005,
+              0.6031
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "diag",
+      "azimuth_deg": 44.1,
+      "elevation_deg": 19.2,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3822,
+        0.362,
+        0.6328,
+        0.7222
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.455,
+            0.362,
+            0.6033,
+            0.6524
+          ],
+          "keypoints": {
+            "head_center": [
+              0.5446,
+              0.3986
+            ],
+            "goggles_center": [
+              0.5264,
+              0.3883
+            ],
+            "flask_center": [
+              0.4909,
+              0.4892
+            ],
+            "flask_liquid_center": [
+              0.4909,
+              0.4973
+            ],
+            "belt_bottle_red_center": [
+              0.4627,
+              0.5083
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alchemy_scale",
+          "bbox": [
+            0.4896,
+            0.4871,
+            0.6022,
+            0.5829
+          ],
+          "keypoints": {
+            "beam_center": [
+              0.5393,
+              0.5001
+            ],
+            "pointer_tip": [
+              0.5352,
+              0.502
+            ],
+            "dial_plate_center": [
+              0.5359,
+              0.5163
+            ],
+            "pan_left_center": [
+              0.5059,
+              0.5106
+            ],
+            "pan_right_center": [
+              0.574,
+              0.5327
+            ],
+            "weights_center": [
+              0.5742,
+              0.5269
+            ],
+            "spare_weight_center": [
+              0.5972,
+              0.5753
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.3822,
+            0.5574,
+            0.4393,
+            0.6402
+          ],
+          "keypoints": {
+            "pot_center": [
+              0.413,
+              0.5887
+            ],
+            "potion_top": [
+              0.4262,
+              0.5774
+            ],
+            "bubble_1_center": [
+              0.4206,
+              0.5724
+            ],
+            "handle_1_center": [
+              0.3971,
+              0.5731
+            ],
+            "flames_center": [
+              0.4136,
+              0.6117
+            ],
+            "stir_stick_center": [
+              0.413,
+              0.568
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.4468,
+            0.536,
+            0.6328,
+            0.7222
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.5384,
+              0.573
+            ],
+            "table_center": [
+              0.5379,
+              0.6172
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 9.5,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3876,
+        0.3602,
+        0.6368,
+        0.7174
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.467,
+            0.3602,
+            0.6368,
+            0.6696
+          ],
+          "keypoints": {
+            "head_center": [
+              0.5706,
+              0.4007
+            ],
+            "goggles_center": [
+              0.5411,
+              0.3839
+            ],
+            "flask_center": [
+              0.4861,
+              0.4846
+            ],
+            "flask_liquid_center": [
+              0.4861,
+              0.4935
+            ],
+            "belt_bottle_red_center": [
+              0.4883,
+              0.5095
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alchemy_scale",
+          "bbox": [
+            0.415,
+            0.4706,
+            0.4906,
+            0.5741
+          ],
+          "keypoints": {
+            "beam_center": [
+              0.4522,
+              0.4805
+            ],
+            "pointer_tip": [
+              0.4445,
+              0.4807
+            ],
+            "dial_plate_center": [
+              0.4472,
+              0.4975
+            ],
+            "pan_left_center": [
+              0.4544,
+              0.4966
+            ],
+            "pan_right_center": [
+              0.4502,
+              0.5133
+            ],
+            "weights_center": [
+              0.4501,
+              0.5066
+            ],
+            "spare_weight_center": [
+              0.478,
+              0.5704
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.434,
+            0.5617,
+            0.4954,
+            0.6422
+          ],
+          "keypoints": {
+            "pot_center": [
+              0.4606,
+              0.5923
+            ],
+            "potion_top": [
+              0.4597,
+              0.5788
+            ],
+            "bubble_1_center": [
+              0.465,
+              0.5755
+            ],
+            "handle_1_center": [
+              0.4613,
+              0.5767
+            ],
+            "flames_center": [
+              0.4607,
+              0.6176
+            ],
+            "stir_stick_center": [
+              0.4612,
+              0.57
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.3876,
+            0.5419,
+            0.5102,
+            0.7174
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.4528,
+              0.5636
+            ],
+            "table_center": [
+              0.4532,
+              0.6149
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "high",
+      "azimuth_deg": 297.9,
+      "elevation_deg": 41.7,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3895,
+        0.3813,
+        0.6293,
+        0.6834
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.3895,
+            0.3813,
+            0.5326,
+            0.6165
+          ],
+          "keypoints": {
+            "head_center": [
+              0.4465,
+              0.4168
+            ],
+            "goggles_center": [
+              0.4685,
+              0.4125
+            ],
+            "flask_center": [
+              0.5105,
+              0.4938
+            ],
+            "flask_liquid_center": [
+              0.5104,
+              0.4995
+            ],
+            "belt_bottle_red_center": [
+              0.4911,
+              0.5373
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alchemy_scale",
+          "bbox": [
+            0.5381,
+            0.4213,
+            0.5967,
+            0.5078
+          ],
+          "keypoints": {
+            "beam_center": [
+              0.5688,
+              0.4438
+            ],
+            "pointer_tip": [
+              0.5743,
+              0.4451
+            ],
+            "dial_plate_center": [
+              0.5717,
+              0.4549
+            ],
+            "pan_left_center": [
+              0.5519,
+              0.4792
+            ],
+            "pan_right_center": [
+              0.5835,
+              0.4375
+            ],
+            "weights_center": [
+              0.5837,
+              0.4338
+            ],
+            "spare_weight_center": [
+              0.5679,
+              0.4571
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_cauldron",
+          "bbox": [
+            0.4667,
+            0.6036,
+            0.5218,
+            0.6834
+          ],
+          "keypoints": {
+            "pot_center": [
+              0.4946,
+              0.6336
+            ],
+            "potion_top": [
+              0.5037,
+              0.609
+            ],
+            "bubble_1_center": [
+              0.4938,
+              0.6158
+            ],
+            "handle_1_center": [
+              0.4837,
+              0.6426
+            ],
+            "flames_center": [
+              0.4947,
+              0.6494
+            ],
+            "stir_stick_center": [
+              0.4939,
+              0.619
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.5004,
+            0.4424,
+            0.6293,
+            0.6073
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.5662,
+              0.4918
+            ],
+            "table_center": [
+              0.5647,
+              0.5203
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
