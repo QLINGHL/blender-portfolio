@@ -1,0 +1,1068 @@
+{
+  "asset": "055-lowpoly-cauldron",
+  "parts": 24,
+  "total_faces": 1360,
+  "total_verts": 1215,
+  "tris": 392,
+  "quads": 968,
+  "ngons": 0,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 24,
+  "boundary_edges_ok": true,
+  "pot_boundary_edges": 24,
+  "inverted_normals": 0,
+  "face_counts_match_design": true,
+  "face_mismatch": {},
+  "missing_parts": [],
+  "extra_parts": [],
+  "uv_out_of_bounds": 0,
+  "uv_ok": true,
+  "uv_utilization_per_part": {
+    "BellyBand": 0.104,
+    "Bubble_1": 0.576,
+    "Bubble_2": 0.513,
+    "Bubble_3": 0.573,
+    "Bubble_4": 0.512,
+    "Bubble_5": 0.514,
+    "FlameCore": 0.418,
+    "Flame_1": 0.394,
+    "Flame_2": 0.4,
+    "Flame_3": 0.417,
+    "FootPad_1": 0.514,
+    "FootPad_2": 0.514,
+    "FootPad_3": 0.514,
+    "Handle_1": 0.359,
+    "Handle_2": 0.359,
+    "Leg_1": 0.542,
+    "Leg_2": 0.542,
+    "Leg_3": 0.542,
+    "Log_1": 0.53,
+    "Log_2": 0.53,
+    "Pot": 0.445,
+    "Potion": 0.395,
+    "Rim": 0.128,
+    "StirStick": 0.17
+  },
+  "uv_islands": 158,
+  "uv_overlap_pct": 0.0,
+  "uv_overlap_worst_part": "BellyBand",
+  "empty_material_slots": 0,
+  "structure": {
+    "pot": {
+      "range": [
+        -0.16,
+        0.16,
+        -0.16,
+        0.16,
+        0.14,
+        0.4
+      ],
+      "rings": [
+        {
+          "distance": 0.0,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.14
+          ],
+          "radius": 0.085
+        },
+        {
+          "distance": 0.02,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.16
+          ],
+          "radius": 0.115
+        },
+        {
+          "distance": 0.07,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.21
+          ],
+          "radius": 0.145
+        },
+        {
+          "distance": 0.13,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.27
+          ],
+          "radius": 0.16
+        },
+        {
+          "distance": 0.18,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.32
+          ],
+          "radius": 0.158
+        },
+        {
+          "distance": 0.22,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.36
+          ],
+          "radius": 0.145
+        },
+        {
+          "distance": 0.26,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.4
+          ],
+          "radius": 0.138
+        }
+      ],
+      "ring_distances": [
+        0.0,
+        0.02,
+        0.07,
+        0.13,
+        0.18,
+        0.22,
+        0.26
+      ],
+      "ring_counts": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "ring_radii": [
+        0.085,
+        0.115,
+        0.145,
+        0.16,
+        0.158,
+        0.145,
+        0.138
+      ],
+      "tri_face_center_zs": [
+        0.14
+      ],
+      "tri_count": 24,
+      "ok": true
+    },
+    "rim": {
+      "range": [
+        -0.147,
+        0.147,
+        -0.147,
+        0.147,
+        0.392,
+        0.408
+      ],
+      "expected": [
+        -0.147,
+        0.147,
+        -0.147,
+        0.147,
+        0.391,
+        0.409
+      ],
+      "ok": true
+    },
+    "bellyband": {
+      "range": [
+        -0.168,
+        0.168,
+        -0.168,
+        0.168,
+        0.263,
+        0.277
+      ],
+      "expected": [
+        -0.168,
+        0.168,
+        -0.168,
+        0.168,
+        0.262,
+        0.278
+      ],
+      "ok": true
+    },
+    "potion": {
+      "range": [
+        -0.132,
+        0.132,
+        -0.132,
+        0.132,
+        0.382,
+        0.385
+      ],
+      "expected": [
+        -0.132,
+        0.132,
+        -0.132,
+        0.132,
+        0.382,
+        0.385
+      ],
+      "top_below_rim_top": 0.024,
+      "radius_gap_to_pot_wall": 0.006,
+      "ok": true
+    },
+    "bubbles": {
+      "bubbles": {
+        "Bubble_1": {
+          "range": [
+            0.029,
+            0.061,
+            0.013,
+            0.047,
+            0.367,
+            0.403
+          ],
+          "center": [
+            0.045,
+            0.03,
+            0.385
+          ],
+          "expected_center": [
+            0.045,
+            0.03,
+            0.385
+          ],
+          "radius": 0.018,
+          "top_above_potion": 0.018,
+          "bottom_below_potion": 0.018,
+          "outer_reach": 0.072,
+          "ok": true
+        },
+        "Bubble_2": {
+          "range": [
+            -0.068,
+            -0.042,
+            0.032,
+            0.058,
+            0.371,
+            0.399
+          ],
+          "center": [
+            -0.055,
+            0.045,
+            0.385
+          ],
+          "expected_center": [
+            -0.055,
+            0.045,
+            0.385
+          ],
+          "radius": 0.014,
+          "top_above_potion": 0.014,
+          "bottom_below_potion": 0.014,
+          "outer_reach": 0.085,
+          "ok": true
+        },
+        "Bubble_3": {
+          "range": [
+            -0.034,
+            -0.006,
+            -0.075,
+            -0.045,
+            0.369,
+            0.401
+          ],
+          "center": [
+            -0.02,
+            -0.06,
+            0.385
+          ],
+          "expected_center": [
+            -0.02,
+            -0.06,
+            0.385
+          ],
+          "radius": 0.016,
+          "top_above_potion": 0.016,
+          "bottom_below_potion": 0.016,
+          "outer_reach": 0.079,
+          "ok": true
+        },
+        "Bubble_4": {
+          "range": [
+            0.059,
+            0.081,
+            -0.056,
+            -0.034,
+            0.373,
+            0.397
+          ],
+          "center": [
+            0.07,
+            -0.045,
+            0.385
+          ],
+          "expected_center": [
+            0.07,
+            -0.045,
+            0.385
+          ],
+          "radius": 0.012,
+          "top_above_potion": 0.012,
+          "bottom_below_potion": 0.012,
+          "outer_reach": 0.095,
+          "ok": true
+        },
+        "Bubble_5": {
+          "range": [
+            -0.005,
+            0.015,
+            0.065,
+            0.085,
+            0.374,
+            0.396
+          ],
+          "center": [
+            0.005,
+            0.075,
+            0.385
+          ],
+          "expected_center": [
+            0.005,
+            0.075,
+            0.385
+          ],
+          "radius": 0.011,
+          "top_above_potion": 0.011,
+          "bottom_below_potion": 0.011,
+          "outer_reach": 0.086,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "handles": {
+      "handles": {
+        "Handle_1": {
+          "range": [
+            -0.163,
+            -0.147,
+            -0.042,
+            0.042,
+            0.288,
+            0.372
+          ],
+          "expected": [
+            -0.163,
+            -0.147,
+            -0.043,
+            0.043,
+            0.287,
+            0.373
+          ],
+          "center": [
+            -0.155,
+            0,
+            0.33
+          ],
+          "pot_radius_at_z": 0.155,
+          "wall_x": -0.155,
+          "embedded_in_wall": true,
+          "embed_depth": 0.008,
+          "ok": true
+        },
+        "Handle_2": {
+          "range": [
+            0.147,
+            0.163,
+            -0.042,
+            0.042,
+            0.288,
+            0.372
+          ],
+          "expected": [
+            0.147,
+            0.163,
+            -0.043,
+            0.043,
+            0.287,
+            0.373
+          ],
+          "center": [
+            0.155,
+            0,
+            0.33
+          ],
+          "pot_radius_at_z": 0.155,
+          "wall_x": 0.155,
+          "embedded_in_wall": true,
+          "embed_depth": 0.008,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "legs": {
+      "legs": {
+        "Leg_1": {
+          "range": [
+            -0.018,
+            0.018,
+            0.085,
+            0.215,
+            -0.01,
+            0.17
+          ],
+          "expected": [
+            -0.018,
+            0.018,
+            0.085,
+            0.215,
+            -0.01,
+            0.17
+          ],
+          "axis_length": 0.1887,
+          "rings": [
+            [
+              0.0,
+              8
+            ],
+            [
+              0.189,
+              8
+            ]
+          ],
+          "centroid": [
+            0.0,
+            0.15,
+            0.08
+          ],
+          "expected_centroid": [
+            0.0,
+            0.15,
+            0.08
+          ],
+          "tris_not_at_ends": 0,
+          "min_z": -0.01,
+          "footpad_range": [
+            -0.02,
+            0.02,
+            0.179,
+            0.221,
+            -0.01,
+            0.034
+          ],
+          "footpad_center": [
+            -0.0,
+            0.2,
+            0.012
+          ],
+          "footpad_expected_center": [
+            1.2246467991473533e-17,
+            0.2,
+            0.012
+          ],
+          "footpad_min_z": -0.01,
+          "ok": true
+        },
+        "Leg_2": {
+          "range": [
+            -0.189,
+            -0.071,
+            -0.116,
+            -0.034,
+            -0.01,
+            0.17
+          ],
+          "expected": [
+            -0.189,
+            -0.071,
+            -0.117,
+            -0.033,
+            -0.01,
+            0.17
+          ],
+          "axis_length": 0.1887,
+          "rings": [
+            [
+              0.0,
+              8
+            ],
+            [
+              0.189,
+              8
+            ]
+          ],
+          "centroid": [
+            -0.13,
+            -0.075,
+            0.08
+          ],
+          "expected_centroid": [
+            -0.13,
+            -0.075,
+            0.08
+          ],
+          "tris_not_at_ends": 0,
+          "min_z": -0.01,
+          "footpad_range": [
+            -0.193,
+            -0.153,
+            -0.121,
+            -0.079,
+            -0.01,
+            0.034
+          ],
+          "footpad_center": [
+            -0.173,
+            -0.1,
+            0.012
+          ],
+          "footpad_expected_center": [
+            -0.17320508075688773,
+            -0.10000000000000003,
+            0.012
+          ],
+          "footpad_min_z": -0.01,
+          "ok": true
+        },
+        "Leg_3": {
+          "range": [
+            0.071,
+            0.189,
+            -0.116,
+            -0.034,
+            -0.01,
+            0.17
+          ],
+          "expected": [
+            0.071,
+            0.189,
+            -0.117,
+            -0.033,
+            -0.01,
+            0.17
+          ],
+          "axis_length": 0.1887,
+          "rings": [
+            [
+              -0.0,
+              8
+            ],
+            [
+              0.189,
+              8
+            ]
+          ],
+          "centroid": [
+            0.13,
+            -0.075,
+            0.08
+          ],
+          "expected_centroid": [
+            0.13,
+            -0.075,
+            0.08
+          ],
+          "tris_not_at_ends": 0,
+          "min_z": -0.01,
+          "footpad_range": [
+            0.153,
+            0.193,
+            -0.121,
+            -0.079,
+            -0.01,
+            0.034
+          ],
+          "footpad_center": [
+            0.173,
+            -0.1,
+            0.012
+          ],
+          "footpad_expected_center": [
+            0.17320508075688767,
+            -0.10000000000000009,
+            0.012
+          ],
+          "footpad_min_z": -0.01,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "fire": {
+      "fire": {
+        "Log_1": {
+          "range": [
+            -0.139,
+            0.139,
+            -0.074,
+            0.074,
+            -0.001,
+            0.051
+          ],
+          "expected": [
+            -0.139,
+            0.139,
+            -0.074,
+            0.074,
+            -0.001,
+            0.051
+          ],
+          "centroid": [
+            0.0,
+            0.0,
+            0.025
+          ],
+          "expected_centroid": [
+            0.0,
+            0.0,
+            0.025
+          ],
+          "min_z": -0.001,
+          "ok": true
+        },
+        "Log_2": {
+          "range": [
+            -0.139,
+            0.139,
+            -0.074,
+            0.074,
+            -0.001,
+            0.051
+          ],
+          "expected": [
+            -0.139,
+            0.139,
+            -0.074,
+            0.074,
+            -0.001,
+            0.051
+          ],
+          "centroid": [
+            -0.0,
+            -0.0,
+            0.025
+          ],
+          "expected_centroid": [
+            0.0,
+            0.0,
+            0.025
+          ],
+          "min_z": -0.001,
+          "ok": true
+        },
+        "Flame_1": {
+          "range": [
+            -0.045,
+            0.045,
+            -0.045,
+            0.045,
+            0.03,
+            0.2
+          ],
+          "expected": [
+            -0.045,
+            0.045,
+            -0.045,
+            0.045,
+            0.03,
+            0.2
+          ],
+          "tip_above_pot_bottom": 0.06,
+          "pot_radius_at_tip_z": 0.139,
+          "ok": true
+        },
+        "Flame_2": {
+          "range": [
+            -0.085,
+            -0.015,
+            -0.005,
+            0.065,
+            0.03,
+            0.16
+          ],
+          "expected": [
+            -0.085,
+            -0.015,
+            -0.005,
+            0.065,
+            0.03,
+            0.16
+          ],
+          "tip_above_pot_bottom": 0.02,
+          "pot_radius_at_tip_z": 0.115,
+          "ok": true
+        },
+        "Flame_3": {
+          "range": [
+            0.015,
+            0.085,
+            -0.065,
+            0.005,
+            0.03,
+            0.15
+          ],
+          "expected": [
+            0.015,
+            0.085,
+            -0.065,
+            0.005,
+            0.03,
+            0.15
+          ],
+          "tip_above_pot_bottom": 0.01,
+          "pot_radius_at_tip_z": 0.1,
+          "ok": true
+        },
+        "FlameCore": {
+          "range": [
+            -0.028,
+            0.028,
+            -0.028,
+            0.028,
+            0.03,
+            0.12
+          ],
+          "expected": [
+            -0.028,
+            0.028,
+            -0.028,
+            0.028,
+            0.03,
+            0.12
+          ],
+          "tip_above_pot_bottom": -0.02,
+          "pot_radius_at_tip_z": null,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "stick": {
+      "range": [
+        -0.172,
+        0.172,
+        -0.041,
+        0.051,
+        0.394,
+        0.426
+      ],
+      "expected": [
+        -0.172,
+        0.172,
+        -0.041,
+        0.051,
+        0.394,
+        0.426
+      ],
+      "centroid": [
+        -0.0,
+        0.005,
+        0.41
+      ],
+      "expected_centroid": [
+        0.0,
+        0.005,
+        0.41
+      ],
+      "rim_crossings": {
+        "-0.138": {
+          "centerline_z": 0.414,
+          "bottom_z": 0.403,
+          "rests_on_rim": true
+        },
+        "0.138": {
+          "centerline_z": 0.406,
+          "bottom_z": 0.395,
+          "rests_on_rim": true
+        }
+      },
+      "ok": true
+    },
+    "symmetry": {
+      "pairs": [
+        {
+          "pair": [
+            "Handle_1",
+            "Handle_2"
+          ],
+          "kind": "mirror_x",
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "dz_expected": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "Leg_2",
+            "Leg_3"
+          ],
+          "kind": "mirror_x",
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "dz_expected": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "FootPad_2",
+            "FootPad_3"
+          ],
+          "kind": "mirror_x",
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.0,
+          "dz_expected": 0.0,
+          "faces_equal": true,
+          "ok": true
+        },
+        {
+          "pair": [
+            "Flame_2",
+            "Flame_3"
+          ],
+          "kind": "point_xy",
+          "dx": 0.0,
+          "dy": 0.0,
+          "dz": 0.005,
+          "dz_expected": 0.005,
+          "faces_equal": true,
+          "ok": true
+        }
+      ],
+      "ok": true
+    },
+    "ground_contact": {
+      "checked": 24,
+      "below_ground": {
+        "FootPad_1": -0.01,
+        "FootPad_2": -0.01,
+        "FootPad_3": -0.01,
+        "Leg_1": -0.01,
+        "Leg_2": -0.01,
+        "Leg_3": -0.01
+      },
+      "global_min_z": -0.01,
+      "planted_tolerance": 0.02,
+      "planted_ok": true,
+      "ok": true
+    },
+    "overall": {
+      "bbox": [
+        -0.193,
+        0.193,
+        -0.168,
+        0.221,
+        -0.01,
+        0.426
+      ],
+      "expected_bbox": [
+        -0.193,
+        0.193,
+        -0.168,
+        0.221,
+        -0.01,
+        0.426
+      ],
+      "width": 0.386,
+      "depth": 0.389,
+      "height": 0.436,
+      "note_claimed_width": 0.55,
+      "width_matches_note": false,
+      "ok": true
+    }
+  },
+  "structure_ok": true,
+  "materials": {
+    "rows": [
+      {
+        "name": "Cauldron_Iron",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.55,
+        "base_color": [
+          0.16,
+          0.16,
+          0.18
+        ],
+        "design_color_linear": [
+          0.16,
+          0.16,
+          0.18
+        ],
+        "ok": true
+      },
+      {
+        "name": "Cauldron_IronDark",
+        "found": true,
+        "metallic": 0.65,
+        "roughness": 0.6,
+        "base_color": [
+          0.1,
+          0.1,
+          0.11
+        ],
+        "design_color_linear": [
+          0.1,
+          0.1,
+          0.11
+        ],
+        "ok": true
+      },
+      {
+        "name": "Cauldron_Wood",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.36,
+          0.22,
+          0.12
+        ],
+        "design_color_linear": [
+          0.36,
+          0.22,
+          0.12
+        ],
+        "ok": true
+      },
+      {
+        "name": "Cauldron_WoodDark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.24,
+          0.15,
+          0.08
+        ],
+        "design_color_linear": [
+          0.24,
+          0.15,
+          0.08
+        ],
+        "ok": true
+      },
+      {
+        "name": "Cauldron_Potion",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.4,
+        "base_color": [
+          0.22,
+          0.72,
+          0.22
+        ],
+        "design_color_linear": [
+          0.22,
+          0.72,
+          0.22
+        ],
+        "ok": true,
+        "emission_strength": 0.8,
+        "emission_color": [
+          0.22,
+          0.72,
+          0.22
+        ],
+        "mix_fac": 0.7
+      },
+      {
+        "name": "Cauldron_Bubble",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.4,
+        "base_color": [
+          0.45,
+          0.9,
+          0.4
+        ],
+        "design_color_linear": [
+          0.45,
+          0.9,
+          0.4
+        ],
+        "ok": true,
+        "emission_strength": 0.6,
+        "emission_color": [
+          0.45,
+          0.9,
+          0.4
+        ],
+        "mix_fac": 0.6
+      },
+      {
+        "name": "Cauldron_Flame",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.4,
+        "base_color": [
+          0.95,
+          0.45,
+          0.1
+        ],
+        "design_color_linear": [
+          0.95,
+          0.45,
+          0.1
+        ],
+        "ok": true,
+        "emission_strength": 1.2,
+        "emission_color": [
+          0.95,
+          0.45,
+          0.1
+        ],
+        "mix_fac": 0.7
+      },
+      {
+        "name": "Cauldron_FlameCore",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.4,
+        "base_color": [
+          0.98,
+          0.8,
+          0.25
+        ],
+        "design_color_linear": [
+          0.98,
+          0.8,
+          0.25
+        ],
+        "ok": true,
+        "emission_strength": 1.4,
+        "emission_color": [
+          0.98,
+          0.8,
+          0.25
+        ],
+        "mix_fac": 0.7
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": [],
+    "assignment_mismatches": [],
+    "empty_material_slots": 0
+  },
+  "overall_pass": true
+}
