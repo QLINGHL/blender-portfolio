@@ -377,31 +377,31 @@
       "apron": [
         -0.22,
         0.22,
-        -0.36,
-        -0.264,
-        0.299,
-        1.249
+        -0.413,
+        -0.317,
+        0.275,
+        1.225
       ],
-      "apron_front_y_at_055": -0.342,
-      "apron_front_y_at_0775": -0.327,
-      "apron_front_y_at_092": -0.317,
+      "apron_front_y_at_055": -0.394,
+      "apron_front_y_at_0775": -0.378,
+      "apron_front_y_at_092": -0.368,
       "robe_front_y_at_055": -0.35,
       "robe_front_y_at_0775": -0.33,
       "robe_front_y_at_092": -0.32,
-      "apron_vs_robe_055": 0.008,
-      "apron_vs_robe_0775": 0.003,
-      "apron_vs_robe_092": 0.003,
+      "apron_vs_robe_055": -0.044,
+      "apron_vs_robe_0775": -0.048,
+      "apron_vs_robe_092": -0.048,
       "pocket": [
         -0.1,
         0.1,
-        -0.363,
-        -0.328,
-        0.505,
-        0.646
+        -0.416,
+        -0.382,
+        0.479,
+        0.621
       ],
-      "pocket_center_z": 0.576,
-      "pocket_back_y": -0.333,
-      "apron_front_at_pocket_z": -0.341,
+      "pocket_center_z": 0.55,
+      "pocket_back_y": -0.386,
+      "apron_front_at_pocket_z": -0.394,
       "pocket_float_gap": 0.008,
       "straps": {
         "ApronStrap": [
@@ -426,46 +426,46 @@
           "range": [
             -0.303,
             -0.217,
-            -0.47,
-            -0.37,
+            -0.52,
+            -0.42,
             0.78,
             0.9
           ],
-          "back_y": -0.37,
-          "front_y": -0.47,
-          "apron_front_at_z": -0.322,
-          "clear_of_apron": -0.048
+          "back_y": -0.42,
+          "front_y": -0.52,
+          "apron_front_at_z": -0.374,
+          "clear_of_apron": -0.046
         },
         "PotionBlueBody": {
           "range": [
             -0.043,
             0.043,
-            -0.47,
-            -0.37,
+            -0.52,
+            -0.42,
             0.78,
             0.9
           ],
-          "back_y": -0.37,
-          "front_y": -0.47,
-          "apron_front_at_z": -0.322,
-          "clear_of_apron": -0.048
+          "back_y": -0.42,
+          "front_y": -0.52,
+          "apron_front_at_z": -0.374,
+          "clear_of_apron": -0.046
         },
         "PotionPurpleBody": {
           "range": [
             0.217,
             0.303,
-            -0.47,
-            -0.37,
+            -0.52,
+            -0.42,
             0.78,
             0.9
           ],
-          "back_y": -0.37,
-          "front_y": -0.47,
-          "apron_front_at_z": -0.322,
-          "clear_of_apron": -0.048
+          "back_y": -0.42,
+          "front_y": -0.52,
+          "apron_front_at_z": -0.374,
+          "clear_of_apron": -0.046
         }
       },
-      "ok": false
+      "ok": true
     },
     "arms": {
       "Arm": {
@@ -712,8 +712,8 @@
         1.03
       ],
       "flask_back_y": -0.37,
-      "apron_front_y_at_103": -0.309,
-      "flask_clear_of_apron": -0.061,
+      "apron_front_y_at_103": -0.36,
+      "flask_clear_of_apron": -0.01,
       "liquid_inside_flask_xz": true,
       "liquid_top_below_cork": 0.105,
       "cork_above_flask": 0.0,
@@ -731,7 +731,7 @@
           "grips": true
         }
       },
-      "flask_to_apron_min_vert_dist": 0.2757,
+      "flask_to_apron_min_vert_dist": 0.2389,
       "ok": true
     },
     "legs": {
@@ -1025,7 +1025,7 @@
       "ok": true
     }
   },
-  "structure_ok": false,
+  "structure_ok": true,
   "materials": {
     "rows": [
       {
@@ -1444,5 +1444,5 @@
     "posed_below_ground": {},
     "ok": true
   },
-  "overall_pass": false
+  "overall_pass": true
 }

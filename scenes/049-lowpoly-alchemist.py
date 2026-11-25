@@ -9,8 +9,9 @@ Arms and legs are 5-ring tubes: the middle ring lands exactly on the
 elbow / knee joint loop. Flat shading, Eevee beauty + wireframe shots.
 Camera is auto-fitted with fit_camera_to_objects (target fill 0.78).
 042 lesson applied: the held prop sits well in front of the robe and
-apron (robe front ~-0.33, apron front ~-0.38, flask centre y=-0.48)
-so it stays visible; shoes bottom at z=0.
+apron (robe front ~-0.33, apron front ~-0.36 at flask height,
+flask centre y=-0.48) so it stays visible; shoes bottom at z=0.
+054: apron is a local-coordinate box, tilted -4° about its own centre.
 Run: blender --background --python 049-lowpoly-alchemist.py
 """
 import os
@@ -102,6 +103,28 @@ def box(name, center, size, mat):
         (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7),
     ]
     return mesh_from_data(name, verts, faces, mat)
+
+
+def box_own_origin(name, center, size, mat, rot=(0.0, 0.0, 0.0)):
+    """Box whose mesh verts are centred on the local origin; the object
+    carries location + rotation, so `rot` turns about the box centre.
+    (054 fix: the old box()+rotation_euler rotated about the world
+    origin because box() baked absolute coords into the mesh.)"""
+    sx, sy, sz = size[0] / 2.0, size[1] / 2.0, size[2] / 2.0
+    verts = [
+        (-sx, -sy, -sz), (sx, -sy, -sz),
+        (sx, sy, -sz), (-sx, sy, -sz),
+        (-sx, -sy, sz), (sx, -sy, sz),
+        (sx, sy, sz), (-sx, sy, sz),
+    ]
+    faces = [
+        (0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4),
+        (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7),
+    ]
+    obj = mesh_from_data(name, verts, faces, mat)
+    obj.location = center
+    obj.rotation_euler = rot
+    return obj
 
 
 def cyl_between(name, p0, p1, radius, sides, mat):
@@ -252,13 +275,19 @@ def main():
                          [0.30, 0.315, 0.335, 0.365, 0.40], 8, robe)
     parts.append(robe_obj)
     # --- apron: front panel following the robe flare (slight tilt),
-    #     front face at y ~ -0.38, plus two shoulder straps ---
-    apron_panel = box("Apron", (0, -0.365, 0.75), (0.44, 0.03, 0.95), apron)
-    apron_panel.rotation_euler = (math.radians(-4), 0, 0)
+    #     front face at y ~ -0.38, plus two shoulder straps.
+    #     054 fix: local-coordinate box + object transform, so the -4°
+    #     tilt turns about the apron centre (the old box()+rotation
+    #     turned about the world origin and sank the panel into the robe).
+    #     Pocket moved to y=-0.399 so its back stays embedded 0.0075
+    #     in the apron front, as before. ---
+    apron_panel = box_own_origin("Apron", (0, -0.365, 0.75),
+                                 (0.44, 0.03, 0.95), apron,
+                                 rot=(math.radians(-4), 0, 0))
     parts.append(apron_panel)
-    apron_pocket = box("ApronPocket", (0, -0.385, 0.55), (0.20, 0.025, 0.14),
-                       apron_dark)
-    apron_pocket.rotation_euler = (math.radians(-4), 0, 0)
+    apron_pocket = box_own_origin("ApronPocket", (0, -0.399, 0.55),
+                                  (0.20, 0.025, 0.14), apron_dark,
+                                  rot=(math.radians(-4), 0, 0))
     parts.append(apron_pocket)
     for sx in (-1, 1):
         strap = box("ApronStrap", (sx * 0.13, 0, 1.26), (0.07, 0.72, 0.025),
@@ -271,16 +300,18 @@ def main():
     buckle = box("Buckle", (0, -0.345, 0.945), (0.09, 0.02, 0.06), brass)
     parts.append(buckle)
     # --- three potion bottles hanging from the belt (front arc).
-    #     Bottles sit at y=-0.42, clearly in front of the apron face
-    #     (~-0.38), so all three read instead of sinking into the apron. ---
+    #     Bottles sit at y=-0.47, clearly in front of the apron face
+    #     (~-0.374 at bottle height), so all three read instead of
+    #     sinking into the apron. 054: bottles moved forward with the
+    #     fixed apron (was -0.42 against the old, sunken apron front). ---
     bottle_defs = [(-0.26, potion_red, "PotionRed"),
                    (0.0, potion_blue, "PotionBlue"),
                    (0.26, potion_purple, "PotionPurple")]
     for bx, bmat, bname in bottle_defs:
-        body = make_tube(bname + "Body", (bx, -0.42, 0.78), (0, 0, 1),
+        body = make_tube(bname + "Body", (bx, -0.47, 0.78), (0, 0, 1),
                          [0.0, 0.09, 0.12], [0.045, 0.05, 0.02], 6, bmat)
         parts.append(body)
-        cork_top = make_tube(bname + "Cork", (bx, -0.42, 0.90), (0, 0, 1),
+        cork_top = make_tube(bname + "Cork", (bx, -0.47, 0.90), (0, 0, 1),
                              [0.0, 0.03], [0.022, 0.02], 6, cork)
         parts.append(cork_top)
     # --- arms: 5 rings, middle ring = elbow joint loop; angled forward
@@ -306,9 +337,9 @@ def main():
                           (1.0, 0.9, 0.8), skin)
         parts.append(hand)
     # --- Erlenmeyer flask held in both hands, well in front of the
-    #     apron (apron front ~-0.38, flask centre y=-0.48): glass cone +
-    #     neck + cork + bright green liquid inside, tilted slightly
-    #     toward the viewer so the liquid reads. ---
+    #     apron (apron front ~-0.36 at flask height, flask centre y=-0.48):
+    #     glass cone + neck + cork + bright green liquid inside, tilted
+    #     slightly toward the viewer so the liquid reads. ---
     fc = Vector((0, -0.48, 0.92))
     flask = make_tube("Flask", tuple(fc), (0, 0, 1),
                       [0.0, 0.10, 0.16, 0.22], [0.11, 0.10, 0.035, 0.035],
@@ -365,7 +396,7 @@ def main():
         f.write("- 头部：皮肤球头 + 棕色发盖 + 灰色短须 + 前额黄铜护目镜（双圆环镜框 + 绿色镜片 + 绕头皮带），护目镜推上额头\n")
         f.write("- 上身：深青长袍（5 环，自肩部微喇叭下摆至脚踝）+ 深青披肩 + 棕色皮围裙（前片 + 兜 + 双肩带）\n")
         f.write("- 腰部：深棕皮带 + 黄铜带扣，正面挂三瓶药水（红 / 蓝 / 紫，瓶身 + 瓶塞）\n")
-        f.write("- 双手身前持一只锥形烧瓶：透明玻璃锥体 + 瓶颈 + 瓶塞，内装亮绿药液；烧瓶中心 y=-0.48，位于围裙前片（y≈-0.38）前方 0.10，正面清晰可见（042 教训）\n")
+        f.write("- 双手身前持一只锥形烧瓶：透明玻璃锥体 + 瓶颈 + 瓶塞，内装亮绿药液；烧瓶中心 y=-0.48，位于围裙前片（z≈1.03 处 y≈-0.36）前方 0.12，正面清晰可见（042 教训）；054 围裙改为本地坐标盒子、-4° 绕自身中心倾斜，药水瓶随之前移至 y=-0.47\n")
         f.write("- 腿部藏于袍下：灰裤 + 深棕皮鞋，鞋尖从袍摆前探出，鞋底 z=0 落地\n\n")
         f.write("## 关节拓扑（绑定就绪）\n\n")
         f.write("- 手臂：5 个环形边线，中间环正好落在肘关节（肘部可弯曲不断裂）\n")

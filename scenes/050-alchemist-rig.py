@@ -104,6 +104,28 @@ def box(name, center, size, mat):
     return mesh_from_data(name, verts, faces, mat)
 
 
+def box_own_origin(name, center, size, mat, rot=(0.0, 0.0, 0.0)):
+    """Box whose mesh verts are centred on the local origin; the object
+    carries location + rotation, so `rot` turns about the box centre.
+    (054 fix, same as 049: the old box()+rotation_euler rotated about
+    the world origin because box() baked absolute coords into the mesh.)"""
+    sx, sy, sz = size[0] / 2.0, size[1] / 2.0, size[2] / 2.0
+    verts = [
+        (-sx, -sy, -sz), (sx, -sy, -sz),
+        (sx, sy, -sz), (-sx, sy, -sz),
+        (-sx, -sy, sz), (sx, -sy, sz),
+        (sx, sy, sz), (-sx, sy, sz),
+    ]
+    faces = [
+        (0, 3, 2, 1), (4, 5, 6, 7), (0, 1, 5, 4),
+        (1, 2, 6, 5), (2, 3, 7, 6), (3, 0, 4, 7),
+    ]
+    obj = mesh_from_data(name, verts, faces, mat)
+    obj.location = center
+    obj.rotation_euler = rot
+    return obj
+
+
 def cyl_between(name, p0, p1, radius, sides, mat):
     """Cylinder (with end caps) between two points, fan caps."""
     a = Vector(p0)
@@ -237,12 +259,16 @@ def build_alchemist():
                          [0.0, 0.30, 0.60, 0.90, 1.20],
                          [0.30, 0.315, 0.335, 0.365, 0.40], 8, robe)
     parts.append(robe_obj)
-    apron_panel = box("Apron", (0, -0.365, 0.75), (0.44, 0.03, 0.95), apron)
-    apron_panel.rotation_euler = (math.radians(-4), 0, 0)
+    # 054 fix (same as 049): local-coordinate boxes so the -4° tilt
+    # turns about each part's own centre, not the world origin.
+    # Pocket moved to y=-0.399 to keep its back embedded 0.0075.
+    apron_panel = box_own_origin("Apron", (0, -0.365, 0.75),
+                                 (0.44, 0.03, 0.95), apron,
+                                 rot=(math.radians(-4), 0, 0))
     parts.append(apron_panel)
-    apron_pocket = box("ApronPocket", (0, -0.385, 0.55), (0.20, 0.025, 0.14),
-                       apron_dark)
-    apron_pocket.rotation_euler = (math.radians(-4), 0, 0)
+    apron_pocket = box_own_origin("ApronPocket", (0, -0.399, 0.55),
+                                  (0.20, 0.025, 0.14), apron_dark,
+                                  rot=(math.radians(-4), 0, 0))
     parts.append(apron_pocket)
     for sx in (-1, 1):
         strap = box("ApronStrap", (sx * 0.13, 0, 1.26), (0.07, 0.72, 0.025),
@@ -257,10 +283,10 @@ def build_alchemist():
                    (0.0, potion_blue, "PotionBlue"),
                    (0.26, potion_purple, "PotionPurple")]
     for bx, bmat, bname in bottle_defs:
-        body = make_tube(bname + "Body", (bx, -0.42, 0.78), (0, 0, 1),
+        body = make_tube(bname + "Body", (bx, -0.47, 0.78), (0, 0, 1),
                          [0.0, 0.09, 0.12], [0.045, 0.05, 0.02], 6, bmat)
         parts.append(body)
-        cork_top = make_tube(bname + "Cork", (bx, -0.42, 0.90), (0, 0, 1),
+        cork_top = make_tube(bname + "Cork", (bx, -0.47, 0.90), (0, 0, 1),
                              [0.0, 0.03], [0.022, 0.02], 6, cork)
         parts.append(cork_top)
     wrists = {}

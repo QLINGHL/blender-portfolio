@@ -322,12 +322,14 @@ def tri_faces_at_ends(obj, origin, direction, length):
 
 
 def plane_y_at_z(obj, local_axis_value, axis, z_target):
-    """For a box part whose mesh verts are absolute coords with an
-    object rotation applied: take the face whose local coords equal
-    `local_axis_value` along `axis` ('y' or '-y'), fit its world plane
-    y = a + b*z, and return the plane's y at z_target.
-    (Used for the apron front face and the pocket back face, whose
-    object rotation is about the world origin, not the part centre.)"""
+    """For a box part whose mesh verts are local coords with an object
+    rotation about the part centre: take the face whose local coords
+    equal `local_axis_value` along `axis` ('y' or '-y'), fit its world
+    plane y = a + b*z, and return the plane's y at z_target.
+    (Used for the apron front face and the pocket back face. Before
+    054 the boxes carried absolute coords and rotated about the world
+    origin; since 054 they are local boxes with location + rotation,
+    so the local face values are -0.015 / +0.0125, not -0.38.)"""
     mw = obj.matrix_world
     pts = []
     for v in obj.data.vertices:
@@ -502,15 +504,15 @@ def check_torso(by_name):
                 return a["radius"] + t * (b["radius"] - a["radius"])
         return None
 
-    # apron front plane (local y=-0.38 face) vs robe front, at two heights
-    apron_front_055 = plane_y_at_z(by_name["Apron"], -0.38, "y", 0.55)
-    apron_front_092 = plane_y_at_z(by_name["Apron"], -0.38, "y", 0.92)
-    apron_front_0775 = plane_y_at_z(by_name["Apron"], -0.38, "y", 0.775)
-    # pocket back plane (local y=-0.3725 face) vs apron front at pocket z
+    # apron front plane (local y=-0.015 face) vs robe front, at two heights
+    apron_front_055 = plane_y_at_z(by_name["Apron"], -0.015, "y", 0.55)
+    apron_front_092 = plane_y_at_z(by_name["Apron"], -0.015, "y", 0.92)
+    apron_front_0775 = plane_y_at_z(by_name["Apron"], -0.015, "y", 0.775)
+    # pocket back plane (local y=+0.0125 face) vs apron front at pocket z
     pocket_zc = (pocket[4] + pocket[5]) / 2
-    pocket_back = plane_y_at_z(by_name["ApronPocket"], -0.3725, "y",
+    pocket_back = plane_y_at_z(by_name["ApronPocket"], 0.0125, "y",
                                pocket_zc)
-    apron_front_at_pocket = plane_y_at_z(by_name["Apron"], -0.38, "y",
+    apron_front_at_pocket = plane_y_at_z(by_name["Apron"], -0.015, "y",
                                          pocket_zc)
     # pocket back in front of apron front (more negative y) = floating gap
     pocket_float = (round(pocket_back - apron_front_at_pocket, 3)
@@ -521,7 +523,7 @@ def check_torso(by_name):
     for tag in ("PotionRedBody", "PotionBlueBody", "PotionPurpleBody"):
         r = world_range(by_name[tag])
         zc = (r[4] + r[5]) / 2
-        af = plane_y_at_z(by_name["Apron"], -0.38, "y", zc)
+        af = plane_y_at_z(by_name["Apron"], -0.015, "y", zc)
         potions[tag] = {"range": r, "back_y": r[3], "front_y": r[2],
                         "apron_front_at_z": af,
                         "clear_of_apron": (round(r[3] - af, 3)
@@ -664,7 +666,7 @@ def check_flask(by_name):
                       "z": round(oz, 3),
                       "grips": bool(ox > 0 and oy > 0 and oz > 0)}
     # flask vs apron front at flask mid height (z ~1.03)
-    apron_front_103 = plane_y_at_z(by_name["Apron"], -0.38, "y", 1.03)
+    apron_front_103 = plane_y_at_z(by_name["Apron"], -0.015, "y", 1.03)
     flask_center = ((flask[0] + flask[1]) / 2, (flask[2] + flask[3]) / 2,
                     (flask[4] + flask[5]) / 2)
     row = {"flask": flask, "liquid": liquid, "cork": cork,
@@ -1070,7 +1072,7 @@ def main():
                 "另复核 `scenes/050-alchemist-rig.blend`（骨架绑定后状态）。\n" % len(results))
         f.write("检查方式：Blender bmesh 实测 + 世界坐标实测，非目测估算。049 / 050 原文件未改动。\n\n")
         f.write("## 结论\n\n")
-        f.write("**%s**\n\n" % ("全部通过" if all_ok else "REVIEW NEEDED：见第 4 节围裙缺陷"))
+        f.write("**%s**\n\n" % ("全部通过" if all_ok else "REVIEW NEEDED：见第 7 节待修项"))
         f.write("## 1. 拓扑\n\n")
         f.write("| 部件 | 顶点 | 面 | 三角 | 四边 | N-gon | 重叠顶点 | 散边 | 边界边 | 非流形边 | 退化面 | 最高顶点价数 |\n")
         f.write("| ---- | ---- | -- | ---- | ---- | ----- | -------- | ---- | ------ | -------- | ------ | ------------ |\n")
@@ -1180,26 +1182,38 @@ def main():
                     abs(t["pocket_float_gap"]),
                     verdict(t["pocket_float_gap"] is not None
                             and 0 < t["pocket_float_gap"] < 0.02)))
-        f.write("  **缺陷：围裙的 -4° 倾斜绕的是世界原点，不是围裙自身中心。**"
-                "049 脚本用 box() 生成绝对坐标网格（物体原点在世界原点），"
-                "再设 rotation_euler=(-4°, 0, 0)，整个围裙被绕原点甩到"
-                "胸前上方（围裙盒中心从 (0, -0.365, 0.75) 移到 "
-                "(0, -0.312, 0.774)，前片中心 y 从 -0.38 变为 -0.327），"
-                "与 042 书的 -8° 倾斜同一根因。"
-                "后果：围裙前片中心带在 z=0.55/0.775/0.92 三处分别被长袍"
-                "盖住 %.3f / %.3f / %.3f（设计应多探出约 0.03 / 0.05 / 0.06）；"
-                "围裙两侧（x 较大处）仍露出袍面，渲染图上围裙仍可辨认，"
-                "但中心带 3–8mm 被袍面吞掉。围裙兜不受影响：兜背嵌进围裙"
-                "前沿 %.3f（设计 0.0075），贴合正常。\n"
-                "  修复：把围裙做成本地坐标盒子（中心在原点），"
-                "再设物体 location=(0, -0.365, 0.75)、"
-                "rotation_euler=(-4°, 0, 0)，让倾斜绕围裙中心发生；"
-                "或把 -4° 烘进网格顶点后清零物体旋转。修完重跑本脚本复核："
-                "围裙前沿在 z=0.55/0.775/0.92 三处均应比长袍前沿多探出"
-                "约 0.03 / 0.05 / 0.06。注意：050 rig 版沿用同一写法，"
-                "同样受影响。\n" % (
-                    t["apron_vs_robe_055"], t["apron_vs_robe_0775"],
-                    t["apron_vs_robe_092"], t["pocket_float_gap"]))
+        apron_covered = any(v is not None and v > 0 for v in (
+            t["apron_vs_robe_055"], t["apron_vs_robe_0775"],
+            t["apron_vs_robe_092"]))
+        if apron_covered:
+            f.write("  **缺陷：围裙的 -4° 倾斜绕的是世界原点，不是围裙自身中心。**"
+                    "049 脚本用 box() 生成绝对坐标网格（物体原点在世界原点），"
+                    "再设 rotation_euler=(-4°, 0, 0)，整个围裙被绕原点甩到"
+                    "胸前上方（围裙盒中心从 (0, -0.365, 0.75) 移到 "
+                    "(0, -0.312, 0.774)，前片中心 y 从 -0.38 变为 -0.327），"
+                    "与 042 书的 -8° 倾斜同一根因。"
+                    "后果：围裙前片中心带在 z=0.55/0.775/0.92 三处分别被长袍"
+                    "盖住 %.3f / %.3f / %.3f（设计应多探出约 0.03 / 0.05 / 0.06）；"
+                    "围裙两侧（x 较大处）仍露出袍面，渲染图上围裙仍可辨认，"
+                    "但中心带 3–8mm 被袍面吞掉。围裙兜不受影响：兜背嵌进围裙"
+                    "前沿 %.3f（设计 0.0075），贴合正常。\n"
+                    "  修复：把围裙做成本地坐标盒子（中心在原点），"
+                    "再设物体 location=(0, -0.365, 0.75)、"
+                    "rotation_euler=(-4°, 0, 0)，让倾斜绕围裙中心发生；"
+                    "或把 -4° 烘进网格顶点后清零物体旋转。修完重跑本脚本复核："
+                    "围裙前沿在 z=0.55/0.775/0.92 三处均应比长袍前沿多探出"
+                    "约 0.03 / 0.05 / 0.06。注意：050 rig 版沿用同一写法，"
+                    "同样受影响。\n" % (
+                        t["apron_vs_robe_055"], t["apron_vs_robe_0775"],
+                        t["apron_vs_robe_092"], t["pocket_float_gap"]))
+        else:
+            f.write("  **054 已修复：围裙改为本地坐标盒子，-4° 倾斜绕围裙自身"
+                    "中心发生。**围裙前沿在 z=0.55/0.775/0.92 三处比长袍前沿"
+                    "多探出 %.3f / %.3f / %.3f；围裙兜背嵌进围裙前沿 %.3f"
+                    "（设计 0.0075）；腰间三瓶药水随围裙前移至 y=-0.47，"
+                    "瓶背仍在围裙前面。\n" % (
+                        -t["apron_vs_robe_055"], -t["apron_vs_robe_0775"],
+                        -t["apron_vs_robe_092"], t["pocket_float_gap"]))
         for tag, p in t["potions"].items():
             f.write("- %s：瓶身 x %.3f–%.3f、y %.3f–%.3f、z %.3f–%.3f，"
                     "瓶背 y=%.3f，同高度围裙前沿 y=%.3f，瓶背在围裙前面 %.3f"
@@ -1337,10 +1351,11 @@ def main():
         f.write("结论：**%s**。\n\n" % ("全部通过" if all_ok else "REVIEW NEEDED"))
         if not all_ok:
             f.write("待修项（按优先级）：\n\n")
-            f.write("1. 围裙 -4° 倾斜绕世界原点（049 脚本 box()+rotation_euler 写法）："
-                    "围裙前片中心带被长袍盖住 0.003–0.008（z=0.55 处 0.008）。"
-                    "修法见第 4 节。\n"
-                    % ())
+            if apron_covered:
+                f.write("1. 围裙 -4° 倾斜绕世界原点（049 脚本 box()+rotation_euler 写法）："
+                        "围裙前片中心带被长袍盖住 0.003–0.008（z=0.55 处 0.008）。"
+                        "修法见第 4 节。\n"
+                        % ())
             f.write("2. 右手持瓶漂移 0.036 米（050 已知，右手向烧瓶靠拢、未脱手）："
                     "下次同类持物姿势把双肩 z 分量也取同号（050 轮建议）。\n")
         f.write("\n其余项：拓扑、法线、UV、材质、关节环、对称、地面接触、骨架绑定复核均通过。\n")

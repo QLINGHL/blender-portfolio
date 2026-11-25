@@ -740,12 +740,12 @@
       "min_z": 0.0587
     },
     "Apron": {
-      "max_displacement": 0.0676,
-      "min_z": 0.2653
+      "max_displacement": 0.0659,
+      "min_z": 0.227
     },
     "ApronPocket": {
-      "max_displacement": 0.0621,
-      "min_z": 0.5013
+      "max_displacement": 0.0699,
+      "min_z": 0.4805
     },
     "ApronStrap": {
       "max_displacement": 0.0552,
@@ -764,28 +764,28 @@
       "min_z": 0.9006
     },
     "PotionRedBody": {
-      "max_displacement": 0.0697,
-      "min_z": 0.7466
+      "max_displacement": 0.0703,
+      "min_z": 0.7451
     },
     "PotionRedCork": {
-      "max_displacement": 0.0656,
-      "min_z": 0.8679
+      "max_displacement": 0.0664,
+      "min_z": 0.8664
     },
     "PotionBlueBody": {
       "max_displacement": 0.064,
-      "min_z": 0.7623
+      "min_z": 0.7607
     },
     "PotionBlueCork": {
-      "max_displacement": 0.063,
-      "min_z": 0.8837
+      "max_displacement": 0.0633,
+      "min_z": 0.882
     },
     "PotionPurpleBody": {
-      "max_displacement": 0.0686,
-      "min_z": 0.7713
+      "max_displacement": 0.0695,
+      "min_z": 0.7698
     },
     "PotionPurpleCork": {
-      "max_displacement": 0.0675,
-      "min_z": 0.8923
+      "max_displacement": 0.0688,
+      "min_z": 0.8906
     },
     "Arm": {
       "max_displacement": 0.0621,
@@ -861,7 +861,7 @@
     "flask_to_hand_r_rest": 0.1504,
     "flask_to_hand_r_posed": 0.1144,
     "flask_to_hand_r_drift": 0.036,
-    "flask_min_dist_to_apron": 0.2415,
+    "flask_min_dist_to_apron": 0.2017,
     "flask_min_dist_to_robe": 0.0732
   }
 }
