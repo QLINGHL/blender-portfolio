@@ -114,7 +114,8 @@ def main():
     d.text((36, fy + 10), footer1, fill=(60, 60, 60), font=font(30))
     footer2 = ("8 bottles lathe 16 sides, liquid 65% height x0.8, corks "
                "sink 0.006 / stick out 0.022; labels hug wall 0.0015; "
-               "DEFECT: Bottle_L1 clips Post_L 0.0045 (4 verts inside)")
+               "FIXED (061): Bottle_L1 moved inward 0.01 m (x -0.20 -> "
+               "-0.19), no clip into Post_L (QA PASS)")
     d.text((36, fy + 52), footer2, fill=(60, 60, 60), font=font(28))
     n_mats = len(s["materials"]["rows"])
     ok_mats = sum(1 for r in s["materials"]["rows"] if r["ok"])

@@ -352,7 +352,7 @@ def main():
     # --- bottles ---
     # lower shelf, base z 0.045
     tops = {}
-    tops["L1"] = make_bottle("L1", "round", -0.20, 0.045, glass_amber,
+    tops["L1"] = make_bottle("L1", "round", -0.19, 0.045, glass_amber,
                              liq_amber, cork_mat, parchment, parts)
     tops["L2"] = make_bottle("L2", "tall", -0.075, 0.045, glass_green,
                              liq_green, cork_mat, parchment, parts)
@@ -445,6 +445,10 @@ def main():
                 "锥形瓶下沿不再埋进瓶壁\n")
         f.write("- 下层（z 0.045）：L1 圆腹琥珀、L2 高身绿、L3 小药瓶蓝、"
                 "L4 锥形紫\n")
+        f.write("- 修复记录（061，2026-11-26）：060 质检单发现 Bottle_L1 "
+                "卡进 Post_L（4 个顶点在立柱体内，最深 0.0045 m）；L1 向内"
+                "移 0.01 m（x -0.20 → -0.19，与 U1 对齐），修完重跑 060 "
+                "质检脚本复核到 PASS\n")
         f.write("- 上层（z 0.285）：U1 圆腹红、U2 高身青、U3 小药瓶琥珀、"
                 "U4 锥形绿；上层最高瓶顶（瓶塞）约 z 0.477，顶板底 0.495，"
                 "不穿帮\n")

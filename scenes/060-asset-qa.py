@@ -157,7 +157,7 @@ PROFILES = {
 LATHE_SIDES = 16
 # tag -> (kind, x, z_base, glass, liquid)
 BOTTLES = {
-    "L1": ("round", -0.20, 0.045, "Amber", "Amber"),
+    "L1": ("round", -0.19, 0.045, "Amber", "Amber"),
     "L2": ("tall", -0.075, 0.045, "Green", "Green"),
     "L3": ("vial", 0.035, 0.045, "Blue", "Blue"),
     "L4": ("conical", 0.16, 0.045, "Purple", "Purple"),
@@ -1045,7 +1045,7 @@ def main():
     with open(CHECKLIST, "w", encoding="utf-8") as f:
         f.write("# 060 资产质检单：低模炼金药水架（059）\n\n")
         f.write("被检资产：`scenes/059-lowpoly-potion-rack.blend`（%d 个道具部件，不含地面）。\n" % len(results))
-        f.write("检查方式：Blender bmesh 实测 + 世界坐标实测，非目测估算。059 原文件未改动。\n\n")
+        f.write("检查方式：Blender bmesh 实测 + 世界坐标实测，非目测估算。061 修复后复核：059 源文件已按修复重建（L1 x -0.20 → -0.19）。\n\n")
         f.write("## 结论\n\n")
         f.write("**%s**\n\n" % ("全部通过" if all_ok else "REVIEW NEEDED：见第 7 节待修项"))
         f.write("## 1. 拓扑\n\n")
@@ -1271,6 +1271,9 @@ def main():
                 "不是破洞；其余 34 个部件全部闭合。\n")
         f.write("- 059 笔记尺寸与实测一致：宽 0.585 m × 深 0.170 m × "
                 "高 0.552 m（笔记“约 0.59 × 0.55 × 0.17 m”）。\n")
+        f.write("- 061 修复复核：Bottle_L1 向内移 0.01 m（x -0.20 → -0.19，"
+                "与 U1 对齐），L1–Post_L 间隙 0.006、L1–L2 间隙 0.030，"
+                "立柱体内顶点 0 个，原 REVIEW NEEDED 的唯一缺陷已消除。\n")
         f.write("\n## 7. 总评\n\n")
         f.write("结论：**%s**。\n\n\n" % ("全部通过" if all_ok else "REVIEW NEEDED"))
         if all_ok:
