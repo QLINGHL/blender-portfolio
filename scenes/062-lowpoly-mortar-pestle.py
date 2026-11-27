@@ -218,10 +218,13 @@ PESTLE_PROFILE = [
     (0.016, 0.220), (0.012, 0.245), (0.001, 0.255),
 ]
 
-# Powder mound profile (radius, z), base at the bowl floor.
+# Powder mound profile (radius, z), base at the bowl floor. 064: base
+# radii shrunk x0.7 (0.055 -> 0.0385) so the mound fits the far side
+# clear of the pestle (063: min pestle clearance -0.0242 at full size);
+# height unchanged (0.024).
 MOUND_PROFILE = [
-    (0.001, 0.000), (0.055, 0.000), (0.052, 0.005), (0.032, 0.014),
-    (0.012, 0.021), (0.001, 0.024),
+    (0.001, 0.000), (0.0385, 0.000), (0.0364, 0.005), (0.0224, 0.014),
+    (0.0084, 0.021), (0.001, 0.024),
 ]
 
 
@@ -263,26 +266,37 @@ def main():
     parts.append(pestle)
 
     # --- ground powder mound, off-center on the bowl floor, on the
-    # far (+Y) side so it stays visible over the near rim ---
+    # far (+Y) side so it stays visible over the near rim. 064: moved
+    # from (0.06, 0.03) to (0.0, 0.09) — centre 0.0804 from the pestle
+    # axis (063: -0.0242 clearance at the old spot); the -X side the
+    # 063 sheet suggested is already occupied by HerbChunk_2/3, so the
+    # +Y far side is the free spot that still clears the pestle. ---
     mound = lathe_z("PowderMound", MOUND_PROFILE, 12, powder,
                     z_base=0.038, cap_bottom=True)
-    mound.location = (0.06, 0.03, 0.0)
+    mound.location = (0.0, 0.09, 0.0)
     parts.append(mound)
 
     # --- ground herb fragments scattered on the bowl floor, clear of
     # the pestle bulb (bulb occupies r < ~0.04 around (0.01, 0.01)).
-    # All on the visible side: from the (0,-1,0.60) camera the near rim
-    # hides floor with y < ~-0.015, so fragments sit at y >= -0.01. ---
+    # 064 (063: chunks 1/2/3/6/7/8 buried in the sloped bowl wall,
+    # visible height -0.020..0.003): each chunk is raised onto the
+    # local floor — centre z = floor height at its radial distance +
+    # half-height (scale_z * radius) - 0.002 bottom embed — so every
+    # chunk sticks ~0.012-0.015 out of the slope. Chunk 5 (063:
+    # -0.0059 into the pestle) also moves away from the pestle axis to
+    # (0.100, -0.030); its raised top (z 0.070) still clears the near
+    # rim on the (0,-1,0.60) sightline, so the y >= -0.01 rule no
+    # longer binds it. ---
     chunks = [
         # (x, y, z, radius, scale_z, rot_z_deg, material)
-        (0.075, 0.045, 0.040, 0.019, 0.45, 20, herb_green),
-        (-0.055, 0.060, 0.040, 0.021, 0.40, 75, herb_light),
-        (-0.085, 0.010, 0.040, 0.017, 0.50, 140, herb_green),
-        (-0.020, -0.005, 0.040, 0.020, 0.42, 200, herb_light),
-        (0.055, -0.010, 0.040, 0.018, 0.48, 260, herb_green),
-        (0.095, 0.015, 0.040, 0.016, 0.45, 310, herb_light),
-        (-0.045, 0.095, 0.040, 0.017, 0.50, 45, herb_green),
-        (0.100, 0.060, 0.040, 0.015, 0.45, 170, herb_green),
+        (0.075, 0.045, 0.0534, 0.019, 0.45, 20, herb_green),
+        (-0.055, 0.060, 0.0517, 0.021, 0.40, 75, herb_light),
+        (-0.085, 0.010, 0.0529, 0.017, 0.50, 140, herb_green),
+        (-0.020, -0.005, 0.0451, 0.020, 0.42, 200, herb_light),
+        (0.100, -0.030, 0.0610, 0.018, 0.48, 260, herb_green),
+        (0.095, 0.015, 0.0542, 0.016, 0.45, 310, herb_light),
+        (-0.045, 0.095, 0.0616, 0.017, 0.50, 45, herb_green),
+        (0.100, 0.060, 0.0714, 0.015, 0.45, 170, herb_green),
     ]
     for i, (x, y, z, r, sz, rz, mat) in enumerate(chunks):
         parts.append(herb_chunk("HerbChunk_%d" % (i + 1), (x, y, z),
@@ -408,11 +422,13 @@ def main():
                 "柄端伸出碗口上方；柄在碗口平面（z 0.112）处 x 约 0.064，"
                 "在内腔半径内，不碰碗口\n")
         f.write("- 草药粉堆（PowderMound）：车削小丘，6 个断面、12 段，"
-                "底径 0.055、高 0.024，落在碗底远侧 (0.06, 0.03, 0.038)，"
+                "底径 0.0385（064 缩小底盘 ×0.7）、高 0.024，落在碗底"
+                " +Y 远侧 (0.0, 0.09, 0.038)，中心离杵轴 0.0804，"
                 "避免被近侧碗口遮挡\n")
         f.write("- 草药碎（HerbChunk_1–8）：20 面扁平二十面体，压扁 0.4–"
-                "0.5，半径 0.015–0.021，散在碗底、避开杵头（r < 0.04 区域）"
-                "与近侧遮挡区（y >= -0.01）\n")
+                "0.5，半径 0.015–0.021，散在碗底、避开杵头；064 起每块按"
+                "当地碗底面高抬高（中心 z = 当地碗底面高 + 碎块半高"
+                " − 0.002），5 号移离杵轴到 (0.100, -0.030, 0.0610)\n")
         f.write("- 干草茎（DryStem_1–5）：两点圆柱，6 段，半径 0.004、"
                 "长 0.17，从公共基点 (0.26, 0.02, 0.004) 扇形散开\n")
         f.write("- 干叶（DryLeaf_1–6）：扁平小盒 0.034×0.014×0.002，"

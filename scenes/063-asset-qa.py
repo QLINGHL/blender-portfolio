@@ -87,15 +87,15 @@ PESTLE_PROFILE = [
     (0.016, 0.220), (0.012, 0.245), (0.001, 0.255),
 ]
 MOUND_PROFILE = [
-    (0.001, 0.000), (0.055, 0.000), (0.052, 0.005), (0.032, 0.014),
-    (0.012, 0.021), (0.001, 0.024),
+    (0.001, 0.000), (0.0385, 0.000), (0.0364, 0.005), (0.0224, 0.014),
+    (0.0084, 0.021), (0.001, 0.024),
 ]
 MORTAR_SIDES = 24
 PESTLE_SIDES = 16
 MOUND_SIDES = 12
 PESTLE_ORIGIN = (0.01, 0.01, 0.038)
 PESTLE_ANGLE_DEG = 38.0
-MOUND_LOC = (0.06, 0.03, 0.0)
+MOUND_LOC = (0.0, 0.09, 0.0)
 MOUND_Z_BASE = 0.038
 # inner wall of the mortar, rim -> centre (radius, z), for the floor-height
 # function: the bowl floor is a slope, not a flat plane.
@@ -106,14 +106,14 @@ MORTAR_OUTER_RADIUS = 0.158
 BOWL_FLOOR_Z = 0.038  # floor height at the centre
 # herb chunks: (x, y, z, radius, scale_z, rot_z_deg, material)
 CHUNKS = [
-    (0.075, 0.045, 0.040, 0.019, 0.45, 20, "Herb_Green"),
-    (-0.055, 0.060, 0.040, 0.021, 0.40, 75, "Herb_Light"),
-    (-0.085, 0.010, 0.040, 0.017, 0.50, 140, "Herb_Green"),
-    (-0.020, -0.005, 0.040, 0.020, 0.42, 200, "Herb_Light"),
-    (0.055, -0.010, 0.040, 0.018, 0.48, 260, "Herb_Green"),
-    (0.095, 0.015, 0.040, 0.016, 0.45, 310, "Herb_Light"),
-    (-0.045, 0.095, 0.040, 0.017, 0.50, 45, "Herb_Green"),
-    (0.100, 0.060, 0.040, 0.015, 0.45, 170, "Herb_Green"),
+    (0.075, 0.045, 0.0534, 0.019, 0.45, 20, "Herb_Green"),
+    (-0.055, 0.060, 0.0517, 0.021, 0.40, 75, "Herb_Light"),
+    (-0.085, 0.010, 0.0529, 0.017, 0.50, 140, "Herb_Green"),
+    (-0.020, -0.005, 0.0451, 0.020, 0.42, 200, "Herb_Light"),
+    (0.100, -0.030, 0.0610, 0.018, 0.48, 260, "Herb_Green"),
+    (0.095, 0.015, 0.0542, 0.016, 0.45, 310, "Herb_Light"),
+    (-0.045, 0.095, 0.0616, 0.017, 0.50, 45, "Herb_Green"),
+    (0.100, 0.060, 0.0714, 0.015, 0.45, 170, "Herb_Green"),
 ]
 # dry stems: common base point + fan directions (from the 062 build script)
 STEM_BASE = (0.26, 0.02, 0.004)
@@ -976,7 +976,7 @@ def main():
             mound["base_ring_burial_max"], mound["pestle_clearance"],
             verdict(mound["ok"])))
         f.write("\n### 4.4 碗内草药碎（8 块）\n\n")
-        f.write("判定标准：草药碎须露出斜坡碗底面才可见——露出高度 = 碎块顶 z − 碎块中心处碗底面高，须 > 0.004（约碎块半高的一半）；碎块底埋入碗底、下坡一侧顶点埋入斜坡壁属 planted，不单独判否。碗底面是斜坡（中心 z 0.038、r 0.100 处 z 0.050、碗口 z 0.108），碎块中心统一 z 0.040，离轴越远埋得越深。\n\n")
+        f.write("判定标准：草药碎须露出斜坡碗底面才可见——露出高度 = 碎块顶 z − 碎块中心处碗底面高，须 > 0.004（约碎块半高的一半）；碎块底埋入碗底、下坡一侧顶点埋入斜坡壁属 planted，不单独判否。碗底面是斜坡（中心 z 0.038、r 0.100 处 z 0.050、碗口 z 0.108），064 起碎块中心按当地碗底面高抬高（中心 z = 当地碗底面高 + 碎块半高 − 0.002），离轴越远抬得越高。\n\n")
         for name, ch in chunks["chunks"].items():
             f.write("- %s：中心 %s（设计 %s），离碗轴 %.3f、该处碗底面高 %.3f；顶 z %.3f、底 z %.3f（设计底 %.3f，底埋入碗底 %.4f，属 planted）；露出高度 %.4f；埋入碗壁顶点 %d/%d 个、最深 %.4f；与研杵最小间隙 %.4f：%s\n" % (
                 name, ch["center"], ch["design_center"],
@@ -1083,7 +1083,7 @@ def main():
                             for n in slivers),
                         max(chunks["chunks"][n]["visible_height"]
                             for n in slivers))
-                f.write("- 碗内草药碎埋入斜坡碗壁（%s）：碎块中心统一 z 0.040，"
+                f.write("- 碗内草药碎埋入斜坡碗壁（%s）：碎块中心原先统一 z 0.040，"
                         "但碗底面是斜坡（离轴越远越高），%s 顶低于当地碗底面、"
                         "渲染中完全看不见%s；"
                         "修法：每块碎块按其中心离轴距离抬到当地碗底面上"
@@ -1105,9 +1105,9 @@ def main():
                             ", ".join("%.4f" % c for _n, c in clip_chunks)))
             if mound["pestle_clearance"] <= 0:
                 f.write("- 草药粉堆卡进研杵杵头（最小间隙 %.4f m，最深穿入 %.4f）："
-                        "粉堆底盘半径 0.055、中心离杵轴仅 %.3f，底盘扫过杵头球体；"
-                        "修法：粉堆移到碗内 -X 一侧（离杵轴 > 0.08，同时与抬高后的"
-                        "草药碎保持间距）或缩小底盘，修完重跑本质检脚本复核。\n" % (
+                        "粉堆底盘半径 0.0385、中心离杵轴仅 %.3f，底盘扫过杵头球体；"
+                        "修法：粉堆移到碗内远离杵轴一侧（离杵轴 > 0.08，同时与抬高后的"
+                        "草药碎保持间距）或进一步缩小底盘，修完重跑本质检脚本复核。\n" % (
                             mound["pestle_clearance"],
                             -mound["pestle_clearance"],
                             mound["pestle_axis_distance"]))

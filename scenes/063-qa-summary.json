@@ -43,9 +43,9 @@
     "HerbChunk_8": 0.455,
     "Mortar": 0.395,
     "Pestle": 0.306,
-    "PowderMound": 0.396
+    "PowderMound": 0.5
   },
-  "uv_islands": 122,
+  "uv_islands": 125,
   "uv_overlap_pct": 0.0,
   "uv_overlap_worst_part": "DryLeaf_1",
   "empty_material_slots": 0,
@@ -538,18 +538,18 @@
     "mound": {
       "lathe": {
         "range": [
-          0.005,
-          0.115,
-          -0.025,
-          0.085,
+          -0.038,
+          0.038,
+          0.052,
+          0.128,
           0.038,
           0.062
         ],
         "expected": [
-          0.005,
-          0.115,
-          -0.025,
-          0.085,
+          -0.038,
+          0.038,
+          0.052,
+          0.128,
           0.038,
           0.062
         ],
@@ -558,8 +558,8 @@
             "distance": 0.0,
             "count": 12,
             "center": [
-              0.06,
-              0.03,
+              -0.0,
+              0.09,
               0.038
             ],
             "radius": 0.001
@@ -568,48 +568,48 @@
             "distance": 0.0,
             "count": 12,
             "center": [
-              0.06,
-              0.03,
+              -0.0,
+              0.09,
               0.038
             ],
-            "radius": 0.055
+            "radius": 0.038
           },
           {
             "distance": 0.005,
             "count": 12,
             "center": [
-              0.06,
-              0.03,
+              0.0,
+              0.09,
               0.043
             ],
-            "radius": 0.052
+            "radius": 0.036
           },
           {
             "distance": 0.014,
             "count": 12,
             "center": [
-              0.06,
-              0.03,
+              0.0,
+              0.09,
               0.052
             ],
-            "radius": 0.032
+            "radius": 0.022
           },
           {
             "distance": 0.021,
             "count": 12,
             "center": [
-              0.06,
-              0.03,
+              0.0,
+              0.09,
               0.059
             ],
-            "radius": 0.012
+            "radius": 0.008
           },
           {
             "distance": 0.024,
             "count": 12,
             "center": [
-              0.06,
-              0.03,
+              -0.0,
+              0.09,
               0.062
             ],
             "radius": 0.001
@@ -633,10 +633,10 @@
         ],
         "ring_radii": [
           0.001,
-          0.055,
-          0.052,
-          0.032,
-          0.012,
+          0.038,
+          0.036,
+          0.022,
+          0.008,
           0.001
         ],
         "design_distances": [
@@ -649,10 +649,10 @@
         ],
         "design_radii": [
           0.001,
-          0.055,
-          0.052,
-          0.032,
-          0.012,
+          0.0385,
+          0.0364,
+          0.0224,
+          0.0084,
           0.001
         ],
         "tri_axial_positions": [
@@ -661,14 +661,14 @@
         "tri_count": 12,
         "ok": true
       },
-      "center_radial": 0.067,
-      "pestle_axis_distance": 0.044,
-      "floor_z_at_center": 0.042,
+      "center_radial": 0.09,
+      "pestle_axis_distance": 0.08,
+      "floor_z_at_center": 0.048,
       "top_z": 0.062,
-      "visible_height": 0.0202,
-      "base_ring_burial_max": 0.0383,
-      "pestle_clearance": -0.0242,
-      "ok": false
+      "visible_height": 0.0145,
+      "base_ring_burial_max": 0.0586,
+      "pestle_clearance": 0.0202,
+      "ok": true
     },
     "chunks": {
       "chunks": {
@@ -676,196 +676,196 @@
           "center": [
             0.075,
             0.045,
-            0.04
+            0.053
           ],
           "design_center": [
             0.075,
             0.045,
-            0.04
+            0.0534
           ],
           "center_radial": 0.087,
           "floor_z_at_center": 0.047,
-          "top_z": 0.049,
-          "bottom_z": 0.031,
-          "expected_bottom_z": 0.0314,
-          "floor_embed": 0.0154,
-          "visible_height": 0.0017,
-          "buried_verts": 9,
+          "top_z": 0.062,
+          "bottom_z": 0.045,
+          "expected_bottom_z": 0.0449,
+          "floor_embed": 0.002,
+          "visible_height": 0.0151,
+          "buried_verts": 2,
           "total_verts": 12,
-          "max_burial_depth": 0.0169,
-          "pestle_clearance": 0.0168,
-          "ok": false
+          "max_burial_depth": 0.0035,
+          "pestle_clearance": 0.0147,
+          "ok": true
         },
         "HerbChunk_2": {
           "center": [
             -0.055,
             0.06,
-            0.04
+            0.052
           ],
           "design_center": [
             -0.055,
             0.06,
-            0.04
+            0.0517
           ],
           "center_radial": 0.081,
           "floor_z_at_center": 0.045,
-          "top_z": 0.048,
-          "bottom_z": 0.032,
-          "expected_bottom_z": 0.0316,
-          "floor_embed": 0.0137,
-          "visible_height": 0.0031,
-          "buried_verts": 9,
+          "top_z": 0.06,
+          "bottom_z": 0.043,
+          "expected_bottom_z": 0.0433,
+          "floor_embed": 0.002,
+          "visible_height": 0.0148,
+          "buried_verts": 2,
           "total_verts": 12,
-          "max_burial_depth": 0.0137,
-          "pestle_clearance": 0.0625,
-          "ok": false
+          "max_burial_depth": 0.002,
+          "pestle_clearance": 0.0631,
+          "ok": true
         },
         "HerbChunk_3": {
           "center": [
             -0.085,
             0.01,
-            0.04
+            0.053
           ],
           "design_center": [
             -0.085,
             0.01,
-            0.04
+            0.0529
           ],
           "center_radial": 0.086,
           "floor_z_at_center": 0.046,
-          "top_z": 0.049,
-          "bottom_z": 0.031,
-          "expected_bottom_z": 0.0315,
-          "floor_embed": 0.0149,
-          "visible_height": 0.0021,
-          "buried_verts": 10,
+          "top_z": 0.061,
+          "bottom_z": 0.044,
+          "expected_bottom_z": 0.0444,
+          "floor_embed": 0.002,
+          "visible_height": 0.015,
+          "buried_verts": 2,
           "total_verts": 12,
-          "max_burial_depth": 0.0149,
-          "pestle_clearance": 0.0792,
-          "ok": false
+          "max_burial_depth": 0.002,
+          "pestle_clearance": 0.0811,
+          "ok": true
         },
         "HerbChunk_4": {
           "center": [
             -0.02,
             -0.005,
-            0.04
+            0.045
           ],
           "design_center": [
             -0.02,
             -0.005,
-            0.04
+            0.0451
           ],
           "center_radial": 0.021,
           "floor_z_at_center": 0.039,
-          "top_z": 0.048,
-          "bottom_z": 0.032,
-          "expected_bottom_z": 0.0316,
-          "floor_embed": 0.0071,
-          "visible_height": 0.0097,
-          "buried_verts": 6,
+          "top_z": 0.054,
+          "bottom_z": 0.037,
+          "expected_bottom_z": 0.0367,
+          "floor_embed": 0.002,
+          "visible_height": 0.0148,
+          "buried_verts": 1,
           "total_verts": 12,
-          "max_burial_depth": 0.0071,
-          "pestle_clearance": 0.0152,
+          "max_burial_depth": 0.002,
+          "pestle_clearance": 0.0153,
           "ok": true
         },
         "HerbChunk_5": {
           "center": [
-            0.055,
-            -0.01,
-            0.04
+            0.1,
+            -0.03,
+            0.061
           ],
           "design_center": [
-            0.055,
-            -0.01,
-            0.04
+            0.1,
+            -0.03,
+            0.061
           ],
-          "center_radial": 0.056,
-          "floor_z_at_center": 0.04,
-          "top_z": 0.049,
-          "bottom_z": 0.031,
-          "expected_bottom_z": 0.0314,
-          "floor_embed": 0.0085,
-          "visible_height": 0.0088,
-          "buried_verts": 6,
+          "center_radial": 0.104,
+          "floor_z_at_center": 0.054,
+          "top_z": 0.07,
+          "bottom_z": 0.052,
+          "expected_bottom_z": 0.0524,
+          "floor_embed": 0.002,
+          "visible_height": 0.0152,
+          "buried_verts": 4,
           "total_verts": 12,
-          "max_burial_depth": 0.0085,
-          "pestle_clearance": -0.0059,
-          "ok": false
+          "max_burial_depth": 0.0121,
+          "pestle_clearance": 0.0362,
+          "ok": true
         },
         "HerbChunk_6": {
           "center": [
             0.095,
             0.015,
-            0.04
+            0.054
           ],
           "design_center": [
             0.095,
             0.015,
-            0.04
+            0.0542
           ],
           "center_radial": 0.096,
           "floor_z_at_center": 0.049,
-          "top_z": 0.047,
-          "bottom_z": 0.033,
-          "expected_bottom_z": 0.0328,
-          "floor_embed": 0.0162,
-          "visible_height": -0.0018,
-          "buried_verts": 12,
+          "top_z": 0.061,
+          "bottom_z": 0.047,
+          "expected_bottom_z": 0.047,
+          "floor_embed": 0.002,
+          "visible_height": 0.0124,
+          "buried_verts": 4,
           "total_verts": 12,
-          "max_burial_depth": 0.0227,
-          "pestle_clearance": 0.0297,
-          "ok": false
+          "max_burial_depth": 0.0085,
+          "pestle_clearance": 0.0251,
+          "ok": true
         },
         "HerbChunk_7": {
           "center": [
             -0.045,
             0.095,
-            0.04
+            0.062
           ],
           "design_center": [
             -0.045,
             0.095,
-            0.04
+            0.0616
           ],
           "center_radial": 0.105,
           "floor_z_at_center": 0.055,
-          "top_z": 0.049,
-          "bottom_z": 0.031,
-          "expected_bottom_z": 0.0315,
-          "floor_embed": 0.0236,
-          "visible_height": -0.0066,
-          "buried_verts": 12,
+          "top_z": 0.07,
+          "bottom_z": 0.053,
+          "expected_bottom_z": 0.0531,
+          "floor_embed": 0.002,
+          "visible_height": 0.015,
+          "buried_verts": 4,
           "total_verts": 12,
-          "max_burial_depth": 0.0318,
-          "pestle_clearance": 0.0852,
-          "ok": false
+          "max_burial_depth": 0.0102,
+          "pestle_clearance": 0.0874,
+          "ok": true
         },
         "HerbChunk_8": {
           "center": [
             0.1,
             0.06,
-            0.04
+            0.071
           ],
           "design_center": [
             0.1,
             0.06,
-            0.04
+            0.0714
           ],
           "center_radial": 0.117,
           "floor_z_at_center": 0.067,
-          "top_z": 0.047,
-          "bottom_z": 0.033,
-          "expected_bottom_z": 0.0333,
-          "floor_embed": 0.0334,
-          "visible_height": -0.0199,
-          "buried_verts": 12,
+          "top_z": 0.078,
+          "bottom_z": 0.065,
+          "expected_bottom_z": 0.0646,
+          "floor_embed": 0.002,
+          "visible_height": 0.0115,
+          "buried_verts": 5,
           "total_verts": 12,
-          "max_burial_depth": 0.059,
-          "pestle_clearance": 0.052,
-          "ok": false
+          "max_burial_depth": 0.0276,
+          "pestle_clearance": 0.0394,
+          "ok": true
         }
       },
-      "ok": false
+      "ok": true
     },
     "stems": {
       "stems": {
@@ -1325,7 +1325,7 @@
       "ok": true
     }
   },
-  "structure_ok": false,
+  "structure_ok": true,
   "materials": {
     "rows": [
       {
@@ -1453,5 +1453,5 @@
     "assignment_mismatches": [],
     "empty_material_slots": 0
   },
-  "overall_pass": false
+  "overall_pass": true
 }

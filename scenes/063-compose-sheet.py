@@ -113,9 +113,19 @@ def main():
                    s["inverted_normals"], s["uv_out_of_bounds"],
                    s["uv_islands"], s["uv_overlap_pct"]))
     d.text((36, fy + 10), footer1, fill=(60, 60, 60), font=font(30))
-    footer2 = ("REVIEW NEEDED: 3 herb chunks fully buried in the sloped "
-               "bowl wall (6/7/8), 3 more only slivers (1/2/3); chunk 5 "
-               "clips pestle -0.0059; powder mound clips pestle -0.0242")
+    if s["overall_pass"]:
+        ch = s["structure"]["chunks"]["chunks"]
+        vis = [v["visible_height"] for v in ch.values()]
+        footer2 = ("064 fix verified: all 8 herb chunks visible "
+                   "(%.4f-%.4f), min pestle clearance %.4f; powder "
+                   "mound clearance %.4f" % (
+                       min(vis), max(vis),
+                       min(v["pestle_clearance"] for v in ch.values()),
+                       s["structure"]["mound"]["pestle_clearance"]))
+    else:
+        footer2 = ("REVIEW NEEDED: 3 herb chunks fully buried in the sloped "
+                   "bowl wall (6/7/8), 3 more only slivers (1/2/3); chunk 5 "
+                   "clips pestle -0.0059; powder mound clips pestle -0.0242")
     d.text((36, fy + 52), footer2, fill=(60, 60, 60), font=font(28))
     n_mats = len(s["materials"]["rows"])
     ok_mats = sum(1 for r in s["materials"]["rows"] if r["ok"])
