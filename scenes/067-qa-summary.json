@@ -1,0 +1,930 @@
+{
+  "asset": "066-lowpoly-funnel-beaker",
+  "parts": 16,
+  "total_faces": 828,
+  "total_verts": 917,
+  "tris": 120,
+  "quads": 708,
+  "ngons": 0,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 264,
+  "boundary_edges_ok": true,
+  "open_boundary_edges": 264,
+  "inverted_normals": 0,
+  "inverted_normals_recalc_raw": 120,
+  "inverted_normals_recalc_funnel": 120,
+  "funnel_winding_analytic_flipped": 0,
+  "face_counts_match_design": true,
+  "face_mismatch": {},
+  "missing_parts": [],
+  "extra_parts": [],
+  "uv_out_of_bounds": 0,
+  "uv_ok": true,
+  "uv_utilization_per_part": {
+    "CupLiquid": 0.639,
+    "Funnel": 0.249,
+    "FunnelLiquid": 0.392,
+    "FunnelRimLip": 0.072,
+    "FunnelRing": 0.155,
+    "GradRing_1": 0.109,
+    "GradRing_2": 0.083,
+    "GradRing_3": 0.104,
+    "GradRing_4": 0.101,
+    "MeasuringCup": 0.49,
+    "RingArm_L": 0.763,
+    "RingArm_R": 0.763,
+    "StandBase": 0.632,
+    "StandCrossbar": 0.495,
+    "StandPost_L": 0.425,
+    "StandPost_R": 0.425
+  },
+  "uv_islands": 98,
+  "uv_overlap_pct": 0.0,
+  "uv_overlap_worst_part": "CupLiquid",
+  "empty_material_slots": 0,
+  "structure": {
+    "funnel": {
+      "range": [
+        -0.15,
+        0.15,
+        -0.15,
+        0.15,
+        0.177,
+        0.517
+      ],
+      "expected": [
+        -0.15,
+        0.15,
+        -0.15,
+        0.15,
+        0.177,
+        0.517
+      ],
+      "rings": [
+        {
+          "distance": 0.16,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.177
+          ],
+          "radius": 0.022
+        },
+        {
+          "distance": 0.3,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.317
+          ],
+          "radius": 0.022
+        },
+        {
+          "distance": 0.33,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.347
+          ],
+          "radius": 0.05
+        },
+        {
+          "distance": 0.4,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.417
+          ],
+          "radius": 0.09
+        },
+        {
+          "distance": 0.46,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.477
+          ],
+          "radius": 0.125
+        },
+        {
+          "distance": 0.5,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.517
+          ],
+          "radius": 0.15
+        }
+      ],
+      "ring_distances": [
+        0.16,
+        0.3,
+        0.33,
+        0.4,
+        0.46,
+        0.5
+      ],
+      "ring_counts": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "ring_radii": [
+        0.022,
+        0.022,
+        0.05,
+        0.09,
+        0.125,
+        0.15
+      ],
+      "design_distances": [
+        0.16,
+        0.3,
+        0.33,
+        0.4,
+        0.46,
+        0.5
+      ],
+      "design_radii": [
+        0.022,
+        0.022,
+        0.05,
+        0.09,
+        0.125,
+        0.15
+      ],
+      "tri_axial_positions": [],
+      "tri_count": 0,
+      "ok": true
+    },
+    "cup": {
+      "range": [
+        -0.085,
+        0.085,
+        -0.085,
+        0.085,
+        0.02,
+        0.15
+      ],
+      "expected": [
+        -0.085,
+        0.085,
+        -0.085,
+        0.085,
+        0.02,
+        0.15
+      ],
+      "rings": [
+        {
+          "distance": 0.02,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.02
+          ],
+          "radius": 0.001
+        },
+        {
+          "distance": 0.02,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.02
+          ],
+          "radius": 0.075
+        },
+        {
+          "distance": 0.03,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.03
+          ],
+          "radius": 0.001
+        },
+        {
+          "distance": 0.03,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.03
+          ],
+          "radius": 0.072
+        },
+        {
+          "distance": 0.15,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.15
+          ],
+          "radius": 0.082
+        },
+        {
+          "distance": 0.15,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.15
+          ],
+          "radius": 0.085
+        }
+      ],
+      "ring_distances": [
+        0.02,
+        0.02,
+        0.03,
+        0.03,
+        0.15,
+        0.15
+      ],
+      "ring_counts": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "ring_radii": [
+        0.001,
+        0.075,
+        0.001,
+        0.072,
+        0.082,
+        0.085
+      ],
+      "design_distances": [
+        0.02,
+        0.02,
+        0.03,
+        0.03,
+        0.15,
+        0.15
+      ],
+      "design_radii": [
+        0.001,
+        0.075,
+        0.001,
+        0.072,
+        0.082,
+        0.085
+      ],
+      "tri_axial_positions": [
+        0.02
+      ],
+      "tri_count": 24,
+      "ok": true
+    },
+    "grad_rings": {
+      "rings": {
+        "GradRing_1": {
+          "rings": [
+            [
+              0.049,
+              24,
+              0.078
+            ],
+            [
+              0.052,
+              24,
+              0.078
+            ]
+          ],
+          "design_center_z": 0.05,
+          "design_radius": 0.0783,
+          "ok": true
+        },
+        "GradRing_2": {
+          "rings": [
+            [
+              0.073,
+              24,
+              0.08
+            ],
+            [
+              0.076,
+              24,
+              0.08
+            ]
+          ],
+          "design_center_z": 0.075,
+          "design_radius": 0.0802,
+          "ok": true
+        },
+        "GradRing_3": {
+          "rings": [
+            [
+              0.098,
+              24,
+              0.082
+            ],
+            [
+              0.101,
+              24,
+              0.082
+            ]
+          ],
+          "design_center_z": 0.1,
+          "design_radius": 0.0822,
+          "ok": true
+        },
+        "GradRing_4": {
+          "rings": [
+            [
+              0.123,
+              24,
+              0.084
+            ],
+            [
+              0.126,
+              24,
+              0.084
+            ]
+          ],
+          "design_center_z": 0.125,
+          "design_radius": 0.0841,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "funnel_liquid_shape": {
+      "range": [
+        -0.104,
+        0.104,
+        -0.104,
+        0.104,
+        0.322,
+        0.457
+      ],
+      "expected": [
+        -0.104,
+        0.104,
+        -0.104,
+        0.104,
+        0.322,
+        0.457
+      ],
+      "rings": [
+        [
+          0.322,
+          24,
+          0.026
+        ],
+        [
+          0.457,
+          24,
+          0.104
+        ]
+      ],
+      "tri_axial_positions": [
+        0.322,
+        0.457
+      ],
+      "tri_count": 48,
+      "ok": true
+    },
+    "cup_liquid_shape": {
+      "range": [
+        -0.076,
+        0.076,
+        -0.076,
+        0.076,
+        0.031,
+        0.11
+      ],
+      "expected": [
+        -0.076,
+        0.076,
+        -0.076,
+        0.076,
+        0.031,
+        0.11
+      ],
+      "rings": [
+        [
+          0.031,
+          24,
+          0.07
+        ],
+        [
+          0.11,
+          24,
+          0.076
+        ]
+      ],
+      "tri_axial_positions": [
+        0.031,
+        0.11
+      ],
+      "tri_count": 48,
+      "ok": true
+    },
+    "funnel_ring": {
+      "range": [
+        -0.102,
+        0.102,
+        -0.102,
+        0.102,
+        0.414,
+        0.426
+      ],
+      "expected": [
+        -0.102,
+        0.102,
+        -0.102,
+        0.102,
+        0.413,
+        0.427
+      ],
+      "rho_min": 0.088,
+      "rho_max": 0.102,
+      "rho_min_expected": 0.088,
+      "rho_max_expected": 0.102,
+      "ok": true
+    },
+    "rim_lip": {
+      "range": [
+        -0.155,
+        0.155,
+        -0.155,
+        0.155,
+        0.513,
+        0.521
+      ],
+      "expected": [
+        -0.155,
+        0.155,
+        -0.155,
+        0.155,
+        0.512,
+        0.522
+      ],
+      "rho_min": 0.145,
+      "rho_max": 0.155,
+      "rho_min_expected": 0.145,
+      "rho_max_expected": 0.155,
+      "ok": true
+    },
+    "boxes": {
+      "StandBase": {
+        "range": [
+          -0.22,
+          0.22,
+          -0.15,
+          0.15,
+          0.0,
+          0.02
+        ],
+        "expected": [
+          -0.22,
+          0.22,
+          -0.15,
+          0.15,
+          0.0,
+          0.02
+        ],
+        "ok": true
+      },
+      "StandPost_L": {
+        "range": [
+          -0.19,
+          -0.15,
+          -0.025,
+          0.025,
+          0.02,
+          0.46
+        ],
+        "expected": [
+          -0.19,
+          -0.15,
+          -0.025,
+          0.025,
+          0.02,
+          0.46
+        ],
+        "ok": true
+      },
+      "StandPost_R": {
+        "range": [
+          0.15,
+          0.19,
+          -0.025,
+          0.025,
+          0.02,
+          0.46
+        ],
+        "expected": [
+          0.15,
+          0.19,
+          -0.025,
+          0.025,
+          0.02,
+          0.46
+        ],
+        "ok": true
+      },
+      "StandCrossbar": {
+        "range": [
+          -0.19,
+          0.19,
+          -0.025,
+          0.025,
+          0.44,
+          0.48
+        ],
+        "expected": [
+          -0.19,
+          0.19,
+          -0.025,
+          0.025,
+          0.44,
+          0.48
+        ],
+        "ok": true
+      },
+      "RingArm_L": {
+        "range": [
+          -0.173,
+          -0.098,
+          -0.015,
+          0.015,
+          0.41,
+          0.43
+        ],
+        "expected": [
+          -0.173,
+          -0.098,
+          -0.015,
+          0.015,
+          0.41,
+          0.43
+        ],
+        "ok": true
+      },
+      "RingArm_R": {
+        "range": [
+          0.098,
+          0.173,
+          -0.015,
+          0.015,
+          0.41,
+          0.43
+        ],
+        "expected": [
+          0.098,
+          0.173,
+          -0.015,
+          0.015,
+          0.41,
+          0.43
+        ],
+        "ok": true
+      }
+    },
+    "ring_wedge": {
+      "funnel_vert_min_sdf": -0.0012,
+      "funnel_vert_worst": [
+        0.09,
+        0.0,
+        0.417
+      ],
+      "ring_vert_max_penetration": 0.0038,
+      "ring_vert_worst": [
+        0.065,
+        0.065,
+        0.426
+      ],
+      "analytic_max_penetration": 0.0049,
+      "analytic_max_z": 0.424,
+      "cone_radius_at_ring_plane_true": 0.0917,
+      "cone_radius_at_ring_plane_note_approx": 0.0879,
+      "ring_inner_radius": 0.088,
+      "ring_tube_radius": 0.007,
+      "ok": true
+    },
+    "rim_lip_wrap": {
+      "top_ring_verts": 24,
+      "top_ring_radius": 0.15,
+      "lip_center_radius": 0.15,
+      "min_sdf_to_lip": -0.005,
+      "max_sdf_to_lip": -0.005,
+      "ok": true
+    },
+    "liquids": {
+      "liquids": {
+        "FunnelLiquid": {
+          "min_clearance_verts": 0.0007,
+          "min_clearance_vert_at": [
+            0.018,
+            0.018,
+            0.322
+          ],
+          "min_clearance_analytic": 0.0007,
+          "min_clearance_analytic_z": 0.322,
+          "top_z": 0.457,
+          "top_clearance": 0.0093,
+          "funnel_rim_z": 0.517,
+          "ok": true
+        },
+        "CupLiquid": {
+          "min_clearance_verts": 0.0021,
+          "min_clearance_vert_at": [
+            0.061,
+            0.035,
+            0.031
+          ],
+          "min_clearance_analytic": 0.0021,
+          "min_clearance_analytic_z": 0.031,
+          "bottom_z": 0.031,
+          "cavity_floor_z": 0.03,
+          "top_z": 0.11,
+          "cup_rim_z": 0.15,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "drip_gap": {
+      "stem_bottom_z": 0.177,
+      "stem_bottom_radius": 0.022,
+      "stem_bottom_center": [
+        -0.0,
+        -0.0,
+        0.177
+      ],
+      "cup_rim_z": 0.15,
+      "cup_inner_radius_at_rim": 0.082,
+      "drip_gap": 0.027,
+      "ok": true
+    },
+    "stand_joins": {
+      "joins": {
+        "crossbar_into_posts": {
+          "crossbar_x": [
+            -0.19,
+            0.19
+          ],
+          "post_L_x": [
+            -0.19,
+            -0.15
+          ],
+          "post_R_x": [
+            0.15,
+            0.19
+          ],
+          "embed_L": null,
+          "embed_R": null,
+          "z_overlap": [
+            0.44,
+            0.46
+          ],
+          "ok": true
+        },
+        "RingArm_L": {
+          "range": [
+            -0.173,
+            -0.098,
+            -0.015,
+            0.015,
+            0.41,
+            0.43
+          ],
+          "inner_end_x": -0.098,
+          "outer_end_x": -0.173,
+          "ring_tube_radial": [
+            0.088,
+            0.102
+          ],
+          "post_x": [
+            -0.19,
+            -0.15
+          ],
+          "ok": true
+        },
+        "RingArm_R": {
+          "range": [
+            0.098,
+            0.173,
+            -0.015,
+            0.015,
+            0.41,
+            0.43
+          ],
+          "inner_end_x": 0.098,
+          "outer_end_x": 0.173,
+          "ring_tube_radial": [
+            0.088,
+            0.102
+          ],
+          "post_x": [
+            0.15,
+            0.19
+          ],
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "ground_contact": {
+      "checked": 16,
+      "below_ground": {},
+      "global_min_z": 0.0,
+      "ok": true
+    },
+    "overall": {
+      "bbox": [
+        -0.22,
+        0.22,
+        -0.155,
+        0.155,
+        0.0,
+        0.521
+      ],
+      "width": 0.44,
+      "depth": 0.31,
+      "height": 0.521,
+      "note_size": [
+        0.44,
+        0.52,
+        0.3
+      ],
+      "ok": true
+    },
+    "funnel_winding": {
+      "method": "profile-segment analytic (same as 066 build self-check)",
+      "flipped_faces": 0,
+      "recalc_flipped_faces": 120,
+      "ok": true
+    }
+  },
+  "structure_ok": true,
+  "materials": {
+    "rows": [
+      {
+        "name": "Stand_Wood",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.38,
+          0.26,
+          0.13
+        ],
+        "design_color_linear": [
+          0.38,
+          0.26,
+          0.13
+        ],
+        "ok": true
+      },
+      {
+        "name": "Stand_WoodDark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.85,
+        "base_color": [
+          0.3,
+          0.2,
+          0.1
+        ],
+        "design_color_linear": [
+          0.3,
+          0.2,
+          0.1
+        ],
+        "ok": true
+      },
+      {
+        "name": "Ring_Brass",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.35,
+        "base_color": [
+          0.55,
+          0.4,
+          0.15
+        ],
+        "design_color_linear": [
+          0.55,
+          0.4,
+          0.15
+        ],
+        "ok": true
+      },
+      {
+        "name": "Glass_Clear",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.15,
+        "base_color": [
+          0.8,
+          0.85,
+          0.88
+        ],
+        "design_color_linear": [
+          0.8,
+          0.85,
+          0.88
+        ],
+        "ok": true,
+        "alpha": 0.35,
+        "alpha_ok": true,
+        "surface_render_method": "DITHERED",
+        "dithered_ok": true
+      },
+      {
+        "name": "Liquid_Green",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.35,
+        "base_color": [
+          0.35,
+          0.75,
+          0.25
+        ],
+        "design_color_linear": [
+          0.35,
+          0.75,
+          0.25
+        ],
+        "ok": true,
+        "emission_color": [
+          0.35,
+          0.75,
+          0.25
+        ],
+        "emission_strength": 0.7,
+        "mix_factor": 0.55,
+        "emission_found": true
+      },
+      {
+        "name": "Liquid_Amber",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.45,
+          0.18,
+          0.02
+        ],
+        "design_color_linear": [
+          0.45,
+          0.18,
+          0.02
+        ],
+        "ok": true,
+        "emission_color": [
+          0.45,
+          0.18,
+          0.02
+        ],
+        "emission_strength": 0.5,
+        "mix_factor": 0.4,
+        "emission_found": true
+      },
+      {
+        "name": "Graduation_Dark",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.7,
+        "base_color": [
+          0.12,
+          0.11,
+          0.1
+        ],
+        "design_color_linear": [
+          0.12,
+          0.11,
+          0.1
+        ],
+        "ok": true
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": [],
+    "assignment_mismatches": [],
+    "empty_material_slots": 0
+  },
+  "overall_pass": true
+}
