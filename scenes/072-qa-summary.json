@@ -1,0 +1,1263 @@
+{
+  "asset": "071-lowpoly-hourglass",
+  "parts": 14,
+  "total_faces": 1320,
+  "total_verts": 1261,
+  "tris": 232,
+  "quads": 1088,
+  "ngons": 0,
+  "ngons_ok": true,
+  "duplicate_verts": 0,
+  "loose_edges": 0,
+  "nonmanifold_edges": 0,
+  "degenerate_faces": 0,
+  "boundary_edges": 72,
+  "boundary_edges_ok": true,
+  "open_boundary_edges": 72,
+  "inverted_normals": 0,
+  "inverted_normals_recalc_raw": 168,
+  "inverted_normals_recalc_lathe": 168,
+  "analytic_flipped_total": 0,
+  "face_counts_match_design": true,
+  "face_mismatch": {},
+  "missing_parts": [],
+  "extra_parts": [],
+  "uv_out_of_bounds": 0,
+  "uv_ok": true,
+  "uv_utilization_per_part": {
+    "BoardBottom": 0.561,
+    "BoardTop": 0.561,
+    "HourglassGlass": 0.576,
+    "KnobBase": 0.396,
+    "KnobTop": 0.483,
+    "Pillar_0": 0.174,
+    "Pillar_1": 0.174,
+    "Pillar_2": 0.174,
+    "Pillar_3": 0.174,
+    "RingLower": 0.13,
+    "RingUpper": 0.122,
+    "SandLower": 0.39,
+    "SandStream": 0.128,
+    "SandUpper": 0.591
+  },
+  "uv_islands": 93,
+  "uv_overlap_pct": 0.0,
+  "uv_overlap_worst_part": "BoardBottom",
+  "empty_material_slots": 0,
+  "structure": {
+    "glass": {
+      "range": [
+        -0.095,
+        0.095,
+        -0.095,
+        0.095,
+        0.02,
+        0.42
+      ],
+      "expected": [
+        -0.095,
+        0.095,
+        -0.095,
+        0.095,
+        0.02,
+        0.42
+      ],
+      "rings": [
+        {
+          "distance": 0.02,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.02
+          ],
+          "radius": 0.001
+        },
+        {
+          "distance": 0.025,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.025
+          ],
+          "radius": 0.055
+        },
+        {
+          "distance": 0.05,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.05
+          ],
+          "radius": 0.085
+        },
+        {
+          "distance": 0.09,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.09
+          ],
+          "radius": 0.095
+        },
+        {
+          "distance": 0.13,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.13
+          ],
+          "radius": 0.092
+        },
+        {
+          "distance": 0.16,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.16
+          ],
+          "radius": 0.075
+        },
+        {
+          "distance": 0.185,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.185
+          ],
+          "radius": 0.045
+        },
+        {
+          "distance": 0.22,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.22
+          ],
+          "radius": 0.009
+        },
+        {
+          "distance": 0.232,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.232
+          ],
+          "radius": 0.045
+        },
+        {
+          "distance": 0.255,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.255
+          ],
+          "radius": 0.075
+        },
+        {
+          "distance": 0.3,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.3
+          ],
+          "radius": 0.092
+        },
+        {
+          "distance": 0.35,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.35
+          ],
+          "radius": 0.095
+        },
+        {
+          "distance": 0.39,
+          "count": 24,
+          "center": [
+            -0.0,
+            0.0,
+            0.39
+          ],
+          "radius": 0.085
+        },
+        {
+          "distance": 0.415,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.415
+          ],
+          "radius": 0.055
+        },
+        {
+          "distance": 0.42,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.42
+          ],
+          "radius": 0.001
+        }
+      ],
+      "ring_distances": [
+        0.02,
+        0.025,
+        0.05,
+        0.09,
+        0.13,
+        0.16,
+        0.185,
+        0.22,
+        0.232,
+        0.255,
+        0.3,
+        0.35,
+        0.39,
+        0.415,
+        0.42
+      ],
+      "ring_counts": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "ring_radii": [
+        0.001,
+        0.055,
+        0.085,
+        0.095,
+        0.092,
+        0.075,
+        0.045,
+        0.009,
+        0.045,
+        0.075,
+        0.092,
+        0.095,
+        0.085,
+        0.055,
+        0.001
+      ],
+      "design_distances": [
+        0.02,
+        0.025,
+        0.05,
+        0.09,
+        0.13,
+        0.16,
+        0.185,
+        0.22,
+        0.232,
+        0.255,
+        0.3,
+        0.35,
+        0.39,
+        0.415,
+        0.42
+      ],
+      "design_radii": [
+        0.001,
+        0.055,
+        0.085,
+        0.095,
+        0.092,
+        0.075,
+        0.045,
+        0.009,
+        0.045,
+        0.075,
+        0.092,
+        0.095,
+        0.085,
+        0.055,
+        0.001
+      ],
+      "tri_axial_positions": [
+        0.02
+      ],
+      "tri_count": 24,
+      "ok": true
+    },
+    "sand_lower_shape": {
+      "range": [
+        -0.075,
+        0.075,
+        -0.075,
+        0.075,
+        0.021,
+        0.072
+      ],
+      "expected": [
+        -0.075,
+        0.075,
+        -0.075,
+        0.075,
+        0.021,
+        0.072
+      ],
+      "rings": [
+        {
+          "distance": 0.021,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.021
+          ],
+          "radius": 0.001
+        },
+        {
+          "distance": 0.024,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.024
+          ],
+          "radius": 0.04
+        },
+        {
+          "distance": 0.032,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.032
+          ],
+          "radius": 0.06
+        },
+        {
+          "distance": 0.045,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.045
+          ],
+          "radius": 0.075
+        },
+        {
+          "distance": 0.052,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.052
+          ],
+          "radius": 0.055
+        },
+        {
+          "distance": 0.062,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.062
+          ],
+          "radius": 0.035
+        },
+        {
+          "distance": 0.069,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.069
+          ],
+          "radius": 0.015
+        },
+        {
+          "distance": 0.072,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.072
+          ],
+          "radius": 0.001
+        }
+      ],
+      "ring_distances": [
+        0.021,
+        0.024,
+        0.032,
+        0.045,
+        0.052,
+        0.062,
+        0.069,
+        0.072
+      ],
+      "ring_counts": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "ring_radii": [
+        0.001,
+        0.04,
+        0.06,
+        0.075,
+        0.055,
+        0.035,
+        0.015,
+        0.001
+      ],
+      "design_distances": [
+        0.021,
+        0.024,
+        0.032,
+        0.045,
+        0.052,
+        0.062,
+        0.069,
+        0.072
+      ],
+      "design_radii": [
+        0.001,
+        0.04,
+        0.06,
+        0.075,
+        0.055,
+        0.035,
+        0.015,
+        0.001
+      ],
+      "tri_axial_positions": [
+        0.021
+      ],
+      "tri_count": 24,
+      "ok": true
+    },
+    "sand_upper_shape": {
+      "range": [
+        -0.081,
+        0.081,
+        -0.081,
+        0.081,
+        0.215,
+        0.277
+      ],
+      "expected": [
+        -0.082,
+        0.082,
+        -0.082,
+        0.082,
+        0.215,
+        0.277
+      ],
+      "rings": [
+        {
+          "distance": 0.215,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.215
+          ],
+          "radius": 0.001
+        },
+        {
+          "distance": 0.228,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.228
+          ],
+          "radius": 0.02
+        },
+        {
+          "distance": 0.239,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.239
+          ],
+          "radius": 0.035
+        },
+        {
+          "distance": 0.249,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.249
+          ],
+          "radius": 0.05
+        },
+        {
+          "distance": 0.26,
+          "count": 24,
+          "center": [
+            0.0,
+            -0.0,
+            0.26
+          ],
+          "radius": 0.065
+        },
+        {
+          "distance": 0.269,
+          "count": 24,
+          "center": [
+            -0.0,
+            -0.0,
+            0.269
+          ],
+          "radius": 0.078
+        },
+        {
+          "distance": 0.277,
+          "count": 24,
+          "center": [
+            0.0,
+            0.0,
+            0.277
+          ],
+          "radius": 0.081
+        }
+      ],
+      "ring_distances": [
+        0.215,
+        0.228,
+        0.239,
+        0.249,
+        0.26,
+        0.269,
+        0.277
+      ],
+      "ring_counts": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "ring_radii": [
+        0.001,
+        0.02,
+        0.035,
+        0.05,
+        0.065,
+        0.078,
+        0.081
+      ],
+      "design_distances": [
+        0.215,
+        0.228,
+        0.239,
+        0.249,
+        0.26,
+        0.269,
+        0.277
+      ],
+      "design_radii": [
+        0.001,
+        0.02,
+        0.035,
+        0.05,
+        0.065,
+        0.078,
+        0.0815
+      ],
+      "tri_axial_positions": [
+        0.215
+      ],
+      "tri_count": 24,
+      "ok": true
+    },
+    "tapered": {
+      "Pillar_0": {
+        "range": [
+          0.128,
+          0.152,
+          0.088,
+          0.112,
+          0.02,
+          0.42
+        ],
+        "expected": [
+          0.128,
+          0.152,
+          0.088,
+          0.112,
+          0.02,
+          0.42
+        ],
+        "rings": [
+          [
+            0.02,
+            12,
+            0.012
+          ],
+          [
+            0.42,
+            12,
+            0.012
+          ]
+        ],
+        "tri_axial_positions": [
+          0.02,
+          0.42
+        ],
+        "tri_count": 24,
+        "ok": true
+      },
+      "Pillar_1": {
+        "range": [
+          -0.152,
+          -0.128,
+          0.088,
+          0.112,
+          0.02,
+          0.42
+        ],
+        "expected": [
+          -0.152,
+          -0.128,
+          0.088,
+          0.112,
+          0.02,
+          0.42
+        ],
+        "rings": [
+          [
+            0.02,
+            12,
+            0.012
+          ],
+          [
+            0.42,
+            12,
+            0.012
+          ]
+        ],
+        "tri_axial_positions": [
+          0.02,
+          0.42
+        ],
+        "tri_count": 24,
+        "ok": true
+      },
+      "Pillar_2": {
+        "range": [
+          0.128,
+          0.152,
+          -0.112,
+          -0.088,
+          0.02,
+          0.42
+        ],
+        "expected": [
+          0.128,
+          0.152,
+          -0.112,
+          -0.088,
+          0.02,
+          0.42
+        ],
+        "rings": [
+          [
+            0.02,
+            12,
+            0.012
+          ],
+          [
+            0.42,
+            12,
+            0.012
+          ]
+        ],
+        "tri_axial_positions": [
+          0.02,
+          0.42
+        ],
+        "tri_count": 24,
+        "ok": true
+      },
+      "Pillar_3": {
+        "range": [
+          -0.152,
+          -0.128,
+          -0.112,
+          -0.088,
+          0.02,
+          0.42
+        ],
+        "expected": [
+          -0.152,
+          -0.128,
+          -0.112,
+          -0.088,
+          0.02,
+          0.42
+        ],
+        "rings": [
+          [
+            0.02,
+            12,
+            0.012
+          ],
+          [
+            0.42,
+            12,
+            0.012
+          ]
+        ],
+        "tri_axial_positions": [
+          0.02,
+          0.42
+        ],
+        "tri_count": 24,
+        "ok": true
+      },
+      "KnobBase": {
+        "range": [
+          -0.02,
+          0.02,
+          -0.02,
+          0.02,
+          0.44,
+          0.465
+        ],
+        "expected": [
+          -0.02,
+          0.02,
+          -0.02,
+          0.02,
+          0.44,
+          0.465
+        ],
+        "rings": [
+          [
+            0.44,
+            12,
+            0.02
+          ],
+          [
+            0.465,
+            12,
+            0.008
+          ]
+        ],
+        "tri_axial_positions": [
+          0.44,
+          0.465
+        ],
+        "tri_count": 24,
+        "ok": true
+      }
+    },
+    "tubes": {
+      "SandStream": {
+        "range": [
+          -0.004,
+          0.004,
+          -0.004,
+          0.004,
+          0.073,
+          0.219
+        ],
+        "expected": [
+          -0.004,
+          0.004,
+          -0.004,
+          0.004,
+          0.073,
+          0.219
+        ],
+        "rings": [
+          [
+            0.0,
+            8,
+            0.004
+          ],
+          [
+            0.146,
+            8,
+            0.004
+          ]
+        ],
+        "tri_axial_positions": [
+          0.0,
+          0.146
+        ],
+        "tri_count": 16,
+        "length": 0.146,
+        "ok": true
+      }
+    },
+    "tori": {
+      "RingLower": {
+        "range": [
+          -0.103,
+          0.103,
+          -0.103,
+          0.103,
+          0.085,
+          0.095
+        ],
+        "expected": [
+          -0.103,
+          0.103,
+          -0.103,
+          0.103,
+          0.084,
+          0.096
+        ],
+        "rho_min": 0.091,
+        "rho_max": 0.103,
+        "rho_min_expected": 0.091,
+        "rho_max_expected": 0.103,
+        "ok": true
+      },
+      "RingUpper": {
+        "range": [
+          -0.103,
+          0.103,
+          -0.103,
+          0.103,
+          0.345,
+          0.355
+        ],
+        "expected": [
+          -0.103,
+          0.103,
+          -0.103,
+          0.103,
+          0.344,
+          0.356
+        ],
+        "rho_min": 0.091,
+        "rho_max": 0.103,
+        "rho_min_expected": 0.091,
+        "rho_max_expected": 0.103,
+        "ok": true
+      }
+    },
+    "boxes": {
+      "BoardBottom": {
+        "range": [
+          -0.17,
+          0.17,
+          -0.13,
+          0.13,
+          0.0,
+          0.02
+        ],
+        "expected": [
+          -0.17,
+          0.17,
+          -0.13,
+          0.13,
+          0.0,
+          0.02
+        ],
+        "ok": true
+      },
+      "BoardTop": {
+        "range": [
+          -0.17,
+          0.17,
+          -0.13,
+          0.13,
+          0.42,
+          0.44
+        ],
+        "expected": [
+          -0.17,
+          0.17,
+          -0.13,
+          0.13,
+          0.42,
+          0.44
+        ],
+        "ok": true
+      }
+    },
+    "knob_sphere": {
+      "range": [
+        -0.011,
+        0.011,
+        -0.011,
+        0.011,
+        0.459,
+        0.481
+      ],
+      "expected": [
+        -0.011,
+        0.011,
+        -0.011,
+        0.011,
+        0.459,
+        0.481
+      ],
+      "verts": 86,
+      "center": [
+        0.0,
+        0.0,
+        0.47
+      ],
+      "ok": true
+    },
+    "ring_embed": {
+      "rings": {
+        "RingLower": {
+          "ring_z": 0.09,
+          "ring_inner_radius": 0.091,
+          "ring_inner_design": 0.091,
+          "ring_outer_radius": 0.103,
+          "ring_outer_design": 0.103,
+          "glass_radius_at_ring_z": 0.095,
+          "glass_radius_design": 0.095,
+          "embed": 0.004,
+          "embed_design": 0.004,
+          "ok": true
+        },
+        "RingUpper": {
+          "ring_z": 0.35,
+          "ring_inner_radius": 0.091,
+          "ring_inner_design": 0.091,
+          "ring_outer_radius": 0.103,
+          "ring_outer_design": 0.103,
+          "glass_radius_at_ring_z": 0.095,
+          "glass_radius_design": 0.095,
+          "embed": 0.004,
+          "embed_design": 0.004,
+          "ok": true
+        }
+      },
+      "ok": true
+    },
+    "pillars": {
+      "pillars": {
+        "Pillar_0": {
+          "center": [
+            0.14,
+            0.1
+          ],
+          "center_design": [
+            0.14,
+            0.1
+          ],
+          "axis_distance": 0.172,
+          "pillar_radius": 0.012,
+          "inner_edge": 0.16,
+          "clearance_to_glass": 0.065,
+          "footprint_inside_board": true,
+          "ok": true
+        },
+        "Pillar_1": {
+          "center": [
+            -0.14,
+            0.1
+          ],
+          "center_design": [
+            -0.14,
+            0.1
+          ],
+          "axis_distance": 0.172,
+          "pillar_radius": 0.012,
+          "inner_edge": 0.16,
+          "clearance_to_glass": 0.065,
+          "footprint_inside_board": true,
+          "ok": true
+        },
+        "Pillar_2": {
+          "center": [
+            0.14,
+            -0.1
+          ],
+          "center_design": [
+            0.14,
+            -0.1
+          ],
+          "axis_distance": 0.172,
+          "pillar_radius": 0.012,
+          "inner_edge": 0.16,
+          "clearance_to_glass": 0.065,
+          "footprint_inside_board": true,
+          "ok": true
+        },
+        "Pillar_3": {
+          "center": [
+            -0.14,
+            -0.1
+          ],
+          "center_design": [
+            -0.14,
+            -0.1
+          ],
+          "axis_distance": 0.172,
+          "pillar_radius": 0.012,
+          "inner_edge": 0.16,
+          "clearance_to_glass": 0.065,
+          "footprint_inside_board": true,
+          "ok": true
+        }
+      },
+      "glass_max_radius": 0.095,
+      "min_clearance": 0.065,
+      "clearance_design": 0.065,
+      "ok": true
+    },
+    "stream": {
+      "stream_top_z": 0.219,
+      "neck_z": 0.22,
+      "top_below_neck": 0.001,
+      "stream_radius": 0.0035,
+      "cone_surface_z_at_stream_radius": 0.2168,
+      "stream_top_vs_cone_surface": 0.0022,
+      "stream_bottom_z": 0.073,
+      "mound_peak_z": 0.072,
+      "bottom_gap_above_mound": 0.001,
+      "ok": false
+    },
+    "board_contacts": {
+      "glass_bottom_z": 0.02,
+      "board_bottom_top_z": 0.02,
+      "glass_board_bottom_gap": 0.0,
+      "glass_top_z": 0.42,
+      "board_top_bottom_z": 0.42,
+      "glass_board_top_gap": 0.0,
+      "knob_base_bottom_z": 0.44,
+      "board_top_top_z": 0.44,
+      "knob_board_gap": 0.0,
+      "knob_sphere_bottom_z": 0.459,
+      "knob_base_top_z": 0.465,
+      "knob_sphere_embed": 0.006,
+      "knob_sphere_top_z": 0.481,
+      "board_bottom_z": 0.0,
+      "pillar_z_ranges": [
+        [
+          0.02,
+          0.42
+        ],
+        [
+          0.02,
+          0.42
+        ],
+        [
+          0.02,
+          0.42
+        ],
+        [
+          0.02,
+          0.42
+        ]
+      ],
+      "ok": true
+    },
+    "sand_clearances": {
+      "SandUpper": {
+        "min_clearance_verts": 0.002,
+        "min_clearance_vert_at": [
+          0.058,
+          0.058,
+          0.277
+        ],
+        "min_clearance_analytic": 0.001,
+        "min_clearance_analytic_z": 0.22,
+        "edge_clearance": 0.002,
+        "edge_point": [
+          0.0815,
+          0.2774
+        ],
+        "edge_clearance_design": 0.002,
+        "ok": true
+      },
+      "SandLower": {
+        "min_clearance_verts": 0.0034,
+        "min_clearance_vert_at": [
+          0.042,
+          0.042,
+          0.032
+        ],
+        "min_clearance_analytic": 0.0034,
+        "min_clearance_analytic_z": 0.032,
+        "min_clearance_design": 0.0034,
+        "ok": true
+      },
+      "repose_slopes": [
+        0.7,
+        0.7,
+        0.7,
+        0.7,
+        0.7
+      ],
+      "repose_tan35": 0.7002,
+      "repose_ok": true,
+      "ok": true
+    },
+    "ground_contact": {
+      "checked": 14,
+      "below_ground": {},
+      "global_min_z": 0.0,
+      "ok": true
+    },
+    "overall": {
+      "bbox": [
+        -0.17,
+        0.17,
+        -0.13,
+        0.13,
+        0.0,
+        0.481
+      ],
+      "width": 0.34,
+      "depth": 0.26,
+      "height": 0.481,
+      "note_size": [
+        0.34,
+        0.48,
+        0.26
+      ],
+      "ok": true
+    },
+    "lathe_winding_analytic": {
+      "HourglassGlass": 0,
+      "SandLower": 0,
+      "SandUpper": 0
+    },
+    "torus_winding": {
+      "RingLower": 0,
+      "RingUpper": 0
+    },
+    "centroid_winding": {
+      "BoardBottom": 0,
+      "BoardTop": 0,
+      "SandStream": 0,
+      "Pillar_0": 0,
+      "Pillar_1": 0,
+      "Pillar_2": 0,
+      "Pillar_3": 0,
+      "KnobBase": 0,
+      "KnobTop": 0
+    },
+    "analytic_flipped_total": 0
+  },
+  "structure_ok": false,
+  "materials": {
+    "rows": [
+      {
+        "name": "Board_Wood",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.8,
+        "base_color": [
+          0.32,
+          0.22,
+          0.12
+        ],
+        "design_color_linear": [
+          0.32,
+          0.22,
+          0.12
+        ],
+        "ok": true
+      },
+      {
+        "name": "Frame_Brass",
+        "found": true,
+        "metallic": 0.7,
+        "roughness": 0.35,
+        "base_color": [
+          0.55,
+          0.4,
+          0.15
+        ],
+        "design_color_linear": [
+          0.55,
+          0.4,
+          0.15
+        ],
+        "ok": true
+      },
+      {
+        "name": "Glass_Clear",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.15,
+        "base_color": [
+          0.8,
+          0.85,
+          0.88
+        ],
+        "design_color_linear": [
+          0.8,
+          0.85,
+          0.88
+        ],
+        "ok": true,
+        "alpha": 0.35,
+        "alpha_ok": true,
+        "surface_render_method": "DITHERED",
+        "dithered_ok": true
+      },
+      {
+        "name": "Sand_Warm",
+        "found": true,
+        "metallic": 0.0,
+        "roughness": 0.9,
+        "base_color": [
+          0.85,
+          0.72,
+          0.45
+        ],
+        "design_color_linear": [
+          0.85,
+          0.72,
+          0.45
+        ],
+        "ok": true,
+        "emission_color": [
+          0.85,
+          0.72,
+          0.45
+        ],
+        "emission_strength": 0.25,
+        "mix_factor": 0.2,
+        "emission_found": true
+      }
+    ],
+    "all_ok": true,
+    "unused_design_mats": [],
+    "assignment_mismatches": [],
+    "empty_material_slots": 0
+  },
+  "overall_pass": false
+}
