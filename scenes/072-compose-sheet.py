@@ -117,7 +117,7 @@ def main():
     footer2 = ("Ring embed %.4f m   |   Pillar clearance %.4f   |   "
                "Upper sand edge clearance %.4f   |   "
                "Lower sand min clearance %.4f   |   "
-               "Stream top above cone %.4f (see checklist §7)   |   "
+               "Stream top vs cone %.4f   |   "
                "Stream bottom gap %.4f" % (
                    st["ring_embed"]["rings"]["RingLower"]["embed"],
                    st["pillars"]["min_clearance"],

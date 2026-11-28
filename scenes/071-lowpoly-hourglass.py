@@ -291,7 +291,9 @@ NECK_Z = 0.22
 NECK_R = 0.009
 REPOSE_TAN = math.tan(math.radians(35.0))  # dz/dr of the sand surface
 STREAM_R = 0.0035
-STREAM_TOP_Z = 0.219
+# 073 修复：原 0.219 高出沙锥面 0.0022（沙锥面在流半径 0.0035 处
+# z 0.2168，沙锥顶点 z 0.2151）。降到 0.2145 后整块顶盖落在沙锥体内。
+STREAM_TOP_Z = 0.2145
 STREAM_BOT_Z = 0.073
 RING_Z_LOW = 0.09
 RING_Z_HIGH = 0.35
@@ -358,6 +360,23 @@ def main():
     print("HOURGLASS_UPPER_SAND: edge_r=%.4f edge_z=%.4f "
           "min_clearance=%.4f profile=%s"
           % (edge_r, edge_z, upper_min_clear, upper_prof))
+    # 073 更正：上面 min_clearance 只在采样环半径处验算（贴壁边沿
+    # 0.0020），不是全曲面最小值。沿实际轮廓段逐点采样：沙锥面穿过
+    # 颈部平面 z 0.22 时离玻璃壁仅 0.001（072 质检单 §6 实测）。
+    upper_min_true = 1e9
+    upper_min_true_z = None
+    for k in range(len(upper_prof) - 1):
+        r0, z0 = upper_prof[k]
+        r1, z1 = upper_prof[k + 1]
+        for i in range(101):
+            t = i / 100.0
+            r = r0 + t * (r1 - r0)
+            z = z0 + t * (z1 - z0)
+            c = glass_radius_at(z) - r
+            if c < upper_min_true:
+                upper_min_true, upper_min_true_z = c, z
+    print("HOURGLASS_UPPER_SAND_TRUE_MIN: min_clearance=%.4f at z=%.4f"
+          % (upper_min_true, upper_min_true_z))
     lower_clears = [glass_radius_at(z) - r
                     for r, z in LOWER_SAND_PROFILE]
     print("HOURGLASS_LOWER_SAND: min_clearance=%.4f clears=%s"
@@ -465,6 +484,11 @@ def main():
     # 3. stream top vs neck plane / stream bottom vs mound peak
     print("HOURGLASS_GAP stream_top_z=%.3f neck_z=%.3f overlap=%.3f"
           % (STREAM_TOP_Z, NECK_Z, NECK_Z - STREAM_TOP_Z))
+    cone_z_at_stream = NECK_Z + REPOSE_TAN * (STREAM_R - 0.008)
+    print("HOURGLASS_GAP stream_top_z=%.4f cone_surface_at_stream_r="
+          "%.4f buried=%.4f"
+          % (STREAM_TOP_Z, cone_z_at_stream,
+             cone_z_at_stream - STREAM_TOP_Z))
     print("HOURGLASS_GAP stream_bot_z=%.3f mound_peak_z=0.072 "
           "gap=%.3f" % (STREAM_BOT_Z, STREAM_BOT_Z - 0.072))
     # 4. glass bottom/top vs boards (touching by design)
@@ -542,8 +566,9 @@ def main():
                 "面按 35° 安息角从颈部（r 0.008，z 0.22）向外上升，逐点"
                 "验算玻璃壁间隙，在 r %.4f、z %.4f 处贴到玻璃壁收住（间隙"
                 " 0.002）\n" % (len(upper_prof), edge_r, edge_z))
-        f.write("- 细沙流（SandStream）：两点直管半径 0.0035，z 0.219–"
-                "0.073，穿过颈部、上端埋进沙锥、下端落在沙丘顶上\n")
+        f.write("- 细沙流（SandStream）：两点直管半径 0.0035，z 0.2145–"
+                "0.073，穿过颈部、上端埋进沙锥内（顶端低于沙锥面 0.0023）、"
+                "下端落在沙丘顶上\n")
         f.write("- 黄铜箍环（RingLower / RingUpper）：R 0.097、管径 0.006，"
                 "箍在玻璃最宽处 z 0.09 / z 0.35（内径 0.091，楔入玻璃 "
                 "0.004，设计意图，同 067 卡箍）\n")
@@ -571,14 +596,18 @@ def main():
         f.write("\n## 实测间隙\n\n")
         f.write("- 箍环内径 0.091 − 玻璃半径 0.095 = 楔入 0.004（设计意图）\n")
         f.write("- 立柱内沿 0.160 − 玻璃最大半径 0.095 = 0.065\n")
-        f.write("- 细沙流顶端 z 0.219 − 颈部 z 0.22 = 埋入 0.001（与沙锥"
-                "相接）\n")
+        f.write("- 细沙流顶端 z 0.2145，沙锥自由面在流半径 0.0035 处 "
+                "z 0.2168，顶端埋入沙锥内 0.0023（顶盖落在沙锥体内；073 "
+                "修复，原 0.219 高出沙锥面 0.0022）\n")
         f.write("- 细沙流底端 z 0.073 − 沙丘峰顶 z 0.072 = 0.001\n")
         f.write("- 玻璃底 z 0.02 − 下板顶 z 0.02 = 0.000（贴合）\n")
         f.write("- 玻璃顶 z 0.42 − 上板底 z 0.42 = 0.000（贴合）\n")
         f.write("- 顶钮底 z 0.44 − 上板顶 z 0.44 = 0.000（贴合）\n")
-        f.write("- 上瓶沙锥贴壁边沿：r %.4f、z %.4f，最小间隙 %.4f\n"
-                % (edge_r, edge_z, upper_min_clear))
+        f.write("- 上瓶沙锥全曲面最小间隙 %.4f（颈部 z %.4f 处，沙锥面"
+                "穿过颈部平面时离玻璃壁最近；073 更正，原笔记称最小间隙 "
+                "0.0020 不实）；贴壁边沿间隙 %.4f（r %.4f、z %.4f）\n"
+                % (upper_min_true, upper_min_true_z, upper_min_clear,
+                   edge_r, edge_z))
         f.write("- 下瓶沙丘与玻璃壁最小间隙 %.4f\n"
                 % min(lower_clears))
         f.write("\n## 材质\n\n")

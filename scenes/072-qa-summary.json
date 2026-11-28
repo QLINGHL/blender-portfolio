@@ -37,7 +37,7 @@
     "RingLower": 0.13,
     "RingUpper": 0.122,
     "SandLower": 0.39,
-    "SandStream": 0.128,
+    "SandStream": 0.132,
     "SandUpper": 0.591
   },
   "uv_islands": 93,
@@ -790,7 +790,7 @@
           -0.004,
           0.004,
           0.073,
-          0.219
+          0.214
         ],
         "expected": [
           -0.004,
@@ -798,7 +798,7 @@
           -0.004,
           0.004,
           0.073,
-          0.219
+          0.214
         ],
         "rings": [
           [
@@ -807,17 +807,17 @@
             0.004
           ],
           [
-            0.146,
+            0.141,
             8,
             0.004
           ]
         ],
         "tri_axial_positions": [
           0.0,
-          0.146
+          0.141
         ],
         "tri_count": 16,
-        "length": 0.146,
+        "length": 0.1415,
         "ok": true
       }
     },
@@ -1036,16 +1036,16 @@
       "ok": true
     },
     "stream": {
-      "stream_top_z": 0.219,
+      "stream_top_z": 0.2145,
       "neck_z": 0.22,
-      "top_below_neck": 0.001,
+      "top_below_neck": 0.0055,
       "stream_radius": 0.0035,
       "cone_surface_z_at_stream_radius": 0.2168,
-      "stream_top_vs_cone_surface": 0.0022,
+      "stream_top_vs_cone_surface": -0.0023,
       "stream_bottom_z": 0.073,
       "mound_peak_z": 0.072,
       "bottom_gap_above_mound": 0.001,
-      "ok": false
+      "ok": true
     },
     "board_contacts": {
       "glass_bottom_z": 0.02,
@@ -1170,7 +1170,7 @@
     },
     "analytic_flipped_total": 0
   },
-  "structure_ok": false,
+  "structure_ok": true,
   "materials": {
     "rows": [
       {
@@ -1259,5 +1259,5 @@
     "assignment_mismatches": [],
     "empty_material_slots": 0
   },
-  "overall_pass": false
+  "overall_pass": true
 }

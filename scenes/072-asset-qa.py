@@ -88,7 +88,9 @@ UPPER_SAND_PROFILE = [
 REPOSE_TAN = math.tan(math.radians(35.0))
 NECK_Z = 0.22
 NECK_R = 0.009
-STREAM_TOP_Z = 0.219
+# 073 修复：STREAM_TOP_Z 从 0.219 降到 0.2145（低于沙锥顶点 z 0.2151，
+# 整块顶盖落在沙锥体内；沙锥面在流半径 0.0035 处 z 0.2168）
+STREAM_TOP_Z = 0.2145
 STREAM_BOT_Z = 0.073
 STREAM_R = 0.0035
 RING_Z_LOW = 0.09
@@ -659,12 +661,13 @@ def check_pillar_clearance(by_name):
 
 
 def check_stream(by_name):
-    """SandStream (r 0.0035) through the neck: top z 0.219 sits 0.001
-    below the neck plane (z 0.22) and must be buried inside the upper
-    sand cone; bottom z 0.073 sits 0.001 above the lower mound peak
+    """SandStream (r 0.0035) through the neck: top z 0.2145 sits below
+    the upper sand cone's apex (z 0.2151) and must be buried inside the
+    cone; bottom z 0.073 sits 0.001 above the lower mound peak
     (z 0.072). The cone's free surface at the stream radius is
     z = 0.22 + tan(35deg)*(0.0035 - 0.008) = 0.2169, so a stream top
-    at 0.219 pokes above the cone surface instead of being buried."""
+    at 0.2145 is buried 0.0023 inside the cone (073 fix; the old
+    0.219 top poked 0.0022 above the cone surface)."""
     stream = by_name["SandStream"]
     vs = world_verts(stream)
     top_z = max(v.z for v in vs)
@@ -1302,11 +1305,17 @@ def main():
             t["range"][0], t["range"][1], t["range"][2],
             t["range"][3], t["range"][4], t["range"][5],
             t["expected"], t["tri_axial_positions"], verdict(t["ok"])))
-        f.write("- 细沙流顶端 z %.4f，颈部平面 z %.4f，顶端在颈面下 %.4f；沙锥自由面在该半径处 z %.4f，流顶端高出沙锥面 %.4f（应埋进沙锥内，见第 7 节待修项）；底端 z %.4f，沙丘峰顶 z %.4f，间隙 %.4f：%s\n" % (
+        stream_top_note = (
+            "流顶端低于沙锥面 %.4f（埋进沙锥内）"
+            % (-stream["stream_top_vs_cone_surface"])
+            if stream["stream_top_vs_cone_surface"] <= 0 else
+            "流顶端高出沙锥面 %.4f（应埋进沙锥内，见第 7 节待修项）"
+            % stream["stream_top_vs_cone_surface"])
+        f.write("- 细沙流顶端 z %.4f，颈部平面 z %.4f，顶端在颈面下 %.4f；沙锥自由面在该半径处 z %.4f，%s；底端 z %.4f，沙丘峰顶 z %.4f，间隙 %.4f：%s\n" % (
             stream["stream_top_z"], stream["neck_z"],
             stream["top_below_neck"],
             stream["cone_surface_z_at_stream_radius"],
-            stream["stream_top_vs_cone_surface"],
+            stream_top_note,
             stream["stream_bottom_z"], stream["mound_peak_z"],
             stream["bottom_gap_above_mound"],
             verdict(stream["ok"])))
@@ -1388,10 +1397,10 @@ def main():
             line += "：%s\n" % verdict(row["ok"])
             f.write(line)
         f.write("\n## 6. 备注（实测发现，非缺陷）\n\n")
-        f.write("- 071 笔记“上瓶沙锥最小间隙 0.0020”需更正：0.0020 是贴壁边沿处的间隙（实测 %.4f），不是全曲面最小值；全曲面解析最小间隙实为 %.4f，位于颈部 z %.4f（沙锥面穿过颈部平面时离玻璃壁仅 0.001，仍为正、不穿帮）。构建脚本只在采样环半径处验算间隙，漏了锥面与颈部平面的交点。其余间隙数字与本质检复核一致：箍环楔入 %.4f、立柱间隙 %.4f、下瓶沙丘最小间隙 %.4f、细沙流底端间隙 %.4f、玻璃与端板贴合 0.000、顶钮贴合 0.000（细沙流顶端一项除外，见第 7 节）。\n" % (
-            sands["SandUpper"]["edge_clearance"],
+        f.write("- 071 笔记已在 073 修复中更正：全曲面最小间隙实为 %.4f（位于颈部 z %.4f，沙锥面穿过颈部平面时离玻璃壁仅 0.001，仍为正、不穿帮），0.0020 只是贴壁边沿处的间隙（实测 %.4f）。旧笔记称“最小间隙 0.0020”不实：构建脚本只在采样环半径处验算间隙，漏了锥面与颈部平面的交点。其余间隙数字与本质检复核一致：箍环楔入 %.4f、立柱间隙 %.4f、下瓶沙丘最小间隙 %.4f、细沙流底端间隙 %.4f、玻璃与端板贴合 0.000、顶钮贴合 0.000；细沙流顶端一项已在 073 修复（见第 7 节）。\n" % (
             sands["SandUpper"]["min_clearance_analytic"],
             sands["SandUpper"]["min_clearance_analytic_z"],
+            sands["SandUpper"]["edge_clearance"],
             ring_embed["rings"]["RingLower"]["embed"],
             pillars["min_clearance"],
             sands["SandLower"]["min_clearance_analytic"],
