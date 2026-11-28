@@ -1,0 +1,685 @@
+{
+  "asset": "still_training_data",
+  "labels": [
+    "lowpoly_alchemist",
+    "lowpoly_alembic_still",
+    "lowpoly_funnel_beaker",
+    "lowpoly_worktable"
+  ],
+  "source_blends": [
+    "scenes/068-lowpoly-alembic-still.blend",
+    "scenes/066-lowpoly-funnel-beaker.blend",
+    "scenes/049-lowpoly-alchemist.blend"
+  ],
+  "layout": "Studio scene, no walls: the 066 funnel & measuring beaker stands on a small wooden worktable at (0.50, -0.10), table top surface z 0.725; the 068 alembic still stands on the floor at (-0.55, -0.10) with its glass retort flask, copper condenser coil, spirit lamp and collection flask; the 049 alchemist stands behind the table at (0, 0.55) facing the front camera so the flask he holds in front of him stays visible. Ground plane + three-point studio lights. Views are front / front-right diagonal / right side / high from the left.",
+  "image": "renders/070-training-data-sample.png",
+  "image_size": [
+    1024,
+    1024
+  ],
+  "coordinate_system": "normalized 0-1 within each view's own 512x512 panel, origin top-left, y down; 'panel' gives the view's [x, y, w, h] in the 1024x1024 sheet, so a full-sheet coordinate is (panel_x + bbox_x*512)/1024",
+  "poly_counts": {
+    "groups": {
+      "alchemist": 1004,
+      "alembic": 1752,
+      "funnel": 828,
+      "worktable": 30
+    },
+    "per_object": {
+      "Shoe.001": 6,
+      "Shoe": 6,
+      "Shawl": 32,
+      "Robe": 48,
+      "PotionRedCork": 18,
+      "PotionRedBody": 24,
+      "PotionPurpleCork": 18,
+      "PotionPurpleBody": 24,
+      "PotionBlueCork": 18,
+      "PotionBlueBody": 24,
+      "Neck": 18,
+      "Leg.001": 36,
+      "Leg": 36,
+      "Head": 48,
+      "Hand.001": 24,
+      "Hand": 24,
+      "HairCap": 40,
+      "GoggleStrap": 64,
+      "GoggleRim.001": 48,
+      "GoggleRim": 48,
+      "GoggleLens.001": 24,
+      "GoggleLens": 24,
+      "FlaskLiquid": 32,
+      "FlaskCork": 18,
+      "Flask": 40,
+      "Eye.001": 18,
+      "Eye": 18,
+      "Cuff.001": 18,
+      "Cuff": 18,
+      "Collar": 24,
+      "Buckle": 6,
+      "Belt": 24,
+      "Beard": 40,
+      "Arm.001": 36,
+      "Arm": 36,
+      "ApronStrap.001": 6,
+      "ApronStrap": 6,
+      "ApronPocket": 6,
+      "Apron": 6,
+      "VapourArm": 36,
+      "StandRod": 36,
+      "StandRing": 144,
+      "RingArm": 6,
+      "RetortRimLip": 144,
+      "RetortLiquid": 144,
+      "RetortFlask": 192,
+      "Flame": 36,
+      "DripTube": 36,
+      "CondenserTube": 48,
+      "CondenserCoil": 300,
+      "CollectionLiquid": 96,
+      "CollectionFlask": 168,
+      "Collar_Neck": 144,
+      "Collar_Condenser": 144,
+      "BurnerWick": 24,
+      "Burner": 48,
+      "BaseBoard": 6,
+      "StandPost_R": 6,
+      "StandPost_L": 6,
+      "StandCrossbar": 6,
+      "StandBase": 6,
+      "RingArm_R": 6,
+      "RingArm_L": 6,
+      "MeasuringCup": 144,
+      "GradRing_4": 24,
+      "GradRing_3": 24,
+      "GradRing_2": 24,
+      "GradRing_1": 24,
+      "FunnelRing": 144,
+      "FunnelRimLip": 144,
+      "FunnelLiquid": 72,
+      "Funnel": 120,
+      "CupLiquid": 72,
+      "Table_Top": 6,
+      "TableLeg_0": 6,
+      "TableLeg_1": 6,
+      "TableLeg_2": 6,
+      "TableLeg_3": 6
+    }
+  },
+  "total_polys": 3614,
+  "scene_total_polys": 3615,
+  "views": [
+    {
+      "view": "front",
+      "azimuth_deg": 0.0,
+      "elevation_deg": 9.7,
+      "panel": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3402,
+        0.3539,
+        0.6938,
+        0.6926
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.4323,
+            0.3539,
+            0.5677,
+            0.6664
+          ],
+          "keypoints": {
+            "head_center": [
+              0.5,
+              0.3931
+            ],
+            "goggles_center": [
+              0.5,
+              0.3786
+            ],
+            "flask_center": [
+              0.5,
+              0.4865
+            ],
+            "flask_liquid_center": [
+              0.5,
+              0.4957
+            ],
+            "belt_bottle_red_center": [
+              0.4533,
+              0.52
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alembic_still",
+          "bbox": [
+            0.3402,
+            0.5886,
+            0.4578,
+            0.687
+          ],
+          "keypoints": {
+            "retort_flask_center": [
+              0.371,
+              0.6369
+            ],
+            "retort_liquid_center": [
+              0.3712,
+              0.6479
+            ],
+            "flame_center": [
+              0.3715,
+              0.6615
+            ],
+            "condenser_coil_center": [
+              0.4183,
+              0.6296
+            ],
+            "collection_flask_center": [
+              0.4185,
+              0.6604
+            ],
+            "collection_liquid_center": [
+              0.4186,
+              0.6691
+            ],
+            "drip_tube_tip": [
+              0.4184,
+              0.6599
+            ],
+            "stand_ring_center": [
+              0.3706,
+              0.6173
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_funnel_beaker",
+          "bbox": [
+            0.5504,
+            0.4497,
+            0.6361,
+            0.5546
+          ],
+          "keypoints": {
+            "funnel_center": [
+              0.5931,
+              0.4802
+            ],
+            "funnel_liquid_center": [
+              0.5931,
+              0.4776
+            ],
+            "funnel_rim_center": [
+              0.5935,
+              0.4541
+            ],
+            "measuring_cup_center": [
+              0.5923,
+              0.5366
+            ],
+            "cup_liquid_center": [
+              0.5923,
+              0.5359
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.5175,
+            0.5375,
+            0.6938,
+            0.6926
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.6013,
+              0.5531
+            ],
+            "table_center": [
+              0.6005,
+              0.6031
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "diag",
+      "azimuth_deg": 44.1,
+      "elevation_deg": 19.2,
+      "panel": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.364,
+        0.362,
+        0.6328,
+        0.7222
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.455,
+            0.362,
+            0.6033,
+            0.6524
+          ],
+          "keypoints": {
+            "head_center": [
+              0.5446,
+              0.3986
+            ],
+            "goggles_center": [
+              0.5264,
+              0.3883
+            ],
+            "flask_center": [
+              0.4909,
+              0.4892
+            ],
+            "flask_liquid_center": [
+              0.4909,
+              0.4973
+            ],
+            "belt_bottle_red_center": [
+              0.4627,
+              0.5083
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alembic_still",
+          "bbox": [
+            0.364,
+            0.5432,
+            0.4651,
+            0.6487
+          ],
+          "keypoints": {
+            "retort_flask_center": [
+              0.3971,
+              0.587
+            ],
+            "retort_liquid_center": [
+              0.3974,
+              0.5957
+            ],
+            "flame_center": [
+              0.3977,
+              0.6064
+            ],
+            "condenser_coil_center": [
+              0.4234,
+              0.5924
+            ],
+            "collection_flask_center": [
+              0.4239,
+              0.617
+            ],
+            "collection_liquid_center": [
+              0.4241,
+              0.6241
+            ],
+            "drip_tube_tip": [
+              0.4227,
+              0.6167
+            ],
+            "stand_ring_center": [
+              0.3966,
+              0.5715
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_funnel_beaker",
+          "bbox": [
+            0.4868,
+            0.4728,
+            0.578,
+            0.5847
+          ],
+          "keypoints": {
+            "funnel_center": [
+              0.5327,
+              0.5055
+            ],
+            "funnel_liquid_center": [
+              0.5327,
+              0.5031
+            ],
+            "funnel_rim_center": [
+              0.5329,
+              0.4818
+            ],
+            "measuring_cup_center": [
+              0.5322,
+              0.556
+            ],
+            "cup_liquid_center": [
+              0.5322,
+              0.5554
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.4468,
+            0.536,
+            0.6328,
+            0.7222
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.5384,
+              0.573
+            ],
+            "table_center": [
+              0.5379,
+              0.6172
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "side",
+      "azimuth_deg": 90.0,
+      "elevation_deg": 9.5,
+      "panel": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3876,
+        0.3602,
+        0.6368,
+        0.7174
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.467,
+            0.3602,
+            0.6368,
+            0.6696
+          ],
+          "keypoints": {
+            "head_center": [
+              0.5706,
+              0.4007
+            ],
+            "goggles_center": [
+              0.5411,
+              0.3839
+            ],
+            "flask_center": [
+              0.4861,
+              0.4846
+            ],
+            "flask_liquid_center": [
+              0.4861,
+              0.4935
+            ],
+            "belt_bottle_red_center": [
+              0.4883,
+              0.5095
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alembic_still",
+          "bbox": [
+            0.4311,
+            0.546,
+            0.488,
+            0.6471
+          ],
+          "keypoints": {
+            "retort_flask_center": [
+              0.4615,
+              0.5917
+            ],
+            "retort_liquid_center": [
+              0.4615,
+              0.6012
+            ],
+            "flame_center": [
+              0.4616,
+              0.6128
+            ],
+            "condenser_coil_center": [
+              0.46,
+              0.5956
+            ],
+            "collection_flask_center": [
+              0.4602,
+              0.6227
+            ],
+            "collection_liquid_center": [
+              0.4602,
+              0.6305
+            ],
+            "drip_tube_tip": [
+              0.4586,
+              0.6219
+            ],
+            "stand_ring_center": [
+              0.4614,
+              0.575
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_funnel_beaker",
+          "bbox": [
+            0.4222,
+            0.4564,
+            0.4819,
+            0.5662
+          ],
+          "keypoints": {
+            "funnel_center": [
+              0.4527,
+              0.4875
+            ],
+            "funnel_liquid_center": [
+              0.4527,
+              0.4848
+            ],
+            "funnel_rim_center": [
+              0.4525,
+              0.4609
+            ],
+            "measuring_cup_center": [
+              0.4531,
+              0.5448
+            ],
+            "cup_liquid_center": [
+              0.4531,
+              0.544
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.3876,
+            0.5419,
+            0.5102,
+            0.7174
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.4528,
+              0.5636
+            ],
+            "table_center": [
+              0.4532,
+              0.6149
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "view": "high",
+      "azimuth_deg": 297.9,
+      "elevation_deg": 41.7,
+      "panel": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "scene_bbox": [
+        0.3895,
+        0.3813,
+        0.6293,
+        0.6993
+      ],
+      "objects": [
+        {
+          "label": "lowpoly_alchemist",
+          "bbox": [
+            0.3895,
+            0.3813,
+            0.5326,
+            0.6165
+          ],
+          "keypoints": {
+            "head_center": [
+              0.4465,
+              0.4168
+            ],
+            "goggles_center": [
+              0.4685,
+              0.4125
+            ],
+            "flask_center": [
+              0.5105,
+              0.4938
+            ],
+            "flask_liquid_center": [
+              0.5104,
+              0.4995
+            ],
+            "belt_bottle_red_center": [
+              0.4911,
+              0.5373
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_alembic_still",
+          "bbox": [
+            0.4515,
+            0.611,
+            0.5364,
+            0.6993
+          ],
+          "keypoints": {
+            "retort_flask_center": [
+              0.4835,
+              0.653
+            ],
+            "retort_liquid_center": [
+              0.4836,
+              0.659
+            ],
+            "flame_center": [
+              0.4837,
+              0.6665
+            ],
+            "condenser_coil_center": [
+              0.5016,
+              0.6233
+            ],
+            "collection_flask_center": [
+              0.5015,
+              0.6403
+            ],
+            "collection_liquid_center": [
+              0.5014,
+              0.6451
+            ],
+            "drip_tube_tip": [
+              0.5027,
+              0.6403
+            ],
+            "stand_ring_center": [
+              0.4833,
+              0.6421
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_funnel_beaker",
+          "bbox": [
+            0.5309,
+            0.4227,
+            0.5953,
+            0.5183
+          ],
+          "keypoints": {
+            "funnel_center": [
+              0.5654,
+              0.4528
+            ],
+            "funnel_liquid_center": [
+              0.5655,
+              0.4512
+            ],
+            "funnel_rim_center": [
+              0.5662,
+              0.4368
+            ],
+            "measuring_cup_center": [
+              0.5637,
+              0.4863
+            ],
+            "cup_liquid_center": [
+              0.5638,
+              0.4859
+            ]
+          }
+        },
+        {
+          "label": "lowpoly_worktable",
+          "bbox": [
+            0.5004,
+            0.4424,
+            0.6293,
+            0.6073
+          ],
+          "keypoints": {
+            "table_top_center": [
+              0.5662,
+              0.4918
+            ],
+            "table_center": [
+              0.5647,
+              0.5203
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
